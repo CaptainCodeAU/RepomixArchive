@@ -1,4 +1,4 @@
-This file is a merged representation of Payload Documentation (https://github.com/payloadcms/payload/tree/main/docs), combined into a single document by Repomix.
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
 
 # File Summary
 
@@ -34,160 +34,113 @@ The content is organized as follows:
 
 # Directory Structure
 ```
-access-control/
-  collections.mdx
-  fields.mdx
-  globals.mdx
-  overview.mdx
-admin/
-  customizing-css.mdx
-  locked-documents.mdx
-  metadata.mdx
-  overview.mdx
-  preferences.mdx
-  preview.mdx
-  react-hooks.mdx
-authentication/
-  api-keys.mdx
-  cookies.mdx
-  custom-strategies.mdx
-  email.mdx
-  jwt.mdx
-  operations.mdx
-  overview.mdx
-  token-data.mdx
-cloud/
-  configuration.mdx
-  creating-a-project.mdx
-  projects.mdx
-  teams.mdx
-configuration/
-  collections.mdx
-  environment-vars.mdx
-  globals.mdx
-  i18n.mdx
-  localization.mdx
-  overview.mdx
-custom-components/
-  custom-providers.mdx
-  custom-views.mdx
-  document-views.mdx
-  edit-view.mdx
-  list-view.mdx
-  overview.mdx
-  root-components.mdx
-database/
-  migrations.mdx
-  mongodb.mdx
-  overview.mdx
-  postgres.mdx
-  sqlite.mdx
-  transactions.mdx
-email/
-  overview.mdx
-examples/
-  overview.mdx
-fields/
-  array.mdx
-  blocks.mdx
-  checkbox.mdx
-  code.mdx
-  collapsible.mdx
-  date.mdx
-  email.mdx
-  group.mdx
-  join.mdx
-  json.mdx
-  number.mdx
-  overview.mdx
-  point.mdx
-  radio.mdx
-  relationship.mdx
-  rich-text.mdx
-  row.mdx
-  select.mdx
-  tabs.mdx
-  text.mdx
-  textarea.mdx
-  ui.mdx
-  upload.mdx
-getting-started/
-  concepts.mdx
-  installation.mdx
-  what-is-payload.mdx
-graphql/
-  extending.mdx
-  graphql-schema.mdx
-  overview.mdx
-hooks/
-  collections.mdx
-  context.mdx
-  fields.mdx
-  globals.mdx
-  overview.mdx
-integrations/
-  vercel-content-link.mdx
-jobs-queue/
-  jobs.mdx
-  overview.mdx
-  queues.mdx
-  tasks.mdx
-  workflows.mdx
-live-preview/
-  client.mdx
-  frontend.mdx
-  overview.mdx
-  server.mdx
-local-api/
-  outside-nextjs.mdx
-  overview.mdx
-migration-guide/
-  overview.mdx
-plugins/
-  build-your-own.mdx
-  form-builder.mdx
-  multi-tenant.mdx
-  nested-docs.mdx
-  overview.mdx
-  redirects.mdx
-  search.mdx
-  sentry.mdx
-  seo.mdx
-  stripe.mdx
-production/
-  deployment.mdx
-  preventing-abuse.mdx
-queries/
-  depth.mdx
-  overview.mdx
-  pagination.mdx
-  select.mdx
-  sort.mdx
-rest-api/
-  overview.mdx
-rich-text/
-  converters.mdx
-  custom-features.mdx
-  migration.mdx
-  overview.mdx
-  slate.mdx
-troubleshooting/
-  troubleshooting.mdx
-typescript/
-  generating-types.mdx
-  overview.mdx
-upload/
-  overview.mdx
-  storage-adapters.mdx
-versions/
-  autosave.mdx
-  drafts.mdx
-  overview.mdx
+access-control_collections.mdx
+access-control_fields.mdx
+access-control_globals.mdx
+access-control_overview.mdx
+admin_customizing-css.mdx
+admin_locked-documents.mdx
+admin_metadata.mdx
+admin_overview.mdx
+admin_preferences.mdx
+admin_preview.mdx
+admin_react-hooks.mdx
+authentication_api-keys.mdx
+authentication_cookies.mdx
+authentication_custom-strategies.mdx
+authentication_email.mdx
+authentication_jwt.mdx
+authentication_operations.mdx
+authentication_overview.mdx
+authentication_token-data.mdx
+configuration_collections.mdx
+configuration_environment-vars.mdx
+configuration_globals.mdx
+configuration_i18n.mdx
+configuration_localization.mdx
+configuration_overview.mdx
+custom-components_overview.mdx
+database_migrations.mdx
+database_overview.mdx
+database_postgres.mdx
+database_transactions.mdx
+email_overview.mdx
+examples_overview.mdx
+fields_blocks.mdx
+fields_collapsible.mdx
+fields_group.mdx
+fields_overview.mdx
+fields_point.mdx
+fields_relationship.mdx
+fields_rich-text.mdx
+fields_row.mdx
+fields_select.mdx
+fields_tabs.mdx
+fields_ui.mdx
+fields_upload.mdx
+getting-started_concepts.mdx
+getting-started_installation.mdx
+getting-started_what-is-payload.mdx
+graphql_extending.mdx
+graphql_graphql-schema.mdx
+graphql_overview.mdx
+hooks_collections.mdx
+hooks_context.mdx
+hooks_fields.mdx
+hooks_globals.mdx
+hooks_overview.mdx
+jobs-queue_jobs.mdx
+jobs-queue_overview.mdx
+jobs-queue_queues.mdx
+jobs-queue_tasks.mdx
+jobs-queue_workflows.mdx
+live-preview_client.mdx
+live-preview_frontend.mdx
+live-preview_overview.mdx
+live-preview_server.mdx
+local-api_outside-nextjs.mdx
+local-api_overview.mdx
+migration-guide_overview.mdx
+plugins_build-your-own.mdx
+plugins_form-builder.mdx
+plugins_multi-tenant.mdx
+plugins_nested-docs.mdx
+plugins_overview.mdx
+plugins_redirects.mdx
+plugins_search.mdx
+plugins_sentry.mdx
+plugins_seo.mdx
+plugins_stripe.mdx
+production_deployment.mdx
+production_preventing-abuse.mdx
+queries_depth.mdx
+queries_overview.mdx
+queries_pagination.mdx
+queries_select.mdx
+queries_sort.mdx
+rest-api_overview.mdx
+rich-text_converters.mdx
+rich-text_converting-html.mdx
+rich-text_converting-jsx.mdx
+rich-text_converting-markdown.mdx
+rich-text_converting-plaintext.mdx
+rich-text_custom-features.mdx
+rich-text_migration.mdx
+rich-text_overview.mdx
+rich-text_slate.mdx
+troubleshooting_troubleshooting.mdx
+typescript_generating-types.mdx
+typescript_overview.mdx
+upload_overview.mdx
+upload_storage-adapters.mdx
+versions_autosave.mdx
+versions_drafts.mdx
+versions_overview.mdx
 ```
 
 # Files
 
-## File: access-control/collections.mdx
+## File: access-control_collections.mdx
 ````
 ---
 title: Collection Access Control
@@ -202,11 +155,12 @@ Collection Access Control is [Access Control](../access-control/overview) used t
 To add Access Control to a Collection, use the `access` property in your [Collection Config](../configuration/collections):
 
 ```ts
-import type { CollectionConfig } from 'payload';
+import type { CollectionConfig } from 'payload'
 
 export const CollectionWithAccessControl: CollectionConfig = {
   // ...
-  access: { // highlight-line
+  access: {
+    // highlight-line
     // ...
   },
 }
@@ -243,24 +197,24 @@ export const CollectionWithAccessControl: CollectionConfig = {
 
 The following options are available:
 
-| Function                | Allows/Denies Access                         |
-| ----------------------- | -------------------------------------------- |
-| **`create`** | Used in the `create` operation. [More details](#create). |
-| **`read`**     | Used in the `find` and `findByID` operations. [More details](#read). |
-| **`update`** | Used in the `update` operation. [More details](#update). |
-| **`delete`** | Used in the `delete` operation. [More details](#delete). |
+| Function     | Allows/Denies Access                                                 |
+| ------------ | -------------------------------------------------------------------- |
+| **`create`** | Used in the `create` operation. [More details](#create).             |
+| **`read`**   | Used in the `find` and `findByID` operations. [More details](#read). |
+| **`update`** | Used in the `update` operation. [More details](#update).             |
+| **`delete`** | Used in the `delete` operation. [More details](#delete).             |
 
 If a Collection supports [`Authentication`](../authentication/overview), the following additional options are available:
 
-| Function                | Allows/Denies Access                                           |
-| ----------------------- | -------------------------------------------------------------- |
-| **`admin`**   | Used to restrict access to the [Admin Panel](../admin/overview). [More details](#admin). |
+| Function     | Allows/Denies Access                                                                     |
+| ------------ | ---------------------------------------------------------------------------------------- |
+| **`admin`**  | Used to restrict access to the [Admin Panel](../admin/overview). [More details](#admin). |
 | **`unlock`** | Used to restrict which users can access the `unlock` operation. [More details](#unlock). |
 
 If a Collection supports [Versions](../versions/overview), the following additional options are available:
 
-| Function           | Allows/Denies Access                                                                                                   |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------- |
+| Function           | Allows/Denies Access                                                                                                                                   |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **`readVersions`** | Used to control who can read versions, and who can't. Will automatically restrict the Admin UI version viewing access. [More details](#read-versions). |
 
 ### Create
@@ -286,10 +240,10 @@ export const CollectionWithCreateAccess: CollectionConfig = {
 
 The following arguments are provided to the `create` function:
 
-| Option     | Description                                                                                                                  |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Option     | Description                                                                                                                   |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | **`req`**  | The [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object containing the currently authenticated `user`. |
-| **`data`** | The data passed to create the document with.                                                                                 |
+| **`data`** | The data passed to create the document with.                                                                                  |
 
 ### Read
 
@@ -313,8 +267,9 @@ export const CollectionWithReadAccess: CollectionConfig = {
 ```
 
 <Banner type="success">
-  **Tip:**
-  Return a [Query](../queries/overview) to limit the Documents to only those that match the constraint. This can be helpful to restrict users' access to specific Documents. [More details](../queries/overview).
+  **Tip:** Return a [Query](../queries/overview) to limit the Documents to only
+  those that match the constraint. This can be helpful to restrict users' access
+  to specific Documents. [More details](../queries/overview).
 </Banner>
 
 As your application becomes more complex, you may want to define your function in a separate file and import them into your Collection Config:
@@ -340,10 +295,10 @@ export const canReadPage: Access = ({ req: { user } }) => {
 
 The following arguments are provided to the `read` function:
 
-| Option    | Description                                                                |
-| --------- | -------------------------------------------------------------------------- |
+| Option    | Description                                                                                                                   |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | **`req`** | The [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object containing the currently authenticated `user`. |
-| **`id`**  | `id` of document requested, if within `findByID`.                           |
+| **`id`**  | `id` of document requested, if within `findByID`.                                                                             |
 
 ### Update
 
@@ -358,7 +313,7 @@ export const CollectionWithUpdateAccess: CollectionConfig = {
   // ...
   access: {
     // highlight-start
-    update: ({ req: { user }}) => {
+    update: ({ req: { user } }) => {
       return Boolean(user)
     },
     // highlight-end
@@ -367,8 +322,9 @@ export const CollectionWithUpdateAccess: CollectionConfig = {
 ```
 
 <Banner type="success">
-  **Tip:**
-  Return a [Query](../queries/overview) to limit the Documents to only those that match the constraint. This can be helpful to restrict users' access to specific Documents. [More details](../queries/overview).
+  **Tip:** Return a [Query](../queries/overview) to limit the Documents to only
+  those that match the constraint. This can be helpful to restrict users' access
+  to specific Documents. [More details](../queries/overview).
 </Banner>
 
 As your application becomes more complex, you may want to define your function in a separate file and import them into your Collection Config:
@@ -389,11 +345,11 @@ export const canUpdateUser: Access = ({ req: { user }, id }) => {
 
 The following arguments are provided to the `update` function:
 
-| Option     | Description                                                                |
-| ---------- | -------------------------------------------------------------------------- |
+| Option     | Description                                                                                                                   |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | **`req`**  | The [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object containing the currently authenticated `user`. |
-| **`id`**   | `id` of document requested to update.                                       |
-| **`data`** | The data passed to update the document with.                                |
+| **`id`**   | `id` of document requested to update.                                                                                         |
+| **`data`** | The data passed to update the document with.                                                                                  |
 
 ### Delete
 
@@ -408,7 +364,7 @@ export const CollectionWithDeleteAccess: CollectionConfig = {
   // ...
   access: {
     // highlight-start
-    delete: ({ req: { user }}) => {
+    delete: ({ req: { user } }) => {
       return Boolean(user)
     },
     // highlight-end
@@ -461,7 +417,7 @@ export const CollectionWithAdminAccess: CollectionConfig = {
   // ...
   access: {
     // highlight-start
-    admin: ({ req: { user }}) => {
+    admin: ({ req: { user } }) => {
       return Boolean(user)
     },
     // highlight-end
@@ -471,8 +427,8 @@ export const CollectionWithAdminAccess: CollectionConfig = {
 
 The following arguments are provided to the `admin` function:
 
-| Option    | Description                                                                |
-| --------- | -------------------------------------------------------------------------- |
+| Option    | Description                                                                                                                   |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | **`req`** | The [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object containing the currently authenticated `user`. |
 
 ### Unlock
@@ -488,7 +444,7 @@ export const CollectionWithUnlockAccess: CollectionConfig = {
   // ...
   access: {
     // highlight-start
-    unlock: ({ req: { user }}) => {
+    unlock: ({ req: { user } }) => {
       return Boolean(user)
     },
     // highlight-end
@@ -498,8 +454,8 @@ export const CollectionWithUnlockAccess: CollectionConfig = {
 
 The following arguments are provided to the `unlock` function:
 
-| Option    | Description                                                                |
-| --------- | -------------------------------------------------------------------------- |
+| Option    | Description                                                                                                                   |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | **`req`** | The [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object containing the currently authenticated `user`. |
 
 ### Read Versions
@@ -515,7 +471,7 @@ export const CollectionWithVersionsAccess: CollectionConfig = {
   // ...
   access: {
     // highlight-start
-    readVersions: ({ req: { user }}) => {
+    readVersions: ({ req: { user } }) => {
       return Boolean(user)
     },
     // highlight-end
@@ -525,12 +481,12 @@ export const CollectionWithVersionsAccess: CollectionConfig = {
 
 The following arguments are provided to the `readVersions` function:
 
-| Option    | Description                                                                |
-| --------- | -------------------------------------------------------------------------- |
+| Option    | Description                                                                                                                   |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | **`req`** | The [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object containing the currently authenticated `user`. |
 ````
 
-## File: access-control/fields.mdx
+## File: access-control_fields.mdx
 ````
 ---
 title: Field-level Access Control
@@ -545,19 +501,21 @@ Field Access Control is [Access Control](../access-control/overview) used to res
 To add Access Control to a Field, use the `access` property in your [Field Config](../fields/overview):
 
 ```ts
-import type { Field } from 'payload';
+import type { Field } from 'payload'
 
 export const FieldWithAccessControl: Field = {
   // ...
-  access: { // highlight-line
+  access: {
+    // highlight-line
     // ...
   },
 }
 ```
 
 <Banner type="warning">
-  **Note:**
-  Field Access Controls does not support returning [Query](../queries/overview) constraints like [Collection Access Control](./collections) does.
+  **Note:** Field Access Controls does not support returning
+  [Query](../queries/overview) constraints like [Collection Access
+  Control](./collections) does.
 </Banner>
 
 ## Config Options
@@ -589,11 +547,11 @@ export const Posts: CollectionConfig = {
 
 The following options are available:
 
-| Function                | Purpose                                                                          |
-| ----------------------- | -------------------------------------------------------------------------------- |
+| Function     | Purpose                                                                                                    |
+| ------------ | ---------------------------------------------------------------------------------------------------------- |
 | **`create`** | Allows or denies the ability to set a field's value when creating a new document. [More details](#create). |
-| **`read`**     | Allows or denies the ability to read a field's value. [More details](#read).       |
-| **`update`** | Allows or denies the ability to update a field's value [More details](#update).    |
+| **`read`**   | Allows or denies the ability to read a field's value. [More details](#read).                               |
+| **`update`** | Allows or denies the ability to update a field's value [More details](#update).                            |
 
 ### Create
 
@@ -601,11 +559,11 @@ Returns a boolean which allows or denies the ability to set a field's value when
 
 **Available argument properties:**
 
-| Option            | Description                                                                |
-| ----------------- | -------------------------------------------------------------------------- |
+| Option            | Description                                                                                                                  |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | **`req`**         | The [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object containing the currently authenticated `user` |
-| **`data`**        | The full data passed to create the document.                               |
-| **`siblingData`** | Immediately adjacent field data passed to create the document.             |
+| **`data`**        | The full data passed to create the document.                                                                                 |
+| **`siblingData`** | Immediately adjacent field data passed to create the document.                                                               |
 
 ### Read
 
@@ -613,12 +571,12 @@ Returns a boolean which allows or denies the ability to read a field's value. If
 
 **Available argument properties:**
 
-| Option            | Description                                                                |
-| ----------------- | -------------------------------------------------------------------------- |
+| Option            | Description                                                                                                                  |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | **`req`**         | The [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object containing the currently authenticated `user` |
-| **`id`**          | `id` of the document being read                                            |
-| **`doc`**         | The full document data.                                                    |
-| **`siblingData`** | Immediately adjacent field data of the document being read.                |
+| **`id`**          | `id` of the document being read                                                                                              |
+| **`doc`**         | The full document data.                                                                                                      |
+| **`siblingData`** | Immediately adjacent field data of the document being read.                                                                  |
 
 ### Update
 
@@ -628,16 +586,16 @@ If `false` is returned and you attempt to update the field's value, the operatio
 
 **Available argument properties:**
 
-| Option            | Description                                                                |
-| ----------------- | -------------------------------------------------------------------------- |
+| Option            | Description                                                                                                                  |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | **`req`**         | The [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object containing the currently authenticated `user` |
-| **`id`**          | `id` of the document being updated                                         |
-| **`data`**        | The full data passed to update the document.                               |
-| **`siblingData`** | Immediately adjacent field data passed to update the document with.        |
-| **`doc`**         | The full document data, before the update is applied.                      |
+| **`id`**          | `id` of the document being updated                                                                                           |
+| **`data`**        | The full data passed to update the document.                                                                                 |
+| **`siblingData`** | Immediately adjacent field data passed to update the document with.                                                          |
+| **`doc`**         | The full document data, before the update is applied.                                                                        |
 ````
 
-## File: access-control/globals.mdx
+## File: access-control_globals.mdx
 ````
 ---
 title: Globals Access Control
@@ -652,11 +610,12 @@ Global Access Control is [Access Control](../access-control/overview) used to re
 To add Access Control to a Global, use the `access` property in your [Global Config](../configuration/globals):
 
 ```ts
-import type { GlobalConfig } from 'payload';
+import type { GlobalConfig } from 'payload'
 
 export const GlobalWithAccessControl: GlobalConfig = {
   // ...
-  access: { // highlight-line
+  access: {
+    // highlight-line
     // ...
   },
 }
@@ -689,15 +648,15 @@ export default Header
 
 The following options are available:
 
-| Function                | Allows/Denies Access                   |
-| ----------------------- | -------------------------------------- |
-| **`read`**     | Used in the `findOne` Global operation. [More details](#read). |
+| Function     | Allows/Denies Access                                            |
+| ------------ | --------------------------------------------------------------- |
+| **`read`**   | Used in the `findOne` Global operation. [More details](#read).  |
 | **`update`** | Used in the `update` Global operation. [More details](#update). |
 
 If a Global supports [Versions](../versions/overview), the following additional options are available:
 
-| Function           | Allows/Denies Access                                                                                                   |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------- |
+| Function           | Allows/Denies Access                                                                                                                                   |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **`readVersions`** | Used to control who can read versions, and who can't. Will automatically restrict the Admin UI version viewing access. [More details](#read-versions). |
 
 ### Read
@@ -716,15 +675,15 @@ const Header: GlobalConfig = {
     read: ({ req: { user } }) => {
       return Boolean(user)
     },
-  }
+  },
   // highlight-end
 }
 ```
 
 The following arguments are provided to the `read` function:
 
-| Option    | Description                                                                |
-| --------- | -------------------------------------------------------------------------- |
+| Option    | Description                                                                                                                   |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | **`req`** | The [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object containing the currently authenticated `user`. |
 
 ### Update
@@ -743,17 +702,17 @@ const Header: GlobalConfig = {
     update: ({ req: { user }, data }) => {
       return Boolean(user)
     },
-  }
+  },
   // highlight-end
 }
 ```
 
 The following arguments are provided to the `update` function:
 
-| Option     | Description                                                                |
-| ---------- | -------------------------------------------------------------------------- |
+| Option     | Description                                                                                                                   |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | **`req`**  | The [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object containing the currently authenticated `user`. |
-| **`data`** | The data passed to update the global with.                                 |
+| **`data`** | The data passed to update the global with.                                                                                    |
 
 ### Read Versions
 
@@ -768,7 +727,7 @@ export const GlobalWithVersionsAccess: GlobalConfig = {
   // ...
   access: {
     // highlight-start
-    readVersions: ({ req: { user }}) => {
+    readVersions: ({ req: { user } }) => {
       return Boolean(user)
     },
     // highlight-end
@@ -778,12 +737,12 @@ export const GlobalWithVersionsAccess: GlobalConfig = {
 
 The following arguments are provided to the `readVersions` function:
 
-| Option    | Description                                                                |
-| --------- | -------------------------------------------------------------------------- |
+| Option    | Description                                                                                                                   |
+| --------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | **`req`** | The [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object containing the currently authenticated `user`. |
 ````
 
-## File: access-control/overview.mdx
+## File: access-control_overview.mdx
 ````
 ---
 title: Access Control
@@ -829,8 +788,10 @@ const defaultPayloadAccess = ({ req: { user } }) => {
 ```
 
 <Banner type="warning">
-  **Important:**
-  In the [Local API](../local-api/overview), all Access Control is _skipped_ by default. This allows your server to have full control over your application. To opt back in, you can set the `overrideAccess` option to `false` in your requests.
+  **Important:** In the [Local API](../local-api/overview), all Access Control
+  is _skipped_ by default. This allows your server to have full control over
+  your application. To opt back in, you can set the `overrideAccess` option to
+  `false` in your requests.
 </Banner>
 
 ## The Access Operation
@@ -840,12 +801,13 @@ The Admin Panel responds dynamically to your changes to Access Control. For exam
 To accomplish this, Payload exposes the [Access Operation](../authentication/operations#access). Upon login, Payload executes each Access Control function at the top level, across all Collections, Globals, and Fields, and returns a response that contains a reflection of what the currently authenticated user can do within your application.
 
 <Banner type="warning">
-  **Important:**
-  When your access control functions are executed via the [Access Operation](../authentication/operations#access),  the `id` and `data` arguments will be `undefined`. This is because Payload is executing your functions without referencing a specific Document.
+  **Important:** When your access control functions are executed via the [Access
+  Operation](../authentication/operations#access), the `id` and `data` arguments
+  will be `undefined`. This is because Payload is executing your functions
+  without referencing a specific Document.
 </Banner>
 
 If you use `id` or `data` within your access control functions, make sure to check that they are defined first. If they are not, then you can assume that your Access Control is being executed via the Access Operation to determine solely what the user can do within the Admin Panel.
-
 
 ## Locale Specific Access Control
 
@@ -857,16 +819,16 @@ Here is an example:
 const access = ({ req }) => {
   // Grant access if the locale is 'en'
   if (req.locale === 'en') {
-    return true;
+    return true
   }
 
   // Deny access for all other locales
-  return false;
+  return false
 }
 ```
 ````
 
-## File: admin/customizing-css.mdx
+## File: admin_customizing-css.mdx
 ````
 ---
 title: Customizing CSS & SCSS
@@ -899,8 +861,10 @@ Here is an example of how you might target the Dashboard View and change the bac
 ```
 
 <Banner type="warning">
-  **Note:**
-  If you are building [Custom Components](../custom-components/overview), it is best to import your own stylesheets directly into your components, rather than using the global stylesheet. You can continue to use the [CSS library](#css-library) as needed.
+  **Note:** If you are building [Custom
+  Components](../custom-components/overview), it is best to import your own
+  stylesheets directly into your components, rather than using the global
+  stylesheet. You can continue to use the [CSS library](#css-library) as needed.
 </Banner>
 
 ### Specificity rules
@@ -910,9 +874,10 @@ All Payload CSS is encapsulated inside CSS layers under `@layer payload-default`
 We have also provided a layer `@layer payload` if you want to use layers and ensure that your styles are applied after payload.
 
 To override existing styles in a way that the previous rules of specificity would be respected you can use the default layer like so
+
 ```css
 @layer payload-default {
-  // my styles within the payload specificity
+  // my styles within the Payload specificity
 }
 ```
 
@@ -947,8 +912,8 @@ The following variables are defined and can be overridden:
 For an up-to-date, comprehensive list of all available variables, please refer to the [Source Code](https://github.com/payloadcms/payload/blob/main/packages/ui/src/scss).
 
 <Banner type="warning">
-  **Warning:**
-  If you're overriding colors or theme elevations, make sure to consider how [your changes will affect dark mode](#dark-mode).
+  **Warning:** If you're overriding colors or theme elevations, make sure to
+  consider how [your changes will affect dark mode](#dark-mode).
 </Banner>
 
 #### Dark Mode
@@ -956,7 +921,7 @@ For an up-to-date, comprehensive list of all available variables, please refer t
 Colors are designed to automatically adapt to theme of the [Admin Panel](./overview). By default, Payload automatically overrides all `--theme-elevation` colors and inverts all success / warning / error shades to suit dark mode. We also update some base theme variables like `--theme-bg`, `--theme-text`, etc.
 ````
 
-## File: admin/locked-documents.mdx
+## File: admin_locked-documents.mdx
 ````
 ---
 title: Document Locking
@@ -980,7 +945,12 @@ When a user starts editing a document, Payload locks it for that user. If anothe
 
 The lock will automatically expire after a set period of inactivity, configurable using the `duration` property in the `lockDocuments` configuration, after which others can resume editing.
 
-<Banner type="info"> **Note:** If your application does not require document locking, you can disable this feature for any collection or global by setting the `lockDocuments` property to `false`. </Banner>
+<Banner type="info">
+  {' '}
+  **Note:** If your application does not require document locking, you can
+  disable this feature for any collection or global by setting the
+  `lockDocuments` property to `false`.{' '}
+</Banner>
 
 ### Config Options
 
@@ -1039,7 +1009,7 @@ const result = await payload.update({
 This option is particularly useful in scenarios where administrative privileges or specific workflows require you to override the lock and ensure the operation is completed.
 ````
 
-## File: admin/metadata.mdx
+## File: admin_metadata.mdx
 ````
 ---
 title: Page Metadata
@@ -1093,16 +1063,17 @@ To customize Root Metadata, use the `admin.meta` key in your Payload Config:
 
 The following options are available for Root Metadata:
 
-| Key | Type | Description |
-| --- | --- | --- |
+| Key                  | Type                                    | Description                                                                                                                                                                                                                                                               |
+| -------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `defaultOGImageType` | `dynamic` (default), `static`, or `off` | The type of default OG image to use. If set to `dynamic`, Payload will use Next.js image generation to create an image with the title of the page. If set to `static`, Payload will use the `defaultOGImage` URL. If set to `off`, Payload will not generate an OG image. |
-| `icons` | `IconConfig[]` | An array of icon objects. [More details](#icons). |
-| `titleSuffix` | `string` | A suffix to append to the end of the title of every page. Defaults to "- Payload". |
-| `[keyof Metadata]` | `unknown` | Any other properties that Next.js supports within the `generateMetadata` function. [More details](https://nextjs.org/docs/app/api-reference/functions/generate-metadata). |
+| `titleSuffix`        | `string`                                | A suffix to append to the end of the title of every page. Defaults to "- Payload".                                                                                                                                                                                        |
+| `[keyof Metadata]`   | `unknown`                               | Any other properties that Next.js supports within the `generateMetadata` function. [More details](https://nextjs.org/docs/app/api-reference/functions/generate-metadata).                                                                                                 |
 
 <Banner type="success">
-  **Reminder:**
-  These are the _root-level_ options for the Admin Panel. You can also customize metadata on the [Collection](../configuration/collections), [Global](../configuration/globals), and Document levels through their respective configs.
+  **Reminder:** These are the _root-level_ options for the Admin Panel. You can
+  also customize metadata on the [Collection](../configuration/collections),
+  [Global](../configuration/globals), and Document levels through their
+  respective configs.
 </Banner>
 
 ### Icons
@@ -1111,7 +1082,7 @@ The Icons Config corresponds to the `<link>` tags that are used to specify icons
 
 The most common icon type is the favicon, which is displayed in the browser tab. This is specified by the `rel` attribute `icon`. Other common icon types include `apple-touch-icon`, which is used by Apple devices when the Admin Panel is saved to the home screen, and `mask-icon`, which is used by Safari to mask the Admin Panel icon.
 
-To customize icons, use the `icons` key within the `admin.meta` object in your Payload Config:
+To customize icons, use the `admin.meta.icons` property in your Payload Config:
 
 ```ts
 {
@@ -1143,7 +1114,7 @@ For a full list of all available Icon options, see the [Next.js documentation](h
 
 Open Graph metadata is a set of tags that are used to control how URLs are displayed when shared on social media platforms. Open Graph metadata is automatically generated by Payload, but can be customized at the Root level.
 
-To customize Open Graph metadata, use the `openGraph` key within the `admin.meta` object in your Payload Config:
+To customize Open Graph metadata, use the `admin.meta.openGraph` property in your Payload Config:
 
 ```ts
 {
@@ -1171,6 +1142,46 @@ To customize Open Graph metadata, use the `openGraph` key within the `admin.meta
 
 For a full list of all available Open Graph options, see the [Next.js documentation](https://nextjs.org/docs/app/api-reference/functions/generate-metadata#opengraph).
 
+### Robots
+
+Setting the `robots` property will allow you to control the `robots` meta tag that is rendered within the `<head>` of the Admin Panel. This can be used to control how search engines index pages and displays them in search results.
+
+By default, the Admin Panel is set to prevent search engines from indexing pages within the Admin Panel.
+
+To customize the Robots Config, use the `admin.meta.robots` property in your Payload Config:
+
+```ts
+{
+  // ...
+  admin: {
+    meta: {
+      // highlight-start
+      robots: 'noindex, nofollow',
+      // highlight-end
+    },
+  },
+}
+```
+
+For a full list of all available Robots options, see the [Next.js documentation](https://nextjs.org/docs/app/api-reference/functions/generate-metadata#robots).
+
+##### Prevent Crawling
+
+While setting meta tags via `admin.meta.robots` can prevent search engines from _indexing_ web pages, it does not prevent them from being _crawled_.
+
+To prevent your pages from being crawled altogether, add a `robots.txt` file to your root directory.
+
+```text
+User-agent: *
+Disallow: /admin/
+```
+
+<Banner type="info">
+  **Note:** If you've customized the path to your Admin Panel via
+  `config.routes`, be sure to update the `Disallow` directive to match your
+  custom path.
+</Banner>
+
 ## Collection Metadata
 
 Collection Metadata is the metadata that is applied to all pages within any given Collection within the Admin Panel. This metadata is used to customize the title and description of all views within any given Collection, unless overridden by the view itself.
@@ -1185,7 +1196,7 @@ export const MyCollection: CollectionConfig = {
   admin: {
     // highlight-start
     meta: {
-    // highlight-end
+      // highlight-end
       title: 'My Collection',
       description: 'The best collection in the world',
     },
@@ -1209,7 +1220,7 @@ export const MyGlobal: GlobalConfig = {
   admin: {
     // highlight-start
     meta: {
-    // highlight-end
+      // highlight-end
       title: 'My Global',
       description: 'The best admin panel in the world',
     },
@@ -1241,9 +1252,10 @@ To customize View Metadata, use the `meta` key within your View Config:
     },
   },
 }
+```
 ````
 
-## File: admin/overview.mdx
+## File: admin_overview.mdx
 ````
 ---
 title: The Admin Panel
@@ -1260,7 +1272,9 @@ The Admin Panel is designed to [white-label your brand](https://payloadcms.com/b
 The Admin Panel is written in [TypeScript](https://www.typescriptlang.org) and built with [React](https://react.dev) using the [Next.js App Router](https://nextjs.org/docs/app). It supports [React Server Components](https://react.dev/reference/rsc/server-components), enabling the use of the [Local API](/docs/local-api/overview) on the front-end. You can install Payload into any [existing Next.js app in just one line](../getting-started/installation) and [deploy it anywhere](../production/deployment).
 
 <Banner type="success">
-  The Payload Admin Panel is designed to be as minimal and straightforward as possible to allow easy customization and control. [Learn more](../custom-components/overview).
+  The Payload Admin Panel is designed to be as minimal and straightforward as
+  possible to allow easy customization and control. [Learn
+  more](../custom-components/overview).
 </Banner>
 
 <LightDarkImage
@@ -1295,7 +1309,8 @@ app/
 ```
 
 <Banner type="info">
-  If you are not familiar with Next.js project structure, you can [learn more about it here](https://nextjs.org/docs/getting-started/project-structure).
+  If you are not familiar with Next.js project structure, you can [learn more
+  about it here](https://nextjs.org/docs/getting-started/project-structure).
 </Banner>
 
 As shown above, all Payload routes are nested within the `(payload)` route group. This creates a boundary between the Admin Panel and the rest of your application by scoping all layouts and styles. The `layout.tsx` file within this directory, for example, is where Payload manages the `html` tag of the document to set proper [`lang`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang) and [`dir`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/dir) attributes, etc.
@@ -1303,8 +1318,11 @@ As shown above, all Payload routes are nested within the `(payload)` route group
 The `admin` directory contains all the _pages_ related to the interface itself, whereas the `api` and `graphql` directories contains all the _routes_ related to the [REST API](../rest-api/overview) and [GraphQL API](../graphql/overview). All admin routes are [easily configurable](#customizing-routes) to meet your application's exact requirements.
 
 <Banner type="warning">
-  **Note:**
-  If you don't intend to use the Admin Panel, [REST API](../rest-api/overview), or [GraphQL API](../graphql/overview), you can opt-out by simply deleting their corresponding directories within your Next.js app. The overhead, however, is completely constrained to these routes, and will not slow down or affect Payload outside when not in use.
+  **Note:** If you don't intend to use the Admin Panel, [REST
+  API](../rest-api/overview), or [GraphQL API](../graphql/overview), you can
+  opt-out by simply deleting their corresponding directories within your Next.js
+  app. The overhead, however, is completely constrained to these routes, and
+  will not slow down or affect Payload outside when not in use.
 </Banner>
 
 Finally, the `custom.scss` file is where you can add or override globally-oriented styles in the Admin Panel, such as modify the color palette. Customizing the look and feel through CSS alone is a powerful feature of the Admin Panel, [more on that here](./customizing-css).
@@ -1325,7 +1343,8 @@ import { buildConfig } from 'payload'
 
 const config = buildConfig({
   // ...
-  admin: { // highlight-line
+  admin: {
+    // highlight-line
     // ...
   },
 })
@@ -1333,25 +1352,28 @@ const config = buildConfig({
 
 The following options are available:
 
-| Option                         | Description                                                                                                                                                           |
-|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **`avatar`**                   | Set account profile picture. Options: `gravatar`, `default` or a custom React component.                                                                              |
-| **`autoLogin`**                | Used to automate log-in for dev and demonstration convenience. [More details](../authentication/overview).                                                            |
-| **`buildPath`**                | Specify an absolute path for where to store the built Admin bundle used in production. Defaults to `path.resolve(process.cwd(), 'build')`.                            |
-| **`components`**               | Component overrides that affect the entirety of the Admin Panel. [More details](../custom-components/overview).                                                                        |
-| **`custom`**                   | Any custom properties you wish to pass to the Admin Panel.                                                                                                            |
-| **`dateFormat`**               | The date format that will be used for all dates within the Admin Panel. Any valid [date-fns](https://date-fns.org/) format pattern can be used.                       |
-| **`livePreview`**              | Enable real-time editing for instant visual feedback of your front-end application. [More details](../live-preview/overview).                                         |
-| **`meta`**                     | Base metadata to use for the Admin Panel. [More details](./metadata).                                                                                                 |
-| **`routes`**                   | Replace built-in Admin Panel routes with your own custom routes. [More details](#customizing-routes).                                                                 |
-| **`suppressHydrationWarning`** | If set to `true`, suppresses React hydration mismatch warnings during the hydration of the root `<html>` tag. Defaults to `false`.                                      |
-| **`theme`**                    | Restrict the Admin Panel theme to use only one of your choice. Default is `all`.                                                                                      |
-| **`timezones`**                 | Configure the timezone settings for the admin panel. [More details](#timezones)                                                                                       |
-| **`user`**                     | The `slug` of the Collection that you want to allow to login to the Admin Panel. [More details](#the-admin-user-collection).                                          |
+| Option                         | Description                                                                                                                                     |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`avatar`**                   | Set account profile picture. Options: `gravatar`, `default` or a custom React component.                                                        |
+| **`autoLogin`**                | Used to automate log-in for dev and demonstration convenience. [More details](../authentication/overview).                                      |
+| **`buildPath`**                | Specify an absolute path for where to store the built Admin bundle used in production. Defaults to `path.resolve(process.cwd(), 'build')`.      |
+| **`components`**               | Component overrides that affect the entirety of the Admin Panel. [More details](../custom-components/overview).                                 |
+| **`custom`**                   | Any custom properties you wish to pass to the Admin Panel.                                                                                      |
+| **`dateFormat`**               | The date format that will be used for all dates within the Admin Panel. Any valid [date-fns](https://date-fns.org/) format pattern can be used. |
+| **`livePreview`**              | Enable real-time editing for instant visual feedback of your front-end application. [More details](../live-preview/overview).                   |
+| **`meta`**                     | Base metadata to use for the Admin Panel. [More details](./metadata).                                                                           |
+| **`routes`**                   | Replace built-in Admin Panel routes with your own custom routes. [More details](#customizing-routes).                                           |
+| **`suppressHydrationWarning`** | If set to `true`, suppresses React hydration mismatch warnings during the hydration of the root `<html>` tag. Defaults to `false`.              |
+| **`theme`**                    | Restrict the Admin Panel theme to use only one of your choice. Default is `all`.                                                                |
+| **`timezones`**                | Configure the timezone settings for the admin panel. [More details](#timezones)                                                                 |
+| **`user`**                     | The `slug` of the Collection that you want to allow to login to the Admin Panel. [More details](#the-admin-user-collection).                    |
 
 <Banner type="success">
-  **Reminder:**
-  These are the _root-level_ options for the Admin Panel. You can also customize [Collection Admin Options](../configuration/collections#admin-options) and [Global Admin Options](../configuration/globals#admin-options) through their respective `admin` keys.
+  **Reminder:** These are the _root-level_ options for the Admin Panel. You can
+  also customize [Collection Admin
+  Options](../configuration/collections#admin-options) and [Global Admin
+  Options](../configuration/globals#admin-options) through their respective
+  `admin` keys.
 </Banner>
 
 ### The Admin User Collection
@@ -1372,7 +1394,8 @@ const config = buildConfig({
 <Banner type="warning">
   **Important:**
 
-  The Admin Panel can only be used by a single auth-enabled Collection. To enable authentication for a Collection, simply set `auth: true` in the Collection's configuration. See [Authentication](../authentication/overview) for more information.
+The Admin Panel can only be used by a single auth-enabled Collection. To enable authentication for a Collection, simply set `auth: true` in the Collection's configuration. See [Authentication](../authentication/overview) for more information.
+
 </Banner>
 
 By default, if you have not specified a Collection, Payload will automatically provide a `User` Collection with access to the Admin Panel. You can customize or override the fields and settings of the default `User` Collection by adding your own Collection with `slug: 'users'`. Doing this will force Payload to use your provided `User` Collection instead of its default version.
@@ -1382,7 +1405,7 @@ You can use whatever Collection you'd like to access the Admin Panel as long as 
 - `admins` - meant to have a higher level of permissions to manage your data and access the Admin Panel
 - `customers` - meant for end users of your app that should not be allowed to log into the Admin Panel
 
-To do this, specify `admin: { user: 'admins' }` in your config. This will provide access to the Admin Panel to only `admins`. Any users authenticated as `customers` will be prevented from accessing the Admin Panel.  See [Access Control](/docs/access-control/overview) for full details.
+To do this, specify `admin: { user: 'admins' }` in your config. This will provide access to the Admin Panel to only `admins`. Any users authenticated as `customers` will be prevented from accessing the Admin Panel. See [Access Control](/docs/access-control/overview) for full details.
 
 ### Role-based Access Control
 
@@ -1409,23 +1432,24 @@ import { buildConfig } from 'payload'
 const config = buildConfig({
   // ...
   routes: {
-    admin: '/custom-admin-route' // highlight-line
-  }
+    admin: '/custom-admin-route', // highlight-line
+  },
 })
 ```
 
 The following options are available:
 
 | Option              | Default route         | Description                                       |
-|---------------------|-----------------------|---------------------------------------------------|
+| ------------------- | --------------------- | ------------------------------------------------- |
 | `admin`             | `/admin`              | The Admin Panel itself.                           |
 | `api`               | `/api`                | The [REST API](../rest-api/overview) base path.   |
 | `graphQL`           | `/graphql`            | The [GraphQL API](../graphql/overview) base path. |
 | `graphQLPlayground` | `/graphql-playground` | The GraphQL Playground.                           |
 
 <Banner type="success">
-  **Tip:**
-  You can easily add _new_ routes to the Admin Panel through [Custom Endpoints](../rest-api/overview#custom-endpoints) and [Custom Views](../custom-components/custom-views).
+  **Tip:** You can easily add _new_ routes to the Admin Panel through [Custom
+  Endpoints](../rest-api/overview#custom-endpoints) and [Custom
+  Views](../custom-components/custom-views).
 </Banner>
 
 #### Customizing Root-level Routes
@@ -1442,8 +1466,9 @@ app/
 ```
 
 <Banner type="warning">
-  **Note:**
-  If you set Root-level Routes _before_ auto-generating the Admin Panel via `create-payload-app`, your [Project Structure](#project-structure) will already be set up correctly.
+  **Note:** If you set Root-level Routes _before_ auto-generating the Admin
+  Panel via `create-payload-app`, your [Project Structure](#project-structure)
+  will already be set up correctly.
 </Banner>
 
 ### Admin-level Routes
@@ -1459,28 +1484,29 @@ const config = buildConfig({
   // ...
   admin: {
     routes: {
-      account: '/my-account' // highlight-line
-    }
+      account: '/my-account', // highlight-line
+    },
   },
 })
 ```
 
 The following options are available:
 
-| Option            | Default route           | Description                                     |
-| ----------------- | ----------------------- | ----------------------------------------------- |
-| `account`         | `/account`              | The user's account page.                        |
-| `createFirstUser` | `/create-first-user`    | The page to create the first user.              |
-| `forgot`          | `/forgot`               | The password reset page.                        |
-| `inactivity`      | `/logout-inactivity`    | The page to redirect to after inactivity.       |
-| `login`           | `/login`                | The login page.                                 |
-| `logout`          | `/logout`               | The logout page.                                |
-| `reset`           | `/reset`                | The password reset page.                        |
-| `unauthorized`    | `/unauthorized`         | The unauthorized page.                          |
+| Option            | Default route        | Description                               |
+| ----------------- | -------------------- | ----------------------------------------- |
+| `account`         | `/account`           | The user's account page.                  |
+| `createFirstUser` | `/create-first-user` | The page to create the first user.        |
+| `forgot`          | `/forgot`            | The password reset page.                  |
+| `inactivity`      | `/logout-inactivity` | The page to redirect to after inactivity. |
+| `login`           | `/login`             | The login page.                           |
+| `logout`          | `/logout`            | The logout page.                          |
+| `reset`           | `/reset`             | The password reset page.                  |
+| `unauthorized`    | `/unauthorized`      | The unauthorized page.                    |
 
 <Banner type="success">
-  **Note:**
-  You can also swap out entire _views_ out for your own, using the `admin.views` property of the Payload Config. See [Custom Views](../custom-components/custom-views) for more information.
+  **Note:** You can also swap out entire _views_ out for your own, using the
+  `admin.views` property of the Payload Config. See [Custom
+  Views](../custom-components/custom-views) for more information.
 </Banner>
 
 ## I18n
@@ -1497,20 +1523,21 @@ The `admin.timezones` configuration allows you to configure timezone settings fo
 
 The following options are available:
 
-| Option            | Description                                     |
-| ----------------- | ----------------------------------------------- |
-| `supportedTimezones`         | An array of label/value options for selectable timezones where the value is the IANA name eg. `America/Detroit`                        |
-| `defaultTimezone`               | The `value` of the default selected timezone. eg. `America/Los_Angeles`                        |
+| Option               | Description                                                                                                     |
+| -------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `supportedTimezones` | An array of label/value options for selectable timezones where the value is the IANA name eg. `America/Detroit` |
+| `defaultTimezone`    | The `value` of the default selected timezone. eg. `America/Los_Angeles`                                         |
 
 We validate the supported timezones array by checking the value against the list of IANA timezones supported via the Intl API, specifically `Intl.supportedValuesOf('timeZone')`.
 
 <Banner type="info">
-  **Important**
-  You must enable timezones on each individual date field via `timezone: true`. See [Date Fields](../fields/overview#date) for more information.
+  **Important** You must enable timezones on each individual date field via
+  `timezone: true`. See [Date Fields](../fields/overview#date) for more
+  information.
 </Banner>
 ````
 
-## File: admin/preferences.mdx
+## File: admin_preferences.mdx
 ````
 ---
 title: Managing User Preferences
@@ -1532,8 +1559,9 @@ Out of the box, Payload handles the persistence of your users' preferences in a 
 <Banner type="warning">
   **Important:**
 
-  All preferences are stored on an individual user basis. Payload automatically recognizes the user
-  that is reading or setting a preference via all provided authentication methods.
+All preferences are stored on an individual user basis. Payload automatically recognizes the user
+that is reading or setting a preference via all provided authentication methods.
+
 </Banner>
 
 ## Use Cases
@@ -1590,80 +1618,66 @@ Here is an example for how you can utilize `usePreferences` within your custom A
 
 ```tsx
 'use client'
-import React, { Fragment, useState, useEffect, useCallback } from 'react';
+import React, { Fragment, useState, useEffect, useCallback } from 'react'
 import { usePreferences } from '@payloadcms/ui'
 
-const lastUsedColorsPreferenceKey = 'last-used-colors';
+const lastUsedColorsPreferenceKey = 'last-used-colors'
 
 export function CustomComponent() {
-  const { getPreference, setPreference } = usePreferences();
+  const { getPreference, setPreference } = usePreferences()
 
   // Store the last used colors in local state
-  const [lastUsedColors, setLastUsedColors] = useState([]);
+  const [lastUsedColors, setLastUsedColors] = useState([])
 
   // Callback to add a color to the last used colors
-  const updateLastUsedColors = useCallback((color) => {
-    // First, check if color already exists in last used colors.
-    // If it already exists, there is no need to update preferences
-    const colorAlreadyExists = lastUsedColors.indexOf(color) > -1;
+  const updateLastUsedColors = useCallback(
+    (color) => {
+      // First, check if color already exists in last used colors.
+      // If it already exists, there is no need to update preferences
+      const colorAlreadyExists = lastUsedColors.indexOf(color) > -1
 
-    if (!colorAlreadyExists) {
-      const newLastUsedColors = [
-        ...lastUsedColors,
-        color,
-      ];
+      if (!colorAlreadyExists) {
+        const newLastUsedColors = [...lastUsedColors, color]
 
-      setLastUsedColors(newLastUsedColors);
-      setPreference(lastUsedColorsPreferenceKey, newLastUsedColors);
-    }
-  }, [lastUsedColors, setPreference]);
+        setLastUsedColors(newLastUsedColors)
+        setPreference(lastUsedColorsPreferenceKey, newLastUsedColors)
+      }
+    },
+    [lastUsedColors, setPreference],
+  )
 
   // Retrieve preferences on component mount
   // This will only be run one time, because the `getPreference` method never changes
   useEffect(() => {
     const asyncGetPreference = async () => {
-      const lastUsedColorsFromPreferences = await getPreference(lastUsedColorsPreferenceKey);
-      setLastUsedColors(lastUsedColorsFromPreferences);
-    };
+      const lastUsedColorsFromPreferences = await getPreference(
+        lastUsedColorsPreferenceKey,
+      )
+      setLastUsedColors(lastUsedColorsFromPreferences)
+    }
 
-    asyncGetPreference();
-  }, [getPreference]);
+    asyncGetPreference()
+  }, [getPreference])
 
   return (
     <div>
-      <button
-        type="button"
-        onClick={() => updateLastUsedColors('red')}
-      >
+      <button type="button" onClick={() => updateLastUsedColors('red')}>
         Use red
       </button>
-      <button
-        type="button"
-        onClick={() => updateLastUsedColors('blue')}
-      >
+      <button type="button" onClick={() => updateLastUsedColors('blue')}>
         Use blue
       </button>
-      <button
-        type="button"
-        onClick={() => updateLastUsedColors('purple')}
-      >
+      <button type="button" onClick={() => updateLastUsedColors('purple')}>
         Use purple
       </button>
-      <button
-        type="button"
-        onClick={() => updateLastUsedColors('yellow')}
-      >
+      <button type="button" onClick={() => updateLastUsedColors('yellow')}>
         Use yellow
       </button>
       {lastUsedColors && (
         <Fragment>
           <h5>Last used colors:</h5>
           <ul>
-            {lastUsedColors?.map((color) => (
-              <li key={color}>
-                {color}
-              </li>
-            ))}
+            {lastUsedColors?.map((color) => <li key={color}>{color}</li>)}
           </ul>
         </Fragment>
       )}
@@ -1673,7 +1687,7 @@ export function CustomComponent() {
 ```
 ````
 
-## File: admin/preview.mdx
+## File: admin_preview.mdx
 ````
 ---
 title: Preview
@@ -1688,8 +1702,10 @@ Preview is a feature that allows you to generate a direct link to your front-end
 The Preview feature can also be used to achieve something known as "Draft Preview". With Draft Preview, you can navigate to your front-end application and enter "draft mode", where your queries are modified to fetch draft content instead of published content. This is useful for seeing how your content will look before being published. [More details](#draft-preview).
 
 <Banner type="warning">
-  **Note:**
-  Preview is different than [Live Preview](../live-preview/overview). Live Preview loads your app within an iframe and renders it in the Admin Panel allowing you to see changes in real-time. Preview, on the other hand, allows you to generate a direct link to your front-end application.
+  **Note:** Preview is different than [Live Preview](../live-preview/overview).
+  Live Preview loads your app within an iframe and renders it in the Admin Panel
+  allowing you to see changes in real-time. Preview, on the other hand, allows
+  you to generate a direct link to your front-end application.
 </Banner>
 
 To add Preview, pass a function to the `admin.preview` property in any [Collection Config](../configuration/collections#admin-options) or [Global Config](../configuration/globals#admin-options):
@@ -1706,7 +1722,7 @@ export const Pages: CollectionConfig = {
     {
       name: 'slug',
       type: 'text',
-    }
+    },
   ],
 }
 ```
@@ -1717,18 +1733,18 @@ The `preview` function resolves to a string that points to your front-end applic
 
 The following arguments are provided to the `preview` function:
 
-| Path               | Description                                                                                                       |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| **`doc`**         | The data of the Document being edited. This includes changes that have not yet been saved.                         |
-| **`options`**     | An object with additional properties.                                                                              |
+| Path          | Description                                                                                |
+| ------------- | ------------------------------------------------------------------------------------------ |
+| **`doc`**     | The data of the Document being edited. This includes changes that have not yet been saved. |
+| **`options`** | An object with additional properties.                                                      |
 
 The `options` object contains the following properties:
 
-| Path               | Description                                                                                                       |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| **`locale`**      | The current locale of the Document being edited.                                                                   |
-| **`req`**         | The Payload Request object.                                                                                        |
-| **`token`**       | The JWT token of the currently authenticated in user.                                                              |
+| Path         | Description                                           |
+| ------------ | ----------------------------------------------------- |
+| **`locale`** | The current locale of the Document being edited.      |
+| **`req`**    | The Payload Request object.                           |
+| **`token`**  | The JWT token of the currently authenticated in user. |
 
 If your application requires a fully qualified URL, such as within deploying to Vercel Preview Deployments, you can use the `req` property to build this URL:
 
@@ -1761,17 +1777,17 @@ export const Pages: CollectionConfig = {
         slug,
         collection,
         path: `/${slug}`,
-        previewSecret: process.env.PREVIEW_SECRET || ''
+        previewSecret: process.env.PREVIEW_SECRET || '',
       })
 
       return `/preview?${encodedParams.toString()}` // highlight-line
-    }
+    },
   },
   fields: [
     {
       name: 'slug',
       type: 'text',
-    }
+    },
   ],
 }
 ```
@@ -1810,7 +1826,9 @@ export async function GET(
   const previewSecret = searchParams.get('previewSecret')
 
   if (previewSecret !== process.env.PREVIEW_SECRET) {
-    return new Response('You are not allowed to preview this page', { status: 403 })
+    return new Response('You are not allowed to preview this page', {
+      status: 403,
+    })
   }
 
   if (!path || !collection || !slug) {
@@ -1818,7 +1836,10 @@ export async function GET(
   }
 
   if (!path.startsWith('/')) {
-    return new Response('This endpoint can only be used for relative previews', { status: 500 })
+    return new Response(
+      'This endpoint can only be used for relative previews',
+      { status: 500 },
+    )
   }
 
   let user
@@ -1829,15 +1850,22 @@ export async function GET(
       headers: req.headers,
     })
   } catch (error) {
-    payload.logger.error({ err: error }, 'Error verifying token for live preview')
-    return new Response('You are not allowed to preview this page', { status: 403 })
+    payload.logger.error(
+      { err: error },
+      'Error verifying token for live preview',
+    )
+    return new Response('You are not allowed to preview this page', {
+      status: 403,
+    })
   }
 
   const draft = await draftMode()
 
   if (!user) {
     draft.disable()
-    return new Response('You are not allowed to preview this page', { status: 403 })
+    return new Response('You are not allowed to preview this page', {
+      status: 403,
+    })
   }
 
   // You can add additional checks here to see if the user is allowed to preview this page
@@ -1888,12 +1916,15 @@ export default async function Page({ params: paramsPromise }) {
 ```
 
 <Banner type="success">
-  **Note:**
-  For fully working example of this, check of the official [Draft Preview Example](https://github.com/payloadcms/payload/tree/main/examples/draft-preview) in the [Examples Directory](https://github.com/payloadcms/payload/tree/main/examples).
+  **Note:** For fully working example of this, check of the official [Draft
+  Preview
+  Example](https://github.com/payloadcms/payload/tree/main/examples/draft-preview)
+  in the [Examples
+  Directory](https://github.com/payloadcms/payload/tree/main/examples).
 </Banner>
 ````
 
-## File: admin/react-hooks.mdx
+## File: admin_react-hooks.mdx
 ````
 ---
 title: React Hooks
@@ -1906,8 +1937,11 @@ keywords: admin, components, custom, documentation, Content Management System, c
 Payload provides a variety of powerful [React Hooks](https://react.dev/reference/react-dom/hooks) that can be used within your own [Custom Components](../custom-components/overview), such as [Custom Fields](../fields/overview#custom-components). With them, you can interface with Payload itself to build just about any type of complex customization you can think of.
 
 <Banner type="warning">
-  **Reminder:**
-  All Custom Components are [React Server Components](https://react.dev/reference/rsc/server-components) by default. Hooks, on the other hand, are only available in client-side environments. To use hooks, [ensure your component is a client component](../custom-components/overview#client-components).
+  **Reminder:** All Custom Components are [React Server
+  Components](https://react.dev/reference/rsc/server-components) by default.
+  Hooks, on the other hand, are only available in client-side environments. To
+  use hooks, [ensure your component is a client
+  component](../custom-components/overview#client-components).
 </Banner>
 
 ## useField
@@ -1926,11 +1960,11 @@ export const CustomTextField: TextFieldClientComponent = ({ path }) => {
 
   return (
     <div>
-      <p>
-        {path}
-      </p>
+      <p>{path}</p>
       <input
-        onChange={(e) => { setValue(e.target.value) }}
+        onChange={(e) => {
+          setValue(e.target.value)
+        }}
         value={value}
       />
     </div>
@@ -1940,12 +1974,12 @@ export const CustomTextField: TextFieldClientComponent = ({ path }) => {
 
 The `useField` hook accepts the following arguments:
 
-| Property          | Description                                                                                                                                                                                                                   |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `path`            | If you do not provide a `path`, `name` will be used instead. This is the path to the field in the form data.                                                                                                                  |
+| Property          | Description                                                                                                                                                                                      |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `path`            | If you do not provide a `path`, `name` will be used instead. This is the path to the field in the form data.                                                                                     |
 | `validate`        | A validation function executed client-side _before_ submitting the form to the server. Different than [Field-level Validation](../fields/overview#validation) which runs strictly on the server. |
-| `disableFormData` | If `true`, the field will not be included in the form data when the form is submitted.                                                                                                                                         |
-| `hasRows` | If `true`, the field will be treated as a field with rows. This is useful for fields like `array` and `blocks`.                                                                                                                                         |
+| `disableFormData` | If `true`, the field will not be included in the form data when the form is submitted.                                                                                                           |
+| `hasRows`         | If `true`, the field will be treated as a field with rows. This is useful for fields like `array` and `blocks`.                                                                                  |
 
 The `useField` hook returns the following object:
 
@@ -1975,8 +2009,9 @@ type FieldType<T> = {
 There are times when a custom field component needs to have access to data from other fields, and you have a few options to do so. The `useFormFields` hook is a powerful and highly performant way to retrieve a form's field state, as well as to retrieve the `dispatchFields` method, which can be helpful for setting other fields' form states from anywhere within a form.
 
 <Banner type="success">
-  **This hook is great for retrieving only certain fields from form state** because it
-  ensures that it will only cause a rerender when the items that you ask for change.
+  **This hook is great for retrieving only certain fields from form state**
+  because it ensures that it will only cause a rerender when the items that you
+  ask for change.
 </Banner>
 
 Thanks to the awesome package [`use-context-selector`](https://github.com/dai-shi/use-context-selector), you can retrieve a specific field's state easily. This is ideal because you can ensure you have an up-to-date field state, and your component will only re-render when _that field's state_ changes.
@@ -1992,9 +2027,14 @@ const MyComponent: React.FC = () => {
   const amount = useFormFields(([fields, dispatch]) => fields.amount)
 
   // Do the same thing as above, but to the `feePercentage` field
-  const feePercentage = useFormFields(([fields, dispatch]) => fields.feePercentage)
+  const feePercentage = useFormFields(
+    ([fields, dispatch]) => fields.feePercentage,
+  )
 
-  if (typeof amount?.value !== 'undefined' && typeof feePercentage?.value !== 'undefined') {
+  if (
+    typeof amount?.value !== 'undefined' &&
+    typeof feePercentage?.value !== 'undefined'
+  ) {
     return <span>The fee is ${(amount.value * feePercentage.value) / 100}</span>
   }
 }
@@ -2056,10 +2096,11 @@ The `useForm` hook can be used to interact with the form itself, and sends back 
 <Banner type="warning">
   **Warning:**
 
-  This hook is optimized to avoid causing rerenders when fields change, and as such, its `fields`
-  property will be out of date. You should only leverage this hook if you need to perform actions
-  against the form in response to your users' actions. Do not rely on its returned "fields" as being
-  up-to-date. They will be removed from this hook's response in an upcoming version.
+This hook is optimized to avoid causing rerenders when fields change, and as such, its `fields`
+property will be out of date. You should only leverage this hook if you need to perform actions
+against the form in response to your users' actions. Do not rely on its returned "fields" as being
+up-to-date. They will be removed from this hook's response in an upcoming version.
+
 </Banner>
 
 The `useForm` hook returns an object with the following properties:
@@ -2281,65 +2322,63 @@ The `useForm` hook returns an object with the following properties:
     ]}
   />
 
-
 \`\`\`tsx
 import { useForm } from "@payloadcms/ui"
 
 export const CustomArrayManager = () => {
   const { addFieldRow } = useForm()
 
-  return (
-    <button
-      type="button"
-      onClick={() => {
-        addFieldRow({
-          path: "arrayField",
-          schemaPath: "arrayField",
-          rowIndex: 0, // optionally specify the index to add the row at
-          subFieldState: {
-            textField: {
-              initialValue: 'New row text',
-              valid: true,
-              value: 'New row text',
-            },
-          },
-          // blockType: "yourBlockSlug",
-          // ^ if managing a block array, you need to specify the block type
-        })
-      }}
-    >
-      Add Row
-    </button>
-  )
-}
-\`\`\`
+return (
+
+<button
+  type="button"
+  onClick={() => {
+    addFieldRow({
+      path: 'arrayField',
+      schemaPath: 'arrayField',
+      rowIndex: 0, // optionally specify the index to add the row at
+      subFieldState: {
+        textField: {
+          initialValue: 'New row text',
+          valid: true,
+          value: 'New row text',
+        },
+      },
+      // blockType: "yourBlockSlug",
+      // ^ if managing a block array, you need to specify the block type
+    })
+  }}
+>
+  Add Row
+</button>
+) } \`\`\`
 
 An example config to go along with the Custom Component
 
 \`\`\`tsx
 const ExampleCollection = {
-  slug: "example-collection",
-  fields: [
-    {
-      name: "arrayField",
-      type: "array",
-      fields: [
-        {
-          name: "textField",
-          type: "text",
-        },
-      ],
-    },
-    {
-      type: "ui",
-      name: "customArrayManager",
-      admin: {
-        components: {
-          Field: '/path/to/CustomArrayManagerField',
-        },
-      },
-    },
-  ],
+slug: "example-collection",
+fields: [
+{
+name: "arrayField",
+type: "array",
+fields: [
+{
+name: "textField",
+type: "text",
+},
+],
+},
+{
+type: "ui",
+name: "customArrayManager",
+admin: {
+components: {
+Field: '/path/to/CustomArrayManagerField',
+},
+},
+},
+],
 }
 \`\`\`
 `
@@ -2357,32 +2396,28 @@ const ExampleCollection = {
         drawerDescription: 'A useful method to programmatically remove a row from an array or block field.',
         drawerSlug: 'removeFieldRow',
         drawerContent:  `
-  <TableWithDrawers
-    columns={[
-      'Prop',
-      'Description',
-    ]}
-    rows={[
-      [
-        {
-          value: "**\\\`path\\\`**",
-        },
-        {
-          value: "The path to the array or block field",
-        },
-      ],
-      [
-        {
-          value: "**\\\`rowIndex\\\`**",
-        },
-        {
-          value: "The index of the row to remove",
-        },
-      ],
-    ]}
-  />
 
-
+<TableWithDrawers
+  columns={['Prop', 'Description']}
+  rows={[
+    [
+      {
+        value: '**\\\`path\\\`**',
+      },
+      {
+        value: 'The path to the array or block field',
+      },
+    ],
+    [
+      {
+        value: '**\\\`rowIndex\\\`**',
+      },
+      {
+        value: 'The index of the row to remove',
+      },
+    ],
+  ]}
+/>
 
 \`\`\`tsx
 import { useForm } from "@payloadcms/ui"
@@ -2390,48 +2425,47 @@ import { useForm } from "@payloadcms/ui"
 export const CustomArrayManager = () => {
   const { removeFieldRow } = useForm()
 
-  return (
-    <button
-      type="button"
-      onClick={() => {
-        removeFieldRow({
-          path: "arrayField",
-          rowIndex: 0,
-        })
-      }}
-    >
-      Remove Row
-    </button>
-  )
-}
-\`\`\`
+return (
+
+<button
+  type="button"
+  onClick={() => {
+    removeFieldRow({
+      path: 'arrayField',
+      rowIndex: 0,
+    })
+  }}
+>
+  Remove Row
+</button>
+) } \`\`\`
 
 An example config to go along with the Custom Component
 
 \`\`\`tsx
 const ExampleCollection = {
-  slug: "example-collection",
-  fields: [
-    {
-      name: "arrayField",
-      type: "array",
-      fields: [
-        {
-          name: "textField",
-          type: "text",
-        },
-      ],
-    },
-    {
-      type: "ui",
-      name: "customArrayManager",
-      admin: {
-        components: {
-          Field: '/path/to/CustomArrayManagerField',
-        },
-      },
-    },
-  ],
+slug: "example-collection",
+fields: [
+{
+name: "arrayField",
+type: "array",
+fields: [
+{
+name: "textField",
+type: "text",
+},
+],
+},
+{
+type: "ui",
+name: "customArrayManager",
+admin: {
+components: {
+Field: '/path/to/CustomArrayManagerField',
+},
+},
+},
+],
 }
 \`\`\`
 `
@@ -2449,41 +2483,36 @@ const ExampleCollection = {
         drawerDescription: 'A useful method to programmatically replace a row from an array or block field.',
         drawerSlug: 'replaceFieldRow',
         drawerContent:  `
-  <TableWithDrawers
-    columns={[
-      'Prop',
-      'Description',
-    ]}
-    rows={[
-      [
-        {
-          value: "**\\\`path\\\`**",
-        },
-        {
-          value: "The path to the array or block field",
-        },
-      ],
-      [
-        {
-          value: "**\\\`rowIndex\\\`**",
-        },
-        {
-          value: "The index of the row to replace",
-        },
-      ],
-      [
-        {
-         value: "**\\\`data\\\`**",
-        },
-        {
-          value: "The data to replace within the row",
-        },
-      ],
-    ]}
-  />
 
-
-
+<TableWithDrawers
+  columns={['Prop', 'Description']}
+  rows={[
+    [
+      {
+        value: '**\\\`path\\\`**',
+      },
+      {
+        value: 'The path to the array or block field',
+      },
+    ],
+    [
+      {
+        value: '**\\\`rowIndex\\\`**',
+      },
+      {
+        value: 'The index of the row to replace',
+      },
+    ],
+    [
+      {
+        value: '**\\\`data\\\`**',
+      },
+      {
+        value: 'The data to replace within the row',
+      },
+    ],
+  ]}
+/>
 
 \`\`\`tsx
 import { useForm } from "@payloadcms/ui"
@@ -2491,69 +2520,68 @@ import { useForm } from "@payloadcms/ui"
 export const CustomArrayManager = () => {
   const { replaceFieldRow } = useForm()
 
-  return (
-    <button
-      type="button"
-      onClick={() => {
-        replaceFieldRow({
-          path: "arrayField",
-          schemaPath: "arrayField",
-          rowIndex: 0, // optionally specify the index to add the row at
-          subFieldState: {
-            textField: {
-              initialValue: 'Updated text',
-              valid: true,
-              value: 'Upddated text',
-            },
-          },
-          // blockType: "yourBlockSlug",
-          // ^ if managing a block array, you need to specify the block type
-        })
-      }}
-    >
-      Replace Row
-    </button>
-  )
-}
-\`\`\`
+return (
+
+<button
+  type="button"
+  onClick={() => {
+    replaceFieldRow({
+      path: 'arrayField',
+      schemaPath: 'arrayField',
+      rowIndex: 0, // optionally specify the index to add the row at
+      subFieldState: {
+        textField: {
+          initialValue: 'Updated text',
+          valid: true,
+          value: 'Upddated text',
+        },
+      },
+      // blockType: "yourBlockSlug",
+      // ^ if managing a block array, you need to specify the block type
+    })
+  }}
+>
+  Replace Row
+</button>
+) } \`\`\`
 
 An example config to go along with the Custom Component
 
 \`\`\`tsx
 const ExampleCollection = {
-  slug: "example-collection",
-  fields: [
-    {
-      name: "arrayField",
-      type: "array",
-      fields: [
-        {
-          name: "textField",
-          type: "text",
-        },
-      ],
-    },
-    {
-      type: "ui",
-      name: "customArrayManager",
-      admin: {
-        components: {
-          Field: '/path/to/CustomArrayManagerField',
-        },
-      },
-    },
-  ],
+slug: "example-collection",
+fields: [
+{
+name: "arrayField",
+type: "array",
+fields: [
+{
+name: "textField",
+type: "text",
+},
+],
+},
+{
+type: "ui",
+name: "customArrayManager",
+admin: {
+components: {
+Field: '/path/to/CustomArrayManagerField',
+},
+},
+},
+],
 }
 \`\`\`
 `
-      }
-    ],
-  ]}
+}
+],
+]}
 />
 
 ## useDocumentForm
 
-The `useDocumentForm` hook works the same way as the [useForm](#useform) hook, but it always gives you access to the top-level `Form` of a document. This is useful if you need to access the document's `Form` context from within a child  `Form`.
+The `useDocumentForm` hook works the same way as the [useForm](#useform) hook, but it always gives you access to the top-level `Form` of a document. This is useful if you need to access the document's `Form` context from within a child `Form`.
 
 An example where this could happen would be custom components within lexical blocks, as lexical blocks initialize their own child `Form`.
 
@@ -2566,7 +2594,9 @@ const MyComponent: React.FC = () => {
   const { fields: parentDocumentFields } = useDocumentForm()
 
   return (
-    <p>The document's Form has ${Object.keys(parentDocumentFields).length} fields</p>
+    <p>
+      The document's Form has ${Object.keys(parentDocumentFields).length} fields
+    </p>
   )
 }
 ```
@@ -2608,23 +2638,41 @@ const CustomComponent: React.FC = () => {
 
 The `useDocumentInfo` hook provides information about the current document being edited, including the following:
 
-| Property                  | Description                                                                                                        |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| **`currentEditor`**       | The user currently editing the document.                                                                             |
-| **`docConfig`**              | Either the Collection or Global config of the document, depending on what is being edited.                         |
-| **`documentIsLocked`**    | Whether the document is currently locked by another user.                                                          |
-| **`id`**                  | If the doc is a collection, its ID will be returned                                                                |
-| **`getDocPermissions`**   | Method to retrieve document-level user preferences.                                                 |
-| **`getDocPreferences`**   | Method to retrieve document-level user preferences.                                                 |
-| **`hasPublishedDoc`**     | Whether the document has a published version.                                                                      |
-| **`incrementVersionCount`** | Method to increment the version count of the document.                                                           |
-| **`preferencesKey`**      | The `preferences` key to use when interacting with document-level user preferences.                                 |
-| **`versions`**            | Versions of the current doc.                                                                                        |
-| **`unpublishedVersions`** | Unpublished versions of the current doc.                                                                            |
-| **`publishedDoc`**        | The currently published version of the doc being edited.                                                            |
-| **`getVersions`**         | Method to retrieve document versions.                                                               |
-| **`docPermissions`**      | The current documents permissions. Collection document permissions fallback when no id is present (i.e. on create). |
-| **`versionCount`**        | The current version count of the document.                                                                          |
+| Property                           | Description                                                                                                                                      |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`action`**                       | The URL attached to the action attribute on the underlying form element, which specifies where to send the form data when the form is submitted. |
+| **`apiURL`**                       | The API URL for the current document.                                                                                                            |
+| **`collectionSlug`**               | The slug of the collection if editing a collection document.                                                                                     |
+| **`currentEditor`**                | The user currently editing the document.                                                                                                         |
+| **`docConfig`**                    | Either the Collection or Global config of the document, depending on what is being edited.                                                       |
+| **`docPermissions`**               | The current document's permissions. Fallback to collection permissions when no id is present.                                                    |
+| **`documentIsLocked`**             | Whether the document is currently locked by another user. [More details](./locked-documents).                                                     |
+| **`getDocPermissions`**            | Method to retrieve document-level permissions.                                                                                                   |
+| **`getDocPreferences`**            | Method to retrieve document-level user preferences. [More details](./preferences).                                                               |
+| **`globalSlug`**                   | The slug of the global if editing a global document.                                                                                             |
+| **`hasPublishedDoc`**              | Whether the document has a published version.                                                                                                    |
+| **`hasPublishPermission`**         | Whether the current user has permission to publish the document.                                                                                 |
+| **`hasSavePermission`**            | Whether the current user has permission to save the document.                                                                                    |
+| **`id`**                           | If the doc is a collection, its ID will be returned.                                                                                             |
+| **`incrementVersionCount`**        | Method to increment the version count of the document.                                                                                           |
+| **`initialData`**                  | The initial data of the document.                                                                                                                |
+| **`isEditing`**                    | Whether the document is being edited (as opposed to created).                                                                                    |
+| **`isInitializing`**               | Whether the document info is still initializing.                                                                                                 |
+| **`isLocked`**                     | Whether the document is locked. [More details](./locked-documents).                                                                               |
+| **`lastUpdateTime`**               | Timestamp of the last update to the document.                                                                                                    |
+| **`mostRecentVersionIsAutosaved`** | Whether the most recent version is an autosaved version.                                                                                         |
+| **`preferencesKey`**               | The `preferences` key to use when interacting with document-level user preferences. [More details](./preferences).                               |
+| **`savedDocumentData`**            | The saved data of the document.                                                                                                                  |
+| **`setDocFieldPreferences`**       | Method to set preferences for a specific field. [More details](./preferences).                                                                   |
+| **`setDocumentTitle`**             | Method to set the document title.                                                                                                                |
+| **`setHasPublishedDoc`**           | Method to update whether the document has been published.                                                                                        |
+| **`title`**                        | The title of the document.                                                                                                                       |
+| **`unlockDocument`**               | Method to unlock a document. [More details](./locked-documents).                                                                                  |
+| **`unpublishedVersionCount`**      | The number of unpublished versions of the document.                                                                                              |
+| **`updateDocumentEditor`**         | Method to update who is currently editing the document. [More details](./locked-documents).                                                       |
+| **`updateSavedDocumentData`**      | Method to update the saved document data.                                                                                                        |
+| **`uploadStatus`**                 | Status of any uploads in progress ('idle', 'uploading', or 'failed').                                                                            |
+| **`versionCount`**                 | The current version count of the document.                                                                                                       |
 
 **Example:**
 
@@ -2643,7 +2691,9 @@ const LinkFromCategoryToPosts: React.FC = () => {
   }
 
   return (
-    <a href={`/admin/collections/posts?where[or][0][and][0][category][in][0]=[${id}]`}>
+    <a
+      href={`/admin/collections/posts?where[or][0][and][0][category][in][0]=[${id}]`}
+    >
       View posts
     </a>
   )
@@ -2669,17 +2719,17 @@ const MyComponent: React.FC = () => {
 
 The `useListQuery` hook returns an object with the following properties:
 
-| Property          | Description                                                                                   |
-| ----------------- | --------------------------------------------------------------------------------------------- |
-| **`data`**        | The data that is being displayed in the List View.                                           |
-| **`defaultLimit`**| The default limit of items to display in the List View.                                      |
-| **`defaultSort`** | The default sort order of items in the List View.                                             |
-| **`handlePageChange`** | A method to handle page changes in the List View.                                         |
-| **`handlePerPageChange`** | A method to handle per page changes in the List View.                                   |
-| **`handleSearchChange`** | A method to handle search changes in the List View.                                     |
-| **`handleSortChange`** | A method to handle sort changes in the List View.                                         |
-| **`handleWhereChange`** | A method to handle where changes in the List View.                                       |
-| **`query`**       | The current query that is being used to fetch the data in the List View.                             |
+| Property                  | Description                                                              |
+| ------------------------- | ------------------------------------------------------------------------ |
+| **`data`**                | The data that is being displayed in the List View.                       |
+| **`defaultLimit`**        | The default limit of items to display in the List View.                  |
+| **`defaultSort`**         | The default sort order of items in the List View.                        |
+| **`handlePageChange`**    | A method to handle page changes in the List View.                        |
+| **`handlePerPageChange`** | A method to handle per page changes in the List View.                    |
+| **`handleSearchChange`**  | A method to handle search changes in the List View.                      |
+| **`handleSortChange`**    | A method to handle sort changes in the List View.                        |
+| **`handleWhereChange`**   | A method to handle where changes in the List View.                       |
+| **`query`**               | The current query that is being used to fetch the data in the List View. |
 
 ## useSelection
 
@@ -2708,11 +2758,10 @@ const MyComponent: React.FC = () => {
 
   return (
     <>
-      <span>Selected {count} out of {totalDocs} docs!</span>
-      <button
-        type="button"
-        onClick={() => toggleAll(true)}
-      >
+      <span>
+        Selected {count} out of {totalDocs} docs!
+      </span>
+      <button type="button" onClick={() => toggleAll(true)}>
         Toggle All Selections
       </button>
     </>
@@ -2796,10 +2845,12 @@ import { useConfig } from '@payloadcms/ui'
 const MyComponent: React.FC = () => {
   // highlight-start
   const { getEntityConfig } = useConfig()
-  const mediaConfig = getEntityConfig({ collectionSlug: 'media'})
+  const mediaConfig = getEntityConfig({ collectionSlug: 'media' })
   // highlight-end
 
-  return <span>The media collection has {mediaConfig.fields.length} fields.</span>
+  return (
+    <span>The media collection has {mediaConfig.fields.length} fields.</span>
+  )
 }
 ```
 
@@ -2844,7 +2895,9 @@ const MyComponent: React.FC = () => {
       </span>
       <button
         type="button"
-        onClick={() => setTheme((prev) => (prev === 'light' ? 'dark' : 'light'))}
+        onClick={() =>
+          setTheme((prev) => (prev === 'light' ? 'dark' : 'light'))
+        }
       >
         Toggle theme
       </button>
@@ -2901,18 +2954,19 @@ const ListenForUpdates: React.FC = () => {
 ```
 
 <Banner type="info">
-  Right now the `useDocumentEvents` hook only tracks recently updated documents, but in the future
-  it will track more document-related events as needed, such as document creation, deletion, etc.
+  Right now the `useDocumentEvents` hook only tracks recently updated documents,
+  but in the future it will track more document-related events as needed, such
+  as document creation, deletion, etc.
 </Banner>
 
 ## useStepNav
 
 The `useStepNav` hook provides a way to change the step-nav breadcrumb links in the app header.
 
-| Property         | Description                                                                       |
-| ---------------- | --------------------------------------------------------------------------------- |
-| **`setStepNav`** | A state setter function which sets the `stepNav` array.                           |
-| **`stepNav`**    | A `StepNavItem` array where each `StepNavItem` has a label and optionally a url.  |
+| Property         | Description                                                                      |
+| ---------------- | -------------------------------------------------------------------------------- |
+| **`setStepNav`** | A state setter function which sets the `stepNav` array.                          |
+| **`stepNav`**    | A `StepNavItem` array where each `StepNavItem` has a label and optionally a url. |
 
 **Example:**
 
@@ -2953,7 +3007,9 @@ const MyComponent: React.FC = () => {
   // Fetch data from a collection item using its ID
   const [{ data, isError, isLoading }, { setParams }] = usePayloadAPI(
     '/api/posts/123',
-    { initialParams: { depth: 1 } }
+    {
+      initialParams: { depth: 1 },
+    },
   )
 
   if (isLoading) return <p>Loading...</p>
@@ -3020,11 +3076,7 @@ By default, any instances of `Link` from `@payloadcms/ui` will trigger route tra
 import { Link } from '@payloadcms/ui'
 
 const MyComponent = () => {
-  return (
-    <Link href="/somewhere">
-      Go Somewhere
-    </Link>
-  )
+  return <Link href="/somewhere">Go Somewhere</Link>
 }
 ```
 
@@ -3049,7 +3101,7 @@ const MyComponent: React.FC = () => {
 ```
 ````
 
-## File: authentication/api-keys.mdx
+## File: authentication_api-keys.mdx
 ````
 ---
 title: API Key Strategy
@@ -3069,7 +3121,8 @@ For example, if you have a third-party service or external app that needs to be 
 <Banner type="success">
   **Tip:**
 
-  This is particularly useful as you can create a "user" that reflects an integration with a specific external service and assign a "role" or specific access only needed by that service/integration.
+This is particularly useful as you can create a "user" that reflects an integration with a specific external service and assign a "role" or specific access only needed by that service/integration.
+
 </Banner>
 
 Technically, both of these options will work for third-party integrations but the second option with API key is simpler, because it reduces the amount of work that your integrations need to do to be authenticated properly.
@@ -3095,8 +3148,9 @@ your API keys will not be.
   **Important:**
   If you change your `PAYLOAD_SECRET`, you will need to regenerate your API keys.
 
-  The secret key is used to encrypt the API keys, so if you change the secret, existing API keys will
-  no longer be valid.
+The secret key is used to encrypt the API keys, so if you change the secret, existing API keys will
+no longer be valid.
+
 </Banner>
 
 ### HTTP Authentication
@@ -3134,7 +3188,7 @@ export const ThirdPartyAccess: CollectionConfig = {
 ```
 ````
 
-## File: authentication/cookies.mdx
+## File: authentication_cookies.mdx
 ````
 ---
 title: Cookie Strategy
@@ -3147,8 +3201,9 @@ keywords: authentication, config, configuration, documentation, Content Manageme
 Payload offers the ability to [Authenticate](./overview) via HTTP-only cookies. These can be read from the responses of `login`, `logout`, `refresh`, and `me` auth operations.
 
 <Banner type="success">
-  **Tip:**
-  You can access the logged-in user from within [Access Control](../access-control/overview) and [Hooks](../hooks/overview) through the `req.user` argument. [More details](./token-data).
+  **Tip:** You can access the logged-in user from within [Access
+  Control](../access-control/overview) and [Hooks](../hooks/overview) through
+  the `req.user` argument. [More details](./token-data).
 </Banner>
 
 ### Automatic browser inclusion
@@ -3172,10 +3227,10 @@ const pages = await response.json()
 For more about including cookies in requests from your app to your Payload API, [read the MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Sending_a_request_with_credentials_included).
 
 <Banner type="success">
-  **Tip:**
-  To make sure you have a Payload cookie set properly in your browser after logging in, you can use
-  the browsers Developer Tools > Application > Cookies > [your-domain-here]. The Developer tools
-  will still show HTTP-only cookies.
+  **Tip:** To make sure you have a Payload cookie set properly in your browser
+  after logging in, you can use the browsers Developer Tools > Application >
+  Cookies > [your-domain-here]. The Developer tools will still show HTTP-only
+  cookies.
 </Banner>
 
 ### CSRF Attacks
@@ -3191,8 +3246,8 @@ So, if a user of `https://payload-finances.com` is logged in and is browsing aro
 // makes an authenticated request as on your behalf
 
 const maliciousRequest = await fetch(`https://payload-finances.com/api/me`, {
-  credentials: 'include'
-}).then(res => await res.json())
+  credentials: 'include',
+}).then((res) => await res.json())
 ```
 
 In this scenario, if your cookie was still valid, malicious-intent.com would be able to make requests like the one above on your behalf. This is a CSRF attack.
@@ -3262,14 +3317,14 @@ Configuration example:
 
 If you're configuring [cors](../production/preventing-abuse#cross-origin-resource-sharing-cors) in your Payload config, you won't be able to use a wildcard anymore, you'll need to specify the list of allowed domains.
 
-
 <Banner type="success">
-  **Good to know:**
-  Setting up `secure: true` will not work if you're developing on `http://localhost` or any non-https domain. For local development you should conditionally set this to `false` based on the environment.
+  **Good to know:** Setting up `secure: true` will not work if you're developing
+  on `http://localhost` or any non-https domain. For local development you
+  should conditionally set this to `false` based on the environment.
 </Banner>
 ````
 
-## File: authentication/custom-strategies.mdx
+## File: authentication_custom-strategies.mdx
 ````
 ---
 title: Custom Strategies
@@ -3280,8 +3335,9 @@ keywords: authentication, config, configuration, overview, documentation, Conten
 ---
 
 <Banner type="warning">
-  This is an advanced feature, so only attempt this if you are an experienced developer. Otherwise,
-  just let Payload's built-in authentication handle user auth for you.
+  This is an advanced feature, so only attempt this if you are an experienced
+  developer. Otherwise, just let Payload's built-in authentication handle user
+  auth for you.
 </Banner>
 
 ### Creating a strategy
@@ -3290,19 +3346,18 @@ At the core, a strategy is a way to authenticate a user making a request. As of 
 
 A strategy is made up of the following:
 
-| Parameter                   | Description                                                               |
-| --------------------------- | ------------------------------------------------------------------------- |
-| **`name`** *               | The name of your strategy                                                 |
-| **`authenticate`** *  | A function that takes in the parameters below and returns a user or null. |
+| Parameter             | Description                                                               |
+| --------------------- | ------------------------------------------------------------------------- |
+| **`name`** \*         | The name of your strategy                                                 |
+| **`authenticate`** \* | A function that takes in the parameters below and returns a user or null. |
 
 The `authenticate` function is passed the following arguments:
 
-| Argument            | Description                                                                                       |
-| ------------------- | ------------------------------------------------------------------------------------------------- |
-| **`headers`** *    | The headers on the incoming request. Useful for retrieving identifiable information on a request. |
-| **`payload`** *    | The Payload class. Useful for authenticating the identifiable information against Payload.        |
-| **`isGraphQL`**     | Whether or not the request was made from a GraphQL endpoint. Default is `false`.                  |
-
+| Argument         | Description                                                                                       |
+| ---------------- | ------------------------------------------------------------------------------------------------- |
+| **`headers`** \* | The headers on the incoming request. Useful for retrieving identifiable information on a request. |
+| **`payload`** \* | The Payload class. Useful for authenticating the identifiable information against Payload.        |
+| **`isGraphQL`**  | Whether or not the request was made from a GraphQL endpoint. Default is `false`.                  |
 
 ### Example Strategy
 
@@ -3370,7 +3425,7 @@ export const Users: CollectionConfig = {
 ```
 ````
 
-## File: authentication/email.mdx
+## File: authentication_email.mdx
 ````
 ---
 title: Authentication Emails
@@ -3394,19 +3449,19 @@ import type { CollectionConfig } from 'payload'
 export const Customers: CollectionConfig = {
   // ...
   auth: {
-    verify: true // highlight-line
+    verify: true, // highlight-line
   },
 }
 ```
 
 <Banner type="info">
-  **Tip:**
-  Verification emails are fully customizable. [More details](#generateemailhtml).
+  **Tip:** Verification emails are fully customizable. [More
+  details](#generateemailhtml).
 </Banner>
 
 The following options are available:
 
-| Option                     | Description                                                                                                                                                                                                                         |
+| Option                     | Description                                                                                                                                           |
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`generateEmailHTML`**    | Allows for overriding the HTML within emails that are sent to users indicating how to validate their account. [More details](#generateemailhtml).     |
 | **`generateEmailSubject`** | Allows for overriding the subject of the email that is sent to users indicating how to validate their account. [More details](#generateemailsubject). |
@@ -3436,11 +3491,11 @@ export const Customers: CollectionConfig = {
 ```
 
 <Banner type="warning">
-  **Important:**
-  If you specify a different URL to send your users to for email verification, such as a page on the
-  frontend of your app or similar, you need to handle making the call to the Payload REST or GraphQL
-  verification operation yourself on your frontend, using the token that was provided for you.
-  Above, it was passed via query parameter.
+  **Important:** If you specify a different URL to send your users to for email
+  verification, such as a page on the frontend of your app or similar, you need
+  to handle making the call to the Payload REST or GraphQL verification
+  operation yourself on your frontend, using the token that was provided for
+  you. Above, it was passed via query parameter.
 </Banner>
 
 #### generateEmailSubject
@@ -3456,11 +3511,11 @@ export const Customers: CollectionConfig = {
     verify: {
       // highlight-start
       generateEmailSubject: ({ req, user }) => {
-        return `Hey ${user.email}, reset your password!`;
-      }
+        return `Hey ${user.email}, reset your password!`
+      },
       // highlight-end
-    }
-  }
+    },
+  },
 }
 ```
 
@@ -3474,7 +3529,8 @@ import type { CollectionConfig } from 'payload'
 export const Customers: CollectionConfig = {
   // ...
   auth: {
-    forgotPassword: { // highlight-line
+    forgotPassword: {
+      // highlight-line
       // ...
     },
   },
@@ -3483,10 +3539,10 @@ export const Customers: CollectionConfig = {
 
 The following options are available:
 
-| Option               | Description                                                                                                                                                                                                                         |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **`expiration`** | Configure how long password reset tokens remain valid, specified in milliseconds. |
-| **`generateEmailHTML`** | Allows for overriding the HTML within emails that are sent to users attempting to reset their password. [More details](#generateEmailHTML). |
+| Option                     | Description                                                                                                                                     |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`expiration`**           | Configure how long password reset tokens remain valid, specified in milliseconds.                                                               |
+| **`generateEmailHTML`**    | Allows for overriding the HTML within emails that are sent to users attempting to reset their password. [More details](#generateEmailHTML).     |
 | **`generateEmailSubject`** | Allows for overriding the subject of the email that is sent to users attempting to reset their password. [More details](#generateEmailSubject). |
 
 #### generateEmailHTML
@@ -3526,28 +3582,28 @@ export const Customers: CollectionConfig = {
 ```
 
 <Banner type="warning">
-  **Important:**
-  If you specify a different URL to send your users to for resetting their password, such as a page
-  on the frontend of your app or similar, you need to handle making the call to the Payload REST or
-  GraphQL reset-password operation yourself on your frontend, using the token that was provided for
-  you. Above, it was passed via query parameter.
+  **Important:** If you specify a different URL to send your users to for
+  resetting their password, such as a page on the frontend of your app or
+  similar, you need to handle making the call to the Payload REST or GraphQL
+  reset-password operation yourself on your frontend, using the token that was
+  provided for you. Above, it was passed via query parameter.
 </Banner>
 
 <Banner type="success">
-  **Tip:**
-  HTML templating can be used to create custom email templates, inline CSS automatically, and more.
-  You can make a reusable function that standardizes all email sent from Payload, which makes
-  sending custom emails more DRY. Payload doesn't ship with an HTML templating engine, so you are
-  free to choose your own.
+  **Tip:** HTML templating can be used to create custom email templates, inline
+  CSS automatically, and more. You can make a reusable function that
+  standardizes all email sent from Payload, which makes sending custom emails
+  more DRY. Payload doesn't ship with an HTML templating engine, so you are free
+  to choose your own.
 </Banner>
 
 The following arguments are passed to the `generateEmailHTML` function:
 
-| Argument | Description                                                                                   |
-|----------|-----------------------------------------------------------------------------------------------|
-| `req`    | The request object.                                                                           |
-| `token`  | The token that is generated for the user to reset their password.                             |
-| `user`   | The user document that is attempting to reset their password.                                 |
+| Argument | Description                                                       |
+| -------- | ----------------------------------------------------------------- |
+| `req`    | The request object.                                               |
+| `token`  | The token that is generated for the user to reset their password. |
+| `user`   | The user document that is attempting to reset their password.     |
 
 #### generateEmailSubject
 
@@ -3562,23 +3618,23 @@ export const Customers: CollectionConfig = {
     forgotPassword: {
       // highlight-start
       generateEmailSubject: ({ req, user }) => {
-        return `Hey ${user.email}, reset your password!`;
-      }
+        return `Hey ${user.email}, reset your password!`
+      },
       // highlight-end
-    }
-  }
+    },
+  },
 }
 ```
 
 The following arguments are passed to the `generateEmailSubject` function:
 
-| Argument | Description                                                                                   |
-|----------|-----------------------------------------------------------------------------------------------|
-| `req`    | The request object.                                                                           |
-| `user`   | The user document that is attempting to reset their password.                                 |
+| Argument | Description                                                   |
+| -------- | ------------------------------------------------------------- |
+| `req`    | The request object.                                           |
+| `user`   | The user document that is attempting to reset their password. |
 ````
 
-## File: authentication/jwt.mdx
+## File: authentication_jwt.mdx
 ````
 ---
 title: JWT Strategy
@@ -3591,8 +3647,9 @@ keywords: authentication, config, configuration, documentation, Content Manageme
 Payload offers the ability to [Authenticate](./overview) via JSON Web Tokens (JWT). These can be read from the responses of `login`, `logout`, `refresh`, and `me` auth operations.
 
 <Banner type="success">
-  **Tip:**
-  You can access the logged-in user from within [Access Control](../access-control/overview) and [Hooks](../hooks/overview) through the `req.user` argument. [More details](./token-data).
+  **Tip:** You can access the logged-in user from within [Access
+  Control](../access-control/overview) and [Hooks](../hooks/overview) through
+  the `req.user` argument. [More details](./token-data).
 </Banner>
 
 ### Identifying Users Via The Authorization Header
@@ -3607,8 +3664,8 @@ const user = await fetch('http://localhost:3000/api/users/login', {
   body: JSON.stringify({
     email: 'dev@payloadcms.com',
     password: 'password',
-  })
-}).then(req => await req.json())
+  }),
+}).then((req) => await req.json())
 
 const request = await fetch('http://localhost:3000', {
   headers: {
@@ -3633,7 +3690,7 @@ export const UsersWithoutJWTs: CollectionConfig = {
 ```
 ````
 
-## File: authentication/operations.mdx
+## File: authentication_operations.mdx
 ````
 ---
 title: Authentication Operations
@@ -3837,12 +3894,15 @@ If successful, this operation will automatically renew the user's HTTP-only cook
 **Example REST API token refresh**:
 
 ```ts
-const res = await fetch('http://localhost:3000/api/[collection-slug]/refresh-token', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
+const res = await fetch(
+  'http://localhost:3000/api/[collection-slug]/refresh-token',
+  {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
   },
-})
+)
 
 const json = await res.json()
 
@@ -3881,12 +3941,15 @@ If your collection supports email verification, the Verify operation will be exp
 **Example REST API user verification**:
 
 ```ts
-const res = await fetch(`http://localhost:3000/api/[collection-slug]/verify/${TOKEN_HERE}`, {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
+const res = await fetch(
+  `http://localhost:3000/api/[collection-slug]/verify/${TOKEN_HERE}`,
+  {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
   },
-})
+)
 ```
 
 **Example GraphQL Mutation**:
@@ -3954,15 +4017,18 @@ By default, the Forgot Password operations send users to the [Admin Panel](../ad
 **Example REST API Forgot Password**:
 
 ```ts
-const res = await fetch(`http://localhost:3000/api/[collection-slug]/forgot-password`, {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
+const res = await fetch(
+  `http://localhost:3000/api/[collection-slug]/forgot-password`,
+  {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      email: 'dev@payloadcms.com',
+    }),
   },
-  body: JSON.stringify({
-    email: 'dev@payloadcms.com',
-  }),
-})
+)
 ```
 
 **Example GraphQL Mutation**:
@@ -3981,22 +4047,29 @@ const token = await payload.forgotPassword({
   data: {
     email: 'dev@payloadcms.com',
   },
-  disableEmail: false, // you can disable the auto-generation of email via local API
+  disableEmail: false, // you can disable the auto-generation of email via Local API
 })
 ```
 
 <Banner type="info">
-  **Note:** if you do not have a `config.serverURL` set, Payload will attempt to create one for you if the `forgot-password` operation was triggered via REST or GraphQL by looking at the incoming `req`. But this is not supported if you are calling `payload.forgotPassword()` via the Local API. If you do not have a `serverURL` set, you may want to override your `auth.forgotPassword.generateEmailHTML` function to provide a full URL to link the user to a proper reset-password page.
+  **Note:** if you do not have a `config.serverURL` set, Payload will attempt to
+  create one for you if the `forgot-password` operation was triggered via REST
+  or GraphQL by looking at the incoming `req`. But this is not supported if you
+  are calling `payload.forgotPassword()` via the Local API. If you do not have a
+  `serverURL` set, you may want to override your
+  `auth.forgotPassword.generateEmailHTML` function to provide a full URL to link
+  the user to a proper reset-password page.
 </Banner>
 
 <Banner type="success">
   **Tip:**
 
-  You can stop the reset-password email from being sent via using the local API. This is helpful if
-  you need to create user accounts programmatically, but not set their password for them. This
-  effectively generates a reset password token which you can then use to send to a page you create,
-  allowing a user to "complete" their account by setting their password. In the background, you'd
-  use the token to "reset" their password.
+You can stop the reset-password email from being sent via using the Local API. This is helpful if
+you need to create user accounts programmatically, but not set their password for them. This
+effectively generates a reset password token which you can then use to send to a page you create,
+allowing a user to "complete" their account by setting their password. In the background, you'd
+use the token to "reset" their password.
+
 </Banner>
 
 ## Reset Password
@@ -4043,7 +4116,7 @@ mutation {
 ```
 ````
 
-## File: authentication/overview.mdx
+## File: authentication_overview.mdx
 ````
 ---
 title: Authentication Overview
@@ -4088,8 +4161,9 @@ _Admin Panel screenshot depicting an Admins Collection with Auth enabled_
 Any [Collection](../configuration/collections) can opt-in to supporting Authentication. Once enabled, each Document that is created within the Collection can be thought of as a "user". This enables a complete authentication workflow on your Collection, such as logging in and out, resetting their password, and more.
 
 <Banner type="warning">
-  **Note:**
-  By default, Payload provides an auth-enabled `User` Collection which is used to access the Admin Panel. [More details](../admin/overview#the-admin-user-collection).
+  **Note:** By default, Payload provides an auth-enabled `User` Collection which
+  is used to access the Admin Panel. [More
+  details](../admin/overview#the-admin-user-collection).
 </Banner>
 
 To enable Authentication on a Collection, use the `auth` property in the [Collection Config](../configuration/collections):
@@ -4112,31 +4186,32 @@ export const Admins: CollectionConfig = {
 ```
 
 <Banner type="info">
-  **Tip:**
-  For default auth behavior, set `auth: true`. This is a good starting point for most applications.
+  **Tip:** For default auth behavior, set `auth: true`. This is a good starting
+  point for most applications.
 </Banner>
 
 <Banner type="warning">
-  **Note:**
-  Auth-enabled Collections with be automatically injected with the `hash`, `salt`, and `email` fields. [More details](../fields/overview#field-names).
+  **Note:** Auth-enabled Collections with be automatically injected with the
+  `hash`, `salt`, and `email` fields. [More
+  details](../fields/overview#field-names).
 </Banner>
 
 The following options are available:
 
-| Option                     | Description                                                                                                                                                                                                                         |
-|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **`cookies`**              | Set cookie options, including `secure`, `sameSite`, and `domain`. For advanced users.                                                                                                                                               |
-| **`depth`**                | How many levels deep a `user` document should be populated when creating the JWT and binding the `user` to the `req`. Defaults to `0` and should only be modified if absolutely necessary, as this will affect performance. |
-| **`disableLocalStrategy`** | Advanced - disable Payload's built-in local auth strategy. Only use this property if you have replaced Payload's auth mechanisms with your own.                                                                                     |
-| **`forgotPassword`**       | Customize the way that the `forgotPassword` operation functions. [More details](./email#forgot-password).                                                                                                             |
-| **`lockTime`**             | Set the time (in milliseconds) that a user should be locked out if they fail authentication more times than `maxLoginAttempts` allows for.                                                                                          |
-| **`loginWithUsername`**    | Ability to allow users to login with username/password. [More](/docs/authentication/overview#login-with-username)                                                                                                                     |
-| **`maxLoginAttempts`**     | Only allow a user to attempt logging in X amount of times. Automatically locks out a user from authenticating if this limit is passed. Set to `0` to disable.                                                                       |
-| **`removeTokenFromResponses`** | Set to true if you want to remove the token from the returned authentication API responses such as login or refresh.                                                                                                                                                            |
-| **`strategies`**           | Advanced - an array of custom authentication strategies to extend this collection's authentication with. [More details](./custom-strategies).                                                                         |
-| **`tokenExpiration`**      | How long (in seconds) to keep the user logged in. JWTs and HTTP-only cookies will both expire at the same time.                                                                                                                     |
-| **`useAPIKey`**            | Payload Authentication provides for API keys to be set on each user within an Authentication-enabled Collection. [More details](./api-keys).                                                                       |
-| **`verify`**               | Set to `true` or pass an object with verification options to require users to verify by email before they are allowed to log into your app. [More details](./email#email-verification).                                  |
+| Option                         | Description                                                                                                                                                                                                                 |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`cookies`**                  | Set cookie options, including `secure`, `sameSite`, and `domain`. For advanced users.                                                                                                                                       |
+| **`depth`**                    | How many levels deep a `user` document should be populated when creating the JWT and binding the `user` to the `req`. Defaults to `0` and should only be modified if absolutely necessary, as this will affect performance. |
+| **`disableLocalStrategy`**     | Advanced - disable Payload's built-in local auth strategy. Only use this property if you have replaced Payload's auth mechanisms with your own.                                                                             |
+| **`forgotPassword`**           | Customize the way that the `forgotPassword` operation functions. [More details](./email#forgot-password).                                                                                                                   |
+| **`lockTime`**                 | Set the time (in milliseconds) that a user should be locked out if they fail authentication more times than `maxLoginAttempts` allows for.                                                                                  |
+| **`loginWithUsername`**        | Ability to allow users to login with username/password. [More](/docs/authentication/overview#login-with-username)                                                                                                           |
+| **`maxLoginAttempts`**         | Only allow a user to attempt logging in X amount of times. Automatically locks out a user from authenticating if this limit is passed. Set to `0` to disable.                                                               |
+| **`removeTokenFromResponses`** | Set to true if you want to remove the token from the returned authentication API responses such as login or refresh.                                                                                                        |
+| **`strategies`**               | Advanced - an array of custom authentication strategies to extend this collection's authentication with. [More details](./custom-strategies).                                                                               |
+| **`tokenExpiration`**          | How long (in seconds) to keep the user logged in. JWTs and HTTP-only cookies will both expire at the same time.                                                                                                             |
+| **`useAPIKey`**                | Payload Authentication provides for API keys to be set on each user within an Authentication-enabled Collection. [More details](./api-keys).                                                                                |
+| **`verify`**                   | Set to `true` or pass an object with verification options to require users to verify by email before they are allowed to log into your app. [More details](./email#email-verification).                                     |
 
 ### Login With Username
 
@@ -4200,14 +4275,15 @@ export default buildConfig({
 ```
 
 <Banner type="warning">
-  **Warning:**
-  The recommended way to use this feature is behind an [Environment Variable](../configuration/environment-vars). This will ensure it is _disabled_ in production.
+  **Warning:** The recommended way to use this feature is behind an [Environment
+  Variable](../configuration/environment-vars). This will ensure it is
+  _disabled_ in production.
 </Banner>
 
 The following options are available:
 
 | Option            | Description                                                                                                     |
-|-------------------|-----------------------------------------------------------------------------------------------------------------|
+| ----------------- | --------------------------------------------------------------------------------------------------------------- |
 | **`username`**    | The username of the user to login as                                                                            |
 | **`email`**       | The email address of the user to login as                                                                       |
 | **`password`**    | The password of the user to login as. This is only needed if `prefillOnly` is set to true                       |
@@ -4244,7 +4320,7 @@ API Keys can be enabled on auth collections. These are particularly useful when 
 There are cases where these may not be enough for your application. Payload is extendable by design so you can wire up your own strategy when you need to. [More details](./custom-strategies).
 ````
 
-## File: authentication/token-data.mdx
+## File: authentication_token-data.mdx
 ````
 ---
 title: Token Data
@@ -4272,10 +4348,7 @@ export const Users: CollectionConfig = {
       saveToJWT: true,
       type: 'select',
       name: 'role',
-      options: [
-        'super-admin',
-        'user',
-      ]
+      options: ['super-admin', 'user'],
     },
     {
       // the entire object will be stored in the JWT
@@ -4294,7 +4367,7 @@ export const Users: CollectionConfig = {
           type: 'text',
           name: 'omitField',
         },
-      ]
+      ],
     },
     {
       type: 'group',
@@ -4311,18 +4384,18 @@ export const Users: CollectionConfig = {
           type: 'text',
           name: 'omitField',
         },
-      ]
+      ],
     },
-  ]
+  ],
 }
 ```
 
 <Banner type="success">
   **Tip:**
 
-  If you wish to use a different key other than the field `name`, you can define `saveToJWT` as a string.
-</Banner>
+If you wish to use a different key other than the field `name`, you can define `saveToJWT` as a string.
 
+</Banner>
 
 ### Using Token Data
 
@@ -4355,302 +4428,7 @@ export const Invoices: CollectionConfig = {
 ```
 ````
 
-## File: cloud/configuration.mdx
-````
----
-title: Project Configuration
-label: Configuration
-order: 20
-desc: Quickly configure and deploy your Payload Cloud project in a few simple steps.
-keywords: configuration, config, settings, project, cloud, payload cloud, deploy, deployment
----
-
-## Select your plan
-
-Once you have created a project, you will need to select your plan. This will determine the resources that are allocated to your project and the features that are available to you.
-
-<Banner type="success">
-  Note: All Payload Cloud teams that deploy a project require a card on file. This helps us prevent
-  fraud and abuse on our platform. If you select a plan with a free trial, you will not be charged
-  until your trial period is over. We’ll remind you 7 days before your trial ends and you can cancel
-  anytime.
-</Banner>
-
-## Project Details
-
-| Option           | Description                                                                                                                                                                                                                                   |
-| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Region**       | Select the region closest to your audience. This will ensure the fastest communication between your data and your client.                                                                                                                     |
-| **Project Name** | A name for your project. You can change this at any time.                                                                                                                                                                                     |
-| **Project Slug** | Choose a unique slug to identify your project. This needs to be unique for your team and you can change it any time.                                                                                                                          |
-| **Team**         | Select the team you want to create the project under. If this is your first project, a personal team will be created for you automatically. You can modify your team settings and invite new members at any time from the Team Settings page. |
-
-## Build Settings
-
-If you are deploying a new project from a template, the following settings will be automatically configured for you. If you are using your own repository, you need to make sure your build settings are accurate for your project to deploy correctly.
-
-| Option               | Description                                                                                                                                                       |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Root Directory**   | The folder where your `package.json` file lives.                                                                                                                  |
-| **Install Command**  | The command used to install your modules, for example: `yarn install` or `npm install`                                                                            |
-| **Build Command**    | The command used to build your application, for example: `yarn build` or `npm run build`                                                                          |
-| **Serve Command**    | The command used to serve your application, for example: `yarn serve` or `npm run serve`                                                                          |
-| **Branch to Deploy** | Select the branch of your repository that you want to deploy from. This is the branch that will be used to build your project when you commit new changes.        |
-| **Default Domain**   | Set a default domain for your project. This must be unique and you will not able to change it. You can always add a custom domain later in your project settings. |
-
-## Environment Variables
-
-Any of the features in Payload Cloud that require environment variables will automatically be provided to your application. If your app requires any custom environment variables, you can set them here.
-
-<Banner type="warning">
-  Note: For security reasons, any variables you wish to provide to the [Admin Panel](../admin/overview) must be prefixed
-  with `NEXT_PUBLIC_`.  Learn more
-  [here](../configuration/environment-vars).
-</Banner>
-
-## Payment
-
-Payment methods can be set per project and can be updated any time. You can use team’s default payment method, or add a new one. Modify your payment methods in your Project settings / Team settings.
-
-<Banner type="success">
-  **Note:** All Payload Cloud teams that deploy a project require a card on file. This
-  helps us prevent fraud and abuse on our platform. If you select a plan with a free trial, you will
-  not be charged until your trial period is over. We’ll remind you 7 days before your trial ends and
-  you can cancel anytime.
-</Banner>
-````
-
-## File: cloud/creating-a-project.mdx
-````
----
-title: Getting Started
-label: Getting Started
-order: 10
-desc: Get started with Payload Cloud, a deployment solution specifically designed for Node + MongoDB applications.
-keywords: cloud, hosted, database, storage, email, deployment, serverless, node, mongodb, s3, aws, cloudflare, atlas, resend, payload, cms
----
-
-A deployment solution specifically designed for Node.js + MongoDB applications, offering seamless deployment of your entire stack in one place. You can get started in minutes with a one-click template or bring your own codebase with you.
-
-Payload Cloud offers various plans tailored to meet your specific needs, including a MongoDB Atlas database, S3 file storage, and email delivery powered by [Resend](https://resend.com). To see a full breakdown of features and plans, see our [Cloud Pricing page](https://payloadcms.com/cloud-pricing).
-
-To get started, you first need to create an account. Head over to [the login screen](https://payloadcms.com/login) and **Register for Free**.
-
-<Banner type="success">
-  To create your first project, you can either select [a template](#starting-from-a-template) or
-  [import an existing project](#importing-from-an-existing-codebase) from GitHub.
-</Banner>
-
-## Starting from a Template
-
-Templates come preconfigured and provide a one-click solution to quickly deploy a new application.
-
-![Screen for creating a new project from a template](https://payloadcms.com/images/docs/cloud/create-from-template.jpg)
-_Creating a new project from a template._
-
-After creating an account, select your desired template from the Projects page. At this point, you need to connect to authorize the Payload Cloud application with your GitHub account. Click Continue with GitHub and follow the prompts to authorize the app.
-
-Next, select your `GitHub Scope`. If you belong to multiple organizations, they will show up here. If you do not see the organization you are looking for, you may need to adjust your GitHub app permissions.
-
-After selecting your scope, create a unique `repository name` and select whether you want your repository to be public or private on GitHub.
-
-<Banner type="warning">
-  **Note:** Public repositories can be accessed by anyone online, while private
-  repositories grant access only to you and anyone you explicitly authorize.
-</Banner>
-
-Once you are ready, click **Create Project**. This will clone the selected template to a new repository in your GitHub account, and take you to the configuration page to set up your project for deployment.
-
-## Importing from an Existing Codebase
-
-Payload Cloud works for any Node.js + MongoDB app. From the New Project page, select **import an existing Git codebase**. Choose the organization and select the repository you want to import. From here, you will be taken to the configuration page to set up your project for deployment.
-
-![Screen for creating a new project from an existing repository](https://payloadcms.com/images/docs/cloud/create-from-existing.jpg)
-_Creating a new project from an existing repository._
-
-<Banner type="warning">
-  **Note:** In order to make use of the features of Payload Cloud in your own codebase,
-  you will need to add the [Cloud Plugin](https://github.com/payloadcms/payload/tree/main/packages/payload-cloud) to your
-  Payload app.
-</Banner>
-````
-
-## File: cloud/projects.mdx
-````
----
-title: Cloud Projects
-label: Projects
-order: 40
-desc: Manage your Payload Cloud projects.
-keywords: cloud, payload cloud, projects, project, overview, database, file storage, build settings, environment variables, custom domains, email, developing locally
----
-
-## Overview
-
-<Banner>
-  The overview tab shows your most recent deployment, along with build and deployment logs. From
-  here, you can see your live URL, deployment details like timestamps and commit hash, as well as
-  the status of your deployment. You can also trigger a redeployment manually, which will rebuild
-  your project using the current configuration.
-</Banner>
-
-![Payload Cloud Overview Page](https://payloadcms.com/images/docs/cloud/overview-page.jpg)
-_A screenshot of the Overview page for a Cloud project._
-
-## Database
-
-Your Payload Cloud project comes with a MongoDB serverless Atlas DB instance or a Dedicated Atlas cluster, depending on your plan. To interact with your cloud database, you will be provided with a MongoDB connection string. This can be found under the **Database** tab of your project.
-
-`mongodb+srv://your_connection_string`
-
-## File Storage
-
-Payload Cloud gives you S3 file storage backed by Cloudflare as a CDN, and this plugin extends Payload so that all of your media will be stored in S3 rather than locally.
-
-AWS Cognito is used for authentication to your S3 bucket. The [Payload Cloud Plugin](https://github.com/payloadcms/payload/tree/main/packages/payload-cloud) will automatically pick up these values. These values are only if you'd like to access your files directly, outside of Payload Cloud.
-
-### Accessing Files Outside of Payload Cloud
-
-If you'd like to access your files outside of Payload Cloud, you'll need to retrieve some values from your project's settings and put them into your environment variables. In Payload Cloud, navigate to the File Storage tab and copy the values using the copy button. Put these values in your .env file. Also copy the Cognito Password value separately and put into your .env file as well.
-
-When you are done, you should have the following values in your .env file:
-
-```env
-PAYLOAD_CLOUD=true
-PAYLOAD_CLOUD_ENVIRONMENT=prod
-PAYLOAD_CLOUD_COGNITO_USER_POOL_CLIENT_ID=
-PAYLOAD_CLOUD_COGNITO_USER_POOL_ID=
-PAYLOAD_CLOUD_COGNITO_IDENTITY_POOL_ID=
-PAYLOAD_CLOUD_PROJECT_ID=
-PAYLOAD_CLOUD_BUCKET=
-PAYLOAD_CLOUD_BUCKET_REGION=
-PAYLOAD_CLOUD_COGNITO_PASSWORD=
-```
-
-The plugin will pick up these values and use them to access your files.
-
-## Build Settings
-
-You can update settings from your Project’s Settings tab. Changes to your build settings will trigger a redeployment of your project.
-
-## Environment Variables
-
-From the Environment Variables page of the Settings tab, you can add, update and delete variables for use in your project. Like build settings, these changes will trigger a redeployment of your project.
-
-<Banner>
-  Note: For security reasons, any variables you wish to provide to the [Admin Panel](../admin/overview) must be prefixed with `NEXT_PUBLIC_`. [More details](../configuration/environment-vars).
-</Banner>
-
-## Custom Domains
-
-With Payload Cloud, you can add custom domain names to your project. To do so, first go to the Domains page of the Settings tab of your project. Here you can see your default domain. To add a new domain, type in the domain name you wish to use.
-
-<Banner>
-  Note: do not include the protocol (http:// or https://) or any paths (/page). Only include the
-  domain name and extension, and optionally a subdomain. - your-domain.com - backend.your-domain.com
-</Banner>
-
-Once you click save, a DNS record will be generated for your domain name to point to your live project. Add this record into your DNS provider’s records, and once the records are resolving properly (this can take 1hr to 48hrs in some cases), your domain will now to point to your live project.
-
-You will also need to configure your Payload project to use your specified domain. In your `payload.config.ts` file, specify your `serverURL` with your domain:
-
-```ts
-export default buildConfig({
-  serverURL: 'https://example.com',
-  // the rest of your config,
-})
-```
-
-## Email
-
-Powered by [Resend](https://resend.com), Payload Cloud comes with integrated email support out of the box. No configuration is needed, and you can use `payload.sendEmail()` to send email right from your Payload app. To learn more about sending email with Payload, checkout the [Email Configuration](../email/overview) overview.
-
-If you are on the Pro or Enterprise plan, you can add your own custom Email domain name. From the Email page of your project’s Settings, add the domain you wish to use for email delivery. This will generate a set of DNS records. Add these records to your DNS provider and click verify to check that your records are resolving properly. Once verified, your emails will now be sent from your custom domain name.
-
-## Developing Locally
-
-To make changes to your project, you will need to clone the repository defined in your project settings to your local machine. In order to run your project locally, you will need configure your local environment first. Refer to your repository’s `README.md` file to see the steps needed for your specific template.
-
-From there, you are ready to make updates to your project. When you are ready to make your changes live, commit your changes to the branch you specified in your Project settings, and your application will automatically trigger a redeploy and build from your latest commit.
-
-## Cloud Plugin
-
-Projects generated from a template will come pre-configured with the official Cloud Plugin, but if you are using your own repository you will need to add this into your project. To do so, add the plugin to your Payload Config:
-
-`pnpm add @payloadcms/payload-cloud`
-
-```js
-import { payloadCloudPlugin } from '@payloadcms/payload-cloud'
-import { buildConfig } from 'payload'
-
-export default buildConfig({
-  plugins: [payloadCloudPlugin()],
-  // rest of config
-})
-```
-
-<Banner type="warning">
-  **Note:** If your Payload Config already has an email with transport, this will take precedence
-  over Payload Cloud's email service.
-</Banner>
-
-<Banner type="info">
-  Good to know: the Payload Cloud Plugin was previously named `@payloadcms/plugin-cloud`. If you are
-  using this plugin, you should update to the new package name.
-</Banner>
-
-#### **Optional configuration**
-
-If you wish to opt-out of any Payload cloud features, the plugin also accepts options to do so.
-
-```js
-payloadCloud({
-  storage: false, // Disable file storage
-  email: false, // Disable email delivery
-})
-```
-````
-
-## File: cloud/teams.mdx
-````
----
-title: Cloud Teams
-label: Teams
-order: 30
-desc: Manage your Payload Cloud team and billing settings.
-keywords: team, teams, billing, subscription, payment, plan, plans, cloud, payload cloud
----
-
-<Banner>
-  Within Payload Cloud, the team management feature offers you the ability to manage your
-  organization, team members, billing, and subscription settings.
-</Banner>
-
-![Payload Cloud Team Settings](https://payloadcms.com/images/docs/cloud/team-settings.jpg)
-_A screenshot of the Team Settings page._
-
-## Members
-
-Each team has members that can interact with your projects. You can invite multiple people to your team and each individual can belong to more than one team. You can assign them either `owner` or `user` permissions. Owners are able to make admin-only changes, such as deleting projects, and editing billing information.
-
-## Adding Members
-
-To add a new member to your team, visit your Team’s Settings page, and click “Invite Teammate”. You can then add their email address, and assign their role. Press “Save” to send the invitations, which will send an email to the invited team member where they can create a new account.
-
-## Billing
-
-Users can update billing settings and subscriptions for any teams where they are designated as an `owner`. To make updates to the team’s payment methods, visit the Billing page under the Team Settings tab. You can add new cards, delete cards, and set a payment method as a default. The default payment method will be used in the event that another payment method fails.
-
-## Subscriptions
-
-From the Subscriptions page, a team owner can see all current plans for their team. From here, you can see the price of each plan, if there is an active trial, and when you will be billed next.
-
-## Invoices
-
-The Invoices page will you show you the invoices for your account, as well as the status on their payment.
-````
-
-## File: configuration/collections.mdx
+## File: configuration_collections.mdx
 ````
 ---
 title: Collection Configs
@@ -4673,15 +4451,16 @@ import { buildConfig } from 'payload'
 
 export default buildConfig({
   // ...
-  collections: [ // highlight-line
+  collections: [
+    // highlight-line
     // Your Collections go here
   ],
 })
 ```
 
 <Banner type="success">
-  **Tip:**
-  If your Collection is only ever meant to contain a single Document, consider using a [Global](./globals) instead.
+  **Tip:** If your Collection is only ever meant to contain a single Document,
+  consider using a [Global](./globals) instead.
 </Banner>
 
 ## Config Options
@@ -4699,14 +4478,16 @@ export const Posts: CollectionConfig = {
     {
       name: 'title',
       type: 'text',
-    }
-  ]
+    },
+  ],
 }
 ```
 
 <Banner type="success">
-  **Reminder:**
-  For more complex examples, see the [Templates](https://github.com/payloadcms/payload/tree/main/templates) and [Examples](https://github.com/payloadcms/payload/tree/main/examples) directories in the Payload repository.
+  **Reminder:** For more complex examples, see the
+  [Templates](https://github.com/payloadcms/payload/tree/main/templates) and
+  [Examples](https://github.com/payloadcms/payload/tree/main/examples)
+  directories in the Payload repository.
 </Banner>
 
 The following options are available:
@@ -4721,20 +4502,21 @@ The following options are available:
 | `defaultSort`      | Pass a top-level field to sort by default in the Collection List View. Prefix the name of the field with a minus symbol ("-") to sort in descending order. Multiple fields can be specified by using a string array. |
 | `dbName`           | Custom table or Collection name depending on the Database Adapter. Auto-generated from slug if not defined.                                                                                                          |
 | `endpoints`        | Add custom routes to the REST API. Set to `false` to disable routes. [More details](../rest-api/overview#custom-endpoints).                                                                                          |
-| `fields` *         | Array of field types that will determine the structure and functionality of the data stored within this Collection. [More details](../fields/overview).                                                              |
+| `fields` \*        | Array of field types that will determine the structure and functionality of the data stored within this Collection. [More details](../fields/overview).                                                              |
 | `graphQL`          | Manage GraphQL-related properties for this collection. [More](#graphql)                                                                                                                                              |
 | `hooks`            | Entry point for Hooks. [More details](../hooks/overview#collection-hooks).                                                                                                                                           |
 | `labels`           | Singular and plural labels for use in identifying this Collection throughout Payload. Auto-generated from slug if not defined.                                                                                       |
 | `lockDocuments`    | Enables or disables document locking. By default, document locking is enabled. Set to an object to configure, or set to `false` to disable locking. [More details](../admin/locked-documents).                       |
-| `slug` *           | Unique, URL-friendly string that will act as an identifier for this Collection.                                                                                                                                      |
+| `slug` \*          | Unique, URL-friendly string that will act as an identifier for this Collection.                                                                                                                                      |
 | `timestamps`       | Set to false to disable documents' automatically generated `createdAt` and `updatedAt` timestamps.                                                                                                                   |
 | `typescript`       | An object with property `interface` as the text used in schema generation. Auto-generated from slug if not defined.                                                                                                  |
 | `upload`           | Specify options if you would like this Collection to support file uploads. For more, consult the [Uploads](../upload/overview) documentation.                                                                        |
 | `versions`         | Set to true to enable default options, or configure with object properties. [More details](../versions/overview#collection-config).                                                                                  |
 | `defaultPopulate`  | Specify which fields to select when this Collection is populated from another document. [More Details](../queries/select#defaultpopulate-collection-config-property).                                                |
 | `indexes`          | Define compound indexes for this collection. This can be used to either speed up querying/sorting by 2 or more fields at the same time or to ensure uniqueness between several fields.                               |
+| `forceSelect`      | Specify which fields should be selected always, regardless of the `select` query which can be useful that the field exists for access control / hooks                                                                |
 
-_* An asterisk denotes that a property is required._
+_\* An asterisk denotes that a property is required._
 
 ### Fields
 
@@ -4759,7 +4541,8 @@ import type { CollectionConfig } from 'payload'
 
 export const MyCollection: CollectionConfig = {
   // ...
-  admin: { // highlight-line
+  admin: {
+    // highlight-line
     // ...
   },
 }
@@ -4767,20 +4550,20 @@ export const MyCollection: CollectionConfig = {
 
 The following options are available:
 
-| Option                           | Description                                                                                                                                                                                                                  |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Option                       | Description                                                                                                                                                                                                                  |
+| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `group`                      | Text or localization object used to group Collection and Global links in the admin navigation. Set to `false` to hide the link from the navigation while keeping its routes accessible.                                      |
 | `hidden`                     | Set to true or a function, called with the current user, returning true to exclude this Collection from navigation and admin routing.                                                                                        |
 | `hooks`                      | Admin-specific hooks for this Collection. [More details](../hooks/collections).                                                                                                                                              |
 | `useAsTitle`                 | Specify a top-level field to use for a document title throughout the Admin Panel. If no field is defined, the ID of the document is used as the title. A field with `virtual: true` cannot be used as the title.             |
 | `description`                | Text to display below the Collection label in the List View to give editors more information. Alternatively, you can use the `admin.components.Description` to render a React component. [More details](#custom-components). |
 | `defaultColumns`             | Array of field names that correspond to which columns to show by default in this Collection's List View.                                                                                                                     |
-| `disableCopyToLocale`        | Disables the "Copy to Locale" button while editing documents within this Collection. Only applicable when localization is enabled.                                                                                                                                        |
+| `disableCopyToLocale`        | Disables the "Copy to Locale" button while editing documents within this Collection. Only applicable when localization is enabled.                                                                                           |
 | `hideAPIURL`                 | Hides the "API URL" meta field while editing documents within this Collection.                                                                                                                                               |
 | `enableRichTextLink`         | The [Rich Text](../fields/rich-text) field features a `Link` element which allows for users to automatically reference related documents within their rich text. Set to `true` by default.                                   |
 | `enableRichTextRelationship` | The [Rich Text](../fields/rich-text) field features a `Relationship` element which allows for users to automatically reference related documents within their rich text. Set to `true` by default.                           |
-| `meta`                       | Page metadata overrides to apply to this Collection within the Admin Panel. [More details](../admin/metadata).                                                                                                                      |
-| `preview`                    | Function to generate preview URLs within the Admin Panel that can point to your app. [More details](../admin/preview).                                                                                                               |
+| `meta`                       | Page metadata overrides to apply to this Collection within the Admin Panel. [More details](../admin/metadata).                                                                                                               |
+| `preview`                    | Function to generate preview URLs within the Admin Panel that can point to your app. [More details](../admin/preview).                                                                                                       |
 | `livePreview`                | Enable real-time editing for instant visual feedback of your front-end application. [More details](../live-preview/overview).                                                                                                |
 | `components`                 | Swap in your own React components to be used within this Collection. [More details](#custom-components).                                                                                                                     |
 | `listSearchableFields`       | Specify which fields should be searched in the List search view. [More details](#list-searchable-fields).                                                                                                                    |
@@ -4799,7 +4582,8 @@ import type { CollectionConfig } from 'payload'
 export const MyCollection: CollectionConfig = {
   // ...
   admin: {
-    components: { // highlight-line
+    components: {
+      // highlight-line
       // ...
     },
   },
@@ -4808,16 +4592,16 @@ export const MyCollection: CollectionConfig = {
 
 The following options are available:
 
-| Option                | Description                                                                                                                                                                        |
-| --------------------- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `afterList`           | An array of components to inject _after_ the built-in List View. [More details](../custom-components/list-view#afterlist).                                                         |
-| `afterListTable`      | An array of components to inject _after_ the built-in List View's table. [More details](../custom-components/list-view#afterlisttable).                                            |
-| `beforeList`          | An array of components to inject _before_ the built-in List View. [More details](../custom-components/list-view#beforelist).                                                       |
-| `beforeListTable`     | An array of components to inject _before_ the built-in List View's table. [More details](../custom-components/list-view#beforelisttable).                                          |
-| `listMenuItems`       | An array of components to render within a menu next to the List Controls (after the Columns and Filters options)                                                                   |
-| `Description`         | A component to render below the Collection label in the List View. An alternative to the `admin.description` property. [More details](../custom-components/list-view#description). |
-| `edit`                | Override specific components within the Edit View. [More details](#edit-view-options).                                                                                             |
-| `views`               | Override or create new views within the Admin Panel. [More details](../custom-components/custom-views).                                                                            |
+| Option            | Description                                                                                                                                                                        |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `afterList`       | An array of components to inject _after_ the built-in List View. [More details](../custom-components/list-view#afterlist).                                                         |
+| `afterListTable`  | An array of components to inject _after_ the built-in List View's table. [More details](../custom-components/list-view#afterlisttable).                                            |
+| `beforeList`      | An array of components to inject _before_ the built-in List View. [More details](../custom-components/list-view#beforelist).                                                       |
+| `beforeListTable` | An array of components to inject _before_ the built-in List View's table. [More details](../custom-components/list-view#beforelisttable).                                          |
+| `listMenuItems`   | An array of components to render within a menu next to the List Controls (after the Columns and Filters options)                                                                   |
+| `Description`     | A component to render below the Collection label in the List View. An alternative to the `admin.description` property. [More details](../custom-components/list-view#description). |
+| `edit`            | Override specific components within the Edit View. [More details](#edit-view-options).                                                                                             |
+| `views`           | Override or create new views within the Admin Panel. [More details](../custom-components/custom-views).                                                                            |
 
 #### Edit View Options
 
@@ -4828,7 +4612,8 @@ export const MyCollection: CollectionCOnfig = {
   // ...
   admin: {
     components: {
-      edit: { // highlight-line
+      edit: {
+        // highlight-line
         // ...
       },
     },
@@ -4838,17 +4623,17 @@ export const MyCollection: CollectionCOnfig = {
 
 The following options are available:
 
-| Option                 | Description                                                                                                                                |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| `SaveButton`      | Replace the default Save Button within the Edit View. [Drafts](../versions/drafts) must be disabled. [More details](../custom-components/edit-view#save-button). |
+| Option            | Description                                                                                                                                                                                               |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `SaveButton`      | Replace the default Save Button within the Edit View. [Drafts](../versions/drafts) must be disabled. [More details](../custom-components/edit-view#save-button).                                          |
 | `SaveDraftButton` | Replace the default Save Draft Button within the Edit View. [Drafts](../versions/drafts) must be enabled and autosave must be disabled. [More details](../custom-components/edit-view#save-draft-button). |
-| `PublishButton`   | Replace the default Publish Button within the Edit View. [Drafts](../versions/drafts) must be enabled. [More details](../custom-components/edit-view#publish-button). |
-| `PreviewButton`   | Replace the default Preview Button within the Edit View. [Preview](../admin/preview) must be enabled. [More details](../custom-components/edit-view#preview-button). |
-| `Upload`          | Replace the default Upload component within the Edit View. [Upload](../upload/overview) must be enabled. [More details](../custom-components/edit-view#upload). |
+| `PublishButton`   | Replace the default Publish Button within the Edit View. [Drafts](../versions/drafts) must be enabled. [More details](../custom-components/edit-view#publish-button).                                     |
+| `PreviewButton`   | Replace the default Preview Button within the Edit View. [Preview](../admin/preview) must be enabled. [More details](../custom-components/edit-view#preview-button).                                      |
+| `Upload`          | Replace the default Upload component within the Edit View. [Upload](../upload/overview) must be enabled. [More details](../custom-components/edit-view#upload).                                           |
 
 <Banner type="success">
-  **Note:**
-  For details on how to build Custom Components, see [Building Custom Components](../custom-components/overview#building-custom-components).
+  **Note:** For details on how to build Custom Components, see [Building Custom
+  Components](../custom-components/overview#building-custom-components).
 </Banner>
 
 ### Pagination
@@ -4900,8 +4685,8 @@ export const Posts: CollectionConfig = {
 ```
 
 <Banner type="warning">
-  **Tip:**
-  If you are adding `listSearchableFields`, make sure you index each of these fields so your admin queries can remain performant.
+  **Tip:** If you are adding `listSearchableFields`, make sure you index each of
+  these fields so your admin queries can remain performant.
 </Banner>
 
 ## GraphQL
@@ -4910,8 +4695,8 @@ You can completely disable GraphQL for this collection by passing `graphQL: fals
 
 You can also pass an object to the collection's `graphQL` property, which allows you to define the following properties:
 
-| Option                 | Description                                                                         |
-| ---------------------- | ----------------------------------------------------------------------------------- |
+| Option             | Description                                                                         |
+| ------------------ | ----------------------------------------------------------------------------------- |
 | `singularName`     | Override the "singular" name that will be used in GraphQL schema generation.        |
 | `pluralName`       | Override the "plural" name that will be used in GraphQL schema generation.          |
 | `disableQueries`   | Disable all GraphQL queries that correspond to this collection by passing `true`.   |
@@ -4928,7 +4713,7 @@ import type { CollectionConfig, SanitizedCollectionConfig } from 'payload'
 ```
 ````
 
-## File: configuration/environment-vars.mdx
+## File: configuration_environment-vars.mdx
 ````
 ---
 title: Environment Variables
@@ -4977,8 +4762,10 @@ For security and safety reasons, the [Admin Panel](../admin/overview) does **not
 If you are building a [Custom Component](../custom-components/overview) and need to access Environment Variables from the client-side, you can do so by prefixing them with `NEXT_PUBLIC_`.
 
 <Banner type="warning">
-  **Important:**
-  Be careful about what variables you provide to your client-side code. Analyze every single one to make sure that you're not accidentally leaking sensitive information. Only ever include keys that are safe for the public to read in plain text.
+  **Important:** Be careful about what variables you provide to your client-side
+  code. Analyze every single one to make sure that you're not accidentally
+  leaking sensitive information. Only ever include keys that are safe for the
+  public to read in plain text.
 </Banner>
 
 For example, if you've got the following Environment Variable:
@@ -4998,11 +4785,7 @@ const stripeKey = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY // highlight-li
 const MyClientComponent = () => {
   // do something with the key
 
-  return (
-    <div>
-      My Client Component
-    </div>
-  )
+  return <div>My Client Component</div>
 }
 ```
 
@@ -5027,12 +4810,13 @@ export default buildConfig({
 ```
 
 <Banner type="warning">
-  **Tip:**
-  Be sure that `dotenv` can find your `.env` file. By default, it will look for a file named `.env` in the root of your project. If you need to specify a different file, pass the path into the config options.
+  **Tip:** Be sure that `dotenv` can find your `.env` file. By default, it will
+  look for a file named `.env` in the root of your project. If you need to
+  specify a different file, pass the path into the config options.
 </Banner>
 ````
 
-## File: configuration/globals.mdx
+## File: configuration_globals.mdx
 ````
 ---
 title: Global Configs
@@ -5053,15 +4837,16 @@ import { buildConfig } from 'payload'
 
 export default buildConfig({
   // ...
-  globals: [ // highlight-line
+  globals: [
+    // highlight-line
     // Your Globals go here
   ],
 })
 ```
 
 <Banner type="success">
-  **Tip:**
-  If you have more than one Global that share the same structure, consider using a [Collection](./collections) instead.
+  **Tip:** If you have more than one Global that share the same structure,
+  consider using a [Collection](./collections) instead.
 </Banner>
 
 ## Config Options
@@ -5095,30 +4880,33 @@ export const Nav: GlobalConfig = {
 ```
 
 <Banner type="success">
-  **Reminder:**
-  For more complex examples, see the [Templates](https://github.com/payloadcms/payload/tree/main/templates) and [Examples](https://github.com/payloadcms/payload/tree/main/examples) directories in the Payload repository.
+  **Reminder:** For more complex examples, see the
+  [Templates](https://github.com/payloadcms/payload/tree/main/templates) and
+  [Examples](https://github.com/payloadcms/payload/tree/main/examples)
+  directories in the Payload repository.
 </Banner>
 
 The following options are available:
 
-| Option              | Description                                                                                                                                                                                    |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Option          | Description                                                                                                                                                                                    |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `access`        | Provide Access Control functions to define exactly who should be able to do what with this Global. [More details](../access-control/globals).                                                  |
-| `admin`         | The configuration options for the Admin Panel. [More details](#admin-options).                                                                                                               |
+| `admin`         | The configuration options for the Admin Panel. [More details](#admin-options).                                                                                                                 |
 | `custom`        | Extension point for adding custom data (e.g. for plugins)                                                                                                                                      |
 | `dbName`        | Custom table or collection name for this Global depending on the Database Adapter. Auto-generated from slug if not defined.                                                                    |
 | `description`   | Text or React component to display below the Global header to give editors more information.                                                                                                   |
 | `endpoints`     | Add custom routes to the REST API. [More details](../rest-api/overview#custom-endpoints).                                                                                                      |
-| `fields` *     | Array of field types that will determine the structure and functionality of the data stored within this Global. [More details](../fields/overview).                                            |
+| `fields` \*     | Array of field types that will determine the structure and functionality of the data stored within this Global. [More details](../fields/overview).                                            |
 | `graphQL`       | Manage GraphQL-related properties related to this global. [More details](#graphql)                                                                                                             |
 | `hooks`         | Entry point for Hooks. [More details](../hooks/overview#global-hooks).                                                                                                                         |
 | `label`         | Text for the name in the Admin Panel or an object with keys for each language. Auto-generated from slug if not defined.                                                                        |
 | `lockDocuments` | Enables or disables document locking. By default, document locking is enabled. Set to an object to configure, or set to `false` to disable locking. [More details](../admin/locked-documents). |
-| `slug` *       | Unique, URL-friendly string that will act as an identifier for this Global.                                                                                                                    |
+| `slug` \*       | Unique, URL-friendly string that will act as an identifier for this Global.                                                                                                                    |
 | `typescript`    | An object with property `interface` as the text used in schema generation. Auto-generated from slug if not defined.                                                                            |
-| `versions`      | Set to true to enable default options, or configure with object properties. [More details](../versions/overview#global-config).                                                               |
+| `versions`      | Set to true to enable default options, or configure with object properties. [More details](../versions/overview#global-config).                                                                |
+| `forceSelect`   | Specify which fields should be selected always, regardless of the `select` query which can be useful that the field exists for access control / hooks                                          |
 
-_* An asterisk denotes that a property is required._
+_\* An asterisk denotes that a property is required._
 
 ### Fields
 
@@ -5143,7 +4931,8 @@ import { GlobalConfig } from 'payload'
 
 export const MyGlobal: GlobalConfig = {
   // ...
-  admin: { // highlight-line
+  admin: {
+    // highlight-line
     // ...
   },
 }
@@ -5151,15 +4940,15 @@ export const MyGlobal: GlobalConfig = {
 
 The following options are available:
 
-| Option            | Description                                                                                                                       |
-| ----------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Option        | Description                                                                                                                                                                             |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `group`       | Text or localization object used to group Collection and Global links in the admin navigation. Set to `false` to hide the link from the navigation while keeping its routes accessible. |
-| `hidden`      | Set to true or a function, called with the current user, returning true to exclude this Global from navigation and admin routing. |
-| `components`  | Swap in your own React components to be used within this Global. [More details](#custom-components).                           |
-| `preview`     | Function to generate a preview URL within the Admin Panel for this Global that can point to your app. [More details](../admin/preview).           |
-| `livePreview` | Enable real-time editing for instant visual feedback of your front-end application. [More details](../live-preview/overview).          |
-| `hideAPIURL`  | Hides the "API URL" meta field while editing documents within this collection.                                                    |
-| `meta`        | Page metadata overrides to apply to this Global within the Admin Panel. [More details](../admin/metadata).                                                                           |
+| `hidden`      | Set to true or a function, called with the current user, returning true to exclude this Global from navigation and admin routing.                                                       |
+| `components`  | Swap in your own React components to be used within this Global. [More details](#custom-components).                                                                                    |
+| `preview`     | Function to generate a preview URL within the Admin Panel for this Global that can point to your app. [More details](../admin/preview).                                                 |
+| `livePreview` | Enable real-time editing for instant visual feedback of your front-end application. [More details](../live-preview/overview).                                                           |
+| `hideAPIURL`  | Hides the "API URL" meta field while editing documents within this collection.                                                                                                          |
+| `meta`        | Page metadata overrides to apply to this Global within the Admin Panel. [More details](../admin/metadata).                                                                              |
 
 ### Custom Components
 
@@ -5173,7 +4962,8 @@ import type { SanitizedGlobalConfig } from 'payload'
 export const MyGlobal: SanitizedGlobalConfig = {
   // ...
   admin: {
-    components: { // highlight-line
+    components: {
+      // highlight-line
       // ...
     },
   },
@@ -5184,10 +4974,10 @@ The following options are available:
 
 #### General
 
-| Option                         | Description                                                                                                            |
-| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| `elements`                 | Override or create new elements within the Edit View. [More details](#edit-view-options).                                  |
-| `views`                    | Override or create new views within the Admin Panel. [More details](../custom-components/custom-views).                    |
+| Option     | Description                                                                                             |
+| ---------- | ------------------------------------------------------------------------------------------------------- |
+| `elements` | Override or create new elements within the Edit View. [More details](#edit-view-options).               |
+| `views`    | Override or create new views within the Admin Panel. [More details](../custom-components/custom-views). |
 
 #### Edit View Options
 
@@ -5198,7 +4988,8 @@ export const MyGlobal: SanitizedGlobalConfig = {
   // ...
   admin: {
     components: {
-      elements: { // highlight-line
+      elements: {
+        // highlight-line
         // ...
       },
     },
@@ -5208,16 +4999,16 @@ export const MyGlobal: SanitizedGlobalConfig = {
 
 The following options are available:
 
-| Option                         | Description                                                                                                                                                                                                       |
-| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `SaveButton`      | Replace the default Save Button with a Custom Component. [Drafts](../versions/drafts) must be disabled. [More details](../custom-components/edit-view#save-button).                                                            |
-| `SaveDraftButton` | Replace the default Save Draft Button with a Custom Component. [Drafts](../versions/drafts) must be enabled and autosave must be disabled. [More details](../custom-components/edit-view#save-draft-button).                   |
-| `PublishButton`   | Replace the default Publish Button with a Custom Component. [Drafts](../versions/drafts) must be enabled. [More details](../custom-components/edit-view#publish-button).                                                       |
-| `PreviewButton`   | Replace the default Preview Button with a Custom Component. [Preview](../admin/preview) must be enabled. [More details](../custom-components/edit-view#preview-button).                                                        |
+| Option            | Description                                                                                                                                                                                                  |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `SaveButton`      | Replace the default Save Button with a Custom Component. [Drafts](../versions/drafts) must be disabled. [More details](../custom-components/edit-view#save-button).                                          |
+| `SaveDraftButton` | Replace the default Save Draft Button with a Custom Component. [Drafts](../versions/drafts) must be enabled and autosave must be disabled. [More details](../custom-components/edit-view#save-draft-button). |
+| `PublishButton`   | Replace the default Publish Button with a Custom Component. [Drafts](../versions/drafts) must be enabled. [More details](../custom-components/edit-view#publish-button).                                     |
+| `PreviewButton`   | Replace the default Preview Button with a Custom Component. [Preview](../admin/preview) must be enabled. [More details](../custom-components/edit-view#preview-button).                                      |
 
 <Banner type="success">
-  **Note:**
-  For details on how to build Custom Components, see [Building Custom Components](../custom-components/overview#building-custom-components).
+  **Note:** For details on how to build Custom Components, see [Building Custom
+  Components](../custom-components/overview#building-custom-components).
 </Banner>
 
 ## GraphQL
@@ -5226,11 +5017,11 @@ You can completely disable GraphQL for this global by passing `graphQL: false` t
 
 You can also pass an object to the global's `graphQL` property, which allows you to define the following properties:
 
-| Option                 | Description                                                                         |
-| ---------------------- | ----------------------------------------------------------------------------------- |
-| `name`             | Override the name that will be used in GraphQL schema generation.                       |
-| `disableQueries`   | Disable all GraphQL queries that correspond to this global by passing `true`.           |
-| `disableMutations` | Disable all GraphQL mutations that correspond to this global by passing `true`.         |
+| Option             | Description                                                                     |
+| ------------------ | ------------------------------------------------------------------------------- |
+| `name`             | Override the name that will be used in GraphQL schema generation.               |
+| `disableQueries`   | Disable all GraphQL queries that correspond to this global by passing `true`.   |
+| `disableMutations` | Disable all GraphQL mutations that correspond to this global by passing `true`. |
 
 ## TypeScript
 
@@ -5243,7 +5034,7 @@ import type { GlobalConfig, SanitizedGlobalConfig } from 'payload'
 ```
 ````
 
-## File: configuration/i18n.mdx
+## File: configuration_i18n.mdx
 ````
 ---
 title: I18n
@@ -5270,15 +5061,17 @@ import { buildConfig } from 'payload'
 
 export default buildConfig({
   // ...
-  i18n: { // highlight-line
+  i18n: {
+    // highlight-line
     // ...
   },
 })
 ```
 
 <Banner type="success">
-  **Note:**
-  If there is a language that Payload does not yet support, we accept [code contributions](https://github.com/payloadcms/payload/blob/main/CONTRIBUTING.md).
+  **Note:** If there is a language that Payload does not yet support, we accept
+  [code
+  contributions](https://github.com/payloadcms/payload/blob/main/CONTRIBUTING.md).
 </Banner>
 
 ## Config Options
@@ -5293,18 +5086,18 @@ export default buildConfig({
   // highlight-start
   i18n: {
     fallbackLanguage: 'en', // default
-  }
+  },
   // highlight-end
 })
 ```
 
 The following options are available:
 
-| Option                | Description                                                                                                                                                                                                                   |
-| --------------------- | --------------------------------|
-| `fallbackLanguage`     | The language to fall back to if the user's preferred language is not supported. Default is `'en'`.                                                                                                                           |
-| `translations`    | An object containing the translations. The keys are the language codes and the values are the translations.                                                                                                                |
-| `supportedLanguages` | An object containing the supported languages. The keys are the language codes and the values are the translations.                                                                                                         |
+| Option               | Description                                                                                                        |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| `fallbackLanguage`   | The language to fall back to if the user's preferred language is not supported. Default is `'en'`.                 |
+| `translations`       | An object containing the translations. The keys are the language codes and the values are the translations.        |
+| `supportedLanguages` | An object containing the supported languages. The keys are the language codes and the values are the translations. |
 
 ## Adding Languages
 
@@ -5328,8 +5121,8 @@ export default buildConfig({
 ```
 
 <Banner type="warning">
- **Tip:**
- It's best to only support the languages that you need so that the bundled JavaScript is kept to a minimum for your project.
+  **Tip:** It's best to only support the languages that you need so that the
+  bundled JavaScript is kept to a minimum for your project.
 </Banner>
 
 ### Custom Translations
@@ -5410,7 +5203,7 @@ export const Articles: CollectionConfig = {
         placeholder: {
           // highlight-start
           en: 'Enter title',
-          es: 'Introduce el título'
+          es: 'Introduce el título',
           // highlight-end
         },
       },
@@ -5435,25 +5228,29 @@ In order to use [Custom Translations](#custom-translations) in your project, you
 
 Here we create a shareable translations object. We will import this in both our custom components and in our Payload config.
 
+In this example we show how to extend English, but you can do the same for any language you want.
+
 ```ts
 // <rootDir>/custom-translations.ts
 
-import type { Config } from 'payload'
+import { enTranslations } from '@payloadcms/translations/languages/en'
 import type { NestedKeysStripped } from '@payloadcms/translations'
 
-export const customTranslations: Config['i18n']['translations'] = {
+export const customTranslations = {
   en: {
     general: {
       myCustomKey: 'My custom english translation',
     },
     fields: {
       addLabel: 'Add!',
-    }
+    },
   },
 }
 
-export type CustomTranslationsObject = typeof customTranslations.en
-export type CustomTranslationsKeys = NestedKeysStripped<CustomTranslationsObject>
+export type CustomTranslationsObject = typeof customTranslations.en &
+  typeof enTranslations
+export type CustomTranslationsKeys =
+  NestedKeysStripped<CustomTranslationsObject>
 ```
 
 Import the shared translations object into our Payload config so they are available for use:
@@ -5483,10 +5280,16 @@ Import the shared translation types to use in your [Custom Component](../custom-
 import type React from 'react'
 import { useTranslation } from '@payloadcms/ui'
 
-import type { CustomTranslationsObject, CustomTranslationsKeys } from '../custom-translations'
+import type {
+  CustomTranslationsObject,
+  CustomTranslationsKeys,
+} from '../custom-translations'
 
 export const MyComponent: React.FC = () => {
-  const { i18n, t } = useTranslation<CustomTranslationsObject, CustomTranslationsKeys>() // These generics merge your custom translations with the default client translations
+  const { i18n, t } = useTranslation<
+    CustomTranslationsObject,
+    CustomTranslationsKeys
+  >() // These generics merge your custom translations with the default client translations
 
   return t('general:myCustomKey')
 }
@@ -5497,7 +5300,10 @@ Additionally, Payload exposes the `t` function in various places, for example in
 ```ts
 // <rootDir>/fields/myField.ts
 
-import type { DefaultTranslationKeys, TFunction } from '@payloadcms/translations'
+import type {
+  DefaultTranslationKeys,
+  TFunction,
+} from '@payloadcms/translations'
 import type { Field } from 'payload'
 
 import { CustomTranslationsKeys } from '../custom-translations'
@@ -5505,14 +5311,15 @@ import { CustomTranslationsKeys } from '../custom-translations'
 const field: Field = {
   name: 'myField',
   type: 'text',
-  label: (
-    { t }: { t: TFunction<CustomTranslationsKeys | DefaultTranslationKeys> }, // The generic passed to TFunction does not automatically merge the custom translations with the default translations. We need to merge them ourselves here
-  ) => t('fields:addLabel'),
+  label: ({ t: defaultT }) => {
+    const t = defaultT as TFunction<CustomTranslationsKeys>
+    return t('fields:addLabel')
+  },
 }
 ```
 ````
 
-## File: configuration/localization.mdx
+## File: configuration_localization.mdx
 ````
 ---
 title: Localization
@@ -5533,7 +5340,8 @@ import { buildConfig } from 'payload'
 
 export default buildConfig({
   // ...
-  localization: { // highlight-line
+  localization: {
+    // highlight-line
     // ...
   },
 })
@@ -5587,18 +5395,18 @@ export default buildConfig({
 ```
 
 <Banner type="success">
-  **Tip:**
-  Localization works very well alongside [I18n](/docs/configuration/i18n).
+  **Tip:** Localization works very well alongside
+  [I18n](/docs/configuration/i18n).
 </Banner>
 
 The following options are available:
 
 | Option                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                       |
-|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`locales`**                | Array of all the languages that you would like to support. [More details](#locales)                                                                                                                                                                                                                                                                                                                                               |
 | **`defaultLocale`**          | Required string that matches one of the locale codes from the array provided. By default, if no locale is specified, documents will be returned in this locale.                                                                                                                                                                                                                                                                   |
 | **`fallback`**               | Boolean enabling "fallback" locale functionality. If a document is requested in a locale, but a field does not have a localized value corresponding to the requested locale, then if this property is enabled, the document will automatically fall back to the fallback locale value. If this property is not enabled, the value will not be populated unless a fallback is explicitly provided in the request. True by default. |
-| **`filterAvailableLocales`** | A function that is called with the array of `locales` and the `req`,  it should return locales to show in admin UI selector. [See more](#filter-available-options).                                                                                                                                                                                                                                                                         |
+| **`filterAvailableLocales`** | A function that is called with the array of `locales` and the `req`, it should return locales to show in admin UI selector. [See more](#filter-available-options).                                                                                                                                                                                                                                                                |
 
 ### Locales
 
@@ -5610,18 +5418,19 @@ The locale codes do not need to be in any specific format. It's up to you to def
 
 | Option               | Description                                                                                                                    |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| **`code`** *        | Unique code to identify the language throughout the APIs for `locale` and `fallbackLocale`                                     |
+| **`code`** \*        | Unique code to identify the language throughout the APIs for `locale` and `fallbackLocale`                                     |
 | **`label`**          | A string to use for the selector when choosing a language, or an object keyed on the i18n keys for different languages in use. |
 | **`rtl`**            | A boolean that when true will make the admin UI display in Right-To-Left.                                                      |
 | **`fallbackLocale`** | The code for this language to fallback to when properties of a document are not present.                                       |
 
-_* An asterisk denotes that a property is required._
+_\* An asterisk denotes that a property is required._
 
 #### Filter Available Options
+
 In some projects you may want to filter the available locales shown in the admin UI selector. You can do this by providing a `filterAvailableLocales` function in your Payload Config. This is called on the server side and is passed the array of locales. This means that you can determine what locales are visible in the localizer selection menu at the top of the admin panel. You could do this per user, or implement a function that scopes these to tenants and more. Here is an example using request headers in a multi-tenant application:
 
 ```ts
-// ... rest of payload config
+// ... rest of Payload config
 localization: {
   defaultLocale: 'en',
   locales: ['en', 'es'],
@@ -5645,7 +5454,6 @@ localization: {
 
 Since the filtering happens at the root level of the application and its result is not calculated every time you navigate to a new page, you may want to call `router.refresh` in a custom component that watches when values that affect the result change. In the example above, you would want to do this when `supportedLocales` changes on the tenant document.
 
-
 ## Field Localization
 
 Payload Localization works on a **field** level—not a document level. In addition to configuring the base Payload Config to support Localization, you need to specify each field that you would like to localize.
@@ -5667,18 +5475,18 @@ With the above configuration, the `title` field will now be saved in the databas
 All field types with a `name` property support the `localized` property—even the more complex field types like `array`s and `block`s.
 
 <Banner type="info">
-  **Note:**
-  Enabling Localization for field types that support nested fields will automatically create
-  localized "sets" of all fields contained within the field. For example, if you have a page layout
-  using a blocks field type, you have the choice of either localizing the full layout, by enabling
-  Localization on the top-level blocks field, or only certain fields within the layout.
+  **Note:** Enabling Localization for field types that support nested fields
+  will automatically create localized "sets" of all fields contained within the
+  field. For example, if you have a page layout using a blocks field type, you
+  have the choice of either localizing the full layout, by enabling Localization
+  on the top-level blocks field, or only certain fields within the layout.
 </Banner>
 
 <Banner type="warning">
-  **Important:**
-  When converting an existing field to or from `localized: true` the data structure in the document
-  will change for this field and so existing data for this field will be lost. Before changing the
-  Localization setting on fields with existing data, you may need to consider a field migration
+  **Important:** When converting an existing field to or from `localized: true`
+  the data structure in the document will change for this field and so existing
+  data for this field will be lost. Before changing the Localization setting on
+  fields with existing data, you may need to consider a field migration
   strategy.
 </Banner>
 
@@ -5729,9 +5537,10 @@ query {
 ```
 
 <Banner>
-  In GraphQL, specifying the locale at the top level of a query will automatically apply it
-  throughout all nested relationship fields. You can override this behavior by re-specifying locale
-  arguments in nested related document queries.
+  In GraphQL, specifying the locale at the top level of a query will
+  automatically apply it throughout all nested relationship fields. You can
+  override this behavior by re-specifying locale arguments in nested related
+  document queries.
 </Banner>
 
 #### Local API
@@ -5751,14 +5560,14 @@ const posts = await payload.find({
 ```
 
 <Banner type="success">
-  **Tip:**
-  The REST and Local APIs can return all Localization data in one request by passing 'all' or '*' as
-  the **locale** parameter. The response will be structured so that field values come
-  back as the full objects keyed for each locale instead of the single, translated value.
+  **Tip:** The REST and Local APIs can return all Localization data in one
+  request by passing 'all' or '*' as the **locale** parameter. The response will
+  be structured so that field values come back as the full objects keyed for
+  each locale instead of the single, translated value.
 </Banner>
 ````
 
-## File: configuration/overview.mdx
+## File: configuration_overview.mdx
 ````
 ---
 title: The Payload Config
@@ -5785,8 +5594,8 @@ export default buildConfig({
 The Payload Config is strongly typed and ties directly into Payload's TypeScript codebase. This means your IDE (such as VSCode) will provide helpful information like type-ahead suggestions while you write your config.
 
 <Banner type="success">
-  **Tip:**
-  The location of your Payload Config can be customized. [More details](#customizing-the-config-location).
+  **Tip:** The location of your Payload Config can be customized. [More
+  details](#customizing-the-config-location).
 </Banner>
 
 ## Config Options
@@ -5810,17 +5619,19 @@ export default buildConfig({
       fields: [
         {
           name: 'title',
-          type: 'text'
-        }
-      ]
-    }
+          type: 'text',
+        },
+      ],
+    },
   ],
 })
 ```
 
 <Banner type="success">
-  **Note:**
-  For more complex examples, see the [Templates](https://github.com/payloadcms/payload/tree/main/templates) and [Examples](https://github.com/payloadcms/payload/tree/main/examples) directories in the Payload repository.
+  **Note:** For more complex examples, see the
+  [Templates](https://github.com/payloadcms/payload/tree/main/templates) and
+  [Examples](https://github.com/payloadcms/payload/tree/main/examples)
+  directories in the Payload repository.
 </Banner>
 
 The following options are available:
@@ -5830,7 +5641,7 @@ The following options are available:
 | **`admin`**                | The configuration options for the Admin Panel, including Custom Components, Live Preview, etc. [More details](../admin/overview#admin-options).                                                |
 | **`bin`**                  | Register custom bin scripts for Payload to execute. [More Details](#custom-bin-scripts).                                                                                                       |
 | **`editor`**               | The Rich Text Editor which will be used by `richText` fields. [More details](../rich-text/overview).                                                                                           |
-| **`db`** *                 | The Database Adapter which will be used by Payload. [More details](../database/overview).                                                                                                      |
+| **`db`** \*                | The Database Adapter which will be used by Payload. [More details](../database/overview).                                                                                                      |
 | **`serverURL`**            | A string used to define the absolute URL of your app. This includes the protocol, for example `https://example.com`. No paths allowed, only protocol, domain and (optionally) port.            |
 | **`collections`**          | An array of Collections for Payload to manage. [More details](./collections).                                                                                                                  |
 | **`compatibility`**        | Compatibility flags for earlier versions of Payload. [More details](#compatibility-flags).                                                                                                     |
@@ -5857,15 +5668,15 @@ The following options are available:
 | **`endpoints`**            | An array of Custom Endpoints added to the Payload router. [More details](../rest-api/overview#custom-endpoints).                                                                               |
 | **`custom`**               | Extension point for adding custom data (e.g. for plugins).                                                                                                                                     |
 | **`i18n`**                 | Internationalization configuration. Pass all i18n languages you'd like the admin UI to support. Defaults to English-only. [More details](./i18n).                                              |
-| **`secret`** *             | A secure, unguessable string that Payload will use for any encryption workflows - for example, password salt / hashing.                                                                        |
+| **`secret`** \*            | A secure, unguessable string that Payload will use for any encryption workflows - for example, password salt / hashing.                                                                        |
 | **`sharp`**                | If you would like Payload to offer cropping, focal point selection, and automatic media resizing, install and pass the Sharp module to the config here.                                        |
 | **`typescript`**           | Configure TypeScript settings here. [More details](#typescript).                                                                                                                               |
 
-_* An asterisk denotes that a property is required._
+_\* An asterisk denotes that a property is required._
 
 <Banner type="warning">
-  **Note:**
-  Some properties are removed from the client-side bundle. [More details](../custom-components/overview#accessing-the-payload-config).
+  **Note:** Some properties are removed from the client-side bundle. [More
+  details](../custom-components/overview#accessing-the-payload-config).
 </Banner>
 
 ### Typescript Config
@@ -5879,33 +5690,36 @@ import { buildConfig } from 'payload'
 
 export default buildConfig({
   // ...
-  typescript: { // highlight-line
+  typescript: {
+    // highlight-line
     // ...
-  }
+  },
 })
 ```
 
 The following options are available:
 
-| Option          | Description                                                                                                                                                                                                 |
-| --------------- | --------------------- |
+| Option             | Description                                                                                                                                                                                                         |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`autoGenerate`** | By default, Payload will auto-generate TypeScript interfaces for all collections and globals that your config defines. Opt out by setting `typescript.autoGenerate: false`. [More details](../typescript/overview). |
-| **`declare`**     | By default, Payload adds a `declare` block to your generated types, which makes sure that Payload uses your generated types for all Local API methods. Opt out by setting `typescript.declare: false`. |
-| **`outputFile`**  | Control the output path and filename of Payload's auto-generated types by defining the `typescript.outputFile` property to a full, absolute path. |
+| **`declare`**      | By default, Payload adds a `declare` block to your generated types, which makes sure that Payload uses your generated types for all Local API methods. Opt out by setting `typescript.declare: false`.              |
+| **`outputFile`**   | Control the output path and filename of Payload's auto-generated types by defining the `typescript.outputFile` property to a full, absolute path.                                                                   |
 
 ## Config Location
 
 For Payload command-line scripts, we need to be able to locate your Payload Config. We'll check a variety of locations for the presence of `payload.config.ts` by default, including:
 
 1. The root current working directory
-1. The `compilerOptions` in your `tsconfig`*
-1. The `dist` directory*
+1. The `compilerOptions` in your `tsconfig`\*
+1. The `dist` directory\*
 
-_* Config location detection is different between development and production environments. See below for more details._
+_\* Config location detection is different between development and production environments. See below for more details._
 
 <Banner type="warning">
-  **Important:**
-  Ensure your `tsconfig.json` is properly configured for Payload to auto-detect your config location. If if does not exist, or does not specify the proper `compilerOptions`, Payload will default to the current working directory.
+  **Important:** Ensure your `tsconfig.json` is properly configured for Payload
+  to auto-detect your config location. If if does not exist, or does not specify
+  the proper `compilerOptions`, Payload will default to the current working
+  directory.
 </Banner>
 
 **Development Mode**
@@ -5956,8 +5770,8 @@ To use a custom config location, set the `PAYLOAD_CONFIG_PATH` environment varia
 ```
 
 <Banner type="info">
-  **Tip:**
-  `PAYLOAD_CONFIG_PATH` can be either an absolute path, or path relative to your current working directory.
+  **Tip:** `PAYLOAD_CONFIG_PATH` can be either an absolute path, or path
+  relative to your current working directory.
 </Banner>
 
 ## Telemetry
@@ -5970,10 +5784,10 @@ For more information about what we track, take a look at our [privacy policy](/p
 
 Cross-origin resource sharing (CORS) can be configured with either a whitelist array of URLS to allow CORS requests from, a wildcard string (`*`) to accept incoming requests from any domain, or a object with the following properties:
 
-| Option    | Description                                                                                                                                                                        |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Option        | Description                                                                                                                             |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | **`origins`** | Either a whitelist array of URLS to allow CORS requests from, or a wildcard string (`'*'`) to accept incoming requests from any domain. |
-| **`headers`**  | A list of allowed headers that will be appended in `Access-Control-Allow-Headers`. |
+| **`headers`** | A list of allowed headers that will be appended in `Access-Control-Allow-Headers`.                                                      |
 
 Here's an example showing how to allow incoming requests from any domain:
 
@@ -5982,7 +5796,7 @@ import { buildConfig } from 'payload'
 
 export default buildConfig({
   // ...
-  cors: '*' // highlight-line
+  cors: '*', // highlight-line
 })
 ```
 
@@ -6028,12 +5842,10 @@ Payload localization works on a field-by-field basis. As you can nest fields wit
 
 By default, Payload will remove the `localized: true` property from sub-fields if a parent field is localized. Set this compatibility flag to `true` only if you have an existing Payload MongoDB database from pre-3.0, and you have nested localized fields that you would like to maintain without migrating.
 
-
 ## Custom bin scripts
 
 Using the `bin` configuration property, you can inject your own scripts to `npx payload`.
 Example for `pnpm payload seed`:
-
 
 Step 1: create `seed.ts` file in the same folder with `payload.config.ts` with:
 
@@ -6045,13 +5857,17 @@ import payload from 'payload'
 // Script must define a "script" function export that accepts the sanitized config
 export const script = async (config: SanitizedConfig) => {
   await payload.init({ config })
-  await payload.create({ collection: 'pages', data: { title: 'my title' } })
+  await payload.create({
+    collection: 'pages',
+    data: { title: 'my title' },
+  })
   payload.logger.info('Succesffully seeded!')
   process.exit(0)
 }
 ```
 
 Step 2: add the `seed` script to `bin`:
+
 ```ts
 export default buildConfig({
   bin: [
@@ -6064,1481 +5880,13 @@ export default buildConfig({
 ```
 
 Now you can run the command using:
+
 ```sh
 pnpm payload seed
 ```
 ````
 
-## File: custom-components/custom-providers.mdx
-````
----
-title: Swap in your own React Context providers
-label: Custom Providers
-order: 30
-desc:
-keywords: admin, components, custom, documentation, Content Management System, cms, headless, javascript, node, react, nextjs
----
-
-As you add more and more [Custom Components](./overview) to your [Admin Panel](../admin/overview), you may find it helpful to add additional [React Context](https://react.dev/learn/scaling-up-with-reducer-and-context)(s) to your app. Payload allows you to inject your own context providers where you can export your own custom hooks, etc.
-
-To add a Custom Provider, use the `admin.components.providers` property in your [Payload Config](../configuration/overview):
-
-```ts
-import { buildConfig } from 'payload'
-
-export default buildConfig({
-  // ...
-  admin: {
-    components: {
-      providers: ['/path/to/MyProvider'], // highlight-line
-    },
-  },
-})
-```
-
-Then build your Custom Provider as follows:
-
-```tsx
-'use client'
-import React, { createContext, useContext } from 'react'
-
-const MyCustomContext = React.createContext(myCustomValue)
-
-export function MyProvider({ children }: { children: React.ReactNode }) {
-  return (
-    <MyCustomContext.Provider value={myCustomValue}>
-      {children}
-    </MyCustomContext.Provider>
-  )
-}
-
-export const useMyCustomContext = () => useContext(MyCustomContext)
-```
-
-_For details on how to build Custom Components, see [Building Custom Components](./overview#building-custom-components)._
-
-<Banner type="warning">
-  **Reminder:** React Context exists only within Client Components. This means they must include the `use client` directive at the top of their files and cannot contain server-only code. To use a Server Component here, simply _wrap_ your Client Component with it.
-</Banner>
-````
-
-## File: custom-components/custom-views.mdx
-````
----
-title: Customizing Views
-label: Customizing Views
-order: 40
-desc:
-keywords:
----
-
-Views are the individual pages that make up the [Admin Panel](../admin/overview), such as the Dashboard, [List View](./list-view), and [Edit View](./edit-view). One of the most powerful ways to customize the Admin Panel is to create Custom Views. These are [Custom Components](./overview) that can either replace built-in views or be entirely new.
-
-There are four types of views within the Admin Panel:
-
-- [Root Views](#root-views)
-- [Collection Views](#collection-views)
-- [Global Views](#global-views)
-- [Document Views](./document-views)
-
-To swap in your own Custom View, first determine the scope that corresponds to what you are trying to accomplish, consult the list of available components, then [author your React component(s)](#building-custom-views) accordingly.
-
-## Configuration
-
-### Replacing Views
-
-To customize views, use the `admin.components.views` property in your [Payload Config](../configuration/overview). This is an object with keys for each view you want to customize. Each key corresponds to the view you want to customize.
-
-The exact list of available keys depends on the scope of the view you are customizing, depending on whether it's a [Root View](#root-views), [Collection View](#collection-views), or [Global View](#global-views). Regardless of the scope, the principles are the same.
-
-Here is an example of how to swap out a built-in view:
-
-```ts
-import { buildConfig } from 'payload'
-
-const config = buildConfig({
-  // ...
-  admin: {
-    components: {
-      views: {
-        // highlight-start
-        dashboard: {
-          Component: '/path/to/MyCustomDashboard',
-        }
-        // highlight-end
-      }
-    }
-  }
-})
-```
-
-For more granular control, pass a configuration object instead. Payload exposes the following properties for each view:
-
-| Property           | Description                                                                                                                                                                                |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `Component` * | Pass in the component path that should be rendered when a user navigates to this route.                                                                                                         |
-| `path` *      | Any valid URL path or array of paths that [`path-to-regexp`](https://www.npmjs.com/package/path-to-regex) understands.                                                                     |
-| `exact`        | Boolean. When true, will only match if the path matches the `usePathname()` exactly.                                                                                                     |
-| `strict`       | When true, a path that has a trailing slash will only match a `location.pathname` with a trailing slash. This has no effect when there are additional URL segments in the pathname. |
-| `sensitive`    | When true, will match if the path is case sensitive.|
-| `meta`         | Page metadata overrides to apply to this view within the Admin Panel. [More details](./metadata).                                                                           |
-
-_* An asterisk denotes that a property is required._
-
-### Adding New Views
-
-To add a _new_ view to the [Admin Panel](../admin/overview), simply add your own key to the `views` object. This is true for all view scopes.
-
-New views require at least the `Component` and `path` properties:
-
-```ts
-import { buildConfig } from 'payload'
-
-const config = buildConfig({
-  // ...
-  admin: {
-    components: {
-      views: {
-        // highlight-start
-        myCustomView: {
-          Component: '/path/to/MyCustomView#MyCustomViewComponent',
-          path: '/my-custom-view',
-        },
-        // highlight-end
-      },
-    },
-  },
-})
-```
-
-<Banner type="warning">
-  **Note:**
-  Routes are cascading, so unless explicitly given the `exact` property, they will
-  match on URLs that simply _start_ with the route's path. This is helpful when creating catch-all
-  routes in your application. Alternatively, define your nested route _before_ your parent
-  route.
-</Banner>
-
-
-## Building Custom Views
-
-Custom Views are simply [Custom Components](./overview) rendered at the page-level. Custom Views can either [replace existing views](#replacing-views) or [add entirely new ones](#adding-new-views). The process is generally the same regardless of the type of view you are customizing.
-
-To understand how to build Custom Views, first review the [Building Custom Components](./overview#building-custom-components) guide. Once you have a Custom Component ready, you can use it as a Custom View.
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const MyCollectionConfig: CollectionConfig = {
-  // ...
-  admin: {
-    components: {
-      views: {
-        // highlight-start
-        edit: {
-          Component: '/path/to/MyCustomView' // highlight-line
-        }
-        // highlight-end
-      },
-    },
-  },
-}
-```
-
-### Default Props
-
-Your Custom Views will be provided with the following props:
-
-| Prop                      | Description                                                                                                                        |
-| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| `initPageResult`      | An object containing `req`, `payload`, `permissions`, etc.                                                                         |
-| `clientConfig`        | The Client Config object. [More details](./overview#accessing-the-payload-config).                                        |
-| `importMap`           | The import map object.                                                                                                             |
-| `params`              | An object containing the [Dynamic Route Parameters](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes). |
-| `searchParams`        | An object containing the [Search Parameters](https://developer.mozilla.org/docs/Learn/Common_questions/What_is_a_URL#parameters).  |
-| `doc`                 | The document being edited. Only available in Document Views. [More details](./document-views).                                      |
-| `i18n`           |    The [i18n](../configuration/i18n) object.                                        |
-| `payload`        |    The [Payload](../local-api/overview) class.                                      |
-
-<Banner type="warning">
-  **Note:**
-  Some views may receive additional props, such as [Collection Views](#collection-views) and [Global Views](#global-views). See the relevant section for more details.
-</Banner>
-
-Here is an example of a Custom View component:
-
-```tsx
-import type { AdminViewServerProps } from 'payload'
-
-import { Gutter } from '@payloadcms/ui'
-import React from 'react'
-
-export function MyCustomView(props: AdminViewServerProps) {
-  return (
-    <Gutter>
-      <h1>Custom Default Root View</h1>
-      <p>This view uses the Default Template.</p>
-    </Gutter>
-  )
-}
-```
-
-<Banner type="success">
-  **Tip:**
-  For consistent layout and navigation, you may want to wrap your Custom View with one of the built-in [Template](./overview#templates).
-</Banner>
-
-### View Templates
-
-Your Custom Root Views can optionally use one of the templates that Payload provides. The most common of these is the Default Template which provides the basic layout and navigation.
-
-Here is an example of how to use the Default Template in your Custom View:
-
-```tsx
-import type { AdminViewServerProps } from 'payload'
-
-import { DefaultTemplate } from '@payloadcms/next/templates'
-import { Gutter } from '@payloadcms/ui'
-import React from 'react'
-
-export function MyCustomView({
-  initPageResult,
-  params,
-  searchParams,
-}: AdminViewServerProps) {
-  return (
-    <DefaultTemplate
-      i18n={initPageResult.req.i18n}
-      locale={initPageResult.locale}
-      params={params}
-      payload={initPageResult.req.payload}
-      permissions={initPageResult.permissions}
-      searchParams={searchParams}
-      user={initPageResult.req.user || undefined}
-      visibleEntities={initPageResult.visibleEntities}
-    >
-      <Gutter>
-        <h1>Custom Default Root View</h1>
-        <p>This view uses the Default Template.</p>
-      </Gutter>
-    </DefaultTemplate>
-  )
-}
-```
-
-### Securing Custom Views
-
-All Custom Views are public by default. It's up to you to secure your custom views. If your view requires a user to be logged in or to have certain access rights, you should handle that within your view component yourself.
-
-Here is how you might secure a Custom View:
-
-```tsx
-import type { AdminViewServerProps } from 'payload'
-
-import { Gutter } from '@payloadcms/ui'
-import React from 'react'
-
-export function MyCustomView({
-  initPageResult
-}: AdminViewServerProps) {
-  const {
-    req: {
-      user
-    }
-  } = initPageResult
-
-  if (!user) {
-    return <p>You must be logged in to view this page.</p>
-  }
-
-  return (
-    <Gutter>
-      <h1>Custom Default Root View</h1>
-      <p>This view uses the Default Template.</p>
-    </Gutter>
-  )
-}
-```
-
-## Root Views
-
-Root Views are the main views of the [Admin Panel](../admin/overview). These are views that are scoped directly under the `/admin` route, such as the Dashboard or Account views.
-
-To [swap out](#replacing-views) Root Views with your own, or to [create entirely new ones](#adding-new-views), use the `admin.components.views` property at the root of your [Payload Config](../configuration/overview):
-
-```ts
-import { buildConfig } from 'payload'
-
-const config = buildConfig({
-  // ...
-  admin: {
-    components: {
-      views: {
-        // highlight-start
-        dashboard: {
-          Component: '/path/to/Dashboard',
-        }
-        // highlight-end
-        // Other options include:
-        // - account
-        // - [key: string]
-        // See below for more details
-      },
-    },
-  },
-})
-```
-
-_For details on how to build Custom Views, including all available props, see [Building Custom Views](#building-custom-views)._
-
-The following options are available:
-
-| Property        | Description                                                                   |
-| --------------- | ----------------------------------------------------------------------------- |
-| `account`   | The Account view is used to show the currently logged in user's Account page. |
-| `dashboard` | The main landing page of the Admin Panel.                                     |
-| `[key]` | Any other key can be used to add a completely new Root View. [More details](#adding-new-views).                             |
-
-## Collection Views
-
-Collection Views are views that are scoped under the `/collections` route, such as the Collection List and Document Edit views.
-
-To [swap out](#replacing-views) Collection Views with your own, or to [create entirely new ones](#adding-new-views), use the `admin.components.views` property of your [Collection Config](../configuration/collections):
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const MyCollectionConfig: CollectionConfig = {
-  // ...
-  admin: {
-    components: {
-      views: {
-        // highlight-start
-        edit: {
-          default: {
-            Component: '/path/to/MyCustomCollectionView',
-          }
-        }
-        // highlight-end
-        // Other options include:
-        // - list
-        // - [key: string]
-        // See below for more details
-      },
-    },
-  },
-}
-```
-
-<Banner type="success">
-  **Reminder:**
-  The `edit` key is comprised of various nested views, known as Document Views, that relate to the same Collection Document. [More details](./document-views).
-</Banner>
-
-The following options are available:
-
-| Property   | Description                                                                                                                                                    |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `edit` | The Edit View corresponds to a single Document for any given Collection and consists of various nested views. [More details](./document-views). |
-| `list` | The List View is used to show a list of Documents for any given Collection. [More details](#list-view).                                                            |
-| `[key]` | Any other key can be used to add a completely new Collection View. [More details](#adding-new-views).                             |
-
-_For details on how to build Custom Views, including all available props, see [Building Custom Views](#building-custom-views)._
-
-## Global Views
-
-Global Views are views that are scoped under the `/globals` route, such as the Edit View.
-
-To [swap out](#replacing-views) Global Views with your own or [create entirely new ones](#adding-new-views), use the `admin.components.views` property in your [Global Config](../configuration/globals):
-
-```ts
-import type { SanitizedGlobalConfig } from 'payload'
-
-export const MyGlobalConfig: SanitizedGlobalConfig = {
-  // ...
-  admin: {
-    components: {
-      views: {
-        // highlight-start
-        edit: {
-          default: {
-            Component: '/path/to/MyCustomGlobalView',
-          }
-        }
-        // highlight-end
-        // Other options include:
-        // - [key: string]
-        // See below for more details
-      },
-    },
-  },
-}
-```
-
-<Banner type="success">
-  **Reminder:**
-  The `edit` key is comprised of various nested views, known as Document Views, that relate to the same Global Document. [More details](./document-views).
-</Banner>
-
-The following options are available:
-
-| Property   | Description                                                                                                                                     |
-| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| `edit` | The Edit View represents a single Document for any given Global and consists of various nested views. [More details](./document-views). |
-| `[key]` | Any other key can be used to add a completely new Global View. [More details](#adding-new-views).                             |
-
-_For details on how to build Custom Views, including all available props, see [Building Custom Views](#building-custom-views)._
-````
-
-## File: custom-components/document-views.mdx
-````
----
-title: Document Views
-label: Document Views
-order: 50
-desc:
-keywords:
----
-
-Document Views consist of multiple, individual views that together represent any single [Collection](../configuration/collections) or [Global](../configuration/globals) Document. All Document Views and are scoped under the `/collections/:collectionSlug/:id` or the `/globals/:globalSlug` route, respectively.
-
-There are a number of default Document Views, such as the [Edit View](./edit-view) and API View, but you can also create [entirely new views](./custom-views#adding-new-views) as needed. All Document Views share a layout and can be given their own tab-based navigation, if desired.
-
-To customize Document Views, use the `admin.components.views.edit[key]` property in your [Collection Config](../configuration/collections) or [Global Config](../configuration/globals):
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const MyCollectionOrGlobalConfig: CollectionConfig = {
-  // ...
-  admin: {
-    components: {
-      views: {
-        // highlight-start
-        edit: {
-          default: {
-            Component: '/path/to/MyCustomEditView',
-          },
-          // Other options include:
-          // - root
-          // - api
-          // - versions
-          // - version
-          // - livePreview
-          // - [key: string]
-          // See below for more details
-        },
-        // highlight-end
-      },
-    },
-  },
-}
-```
-
-## Config Options
-
-The following options are available:
-
-| Property          | Description                                                                                                                                                     |
-| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `root`        | The Root View overrides all other nested views and routes. No document controls or tabs are rendered when this key is set. [More details](#document-root). |
-| `default`     | The Default View is the primary view in which your document is edited. It is rendered within the "Edit" tab. [More details](./edit-view).                                                    |
-| `versions`    | The Versions View is used to navigate the version history of a single document. It is rendered within the "Versions" tab. [More details](../versions/overview). |
-| `version`     | The Version View is used to edit a single version of a document. It is rendered within the "Version" tab. [More details](../versions/overview).                 |
-| `api`         | The API View is used to display the REST API JSON response for a given document. It is rendered within the "API" tab.                                           |
-| `livePreview` | The LivePreview view is used to display the Live Preview interface. It is rendered within the "Live Preview" tab. [More details](../live-preview/overview).     |
-| `[key]`       | Any other key can be used to add a completely new Document View.                                                                |
-
-_For details on how to build Custom Views, including all available props, see [Building Custom Views](./custom-views#building-custom-views)._
-
-### Document Root
-
-The Document Root is mounted on the top-level route for a Document. Setting this property will completely take over the entire Document View layout, including the title, [Document Tabs](#ocument-tabs), _and all other nested Document Views_ including the [Edit View](./edit-view), API View, etc.
-
-When setting a Document Root, you are responsible for rendering all necessary components and controls, as no document controls or tabs would be rendered. To replace only the Edit View precisely, use the `edit.default` key instead.
-
-To override the Document Root, use the `views.edit.root` property in your [Collection Config](../configuration/collections) or [Global Config](../configuration/globals):
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const MyCollection: CollectionConfig = {
-  slug: 'my-collection',
-  admin: {
-    components: {
-      views: {
-        edit: {
-          // highlight-start
-          root: {
-            Component: '/path/to/MyCustomRootComponent', // highlight-line
-          },
-          // highlight-end
-        },
-      },
-    },
-  },
-}
-```
-
-### Edit View
-
-The Edit View is where users interact with individual Collection and Global Documents. This is where they can view, edit, and save their content. the Edit View is keyed under the `default` property in the `views.edit` object.
-
-For more information on customizing the Edit View, see the [Edit View](./edit-view) documentation.
-
-## Document Tabs
-
-Each Document View can be given a tab for navigation, if desired. Tabs are highly configurable, from as simple as changing the label to swapping out the entire component, they can be modified in any way.
-
-To add or customize tabs in the Document View, use the `views.edit.[key].tab` property in your [Collection Config](../configuration/collections) or [Global Config](../configuration/globals):
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const MyCollection: CollectionConfig = {
-  slug: 'my-collection',
-  admin: {
-    components: {
-      views: {
-        edit: {
-          myCustomTab: {
-            Component: '/path/to/MyCustomTab',
-            path: '/my-custom-tab',
-            // highlight-start
-            tab: {
-              Component: '/path/to/MyCustomTabComponent'
-            }
-            // highlight-end
-          },
-          anotherCustomTab: {
-            Component: '/path/to/AnotherCustomView',
-            path: '/another-custom-view',
-            // highlight-start
-            tab: {
-              label: 'Another Custom View',
-              href: '/another-custom-view',
-            }
-            // highlight-end
-          },
-        },
-      },
-    },
-  },
-}
-```
-
-<Banner type="warning">
- **Note:**
- This applies to _both_ Collections _and_ Globals.
-</Banner>
-
-The following options are available for tabs:
-
-| Property    | Description                                                                                           |
-| ----------- | ----------------------------------------------------------------------------------------------------- |
-| `label`     | The label to display in the tab.                                                                      |
-| `href`      | The URL to navigate to when the tab is clicked. This is optional and defaults to the tab's `path`.    |
-| `Component` | The component to render in the tab. This can be a Server or Client component. [More details](#tab-components) |
-
-### Tab Components
-
-If changing the label or href is not enough, you can also replace the entire tab component with your own custom component. This can be done by setting the `tab.Component` property to the path of your custom component.
-
-Here is an example of how to scaffold a custom Document Tab:
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import type { DocumentTabServerProps } from 'payload'
-import { Link } from '@payloadcms/ui'
-
-export function MyCustomTabComponent(props: DocumentTabServerProps) {
-  return (
-    <Link href="/my-custom-tab">
-      This is a custom Document Tab (Server)
-    </Link>
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import type { DocumentTabClientProps } from 'payload'
-import { Link } from '@payloadcms/ui'
-
-export function MyCustomTabComponent(props: DocumentTabClientProps) {
-  return (
-    <Link href="/my-custom-tab">
-      This is a custom Document Tab (Client)
-    </Link>
-  )
-}
-```
-````
-
-## File: custom-components/edit-view.mdx
-````
----
-title: Edit View
-label: Edit View
-order: 60
-desc:
-keywords: admin, components, custom, documentation, Content Management System, cms, headless, javascript, node, react, nextjs
----
-
-The Edit View is where users interact with individual [Collection](../collections/overview) and [Global](../globals/overview) Documents within the [Admin Panel](../admin/overview). The Edit View contains the actual form in which submits the data to the server. This is where they can view, edit, and save their content. It contains controls for saving, publishing, and previewing the document, all of which can be customized to a high degree.
-
-The Edit View can be swapped out in its entirety for a Custom View, or it can be injected with a number of Custom Components to add additional functionality or presentational elements without replacing the entire view.
-
-<Banner type="warning">
-  **Note:**
-  The Edit View is one of many [Document Views](./document-views) in the Payload Admin Panel. Each Document View is responsible for a different aspect of the interacting with a single Document.
-</Banner>
-
-## Custom Edit View
-
-To swap out the entire Edit View with a [Custom View](./custom-views), use the `views.edit.default` property in your [Collection Config](../configuration/collections) or [Global Config](../configuration/globals):
-
-```tsx
-import { buildConfig } from 'payload'
-
-const config = buildConfig({
-  // ...
-  admin: {
-    components: {
-      views: {
-        edit: {
-          // highlight-start
-          default: {
-            Component: '/path/to/MyCustomEditViewComponent',
-          },
-          // highlight-end
-        }
-      },
-    },
-  },
-})
-```
-
-Here is an example of a custom Edit View:
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import type { DocumentViewServerProps } from 'payload'
-
-export function MyCustomServerEditView(props: DocumentViewServerProps) {
-  return (
-    <div>
-      This is a custom Edit View (Server)
-    </div>
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import type { DocumentViewClientProps } from 'payload'
-
-export function MyCustomClientEditView(props: DocumentViewClientProps) {
-  return (
-    <div>
-      This is a custom Edit View (Client)
-    </div>
-  )
-}
-```
-
-_For details on how to build Custom Views, including all available props, see [Building Custom Views](./custom-views#building-custom-views)._
-
-## Custom Components
-
-In addition to swapping out the entire Edit View with a [Custom View](./custom-views), you can also override individual components. This allows you to customize specific parts of the Edit View without swapping out the entire view.
-
-<Banner type="warning">
-  **Important:**
-  Collection and Globals are keyed to a different property in the `admin.components` object have slightly different options. Be sure to use the correct key for the entity you are working with.
-</Banner>
-
-#### Collections
-
-To override Edit View components for a Collection, use the `admin.components.edit` property in your [Collection Config](../configuration/collections):
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const MyCollection: CollectionConfig = {
-  // ...
-  admin: {
-    components: {
-      // highlight-start
-      edit: {
-        // ...
-      },
-      // highlight-end
-    },
-  },
-}
-```
-
-The following options are available:
-
-| Path                  | Description                                                                                                                                                                                                         |
-|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `SaveButton`         | A button that saves the current document. [More details](#SaveButton).                                                                                                                                  |
-| `SaveDraftButton`    | A button that saves the current document as a draft. [More details](#SaveDraftButton).                                                                                                                                  |
-| `PublishButton`      | A button that publishes the current document. [More details](#PublishButton).                                                                                                                                  |
-| `PreviewButton`      | A button that previews the current document. [More details](#PreviewButton).                                                                                                                                  |
-| `Description`        | A description of the Collection. [More details](#Description).                                                                                                                                  |
-| `Upload`             | A file upload component. [More details](#Upload).                                                                                                                                  |
-
-#### Globals
-
-To override Edit View components for Globals, use the `admin.components.elements` property in your [Global Config](../configuration/globals):
-
-```ts
-import type { GlobalConfig } from 'payload'
-
-export const MyGlobal: GlobalConfig = {
-  // ...
-  admin: {
-    components: {
-      // highlight-start
-      elements: {
-        // ...
-      },
-      // highlight-end
-    },
-  },
-}
-```
-
-The following options are available:
-
-| Path                  | Description                                                                                                                                                                                                         |
-|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `SaveButton`         | A button that saves the current document. [More details](#SaveButton).                                                                                                                                  |
-| `SaveDraftButton`    | A button that saves the current document as a draft. [More details](#SaveDraftButton).                                                                                                                                  |
-| `PublishButton`      | A button that publishes the current document. [More details](#PublishButton).                                                                                                                                  |
-| `PreviewButton`      | A button that previews the current document. [More details](#PreviewButton).                                                                                                                                  |
-| `Description`        | A description of the Global. [More details](#Description).                                                                                                                                  |
-
-### SaveButton
-
-The `SaveButton` property allows you to render a custom Save Button in the Edit View.
-
-To add a `SaveButton` component, use the `components.edit.SaveButton` property in your [Collection Config](../configuration/collections) or `components.elements.SaveButton` in your [Global Config](../configuration/globals):
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const MyCollection: CollectionConfig = {
-  // ...
-  admin: {
-    components: {
-      edit: {
-        // highlight-start
-        SaveButton: '/path/to/MySaveButton',
-        // highlight-end
-      }
-    },
-  },
-}
-```
-
-Here's an example of a custom `SaveButton` component:
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import { SaveButton } from '@payloadcms/ui'
-import type { SaveButtonServerProps } from 'payload'
-
-export function MySaveButton(props: SaveButtonServerProps) {
-  return (
-    <SaveButton label="Save" />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { SaveButton } from '@payloadcms/ui'
-import type { SaveButtonClientProps } from 'payload'
-
-export function MySaveButton(props: SaveButtonClientProps) {
-  return (
-    <SaveButton label="Save" />
-  )
-}
-```
-
-### SaveDraftButton
-
-The `SaveDraftButton` property allows you to render a custom Save Draft Button in the Edit View.
-
-To add a `SaveDraftButton` component, use the `components.edit.SaveDraftButton` property in your [Collection Config](../configuration/collections) or `components.elements.SaveDraftButton` in your [Global Config](../configuration/globals):
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const MyCollection: CollectionConfig = {
-  // ...
-  admin: {
-    components: {
-      edit: {
-        // highlight-start
-        SaveDraftButton: '/path/to/MySaveDraftButton',
-        // highlight-end
-      }
-    },
-  },
-}
-```
-
-Here's an example of a custom `SaveDraftButton` component:
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import { SaveDraftButton } from '@payloadcms/ui'
-import type { SaveDraftButtonServerProps } from 'payload'
-
-export function MySaveDraftButton(props: SaveDraftButtonServerProps) {
-  return (
-    <SaveDraftButton />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { SaveDraftButton } from '@payloadcms/ui'
-import type { SaveDraftButtonClientProps } from 'payload'
-
-export function MySaveDraftButton(props: SaveDraftButtonClientProps) {
-  return (
-    <SaveDraftButton />
-  )
-}
-```
-
-### PublishButton
-
-The `PublishButton` property allows you to render a custom Publish Button in the Edit View.
-
-To add a `PublishButton` component, use the `components.edit.PublishButton` property in your [Collection Config](../configuration/collections) or `components.elements.PublishButton` in your [Global Config](../configuration/globals):
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const MyCollection: CollectionConfig = {
-  // ...
-  admin: {
-    components: {
-      edit: {
-        // highlight-start
-        PublishButton: '/path/to/MyPublishButton',
-        // highlight-end
-      }
-    },
-  },
-}
-```
-
-Here's an example of a custom `PublishButton` component:
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import { PublishButton } from '@payloadcms/ui'
-import type { PublishButtonClientProps } from 'payload'
-
-export function MyPublishButton(props: PublishButtonServerProps) {
-  return (
-    <PublishButton label="Publish" />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { PublishButton } from '@payloadcms/ui'
-import type { PublishButtonClientProps } from 'payload'
-
-export function MyPublishButton(props: PublishButtonClientProps) {
-  return (
-    <PublishButton label="Publish" />
-  )
-}
-```
-
-### PreviewButton
-
-The `PreviewButton` property allows you to render a custom Preview Button in the Edit View.
-
-To add a `PreviewButton` component, use the `components.edit.PreviewButton` property in your [Collection Config](../configuration/collections) or `components.elements.PreviewButton` in your [Global Config](../configuration/globals):
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const MyCollection: CollectionConfig = {
-  // ...
-  admin: {
-    components: {
-      edit: {
-        // highlight-start
-        PreviewButton: '/path/to/MyPreviewButton',
-        // highlight-end
-      }
-    },
-  },
-}
-```
-
-Here's an example of a custom `PreviewButton` component:
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import { PreviewButton } from '@payloadcms/ui'
-import type { PreviewButtonServerProps } from 'payload'
-
-export function MyPreviewButton(props: PreviewButtonServerProps) {
-  return (
-    <PreviewButton />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { PreviewButton } from '@payloadcms/ui'
-import type { PreviewButtonClientProps } from 'payload'
-
-export function MyPreviewButton(props: PreviewButtonClientProps) {
-  return (
-    <PreviewButton />
-  )
-}
-```
-
-### Description
-
-The `Description` property allows you to render a custom description of the Collection or Global in the Edit View.
-
-To add a `Description` component, use the `components.edit.Description` property in your [Collection Config](../configuration/collections) or `components.elements.Description` in your [Global Config](../configuration/globals):
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const MyCollection: CollectionConfig = {
-  // ...
-  admin: {
-    components: {
-      // highlight-start
-      Description: '/path/to/MyDescriptionComponent',
-      // highlight-end
-    },
-  },
-}
-```
-
-<Banner type="warning">
-  **Note:**
-  The `Description` component is shared between the Edit View and the [List View](./list-view).
-</Banner>
-
-Here's an example of a custom `Description` component:
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import type { ViewDescriptionServerProps } from 'payload'
-
-export function MyDescriptionComponent(props: ViewDescriptionServerProps) {
-  return (
-    <div>
-      This is a custom description component (Server)
-    </div>
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import type { ViewDescriptionClientProps } from 'payload'
-
-export function MyDescriptionComponent(props: ViewDescriptionClientProps) {
-  return (
-    <div>
-      This is a custom description component (Client)
-    </div>
-  )
-}
-```
-
-### Upload
-
-The `Upload` property allows you to render a custom file upload component in the Edit View.
-
-To add an `Upload` component, use the `components.edit.Upload` property in your [Collection Config](../configuration/collections):
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const MyCollection: CollectionConfig = {
-  // ...
-  admin: {
-    components: {
-      edit: {
-        // highlight-start
-        Upload: '/path/to/MyUploadComponent',
-        // highlight-end
-      }
-    },
-  },
-}
-```
-
-<Banner type="warning">
-  **Note:**
-  The Upload component is only available for Collections.
-</Banner>
-
-Here's an example of a custom `Upload` component:
-
-```tsx
-import React from 'react'
-
-export function MyUploadComponent() {
-  return (
-    <input type="file" />
-  )
-}
-```
-````
-
-## File: custom-components/list-view.mdx
-````
----
-title: List View
-label: List View
-order: 70
-desc:
-keywords: admin, components, custom, documentation, Content Management System, cms, headless, javascript, node, react, nextjs
----
-
-The List View is where users interact with a list of [Collection](../collections/overview) Documents within the [Admin Panel](../admin/overview). This is where they can view, sort, filter, and paginate their documents to find exactly what they're looking for. This is also where users can perform bulk operations on multiple documents at once, such as deleting, editing, or publishing many.
-
-The List View can be swapped out in its entirety for a Custom View, or it can be injected with a number of Custom Components to add additional functionality or presentational elements without replacing the entire view.
-
-<Banner type="info">
-  **Note:**
-  Only [Collections](../collections/overview) have a List View. [Globals](../globals/overview) do not have a List View as they are single documents.
-</Banner>
-
-## Custom List View
-
-To swap out the entire List View with a [Custom View](./custom-views), use the `admin.components.views.list` property in your [Payload Config](../configuration/overview):
-
-```tsx
-import { buildConfig } from 'payload'
-
-const config = buildConfig({
-  // ...
-  admin: {
-    components: {
-      views: {
-        // highlight-start
-        list: '/path/to/MyCustomListView',
-        // highlight-end
-      },
-    },
-  },
-})
-```
-
-Here is an example of a custom List View:
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import type { ListViewServerProps } from 'payload'
-import { DefaultListView } from '@payloadcms/ui'
-
-export function MyCustomServerListView(props: ListViewServerProps) {
-  return (
-    <div>
-      This is a custom List View (Server)
-    </div>
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import type { ListViewClientProps } from 'payload'
-
-export function MyCustomClientListView(props: ListViewClientProps) {
-  return (
-    <div>
-      This is a custom List View (Client)
-    </div>
-  )
-}
-```
-
-_For details on how to build Custom Views, including all available props, see [Building Custom Views](./custom-views#building-custom-views)._
-
-## Custom Components
-
-In addition to swapping out the entire List View with a [Custom View](./custom-views), you can also override individual components. This allows you to customize specific parts of the List View without swapping out the entire view for your own.
-
-To override List View components for a Collection, use the `admin.components` property in your [Collection Config](../configuration/collections):
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const MyCollection: CollectionConfig = {
-  // ...
-  admin: {
-    // highlight-start
-    components: {
-      // ...
-    },
-    // highlight-end
-  },
-}
-```
-
-The following options are available:
-
-| Path                  | Description                                                                                                                  |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------- |
-| `beforeList`          | An array of custom components to inject before the list of documents in the List View. [More details](#beforeList).          |
-| `beforeListTable`     | An array of custom components to inject before the table of documents in the List View. [More details](#beforeListTable).    |
-| `afterList`           | An array of custom components to inject after the list of documents in the List View. [More details](#afterList).            |
-| `afterListTable`      | An array of custom components to inject after the table of documents in the List View. [More details](#afterListTable).      |
-| `Description`         | A component to render a description of the Collection. [More details](#Description).                                         |
-
-### beforeList
-
-The `beforeList` property allows you to inject custom components before the list of documents in the List View.
-
-To add `beforeList` components, use the `components.beforeList` property in your [Collection Config](../configuration/collections):
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const MyCollection: CollectionConfig = {
-  // ...
-  admin: {
-    components: {
-      // highlight-start
-      beforeList: [
-        '/path/to/MyBeforeListComponent',
-      ],
-      // highlight-end
-    },
-  },
-}
-```
-
-Here's an example of a custom `beforeList` component:
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import type { BeforeListServerProps } from 'payload'
-
-export function MyBeforeListComponent(props: BeforeListServerProps) {
-  return (
-    <div>
-      This is a custom beforeList component (Server)
-    </div>
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import type { BeforeListClientProps } from 'payload'
-
-export function MyBeforeListComponent(props: BeforeListClientProps) {
-  return (
-    <div>
-      This is a custom beforeList component (Client)
-    </div>
-  )
-}
-```
-
-### beforeListTable
-
-The `beforeListTable` property allows you to inject custom components before the table of documents in the List View.
-
-To add `beforeListTable` components, use the `components.beforeListTable` property in your [Collection Config](../configuration/collections):
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const MyCollection: CollectionConfig = {
-  // ...
-  admin: {
-    components: {
-      // highlight-start
-      beforeListTable: [
-        '/path/to/MyBeforeListTableComponent',
-      ],
-      // highlight-end
-    },
-  },
-}
-```
-
-Here's an example of a custom `beforeListTable` component:
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import type { BeforeListTableServerProps } from 'payload'
-
-export function MyBeforeListTableComponent(props: BeforeListTableServerProps) {
-  return (
-    <div>
-      This is a custom beforeListTable component (Server)
-    </div>
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import type { BeforeListTableClientProps } from 'payload'
-
-export function MyBeforeListTableComponent(props: BeforeListTableClientProps) {
-  return (
-    <div>
-      This is a custom beforeListTable component (Client)
-    </div>
-  )
-}
-```
-
-### afterList
-
-The `afterList` property allows you to inject custom components after the list of documents in the List View.
-
-To add `afterList` components, use the `components.afterList` property in your [Collection Config](../configuration/collections):
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const MyCollection: CollectionConfig = {
-  // ...
-  admin: {
-    components: {
-      // highlight-start
-      afterList: [
-        '/path/to/MyAfterListComponent',
-      ],
-      // highlight-end
-    },
-  },
-}
-```
-
-Here's an example of a custom `afterList` component:
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import type { AfterListServerProps } from 'payload'
-
-export function MyAfterListComponent(props: AfterListServerProps) {
-  return (
-    <div>
-      This is a custom afterList component (Server)
-    </div>
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import type { AfterListClientProps } from 'payload'
-
-export function MyAfterListComponent(props: AfterListClientProps) {
-  return (
-    <div>
-      This is a custom afterList component (Client)
-    </div>
-  )
-}
-```
-
-### afterListTable
-
-The `afterListTable` property allows you to inject custom components after the table of documents in the List View.
-
-To add `afterListTable` components, use the `components.afterListTable` property in your [Collection Config](../configuration/collections):
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const MyCollection: CollectionConfig = {
-  // ...
-  admin: {
-    components: {
-      // highlight-start
-      afterListTable: [
-        '/path/to/MyAfterListTableComponent',
-      ],
-      // highlight-end
-    },
-  },
-}
-```
-
-Here's an example of a custom `afterListTable` component:
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import type { AfterListTableServerProps } from 'payload'
-
-export function MyAfterListTableComponent(props: AfterListTableServerProps) {
-  return (
-    <div>
-      This is a custom afterListTable component (Server)
-    </div>
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import type { AfterListTableClientProps } from 'payload'
-
-export function MyAfterListTableComponent(props: AfterListTableClientProps) {
-  return (
-    <div>
-      This is a custom afterListTable component (Client)
-    </div>
-  )
-}
-```
-
-### Description
-
-The `Description` property allows you to render a custom description of the Collection in the List View.
-
-To add a `Description` component, use the `components.Description` property in your [Collection Config](../configuration/collections):
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const MyCollection: CollectionConfig = {
-  // ...
-  admin: {
-    components: {
-      // highlight-start
-      Description: '/path/to/MyDescriptionComponent',
-      // highlight-end
-    },
-  },
-}
-```
-
-<Banner type="warning">
-  **Note:**
-  The `Description` component is shared between the List View and the [Edit View](./edit-view).
-</Banner>
-
-Here's an example of a custom `Description` component:
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import type { ViewDescriptionServerProps } from 'payload'
-
-export function MyDescriptionComponent(props: ViewDescriptionServerProps) {
-  return (
-    <div>
-      This is a custom Collection description component (Server)
-    </div>
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import type { ViewDescriptionClientProps } from 'payload'
-
-export function MyDescriptionComponent(props: ViewDescriptionClientProps) {
-  return (
-    <div>
-      This is a custom Collection description component (Client)
-    </div>
-  )
-}
-```
-````
-
-## File: custom-components/overview.mdx
+## File: custom-components_overview.mdx
 ````
 ---
 title: Swap in your own React components
@@ -7553,8 +5901,12 @@ The Payload [Admin Panel](../admin/overview) is designed to be as minimal and st
 All Custom Components in Payload are [React Server Components](https://react.dev/reference/rsc/server-components) by default. This enables the use of the [Local API](../local-api/overview) directly on the front-end. Custom Components are available for nearly every part of the Admin Panel for extreme granularity and control.
 
 <Banner type="success">
-  **Note:**
-  Client Components continue to be fully supported. To use Client Components in your app, simply include the `'use client'` directive. Payload will automatically detect and remove all [non-serializable](https://react.dev/reference/rsc/use-client#serializable-types) default props before rendering your component. [More details](#client-components).
+  **Note:** Client Components continue to be fully supported. To use Client
+  Components in your app, simply include the `'use client'` directive. Payload
+  will automatically detect and remove all
+  [non-serializable](https://react.dev/reference/rsc/use-client#serializable-types)
+  default props before rendering your component. [More
+  details](#client-components).
 </Banner>
 
 There are four main types of Custom Components in Payload:
@@ -7580,16 +5932,17 @@ const config = buildConfig({
   admin: {
     components: {
       logout: {
-        Button: '/src/components/Logout#MyComponent' // highlight-line
-      }
-    }
+        Button: '/src/components/Logout#MyComponent', // highlight-line
+      },
+    },
   },
 })
 ```
 
 <Banner type="success">
-  **Note:**
-  All Custom Components can be either Server Components or Client Components, depending on the presence of the `'use client'` directive at the top of the file.
+  **Note:** All Custom Components can be either Server Components or Client
+  Components, depending on the presence of the `'use client'` directive at the
+  top of the file.
 </Banner>
 
 ### Component Paths
@@ -7615,9 +5968,9 @@ const config = buildConfig({
     },
     components: {
       logout: {
-        Button: '/components/Logout#MyComponent' // highlight-line
-      }
-    }
+        Button: '/components/Logout#MyComponent', // highlight-line
+      },
+    },
   },
 })
 ```
@@ -7640,10 +5993,10 @@ const config = buildConfig({
         Button: {
           path: '/src/components/Logout',
           exportName: 'MyComponent',
-        }
+        },
         // highlight-end
-      }
-    }
+      },
+    },
   },
 })
 ```
@@ -7651,10 +6004,10 @@ const config = buildConfig({
 The following options are available:
 
 | Property      | Description                                                                                                                   |
-|---------------|-------------------------------------------------------------------------------------------------------------------------------|
-| `clientProps` | Props to be passed to the Custom Components if it's a Client Component. [More details](#custom-props).                         |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| `clientProps` | Props to be passed to the Custom Components if it's a Client Component. [More details](#custom-props).                        |
 | `exportName`  | Instead of declaring named exports using `#` in the component path, you can also omit them from `path` and pass them in here. |
-| `path`        | File path to the Custom Component. Named exports can be appended to the end of the path, separated by a `#`.                         |
+| `path`        | File path to the Custom Component. Named exports can be appended to the end of the path, separated by a `#`.                  |
 | `serverProps` | Props to be passed to the Custom Component if it's a Server Component. [More details](#custom-props).                         |
 
 For details on how to build Custom Components, see [Building Custom Components](#building-custom-components).
@@ -7681,7 +6034,12 @@ const config = buildConfig({
   admin: {
     importMap: {
       baseDir: path.resolve(dirname, 'src'),
-      importMapFile: path.resolve(dirname, 'app', '(payload)', 'custom-import-map.js'), // highlight-line
+      importMapFile: path.resolve(
+        dirname,
+        'app',
+        '(payload)',
+        'custom-import-map.js',
+      ), // highlight-line
     },
   },
 })
@@ -7701,7 +6059,8 @@ export default buildConfig({
   admin: {
     // ...
     dependencies: {
-      myTestComponent: { // myTestComponent is the key - can be anything
+      myTestComponent: {
+        // myTestComponent is the key - can be anything
         path: '/components/TestComponent.js#TestComponent',
         type: 'component',
         clientProps: {
@@ -7709,7 +6068,7 @@ export default buildConfig({
         },
       },
     },
-  }
+  },
 })
 ```
 
@@ -7728,7 +6087,7 @@ import React from 'react'
 import type { Payload } from 'payload'
 
 async function MyServerComponent({
-  payload // highlight-line
+  payload, // highlight-line
 }: {
   payload: Payload
 }) {
@@ -7737,22 +6096,25 @@ async function MyServerComponent({
     id: '123',
   })
 
-  return (
-    <p>{page.title}</p>
-  )
+  return <p>{page.title}</p>
 }
 ```
 
 Each Custom Component receives the following props by default:
 
-| Prop                      | Description                                                                                           |
-| ------------------------- | ----------------------------------------------------------------------------------------------------- |
-| `payload`                 | The [Payload](../local-api/overview) class.                                                           |
-| `i18n`                    | The [i18n](../configuration/i18n) object.                                                                           |
+| Prop      | Description                                 |
+| --------- | ------------------------------------------- |
+| `payload` | The [Payload](../local-api/overview) class. |
+| `i18n`    | The [i18n](../configuration/i18n) object.   |
 
 <Banner type="warning">
-  **Reminder:**
-  All Custom Components also receive various other props that are specific to the component being rendered. See [Root Components](#root-components), [Collection Components](../configuration/collections#custom-components), [Global Components](../configuration/globals#custom-components), or [Field Components](../fields/overview#custom-components) for a complete list of all default props per component.
+  **Reminder:** All Custom Components also receive various other props that are
+  specific to the component being rendered. See [Root
+  Components](#root-components), [Collection
+  Components](../configuration/collections#custom-components), [Global
+  Components](../configuration/globals#custom-components), or [Field
+  Components](../fields/overview#custom-components) for a complete list of all
+  default props per component.
 </Banner>
 
 ### Custom Props
@@ -7764,17 +6126,18 @@ import { buildConfig } from 'payload'
 
 const config = buildConfig({
   // ...
-  admin: { // highlight-line
+  admin: {
+    // highlight-line
     components: {
       logout: {
         Button: {
           path: '/src/components/Logout#MyComponent',
           clientProps: {
-            myCustomProp: 'Hello, World!' // highlight-line
+            myCustomProp: 'Hello, World!', // highlight-line
           },
-        }
-      }
-    }
+        },
+      },
+    },
   },
 })
 ```
@@ -7786,9 +6149,7 @@ import React from 'react'
 import { Link } from '@payloadcms/ui'
 
 export function MyComponent({ myCustomProp }: { myCustomProp: string }) {
-  return (
-    <Link href="/admin/logout">{myCustomProp}</Link>
-  )
+  return <Link href="/admin/logout">{myCustomProp}</Link>
 }
 ```
 
@@ -7806,16 +6167,16 @@ export function MyClientComponent() {
   const [count, setCount] = useState(0)
 
   return (
-    <button onClick={() => setCount(count + 1)}>
-      Clicked {count} times
-    </button>
+    <button onClick={() => setCount(count + 1)}>Clicked {count} times</button>
   )
 }
 ```
 
 <Banner type="warning">
-  **Reminder:**
-  Client Components cannot be passed [non-serializable props](https://react.dev/reference/rsc/use-client#serializable-types). If you are rendering your Client Component _from within_ a Server Component, ensure that its props are serializable.
+  **Reminder:** Client Components cannot be passed [non-serializable
+  props](https://react.dev/reference/rsc/use-client#serializable-types). If you
+  are rendering your Client Component _from within_ a Server Component, ensure
+  that its props are serializable.
 </Banner>
 
 ### Accessing the Payload Config
@@ -7827,14 +6188,10 @@ import React from 'react'
 
 export default async function MyServerComponent({
   payload: {
-    config // highlight-line
-  }
+    config, // highlight-line
+  },
 }) {
-  return (
-    <Link href={config.serverURL}>
-      Go Home
-    </Link>
-  )
+  return <Link href={config.serverURL}>Go Home</Link>
 }
 ```
 
@@ -7849,14 +6206,12 @@ import { useConfig } from '@payloadcms/ui'
 
 export function MyClientComponent() {
   // highlight-start
-  const { config: { serverURL } } = useConfig()
+  const {
+    config: { serverURL },
+  } = useConfig()
   // highlight-end
 
-  return (
-    <Link href={serverURL}>
-      Go Home
-    </Link>
-  )
+  return <Link href={serverURL}>Go Home</Link>
 }
 ```
 
@@ -7872,12 +6227,10 @@ Within Server Components, this prop is named `field`:
 import React from 'react'
 import type { TextFieldServerComponent } from 'payload'
 
-export const MyClientFieldComponent: TextFieldServerComponent = ({ field: { name } }) => {
-  return (
-    <p>
-      {`This field's name is ${name}`}
-    </p>
-  )
+export const MyClientFieldComponent: TextFieldServerComponent = ({
+  field: { name },
+}) => {
+  return <p>{`This field's name is ${name}`}</p>
 }
 ```
 
@@ -7888,12 +6241,10 @@ Within Client Components, this prop is named `clientField` because its non-seria
 import React from 'react'
 import type { TextFieldClientComponent } from 'payload'
 
-export const MyClientFieldComponent: TextFieldClientComponent = ({ clientField: { name } }) => {
-  return (
-    <p>
-      {`This field's name is ${name}`}
-    </p>
-  )
+export const MyClientFieldComponent: TextFieldClientComponent = ({
+  clientField: { name },
+}) => {
+  return <p>{`This field's name is ${name}`}</p>
 }
 ```
 
@@ -7912,9 +6263,7 @@ import { getTranslation } from '@payloadcms/translations'
 export default async function MyServerComponent({ i18n }) {
   const translatedTitle = getTranslation(myTranslation, i18n) // highlight-line
 
-  return (
-    <p>{translatedTitle}</p>
-  )
+  return <p>{translatedTitle}</p>
 }
 ```
 
@@ -7939,7 +6288,8 @@ export function MyClientComponent() {
 ```
 
 <Banner type="success">
-  See the [Hooks](../admin/react-hooks) documentation for a full list of available hooks.
+  See the [Hooks](../admin/react-hooks) documentation for a full list of
+  available hooks.
 </Banner>
 
 ### Getting the Current Locale
@@ -7958,9 +6308,7 @@ export default async function MyServerComponent({ payload, locale }) {
     locale,
   })
 
-  return (
-    <p>{localizedPage.title}</p>
-  )
+  return <p>{localizedPage.title}</p>
 }
 ```
 
@@ -7979,14 +6327,13 @@ function Greeting() {
     es: 'Hola',
   }
 
-  return (
-    <span>{trans[locale.code]}</span>
-  )
+  return <span>{trans[locale.code]}</span>
 }
 ```
 
 <Banner type="success">
-  See the [Hooks](../admin/react-hooks) documentation for a full list of available hooks.
+  See the [Hooks](../admin/react-hooks) documentation for a full list of
+  available hooks.
 </Banner>
 
 ### Using Hooks
@@ -8001,14 +6348,13 @@ import { useDocumentInfo } from '@payloadcms/ui'
 export function MyClientComponent() {
   const { slug } = useDocumentInfo() // highlight-line
 
-  return (
-    <p>{`Entity slug: ${slug}`}</p>
-  )
+  return <p>{`Entity slug: ${slug}`}</p>
 }
 ```
 
 <Banner type="success">
-  See the [Hooks](../admin/react-hooks) documentation for a full list of available hooks.
+  See the [Hooks](../admin/react-hooks) documentation for a full list of
+  available hooks.
 </Banner>
 
 ### Adding Styles
@@ -8021,11 +6367,7 @@ To apply custom styles, simply import your own `.css` or `.scss` file into your 
 import './index.scss'
 
 export function MyComponent() {
-  return (
-    <div className="my-component">
-      My Custom Component
-    </div>
-  )
+  return <div className="my-component">My Custom Component</div>
 }
 ```
 
@@ -8050,501 +6392,12 @@ Payload also exports its [SCSS](https://sass-lang.com) library for reuse which i
 ```
 
 <Banner type="success">
-  **Note:**
-  You can also drill into Payload's own component styles, or easily apply global, app-wide CSS. More on that [here](../admin/customizing-css).
+  **Note:** You can also drill into Payload's own component styles, or easily
+  apply global, app-wide CSS. More on that [here](../admin/customizing-css).
 </Banner>
 ````
 
-## File: custom-components/root-components.mdx
-````
----
-title: Root Components
-label: Root Components
-order: 20
-desc:
-keywords: admin, components, custom, documentation, Content Management System, cms, headless, javascript, node, react, nextjs
----
-
-Root Components are those that affect the [Admin Panel](../admin/overview) at a high-level, such as the logo or the main nav. You can swap out these components with your own [Custom Components](./overview) to create a completely custom look and feel.
-
-When combined with [Custom CSS](../admin/customizing-css), you can create a truly unique experience for your users, such as white-labeling the Admin Panel to match your brand.
-
-To override Root Components, use the `admin.components` property at the root of your [Payload Config](../configuration/overview):
-
-```ts
-import { buildConfig } from 'payload'
-
-export default buildConfig({
-  // ...
-  admin: {
-    // highlight-start
-    components: {
-      // ...
-    },
-    // highlight-end
-  },
-})
-```
-
-## Config Options
-
-The following options are available:
-
-| Path                  | Description                                                                                                                                                                                                         |
-|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `actions`         | An array of Custom Components to be rendered _within_ the header of the Admin Panel, providing additional interactivity and functionality. [More details](#actions).                                                |
-| `afterDashboard`  | An array of Custom Components to inject into the built-in Dashboard, _after_ the default dashboard contents. [More details](#afterdashboard).                                                                        |
-| `afterLogin`      | An array of Custom Components to inject into the built-in Login, _after_ the default login form. [More details](#afterlogin).                                                                                       |
-| `afterNavLinks`   | An array of Custom Components to inject into the built-in Nav, _after_ the links. [More details](#afternavlinks).                                                                                                  |
-| `beforeDashboard` | An array of Custom Components to inject into the built-in Dashboard, _before_ the default dashboard contents. [More details](#beforedashboard).                                                                      |
-| `beforeLogin`     | An array of Custom Components to inject into the built-in Login, _before_ the default login form. [More details](#beforelogin).                                                                                     |
-| `beforeNavLinks`  | An array of Custom Components to inject into the built-in Nav, _before_ the links themselves. [More details](#beforenavlinks).                                                                                      |
-| `graphics.Icon`   | The simplified logo used in contexts like the the `Nav` component. [More details](#graphicsicon).                                                                                                                  |
-| `graphics.Logo`   | The full logo used in contexts like the `Login` view. [More details](#graphicslogo).                                                                                                                               |
-| `header`          | An array of Custom Components to be injected above the Payload header. [More details](#header).                                                                                                                    |
-| `logout.Button`   | The button displayed in the sidebar that logs the user out. [More details](#logoutbutton).                                                                                                                         |
-| `Nav`             | Contains the sidebar / mobile menu in its entirety. [More details](#nav).                                                                                                                                         |
-| `providers`       | Custom [React Context](https://react.dev/learn/scaling-up-with-reducer-and-context) providers that will wrap the entire Admin Panel. [More details](./custom-providers).                                       |
-| `views`           | Override or create new views within the Admin Panel. [More details](./custom-views).                                                                                                                                 |
-
-_For details on how to build Custom Components, see [Building Custom Components](./overview#building-custom-components)._
-
-<Banner type="success">
-  **Note:**
-  You can also use set [Collection Components](../configuration/collections#custom-components) and [Global Components](../configuration/globals#custom-components) in their respective configs.
-</Banner>
-
-## Components
-
-### actions
-
-Actions are rendered within the header of the Admin Panel. Actions are typically used to display buttons that add additional interactivity and functionality, although they can be anything you'd like.
-
-To add an action, use the `actions` property in your `admin.components` config:
-
-```ts
-import { buildConfig } from 'payload'
-
-export default buildConfig({
-  // ...
-  admin: {
-    // highlight-start
-    components: {
-      actions: [
-        '/path/to/your/component',
-      ],
-    },
-    // highlight-end
-  },
-})
-```
-
-Here is an example of a simple Action component:
-
-```tsx
-export default function MyCustomAction() {
-  return (
-    <button onClick={() => alert('Hello, world!')}>
-      This is a custom action component
-    </button>
-  )
-}
-```
-
-<Banner type="success">
-  **Note:**
-  You can also use add Actions to the [Edit View](./edit-view) and [List View](./list-view) in their respective configs.
-</Banner>
-
-### beforeDashboard
-
-The `beforeDashboard` property allows you to inject Custom Components into the built-in Dashboard, before the default dashboard contents.
-
-To add `beforeDashboard` components, use the `admin.components.beforeDashboard` property in your Payload Config:
-
-```ts
-import { buildConfig } from 'payload'
-
-export default buildConfig({
-  // ...
-  admin: {
-    // highlight-start
-    components: {
-      beforeDashboard: [
-        '/path/to/your/component',
-      ],
-    },
-    // highlight-end
-  },
-})
-```
-
-Here is an example of a simple `beforeDashboard` component:
-
-```tsx
-export default function MyBeforeDashboardComponent() {
-  return (
-    <div>
-      This is a custom component injected before the Dashboard.
-    </div>
-  )
-}
-```
-
-### afterDashboard
-
-Similar to `beforeDashboard`, the `afterDashboard` property allows you to inject Custom Components into the built-in Dashboard, _after_ the default dashboard contents.
-
-To add `afterDashboard` components, use the `admin.components.afterDashboard` property in your Payload Config:
-
-```ts
-import { buildConfig } from 'payload'
-
-export default buildConfig({
-  // ...
-  admin: {
-    // highlight-start
-    components: {
-      afterDashboard: [
-        '/path/to/your/component',
-      ],
-    },
-    // highlight-end
-  },
-})
-```
-
-Here is an example of a simple `afterDashboard` component:
-
-```tsx
-export default function MyAfterDashboardComponent() {
-  return (
-    <div>
-      This is a custom component injected after the Dashboard.
-    </div>
-  )
-}
-```
-
-### beforeLogin
-
-The `beforeLogin` property allows you to inject Custom Components into the built-in Login view, _before_ the default login form.
-
-To add `beforeLogin` components, use the `admin.components.beforeLogin` property in your Payload Config:
-
-```ts
-import { buildConfig } from 'payload'
-
-export default buildConfig({
-  // ...
-  admin: {
-    // highlight-start
-    components: {
-      beforeLogin: [
-        '/path/to/your/component',
-      ],
-    },
-    // highlight-end
-  },
-})
-```
-
-Here is an example of a simple `beforeLogin` component:
-
-```tsx
-export default function MyBeforeLoginComponent() {
-  return (
-    <div>
-      This is a custom component injected before the Login form.
-    </div>
-  )
-}
-```
-
-### afterLogin
-
-Similar to `beforeLogin`, the `afterLogin` property allows you to inject Custom Components into the built-in Login view, _after_ the default login form.
-
-To add `afterLogin` components, use the `admin.components.afterLogin` property in your Payload Config:
-
-```ts
-import { buildConfig } from 'payload'
-
-export default buildConfig({
-  // ...
-  admin: {
-    // highlight-start
-    components: {
-      afterLogin: [
-        '/path/to/your/component',
-      ],
-    },
-    // highlight-end
-  },
-})
-```
-
-Here is an example of a simple `afterLogin` component:
-
-```tsx
-export default function MyAfterLoginComponent() {
-  return (
-    <div>
-      This is a custom component injected after the Login form.
-    </div>
-  )
-}
-```
-
-### beforeNavLinks
-
-The `beforeNavLinks` property allows you to inject Custom Components into the built-in [Nav Component](#nav), _before_ the nav links themselves.
-
-To add `beforeNavLinks` components, use the `admin.components.beforeNavLinks` property in your Payload Config:
-
-```ts
-import { buildConfig } from 'payload'
-
-export default buildConfig({
-  // ...
-  admin: {
-    // highlight-start
-    components: {
-      beforeNavLinks: [
-        '/path/to/your/component',
-      ],
-    },
-    // highlight-end
-  },
-})
-```
-
-Here is an example of a simple `beforeNavLinks` component:
-
-```tsx
-export default function MyBeforeNavLinksComponent() {
-  return (
-    <div>
-      This is a custom component injected before the Nav links.
-    </div>
-  )
-}
-```
-
-### afterNavLinks
-
-Similar to `beforeNavLinks`, the `afterNavLinks` property allows you to inject Custom Components into the built-in Nav, _after_ the nav links.
-
-To add `afterNavLinks` components, use the `admin.components.afterNavLinks` property in your Payload Config:
-
-```ts
-import { buildConfig } from 'payload'
-
-export default buildConfig({
-  // ...
-  admin: {
-    // highlight-start
-    components: {
-      afterNavLinks: [
-        '/path/to/your/component',
-      ],
-    },
-    // highlight-end
-  },
-})
-```
-
-Here is an example of a simple `afterNavLinks` component:
-
-```tsx
-export default function MyAfterNavLinksComponent() {
-  return (
-    <p>This is a custom component injected after the Nav links.</p>
-  )
-}
-```
-
-### Nav
-
-The `Nav` property contains the sidebar / mobile menu in its entirety. Use this property to completely replace the built-in Nav with your own custom navigation.
-
-To add a custom nav, use the `admin.components.Nav` property in your Payload Config:
-
-```ts
-import { buildConfig } from 'payload'
-
-export default buildConfig({
-  // ...
-  admin: {
-    // highlight-start
-    components: {
-      Nav: '/path/to/your/component',
-    },
-    // highlight-end
-  },
-})
-```
-
-Here is an example of a simple `Nav` component:
-
-```tsx
-import { Link } from '@payloadcms/ui'
-
-export default function MyCustomNav() {
-  return (
-    <nav>
-      <ul>
-        <li>
-          <Link href="/dashboard">
-            Dashboard
-          </Link>
-        </li>
-      </ul>
-    </nav>
-  )
-}
-```
-
-### graphics.Icon
-
-The `Icon` property is the simplified logo used in contexts like the `Nav` component. This is typically a small, square icon that represents your brand.
-
-To add a custom icon, use the `admin.components.graphics.Icon` property in your Payload Config:
-
-```ts
-import { buildConfig } from 'payload'
-
-export default buildConfig({
-  // ...
-  admin: {
-    // highlight-start
-    components: {
-      graphics: {
-        Icon: '/path/to/your/component',
-      },
-    },
-    // highlight-end
-  },
-})
-```
-
-Here is an example of a simple `Icon` component:
-
-```tsx
-export default function MyCustomIcon() {
-  return (
-    <img src="/path/to/your/icon.png" alt="My Custom Icon" />
-  )
-}
-```
-
-### graphics.Logo
-
-The `Logo` property is the full logo used in contexts like the `Login` view. This is typically a larger, more detailed representation of your brand.
-
-To add a custom logo, use the `admin.components.graphic.Logo` property in your Payload Config:
-
-```ts
-import { buildConfig } from 'payload'
-
-export default buildConfig({
-  // ...
-  admin: {
-    // highlight-start
-    components: {
-      graphics: {
-        Logo: '/path/to/your/component',
-      },
-    },
-    // highlight-end
-  },
-})
-```
-
-Here is an example of a simple `Logo` component:
-
-```tsx
-export default function MyCustomLogo() {
-  return (
-    <img src="/path/to/your/logo.png" alt="My Custom Logo" />
-  )
-}
-```
-
-### Header
-
-The `Header` property allows you to inject Custom Components above the Payload header.
-
-Examples of a custom header components might include an announcements banner, a notifications bar, or anything else you'd like to display at the top of the Admin Panel in a prominent location.
-
-To add `Header` components, use the `admin.components.header` property in your Payload Config:
-
-```ts
-import { buildConfig } from 'payload'
-
-export default buildConfig({
-  // ...
-  admin: {
-    // highlight-start
-    components: {
-      Header: [
-        '/path/to/your/component'
-      ],
-    },
-    // highlight-end
-  },
-})
-```
-
-Here is an example of a simple `Header` component:
-
-```tsx
-export default function MyCustomHeader() {
-  return (
-    <header>
-      <h1>My Custom Header</h1>
-    </header>
-  )
-}
-```
-
-### logout.Button
-
-The `logout.Button` property is the button displayed in the sidebar that should log the user out when clicked.
-
-To add a custom logout button, use the `admin.components.logout.Button` property in your Payload Config:
-
-```ts
-import { buildConfig } from 'payload'
-
-export default buildConfig({
-  // ...
-  admin: {
-    // highlight-start
-    components: {
-      logout: {
-        Button: '/path/to/your/component',
-      }
-    },
-    // highlight-end
-  },
-})
-```
-
-Here is an example of a simple `logout.Button` component:
-
-```tsx
-export default function MyCustomLogoutButton() {
-  return (
-    <button onClick={() => alert('Logging out!')}>
-      Log Out
-    </button>
-  )
-}
-```
-````
-
-## File: database/migrations.mdx
+## File: database_migrations.mdx
 ````
 ---
 title: Migrations
@@ -8568,8 +6421,9 @@ Ensure you have an npm script called "payload" in your `package.json` file.
 ```
 
 <Banner>
-  Note that you need to run Payload migrations through the package manager that you are using,
-  because Payload should not be globally installed on your system.
+  Note that you need to run Payload migrations through the package manager that
+  you are using, because Payload should not be globally installed on your
+  system.
 </Banner>
 
 ## Migration file contents
@@ -8600,7 +6454,7 @@ export async function down({ payload, req }: MigrateDownArgs): Promise<void> {
 ## Using Transactions
 
 When migrations are run, each migration is performed in a new [transaction](/docs/database/transactions) for you. All
-you need to do is pass the `req` object to any [local API](/docs/local-api/overview) or direct database calls, such as
+you need to do is pass the `req` object to any [Local API](/docs/local-api/overview) or direct database calls, such as
 `payload.db.updateMany()`, to make database changes inside the transaction. Assuming no errors were thrown, the transaction is committed
 after your `up` or `down` function runs. If the migration errors at any point or fails to commit, it is caught and the
 transaction gets aborted. This way no change is made to the database if the migration fails.
@@ -8610,15 +6464,23 @@ transaction gets aborted. This way no change is made to the database if the migr
 Additionally, you can bypass Payload's layer entirely and perform operations directly on your underlying database within the active transaction:
 
 ### MongoDB:
+
 ```ts
 import { type MigrateUpArgs } from '@payloadcms/db-mongodb'
 
-export async function up({ session, payload, req }: MigrateUpArgs): Promise<void> {
-  const posts = await payload.db.collections.posts.collection.find({ session }).toArray()
+export async function up({
+  session,
+  payload,
+  req,
+}: MigrateUpArgs): Promise<void> {
+  const posts = await payload.db.collections.posts.collection
+    .find({ session })
+    .toArray()
 }
 ```
 
 ### Postgres:
+
 ```ts
 import { type MigrateUpArgs, sql } from '@payloadcms/db-postgres'
 
@@ -8628,7 +6490,9 @@ export async function up({ db, payload, req }: MigrateUpArgs): Promise<void> {
 ```
 
 ### SQLite:
+
 In SQLite, transactions are disabled by default. [More](./transactions).
+
 ```ts
 import { type MigrateUpArgs, sql } from '@payloadcms/db-sqlite'
 
@@ -8667,8 +6531,9 @@ npm run payload migrate:create optional-name-here
 ```
 
 Flags:
-* `--skip-empty`: with Postgres, it skips the "no schema changes detected. Would you like to create a blank migration file?" prompt which can be useful for generating migration in CI.
-* `--force-accept-warning`: accepts any command prompts, creates a blank migration even if there weren't any changes to the schema.
+
+- `--skip-empty`: with Postgres, it skips the "no schema changes detected. Would you like to create a blank migration file?" prompt which can be useful for generating migration in CI.
+- `--force-accept-warning`: accepts any command prompts, creates a blank migration even if there weren't any changes to the schema.
 
 ### Status
 
@@ -8748,9 +6613,10 @@ The typical workflow in Payload is to build out your Payload configs, install pl
 But importantly, you do not need to run migrations against your development database, because Drizzle will have already pushed your changes to your database for you.
 
 <Banner type="warning">
-  Warning: do not mix "push" and migrations with your local development database. If you use "push"
-  locally, and then try to migrate, Payload will throw a warning, telling you that these two methods
-  are not meant to be used interchangeably.
+  Warning: do not mix "push" and migrations with your local development
+  database. If you use "push" locally, and then try to migrate, Payload will
+  throw a warning, telling you that these two methods are not meant to be used
+  interchangeably.
 </Banner>
 
 **2 - create a migration**
@@ -8765,7 +6631,10 @@ But once you're ready, you can run `pnpm payload migrate:create`, which will per
 We won't immediately run this migration for you, however.
 
 <Banner type="success">
-  Tip: migrations created by Payload are relatively programmatic in nature, so there should not be any surprises, but before you check in the created migration it's a good idea to always double-check the contents of the migration files.
+  Tip: migrations created by Payload are relatively programmatic in nature, so
+  there should not be any surprises, but before you check in the created
+  migration it's a good idea to always double-check the contents of the
+  migration files.
 </Banner>
 
 **3 - set up your build process to run migrations**
@@ -8818,84 +6687,21 @@ export default buildConfig({
   // your config here
   db: postgresAdapter({
     //  your adapter config here
-    prodMigrations: migrations
-  })
+    prodMigrations: migrations,
+  }),
 })
 ```
 
 Passing your migrations as shown above will tell Payload, in production only, to execute any migrations that need to be run prior to completing the initialization of Payload. This is ideal for long-running services where Payload will only be initialized at startup.
 
 <Banner type="warning">
-  **Warning:** if Payload is instructed to run migrations in production, this may slow down serverless cold starts on platforms such as Vercel. Generally, this option should only be used for long-running servers / containers.
+  **Warning:** if Payload is instructed to run migrations in production, this
+  may slow down serverless cold starts on platforms such as Vercel. Generally,
+  this option should only be used for long-running servers / containers.
 </Banner>
 ````
 
-## File: database/mongodb.mdx
-````
----
-title: MongoDB
-label: MongoDB
-order: 40
-desc: Payload has supported MongoDB natively since we started. The flexible nature of MongoDB lends itself well to Payload's powerful fields.
-keywords: MongoDB, documentation, typescript, Content Management System, cms, headless, javascript, node, react, nextjs
----
-
-To use Payload with MongoDB, install the package `@payloadcms/db-mongodb`. It will come with everything you need to
-store your Payload data in MongoDB.
-
-Then from there, pass it to your Payload Config as follows:
-
-```ts
-import { mongooseAdapter } from '@payloadcms/db-mongodb'
-
-export default buildConfig({
-  // Your config goes here
-  collections: [
-    // Collections go here
-  ],
-  // Configure the Mongoose adapter here
-  db: mongooseAdapter({
-    // Mongoose-specific arguments go here.
-    // URL is required.
-    url: process.env.DATABASE_URI,
-  }),
-})
-```
-
-## Options
-
-| Option                     | Description                                                                                                                                                                                                                                                                                                  |
-| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `autoPluralization`        | Tell Mongoose to auto-pluralize any collection names if it encounters any singular words used as collection `slug`s.                                                                                                                                                                                         |
-| `connectOptions`           | Customize MongoDB connection options. Payload will connect to your MongoDB database using default options which you can override and extend to include all the [options](https://mongoosejs.com/docs/connections.html#options) available to mongoose.                                                        |
-| `collectionsSchemaOptions` | Customize Mongoose schema options for collections.                                                                                                                                                                                                                                                           |
-| `disableIndexHints`        | Set to true to disable hinting to MongoDB to use 'id' as index. This is currently done when counting documents for pagination, as it increases the speed of the count function used in that query. Disabling this optimization might fix some problems with AWS DocumentDB. Defaults to false                |
-| `migrationDir`             | Customize the directory that migrations are stored.                                                                                                                                                                                                                                                          |
-| `transactionOptions`       | An object with configuration properties used in [transactions](https://www.mongodb.com/docs/manual/core/transactions/) or `false` which will disable the use of transactions.                                                                                                                                |
-| `collation`                | Enable language-specific string comparison with customizable options. Available on MongoDB 3.4+. Defaults locale to "en". Example: `{ strength: 3 }`. For a full list of collation options and their definitions, see the [MongoDB documentation](https://www.mongodb.com/docs/manual/reference/collation/). |
-| `allowAdditionalKeys`      | By default, Payload strips all additional keys from MongoDB data that don't exist in the Payload schema. If you have some data that you want to include to the result but it doesn't exist in Payload, you can set this to `true`. Be careful as Payload access control _won't_ work for this data.          |
-
-## Access to Mongoose models
-
-After Payload is initialized, this adapter exposes all of your Mongoose models and they are available for you to work
-with directly.
-
-You can access Mongoose models as follows:
-
-- Collection models - `payload.db.collections[myCollectionSlug]`
-- Globals model - `payload.db.globals`
-- Versions model (both collections and globals) - `payload.db.versions[myEntitySlug]`
-
-## Using other MongoDB implementations
-Limitations with [DocumentDB](https://aws.amazon.com/documentdb/) and [Azure Cosmos DB](https://azure.microsoft.com/en-us/products/cosmos-db):
-
-* For Azure Cosmos DB you must pass `transactionOptions: false` to the adapter options. Azure Cosmos DB does not support transactions that update two and more documents in different collections, which is a common case when using Payload (via hooks).
-* For Azure Cosmos DB the root config property `indexSortableFields` must be set to `true`.
-* The [Join Field](../fields/join) is not supported in DocumentDB and Azure Cosmos DB, as we internally use MongoDB aggregations to query data for that field, which are limited there. This can be changed in the future.
-* For DocumentDB pass `disableIndexHints: true` to disable hinting to the DB to use `id` as index which can cause problems with DocumentDB.
-````
-
-## File: database/overview.mdx
+## File: database_overview.mdx
 ````
 ---
 title: Database
@@ -8930,8 +6736,10 @@ export default buildConfig({
 ```
 
 <Banner type="warning">
-  **Reminder:**
-  The Database Adapter is an external dependency and must be installed in your project separately from Payload. You can find the installation instructions for each Database Adapter in their respective documentation.
+  **Reminder:** The Database Adapter is an external dependency and must be
+  installed in your project separately from Payload. You can find the
+  installation instructions for each Database Adapter in their respective
+  documentation.
 </Banner>
 
 ## Selecting a Database
@@ -8971,7 +6779,7 @@ It's important to note that nearly every Payload feature is available in all of 
 It's up to you to choose which database you would like to use based on the requirements of your project. Payload has no opinion on which database you should ultimately choose.
 ````
 
-## File: database/postgres.mdx
+## File: database_postgres.mdx
 ````
 ---
 title: Postgres
@@ -9019,45 +6827,55 @@ export default buildConfig({
   // Optionally, can accept the same options as the @vercel/postgres package.
   db: vercelPostgresAdapter({
     pool: {
-      connectionString: process.env.DATABASE_URL
+      connectionString: process.env.DATABASE_URL,
     },
   }),
 })
 ```
 
 <Banner type="info">
-  **Note:**
-  If you're using `vercelPostgresAdapter` your `process.env.POSTGRES_URL` or `pool.connectionString` points to a local database (e.g hostname has `localhost` or `127.0.0.1`) we use the `pg` module for pooling instead of `@vercel/postgres`. This is because `@vercel/postgres` doesn't work with local databases, if you want to disable that behavior, you can pass `forceUseVercelPostgres: true` to the adapter's args and follow [Vercel guide](https://vercel.com/docs/storage/vercel-postgres/local-development#option-2:-local-postgres-instance-with-docker) for a Docker Neon DB setup.
+  **Note:** If you're using `vercelPostgresAdapter` your
+  `process.env.POSTGRES_URL` or `pool.connectionString` points to a local
+  database (e.g hostname has `localhost` or `127.0.0.1`) we use the `pg` module
+  for pooling instead of `@vercel/postgres`. This is because `@vercel/postgres`
+  doesn't work with local databases, if you want to disable that behavior, you
+  can pass `forceUseVercelPostgres: true` to the adapter's args and follow
+  [Vercel
+  guide](https://vercel.com/docs/storage/vercel-postgres/local-development#option-2:-local-postgres-instance-with-docker)
+  for a Docker Neon DB setup.
 </Banner>
 
 ## Options
 
 | Option                      | Description                                                                                                                                                                      |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `pool` *                   | [Pool connection options](https://orm.drizzle.team/docs/quick-postgresql/node-postgres) that will be passed to Drizzle and `node-postgres` or to `@vercel/postgres`              |
+| `pool` \*                   | [Pool connection options](https://orm.drizzle.team/docs/quick-postgresql/node-postgres) that will be passed to Drizzle and `node-postgres` or to `@vercel/postgres`              |
 | `push`                      | Disable Drizzle's [`db push`](https://orm.drizzle.team/kit-docs/overview#prototyping-with-db-push) in development mode. By default, `push` is enabled for development mode only. |
 | `migrationDir`              | Customize the directory that migrations are stored.                                                                                                                              |
 | `schemaName` (experimental) | A string for the postgres schema to use, defaults to 'public'.                                                                                                                   |
 | `idType`                    | A string of 'serial', or 'uuid' that is used for the data type given to id columns.                                                                                              |
 | `transactionOptions`        | A PgTransactionConfig object for transactions, or set to `false` to disable using transactions. [More details](https://orm.drizzle.team/docs/transactions)                       |
 | `disableCreateDatabase`     | Pass `true` to disable auto database creation if it doesn't exist. Defaults to `false`.                                                                                          |
-| `localesSuffix`             | A string appended to the end of table names for storing localized fields. Default is '_locales'.                                                                                 |
-| `relationshipsSuffix`       | A string appended to the end of table names for storing relationships. Default is '_rels'.                                                                                       |
-| `versionsSuffix`            | A string appended to the end of table names for storing versions. Defaults to '_v'.                                                                                              |
+| `localesSuffix`             | A string appended to the end of table names for storing localized fields. Default is '\_locales'.                                                                                |
+| `relationshipsSuffix`       | A string appended to the end of table names for storing relationships. Default is '\_rels'.                                                                                      |
+| `versionsSuffix`            | A string appended to the end of table names for storing versions. Defaults to '\_v'.                                                                                             |
 | `beforeSchemaInit`          | Drizzle schema hook. Runs before the schema is built. [More Details](#beforeschemainit)                                                                                          |
 | `afterSchemaInit`           | Drizzle schema hook. Runs after the schema is built. [More Details](#afterschemainit)                                                                                            |
 | `generateSchemaOutputFile`  | Override generated schema from `payload generate:db-schema` file path. Defaults to `{CWD}/src/payload-generated.schema.ts`                                                       |
+| `allowIDOnCreate`           | Set to `true` to use the `id` passed in data on the create API operations without using a custom ID field.                                                                       |
 
 ## Access to Drizzle
 
 After Payload is initialized, this adapter will expose the full power of Drizzle to you for use if you need it.
 
 To ensure type-safety, you need to generate Drizzle schema first with:
+
 ```sh
 npx payload generate:db-schema
 ```
 
 Then, you can access Drizzle as follows:
+
 ```ts
 import { posts } from './payload-generated-schema'
 // To avoid installing Drizzle, you can import everything that drizzle has from our re-export path.
@@ -9066,7 +6884,12 @@ import { eq, sql, and } from '@payloadcms/db-postgres/drizzle'
 // Drizzle's Querying API: https://orm.drizzle.team/docs/rqb
 const posts = await payload.db.drizzle.query.posts.findMany()
 // Drizzle's Select API https://orm.drizzle.team/docs/select
-const result = await payload.db.drizzle.select().from(posts).where(and(eq(posts.id, 50), sql`lower(${posts.title}) = 'example post title'`))
+const result = await payload.db.drizzle
+  .select()
+  .from(posts)
+  .where(
+    and(eq(posts.id, 50), sql`lower(${posts.title}) = 'example post title'`),
+  )
 ```
 
 ## Tables, relations, and enums
@@ -9101,7 +6924,11 @@ Runs before the schema is built. You can use this hook to extend your database s
 
 ```ts
 import { postgresAdapter } from '@payloadcms/db-postgres'
-import { integer, pgTable, serial } from '@payloadcms/db-postgres/drizzle/pg-core'
+import {
+  integer,
+  pgTable,
+  serial,
+} from '@payloadcms/db-postgres/drizzle/pg-core'
 
 postgresAdapter({
   beforeSchemaInit: [
@@ -9125,7 +6952,13 @@ To quickly generate the Drizzle schema from your database you can use [Drizzle I
 You should get the `schema.ts` file which may look like this:
 
 ```ts
-import { pgTable, uniqueIndex, serial, varchar, text } from 'drizzle-orm/pg-core'
+import {
+  pgTable,
+  uniqueIndex,
+  serial,
+  varchar,
+  text,
+} from 'drizzle-orm/pg-core'
 
 export const users = pgTable('users', {
   id: serial('id').primaryKey(),
@@ -9145,7 +6978,6 @@ export const countries = pgTable(
     }
   },
 )
-
 ```
 
 You can import them into your config and append to the schema with the `beforeSchemaInit` hook like this:
@@ -9162,7 +6994,7 @@ postgresAdapter({
         tables: {
           ...schema.tables,
           users,
-          countries
+          countries,
         },
       }
     },
@@ -9171,7 +7003,6 @@ postgresAdapter({
 ```
 
 Make sure Payload doesn't overlap table names with its collections. For example, if you already have a collection with slug "users", you should either change the slug or `dbName` to change the table name for this collection.
-
 
 ### afterSchemaInit
 
@@ -9209,10 +7040,9 @@ export default buildConfig({
             extraIntegerColumn: integer('extra_integer_column'),
           },
           extraConfig: (table) => ({
-            country_city_composite_index: index('country_city_composite_index').on(
-              table.country,
-              table.city,
-            ),
+            country_city_composite_index: index(
+              'country_city_composite_index',
+            ).on(table.country, table.city),
           }),
         })
 
@@ -9221,10 +7051,10 @@ export default buildConfig({
     ],
   }),
 })
-
 ```
 
 ### Note for generated schema:
+
 Columns and tables, added in schema hooks won't be added to the generated via `payload generate:db-schema` Drizzle schema.
 If you want them to be there, you either have to edit this file manually or mutate the internal Payload "raw" SQL schema in the `beforeSchemaInit`:
 
@@ -9241,282 +7071,9 @@ postgresAdapter({
           my_id: {
             name: 'my_id',
             type: 'serial',
-            primaryKey: true
-          }
-        }
-      }
-
-      // Add a new column to generated by Payload table:
-      adapter.rawTables.posts.columns.customColumn = {
-        name: 'custom_column',
-        // Note that Payload SQL doesn't support everything that Drizzle does.
-        type: 'integer',
-        notNull: true
-      }
-      // Add a new index to generated by Payload table:
-      adapter.rawTables.posts.indexes.customColumnIdx = {
-        name: 'custom_column_idx',
-        unique: true,
-        on: ['custom_column']
-      }
-
-      return schema
-    },
-  ],
-})
-```
-````
-
-## File: database/sqlite.mdx
-````
----
-title: SQLite
-label: SQLite
-order: 60
-desc: Payload supports SQLite through an officially supported Drizzle Database Adapter.
-keywords: SQLite, documentation, typescript, Content Management System, cms, headless, javascript, node, react, nextjs
----
-
-To use Payload with SQLite, install the package `@payloadcms/db-sqlite`. It leverages Drizzle ORM and `libSQL` to interact with a SQLite database that you provide.
-
-It automatically manages changes to your database for you in development mode, and exposes a full suite of migration controls for you to leverage in order to keep other database environments in sync with your schema. DDL transformations are automatically generated.
-
-To configure Payload to use SQLite, pass the `sqliteAdapter` to your Payload Config as follows:
-
-```ts
-import { sqliteAdapter } from '@payloadcms/db-sqlite'
-
-export default buildConfig({
-  // Your config goes here
-  collections: [
-    // Collections go here
-  ],
-  // Configure the SQLite adapter here
-  db: sqliteAdapter({
-    // SQLite-specific arguments go here.
-    // `client.url` is required.
-    client: {
-      url: process.env.DATABASE_URL,
-      authToken: process.env.DATABASE_AUTH_TOKEN,
-    }
-  }),
-})
-```
-
-## Options
-
-| Option                     | Description                                                                                                                                                                      |
-| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `client` *                | [Client connection options](https://orm.drizzle.team/docs/get-started-sqlite#turso) that will be passed to `createClient` from `@libsql/client`.                                 |
-| `push`                     | Disable Drizzle's [`db push`](https://orm.drizzle.team/kit-docs/overview#prototyping-with-db-push) in development mode. By default, `push` is enabled for development mode only. |
-| `migrationDir`             | Customize the directory that migrations are stored.                                                                                                                              |
-| `logger`                   | The instance of the logger to be passed to drizzle. By default Payload's will be used.                                                                                           |
-| `idType`                   | A string of 'number', or 'uuid' that is used for the data type given to id columns.                                                                                              |
-| `transactionOptions`       | A SQLiteTransactionConfig object for transactions, or set to `false` to disable using transactions. [More details](https://orm.drizzle.team/docs/transactions)                   |
-| `localesSuffix`            | A string appended to the end of table names for storing localized fields. Default is '_locales'.                                                                                 |
-| `relationshipsSuffix`      | A string appended to the end of table names for storing relationships. Default is '_rels'.                                                                                       |
-| `versionsSuffix`           | A string appended to the end of table names for storing versions. Defaults to '_v'.                                                                                              |
-| `beforeSchemaInit`         | Drizzle schema hook. Runs before the schema is built. [More Details](#beforeschemainit)                                                                                          |
-| `afterSchemaInit`          | Drizzle schema hook. Runs after the schema is built. [More Details](#afterschemainit)                                                                                            |
-| `generateSchemaOutputFile` | Override generated schema from `payload generate:db-schema` file path. Defaults to `{CWD}/src/payload-generated.schema.ts`                                                       |
-| `autoIncrement`            | Pass `true` to enable SQLite [AUTOINCREMENT](https://www.sqlite.org/autoinc.html) for primary keys to ensure the same ID cannot be reused from deleted rows                      |
-
-## Access to Drizzle
-
-After Payload is initialized, this adapter will expose the full power of Drizzle to you for use if you need it.
-
-To ensure type-safety, you need to generate Drizzle schema first with:
-```sh
-npx payload generate:db-schema
-```
-
-Then, you can access Drizzle as follows:
-```ts
-// Import table from the generated file
-import { posts } from './payload-generated-schema'
-// To avoid installing Drizzle, you can import everything that drizzle has from our re-export path.
-import { eq, sql, and } from '@payloadcms/db-sqlite/drizzle'
-
-// Drizzle's Querying API: https://orm.drizzle.team/docs/rqb
-const posts = await payload.db.drizzle.query.posts.findMany()
-// Drizzle's Select API https://orm.drizzle.team/docs/select
-const result = await payload.db.drizzle.select().from(posts).where(and(eq(posts.id, 50), sql`lower(${posts.title}) = 'example post title'`))
-```
-
-## Tables and relations
-
-In addition to exposing Drizzle directly, all of the tables and Drizzle relations are exposed for you via the `payload.db` property as well.
-
-- Tables - `payload.db.tables`
-- Relations - `payload.db.relations`
-
-## Prototyping in development mode
-
-Drizzle exposes two ways to work locally in development mode.
-
-The first is [`db push`](https://orm.drizzle.team/kit-docs/overview#prototyping-with-db-push), which automatically pushes changes you make to your Payload Config (and therefore, Drizzle schema) to your database so you don't have to manually migrate every time you change your Payload Config. This only works in development mode, and should not be mixed with manually running [`migrate`](/docs/database/migrations) commands.
-
-You will be warned if any changes that you make will entail data loss while in development mode. Push is enabled by default, but you can opt out if you'd like.
-
-Alternatively, you can disable `push` and rely solely on migrations to keep your local database in sync with your Payload Config.
-
-## Migration workflows
-
-In SQLite, migrations are a fundamental aspect of working with Payload and you should become familiar with how they work.
-
-For more information about migrations, [click here](./migrations#when-to-run-migrations).
-
-## Drizzle schema hooks
-
-### beforeSchemaInit
-
-Runs before the schema is built. You can use this hook to extend your database structure with tables that won't be managed by Payload.
-
-```ts
-import { sqliteAdapter } from '@payloadcms/db-sqlite'
-import { integer, sqliteTable } from '@payloadcms/db-sqlite/drizzle/sqlite-core'
-
-sqliteAdapter({
-  beforeSchemaInit: [
-    ({ schema, adapter }) => {
-      return {
-        ...schema,
-        tables: {
-          ...schema.tables,
-          addedTable: sqliteTable('added_table', {
-            id: integer('id').primaryKey({ autoIncrement: true }),
-          }),
-        },
-      }
-    },
-  ],
-})
-```
-
-One use case is preserving your existing database structure when migrating to Payload. By default, Payload drops the current database schema, which may not be desirable in this scenario.
-To quickly generate the Drizzle schema from your database you can use [Drizzle Introspection](https://orm.drizzle.team/kit-docs/commands#introspect--pull)
-You should get the `schema.ts` file which may look like this:
-
-```ts
-import { sqliteTable, text, uniqueIndex, integer } from 'drizzle-orm/sqlite-core'
-
-export const users = sqliteTable('users', {
-  id: integer('id').primaryKey({ autoIncrement: true }),
-  fullName: text('full_name'),
-  phone: text('phone', {length: 256}),
-})
-
-export const countries = sqliteTable(
-  'countries',
-  {
-    id: integer('id').primaryKey({ autoIncrement: true }),
-    name: text('name', { length: 256 }),
-  },
-  (countries) => {
-    return {
-      nameIndex: uniqueIndex('name_idx').on(countries.name),
-    }
-  },
-)
-
-```
-
-You can import them into your config and append to the schema with the `beforeSchemaInit` hook like this:
-
-```ts
-import { sqliteAdapter } from '@payloadcms/db-sqlite'
-import { users, countries } from '../drizzle/schema'
-
-sqliteAdapter({
-  beforeSchemaInit: [
-    ({ schema, adapter }) => {
-      return {
-        ...schema,
-        tables: {
-          ...schema.tables,
-          users,
-          countries
-        },
-      }
-    },
-  ],
-})
-```
-
-Make sure Payload doesn't overlap table names with its collections. For example, if you already have a collection with slug "users", you should either change the slug or `dbName` to change the table name for this collection.
-
-
-### afterSchemaInit
-
-Runs after the Drizzle schema is built. You can use this hook to modify the schema with features that aren't supported by Payload, or if you want to add a column that you don't want to be in the Payload config.
-To extend a table, Payload exposes `extendTable` utillity to the args. You can refer to the [Drizzle documentation](https://orm.drizzle.team/docs/sql-schema-declaration).
-The following example adds the `extra_integer_column` column and a composite index on `country` and `city` columns.
-
-```ts
-import { sqliteAdapter } from '@payloadcms/db-sqlite'
-import { index, integer } from '@payloadcms/db-sqlite/drizzle/sqlite-core'
-import { buildConfig } from 'payload'
-
-export default buildConfig({
-  collections: [
-    {
-      slug: 'places',
-      fields: [
-        {
-          name: 'country',
-          type: 'text',
-        },
-        {
-          name: 'city',
-          type: 'text',
-        },
-      ],
-    },
-  ],
-  db: sqliteAdapter({
-    afterSchemaInit: [
-      ({ schema, extendTable, adapter }) => {
-        extendTable({
-          table: schema.tables.places,
-          columns: {
-            extraIntegerColumn: integer('extra_integer_column'),
+            primaryKey: true,
           },
-          extraConfig: (table) => ({
-            country_city_composite_index: index('country_city_composite_index').on(
-              table.country,
-              table.city,
-            ),
-          }),
-        })
-
-        return schema
-      },
-    ],
-  }),
-})
-
-```
-
-### Note for generated schema:
-Columns and tables, added in schema hooks won't be added to the generated via `payload generate:db-schema` Drizzle schema.
-If you want them to be there, you either have to edit this file manually or mutate the internal Payload "raw" SQL schema in the `beforeSchemaInit`:
-
-```ts
-import { sqliteAdapter } from '@payloadcms/db-sqlite'
-
-sqliteAdapter({
-  beforeSchemaInit: [
-    ({ schema, adapter }) => {
-      // Add a new table
-       adapter.rawTables.myTable = {
-        name: 'my_table',
-        columns: {
-          my_id: {
-            name: 'my_id',
-            type: 'integer',
-            primaryKey: true
-          }
-        }
+        },
       }
 
       // Add a new column to generated by Payload table:
@@ -9524,13 +7081,13 @@ sqliteAdapter({
         name: 'custom_column',
         // Note that Payload SQL doesn't support everything that Drizzle does.
         type: 'integer',
-        notNull: true
+        notNull: true,
       }
       // Add a new index to generated by Payload table:
       adapter.rawTables.posts.indexes.customColumnIdx = {
         name: 'custom_column_idx',
         unique: true,
-        on: ['custom_column']
+        on: ['custom_column'],
       }
 
       return schema
@@ -9540,7 +7097,7 @@ sqliteAdapter({
 ```
 ````
 
-## File: database/transactions.mdx
+## File: database_transactions.mdx
 ````
 ---
 title: Transactions
@@ -9557,13 +7114,15 @@ By default, Payload will use transactions for all data changing operations, as l
 <Banner type="info">
   **Note:**
 
-  MongoDB requires a connection to a replicaset in order to make use of transactions.
+MongoDB requires a connection to a replicaset in order to make use of transactions.
+
 </Banner>
 
 <Banner type="info">
   **Note:**
 
-  Transactions in SQLite are disabled by default. You need to pass `transactionOptions: {}` to enable them.
+Transactions in SQLite are disabled by default. You need to pass `transactionOptions: {}` to enable them.
+
 </Banner>
 
 The initial request made to Payload will begin a new transaction and attach it to the `req.transactionID`. If you have a `hook` that interacts with the database, you can opt in to using the same transaction by passing the `req` in the arguments. For example:
@@ -9611,7 +7170,7 @@ const afterChange: CollectionAfterChangeHook = async ({ req }) => {
 
 ## Direct Transaction Access
 
-When writing your own scripts or custom endpoints, you may wish to have direct control over transactions. This is useful for interacting with your database outside of Payload's local API.
+When writing your own scripts or custom endpoints, you may wish to have direct control over transactions. This is useful for interacting with your database outside of Payload's Local API.
 
 The following functions can be used for managing transactions:
 
@@ -9619,7 +7178,7 @@ The following functions can be used for managing transactions:
 - `payload.db.commitTransaction` - Takes the identifier for the transaction, finalizes any changes.
 - `payload.db.rollbackTransaction` - Takes the identifier for the transaction, discards any changes.
 
-Payload uses the `req` object to pass the transaction ID through to the database adapter. If you are not using the `req` object, you can make a new object to pass the transaction ID directly to database adapter methods and local API calls.
+Payload uses the `req` object to pass the transaction ID through to the database adapter. If you are not using the `req` object, you can make a new object to pass the transaction ID directly to database adapter methods and Local API calls.
 Example:
 
 ```ts
@@ -9633,14 +7192,14 @@ const standalonePayloadScript = async () => {
   const transactionID = await payload.db.beginTransaction()
 
   try {
-    // Make an update using the local API
+    // Make an update using the Local API
     await payload.update({
       collection: 'posts',
       data: {
         some: 'data',
       },
       where: {
-        slug: { equals: 'my-slug' }
+        slug: { equals: 'my-slug' },
       },
       req: { transactionID },
     })
@@ -9665,7 +7224,7 @@ standalonePayloadScript()
 
 If you wish to disable transactions entirely, you can do so by passing `false` as the `transactionOptions` in your database adapter configuration. All the official Payload database adapters support this option.
 
-In addition to allowing database transactions to be disabled at the adapter level. You can prevent Payload from using a transaction in direct calls to the local API by adding `disableTransaction: true` to the args. For example:
+In addition to allowing database transactions to be disabled at the adapter level. You can prevent Payload from using a transaction in direct calls to the Local API by adding `disableTransaction: true` to the args. For example:
 
 ```ts
 await payload.update({
@@ -9674,14 +7233,14 @@ await payload.update({
     some: 'data',
   },
   where: {
-    slug: { equals: 'my-slug' }
+    slug: { equals: 'my-slug' },
   },
   disableTransaction: true,
 })
 ```
 ````
 
-## File: email/overview.mdx
+## File: email_overview.mdx
 ````
 ---
 title: Email Functionality
@@ -9701,7 +7260,7 @@ The email adapter should be passed into the `email` property of the Payload Conf
 
 ### Default Configuration
 
-When email is not needed or desired, Payload will log a warning on startup notifying that email is not configured. A  warning message will also be logged on any attempt to send an email.
+When email is not needed or desired, Payload will log a warning on startup notifying that email is not configured. A warning message will also be logged on any attempt to send an email.
 
 ### Email Adapter
 
@@ -9709,9 +7268,8 @@ An email adapter will require at least the following fields:
 
 | Option                      | Description                                                                      |
 | --------------------------- | -------------------------------------------------------------------------------- |
-| **`defaultFromName`** *    | The name part of the From field that will be seen on the delivered email         |
-| **`defaultFromAddress`** * | The email address part of the From field that will be used when delivering email |
-
+| **`defaultFromName`** \*    | The name part of the From field that will be seen on the delivered email         |
+| **`defaultFromAddress`** \* | The email address part of the From field that will be used when delivering email |
 
 ### Official Email Adapters
 
@@ -9782,12 +7340,10 @@ export default buildConfig({
 
 You also have the ability to bring your own nodemailer transport. This is an example of using the SendGrid nodemailer transport.
 
-
 ```ts
 import { buildConfig } from 'payload'
 import { nodemailerAdapter } from '@payloadcms/email-nodemailer'
 import nodemailerSendgrid from 'nodemailer-sendgrid'
-
 
 export default buildConfig({
   email: nodemailerAdapter({
@@ -9851,7 +7407,7 @@ const email = await payload.sendEmail({
 Payload supports the use of a single transporter of email, but there is nothing stopping you from having more. Consider a use case where sending bulk email is handled differently than transactional email and could be done using a [hook](/docs/hooks/overview).
 ````
 
-## File: examples/overview.mdx
+## File: examples_overview.mdx
 ````
 ---
 title: Examples
@@ -9882,245 +7438,7 @@ npx create-payload-app --example example_name
 We are adding new examples every day, so if your particular use case is not demonstrated in any existing example, please feel free to start a new [Discussion](https://github.com/payloadcms/payload/discussions) or open a new [PR](https://github.com/payloadcms/payload/pulls) to add it yourself.
 ````
 
-## File: fields/array.mdx
-````
----
-title: Array Field
-label: Array
-order: 20
-desc: Array Fields are intended for sets of repeating fields, that you define. Learn how to use Array Fields, see examples and options.
-keywords: array, fields, config, configuration, documentation, Content Management System, cms, headless, javascript, node, react, nextjs
----
-
-The Array Field is used when you need to have a set of "repeating" [Fields](./overview). It stores an array of objects containing fields that you define. These fields can be of any type, including other arrays, to achieve infinitely nested data structures.
-
-Arrays are useful for many different types of content from simple to complex, such as:
-
-- A "slider" with an image ([upload field](/docs/fields/upload)) and a caption ([text field](/docs/fields/text))
-- Navigational structures where editors can specify nav items containing pages ([relationship field](/docs/fields/relationship)), an "open in new tab" [checkbox field](/docs/fields/checkbox)
-- Event agenda "timeslots" where you need to specify start & end time ([date field](/docs/fields/date)), label ([text field](/docs/fields/text)), and Learn More page [relationship](/docs/fields/relationship)
-
-<LightDarkImage
-  srcLight="https://payloadcms.com/images/docs/fields/array.png"
-  srcDark="https://payloadcms.com/images/docs/fields/array-dark.png"
-  alt="Array field with two Rows in Payload Admin Panel"
-  caption="Admin Panel screenshot of an Array field with two Rows"
-/>
-
-To create an Array Field, set the `type` to `array` in your [Field Config](./overview):
-
-```ts
-import type { Field } from 'payload'
-
-export const MyArrayField: Field = {
-  // ...
-  // highlight-start
-  type: 'array',
-  fields: [
-    // ...
-  ],
-  // highlight-end
-}
-```
-
-## Config Options
-
-| Option                 | Description                                                                                                                                                                                                                                                                        |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`name`** *          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                                                                                                                             |
-| **`label`**            | Text used as the heading in the [Admin Panel](../admin/overview) or an object with keys for each language. Auto-generated from name if not defined.                                                                                                                                |
-| **`fields`** *        | Array of field types to correspond to each row of the Array.                                                                                                                                                                                                                       |
-| **`validate`**         | Provide a custom validation function that will be executed on both the [Admin Panel](../admin/overview) and the backend. [More](/docs/fields/overview#validation)                                                                                                                  |
-| **`minRows`**          | A number for the fewest allowed items during validation when a value is present.                                                                                                                                                                                                   |
-| **`maxRows`**          | A number for the most allowed items during validation when a value is present.                                                                                                                                                                                                     |
-| **`saveToJWT`**        | If this field is top-level and nested in a config supporting [Authentication](/docs/authentication/overview), include its data in the user JWT.                                                                                                                                    |
-| **`hooks`**            | Provide Field Hooks to control logic for this field. [More details](../hooks/fields).                                                                                                                                                                                              |
-| **`access`**           | Provide Field Access Control to denote what users can see and do with this field's data. [More details](../access-control/fields).                                                                                                                                                 |
-| **`hidden`**           | Restrict this field's visibility from all APIs entirely. Will still be saved to the database, but will not appear in any API or the Admin Panel.                                                                                                                                   |
-| **`defaultValue`**     | Provide an array of row data to be used for this field's default value. [More](/docs/fields/overview#default-values)                                                                                                                                                               |
-| **`localized`**        | Enable localization for this field. Requires [localization to be enabled](/docs/configuration/localization) in the Base config. If enabled, a separate, localized set of all data within this Array will be kept, so there is no need to specify each nested field as `localized`. |
-| **`required`**         | Require this field to have a value.                                                                                                                                                                                                                                                |
-| **`labels`**           | Customize the row labels appearing in the Admin dashboard.                                                                                                                                                                                                                         |
-| **`admin`**            | Admin-specific configuration. [More details](#admin-options).                                                                                                                                                                                                                      |
-| **`custom`**           | Extension point for adding custom data (e.g. for plugins)                                                                                                                                                                                                                          |
-| **`interfaceName`**    | Create a top level, reusable [Typescript interface](/docs/typescript/generating-types#custom-field-interfaces) & [GraphQL type](/docs/graphql/graphql-schema#custom-field-schemas).                                                                                                |
-| **`dbName`**           | Custom table name for the field when using SQL Database Adapter ([Postgres](/docs/database/postgres)). Auto-generated from name if not defined.                                                                                                                                    |
-| **`typescriptSchema`** | Override field type generation with providing a JSON schema                                                                                                                                                                                                                        |
-| **`virtual`**          | Provide `true` to disable field in the database. See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges)                                                                                                                   |
-
-_* An asterisk denotes that a property is required._
-
-## Admin Options
-
-To customize the appearance and behavior of the Array Field in the [Admin Panel](../admin/overview), you can use the `admin` option:
-
-```ts
-import type { Field } from 'payload'
-
-export const MyArrayField: Field = {
-  // ...
-  admin: { // highlight-line
-    // ...
-  },
-}
-```
-
-The Array Field inherits all of the default options from the base [Field Admin Config](./overview#admin-options), plus the following additional options:
-
-| Option                    | Description                                                                                                                                     |
-| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`initCollapsed`**       | Set the initial collapsed state                                                                                                                 |
-| **`components.RowLabel`** | React component to be rendered as the label on the array row. [Example](#row-label)                                                             |
-| **`isSortable`**          | Disable order sorting by setting this value to `false`                                                                                          |
-
-## Example
-
-In this example, we have an Array Field called `slider` that contains a set of fields for a simple image slider. Each row in the array has a `title`, `image`, and `caption`. We also customize the row label to display the title if it exists, or a default label if it doesn't.
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const ExampleCollection: CollectionConfig = {
-  slug: 'example-collection',
-  fields: [
-    {
-      name: 'slider', // required
-      type: 'array', // required
-      label: 'Image Slider',
-      minRows: 2,
-      maxRows: 10,
-      interfaceName: 'CardSlider', // optional
-      labels: {
-        singular: 'Slide',
-        plural: 'Slides',
-      },
-      fields: [
-        // required
-        {
-          name: 'title',
-          type: 'text',
-        },
-        {
-          name: 'image',
-          type: 'upload',
-          relationTo: 'media',
-          required: true,
-        },
-        {
-          name: 'caption',
-          type: 'text',
-        },
-      ],
-    },
-  ],
-}
-```
-
-## Custom Components
-
-### Field
-
-#### Server Component
-
-```tsx
-import type React from 'react'
-import { ArrayField } from '@payloadcms/ui'
-import type { ArrayFieldServerComponent } from 'payload'
-
-export const CustomArrayFieldServer: ArrayFieldServerComponent = ({
-  clientField,
-  path,
-  schemaPath,
-  permissions
-}) => {
-  return (
-    <ArrayField
-      field={clientField}
-      path={path}
-      schemaPath={schemaPath}
-      permissions={permissions}
-    />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { ArrayField } from '@payloadcms/ui'
-import type { ArrayFieldClientComponent } from 'payload'
-
-export const CustomArrayFieldClient: ArrayFieldClientComponent = (props) => {
-  return <ArrayField {...props} />
-}
-```
-
-### Label
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import { FieldLabel } from '@payloadcms/ui'
-import type { ArrayFieldLabelServerComponent } from 'payload'
-
-export const CustomArrayFieldLabelServer: ArrayFieldLabelServerComponent = ({
-  clientField,
-  path,
-}) => {
-  return (
-    <FieldLabel
-      label={clientField?.label || clientField?.name}
-      path={path}
-      required={clientField?.required}
-    />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import type { ArrayFieldLabelClientComponent } from 'payload'
-
-import { FieldLabel } from '@payloadcms/ui'
-import React from 'react'
-
-export const CustomArrayFieldLabelClient: ArrayFieldLabelClientComponent = ({
-  field,
-  path
-}) => {
-  return (
-    <FieldLabel
-      label={field?.label || field?.name}
-      path={path}
-      required={field?.required}
-    />
-  )
-}
-```
-
-### Row Label
-
-```tsx
-'use client'
-
-import { useRowLabel } from '@payloadcms/ui'
-
-export const ArrayRowLabel = () => {
-  const { data, rowNumber } = useRowLabel<{ title?: string }>()
-
-  const customLabel = `${data.title || 'Slide'} ${String(rowNumber).padStart(2, '0')} `
-
-  return <div>Custom Label: {customLabel}</div>
-}
-```
-````
-
-## File: fields/blocks.mdx
+## File: fields_blocks.mdx
 ````
 ---
 title: Blocks Field
@@ -10165,9 +7483,9 @@ export const MyBlocksField: Field = {
 
 | Option                 | Description                                                                                                                                                                                                                                                                        |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`name`** *          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                                                                                                                             |
+| **`name`** \*          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                                                                                                                             |
 | **`label`**            | Text used as the heading in the Admin Panel or an object with keys for each language. Auto-generated from name if not defined.                                                                                                                                                     |
-| **`blocks`** *        | Array of [block configs](/docs/fields/blocks#block-configs) to be made available to this field.                                                                                                                                                                                    |
+| **`blocks`** \*        | Array of [block configs](/docs/fields/blocks#block-configs) to be made available to this field.                                                                                                                                                                                    |
 | **`validate`**         | Provide a custom validation function that will be executed on both the Admin Panel and the backend. [More](/docs/fields/overview#validation)                                                                                                                                       |
 | **`minRows`**          | A number for the fewest allowed items during validation when a value is present.                                                                                                                                                                                                   |
 | **`maxRows`**          | A number for the most allowed items during validation when a value is present.                                                                                                                                                                                                     |
@@ -10184,7 +7502,7 @@ export const MyBlocksField: Field = {
 | **`typescriptSchema`** | Override field type generation with providing a JSON schema                                                                                                                                                                                                                        |
 | **`virtual`**          | Provide `true` to disable field in the database. See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges)                                                                                                                   |
 
-_* An asterisk denotes that a property is required._
+_\* An asterisk denotes that a property is required._
 
 ## Admin Options
 
@@ -10195,7 +7513,8 @@ import type { Field } from 'payload'
 
 export const MyBlocksField: Field = {
   // ...
-  admin: { // highlight-line
+  admin: {
+    // highlight-line
     // ...
   },
 }
@@ -10203,12 +7522,12 @@ export const MyBlocksField: Field = {
 
 The Blocks Field inherits all of the default options from the base [Field Admin Config](./overview#admin-options), plus the following additional options:
 
-| Option              | Description                                                                |
-| ------------------- | -------------------------------------------------------------------------- |
-| **`group`**         | Text or localization object used to group this Block in the Blocks Drawer. |
-| **`initCollapsed`** | Set the initial collapsed state                                            |
-| **`isSortable`**    | Disable order sorting by setting this value to `false`                     |
-| **`disableBlockName`**    | Hide the blockName field by setting this value to `true`                     |
+| Option                 | Description                                                                |
+| ---------------------- | -------------------------------------------------------------------------- |
+| **`group`**            | Text or localization object used to group this Block in the Blocks Drawer. |
+| **`initCollapsed`**    | Set the initial collapsed state                                            |
+| **`isSortable`**       | Disable order sorting by setting this value to `false`                     |
+| **`disableBlockName`** | Hide the blockName field by setting this value to `true`                   |
 
 #### Customizing the way your block is rendered in Lexical
 
@@ -10222,8 +7541,9 @@ This is super handy if you'd like to present your editors with a very deliberate
 For example, if you have a `gallery` block, you might want to actually render the gallery of images directly in your Lexical block. With the `admin.components.Block` property, you can do exactly that!
 
 <Banner type="success">
-  **Tip:**
-  If you customize the way your block is rendered in Lexical, you can import utility components to easily edit / remove your block - so that you don't have to build all of this yourself.
+  **Tip:** If you customize the way your block is rendered in Lexical, you can
+  import utility components to easily edit / remove your block - so that you
+  don't have to build all of this yourself.
 </Banner>
 
 To import these utility components for one of your custom blocks, you can import the following:
@@ -10251,7 +7571,6 @@ import {
   // The default "collapsible" UI that is rendered for a regular block
   // if you want to re-use it
   BlockCollapsible,
-
 } from '@payloadcms/richtext-lexical/client'
 ```
 
@@ -10260,18 +7579,18 @@ import {
 Blocks are defined as separate configs of their own.
 
 <Banner type="success">
-  **Tip:**
-  Best practice is to define each block config in its own file, and then import them into your
-  Blocks field as necessary. This way each block config can be easily shared between fields. For
-  instance, using the "layout builder" example, you might want to feature a few of the same blocks
-  in a Post collection as well as a Page collection. Abstracting into their own files trivializes
-  their reusability.
+  **Tip:** Best practice is to define each block config in its own file, and
+  then import them into your Blocks field as necessary. This way each block
+  config can be easily shared between fields. For instance, using the "layout
+  builder" example, you might want to feature a few of the same blocks in a Post
+  collection as well as a Page collection. Abstracting into their own files
+  trivializes their reusability.
 </Banner>
 
 | Option                     | Description                                                                                                                                                                         |
 | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`slug`** *               | Identifier for this block type. Will be saved on each block as the `blockType` property.                                                                                            |
-| **`fields`** *             | Array of fields to be stored in this block.                                                                                                                                         |
+| **`slug`** \*              | Identifier for this block type. Will be saved on each block as the `blockType` property.                                                                                            |
+| **`fields`** \*            | Array of fields to be stored in this block.                                                                                                                                         |
 | **`labels`**               | Customize the block labels that appear in the Admin dashboard. Auto-generated from slug if not defined.                                                                             |
 | **`imageURL`**             | Provide a custom image thumbnail to help editors identify this block in the Admin UI.                                                                                               |
 | **`imageAltText`**         | Customize this block's image thumbnail alt text.                                                                                                                                    |
@@ -10350,10 +7669,11 @@ export const CustomBlocksFieldServer: BlocksFieldServerComponent = ({
   clientField,
   path,
   schemaPath,
-  permissions
+  permissions,
 }) => {
   return (
-    <BlocksField field={clientField}
+    <BlocksField
+      field={clientField}
       path={path}
       schemaPath={schemaPath}
       permissions={permissions}
@@ -10421,6 +7741,22 @@ export const CustomBlocksFieldLabelClient: BlocksFieldLabelClientComponent = ({
 }
 ```
 
+### Row Label
+
+```tsx
+'use client'
+
+import { useRowLabel } from '@payloadcms/ui'
+
+export const BlockRowLabel = () => {
+  const { data, rowNumber } = useRowLabel<{ title?: string }>()
+
+  const customLabel = `${data.type} ${String(rowNumber).padStart(2, '0')} `
+
+  return <div>Custom Label: {customLabel}</div>
+}
+```
+
 ## Block References
 
 If you have multiple blocks used in multiple places, your Payload Config can grow in size, potentially sending more data to the client and requiring more processing on the server. However, you can optimize performance by defining each block **once** in your Payload Config and then referencing its slug wherever it's used instead of passing the entire block config.
@@ -10481,9 +7817,9 @@ const config = buildConfig({
   **Reminder:**
   Blocks referenced in the `blockReferences` array are treated as isolated from the collection / global config. This has the following implications:
 
-  1. The block config cannot be modified or extended in the collection config. It will be identical everywhere it's referenced.
-  2. Access control for blocks referenced in the `blockReferences` are run only once - data from the collection will not be available in the block's access control.
-</Banner>
+1. The block config cannot be modified or extended in the collection config. It will be identical everywhere it's referenced.
+2. Access control for blocks referenced in the `blockReferences` are run only once - data from the collection will not be available in the block's access control.
+   </Banner>
 
 ## TypeScript
 
@@ -10494,349 +7830,7 @@ import type { Block } from 'payload'
 ```
 ````
 
-## File: fields/checkbox.mdx
-````
----
-title: Checkbox Field
-label: Checkbox
-order: 40
-desc: Checkbox field types allow the developer to save a boolean value in the database. Learn how to use Checkbox fields, see examples and options.
-keywords: checkbox, fields, config, configuration, documentation, Content Management System, cms, headless, javascript, node, react, nextjs
----
-
-The Checkbox Field saves a boolean in the database.
-
-<LightDarkImage
-  srcLight="https://payloadcms.com/images/docs/fields/checkbox.png"
-  srcDark="https://payloadcms.com/images/docs/fields/checkbox-dark.png"
-  alt="Checkbox field with text field in Payload Admin Panel"
-  caption="Admin Panel screenshot of Checkbox field with Text field below"
-/>
-
-To add a Checkbox Field, set the `type` to `checkbox` in your [Field Config](./overview):
-
-```ts
-import type { Field } from 'payload'
-
-export const MyCheckboxField: Field = {
-  // ...
-  type: 'checkbox', // highlight-line
-}
-```
-
-## Config Options
-
-| Option                 | Description                                                                                                                                                                 |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`name`** *          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                      |
-| **`label`**            | Text used as a field label in the Admin Panel or an object with keys for each language.                                                                                     |
-| **`validate`**         | Provide a custom validation function that will be executed on both the Admin Panel and the backend. [More](/docs/fields/overview#validation)                                |
-| **`index`**            | Build an [index](/docs/database/overview) for this field to produce faster queries. Set this field to `true` if your users will perform queries on this field's data often. |
-| **`saveToJWT`**        | If this field is top-level and nested in a config supporting [Authentication](/docs/authentication/overview), include its data in the user JWT.                             |
-| **`hooks`**            | Provide Field Hooks to control logic for this field. [More details](../hooks/fields).                                                                                       |
-| **`access`**           | Provide Field Access Control to denote what users can see and do with this field's data. [More details](../access-control/fields).                                          |
-| **`hidden`**           | Restrict this field's visibility from all APIs entirely. Will still be saved to the database, but will not appear in any API or the Admin Panel.                            |
-| **`defaultValue`**     | Provide data to be used for this field's default value, will default to false if field is also `required`. [More](/docs/fields/overview#default-values)                     |
-| **`localized`**        | Enable localization for this field. Requires [localization to be enabled](/docs/configuration/localization) in the Base config.                                             |
-| **`required`**         | Require this field to have a value.                                                                                                                                         |
-| **`admin`**            | Admin-specific configuration. [More details](./overview#admin-options).                                                                                                |
-| **`custom`**           | Extension point for adding custom data (e.g. for plugins)                                                                                                                   |
-| **`typescriptSchema`** | Override field type generation with providing a JSON schema                                                                                                                 |
-| **`virtual`**          | Provide `true` to disable field in the database. See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges)            |
-
-_* An asterisk denotes that a property is required._
-
-## Example
-
-Here is an example of a Checkbox Field in a Collection:
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const ExampleCollection: CollectionConfig = {
-  slug: 'example-collection',
-  fields: [
-    {
-      name: 'enableCoolStuff', // required
-      type: 'checkbox', // required
-      label: 'Click me to see fanciness',
-      defaultValue: false,
-    },
-  ],
-}
-```
-
-## Custom Components
-
-### Field
-
-#### Server Component
-
-```tsx
-import type React from 'react'
-import { CheckboxField } from '@payloadcms/ui'
-import type { CheckboxFieldServerComponent } from 'payload'
-
-export const CustomCheckboxFieldServer: CheckboxFieldServerComponent = ({
-  clientField,
-  path,
-  schemaPath,
-  permissions,
-}) => {
-  return (
-    <CheckboxField
-      field={clientField}
-      path={path}
-      schemaPath={schemaPath}
-      permissions={permissions}
-    />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { CheckboxField } from '@payloadcms/ui'
-import type { CheckboxFieldClientComponent } from 'payload'
-
-export const CustomCheckboxFieldClient: CheckboxFieldClientComponent = (props) => {
-  return <CheckboxField {...props} />
-}
-```
-
-### Label
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import { FieldLabel } from '@payloadcms/ui'
-import type { CheckboxFieldLabelServerComponent } from 'payload'
-
-export const CustomCheckboxFieldLabelServer: CheckboxFieldLabelServerComponent = ({
-  clientField,
-  path,
-}) => {
-  return (
-    <FieldLabel
-      label={clientField?.label || clientField?.name}
-      path={path}
-      required={clientField?.required}
-    />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { FieldLabel } from '@payloadcms/ui'
-import type { CheckboxFieldLabelClientComponent } from 'payload'
-
-export const CustomCheckboxFieldLabelClient: CheckboxFieldLabelClientComponent = ({
-  label,
-  path,
-  required,
-}) => {
-  return (
-  <FieldLabel
-    label={field?.label || field?.name}
-    path={path}
-    required={field?.required}
-  />
-)
-}
-```
-````
-
-## File: fields/code.mdx
-````
----
-title: Code Field
-label: Code
-order: 50
-desc: The Code field type will store any string in the Database. Learn how to use Code fields, see examples and options.
-
-keywords: code, fields, config, configuration, documentation, Content Management System, cms, headless, javascript, node, react, nextjs
----
-
-The Code Field saves a string in the database, but provides the [Admin Panel](../admin/overview) with a code editor styled interface.
-
-<LightDarkImage
-  srcLight="https://payloadcms.com/images/docs/fields/code.png"
-  srcDark="https://payloadcms.com/images/docs/fields/code-dark.png"
-  alt="Shows a Code field in the Payload Admin Panel"
-  caption="This field is using the `monaco-react` editor syntax highlighting."
-/>
-
-To add a Code Field, set the `type` to `code` in your [Field Config](./overview):
-
-```ts
-import type { Field } from 'payload'
-
-export const MyBlocksField: Field = {
-  // ...
-  type: 'code', // highlight-line
-}
-```
-
-## Config Options
-
-| Option                 | Description                                                                                                                                                                 |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`name`** *          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                      |
-| **`label`**            | Text used as a field label in the Admin Panel or an object with keys for each language.                                                                                     |
-| **`unique`**           | Enforce that each entry in the Collection has a unique value for this field.                                                                                                |
-| **`index`**            | Build an [index](/docs/database/overview) for this field to produce faster queries. Set this field to `true` if your users will perform queries on this field's data often. |
-| **`minLength`**        | Used by the default validation function to ensure values are of a minimum character length.                                                                                 |
-| **`maxLength`**        | Used by the default validation function to ensure values are of a maximum character length.                                                                                 |
-| **`validate`**         | Provide a custom validation function that will be executed on both the Admin Panel and the backend. [More](/docs/fields/overview#validation)                                |
-| **`saveToJWT`**        | If this field is top-level and nested in a config supporting [Authentication](/docs/authentication/overview), include its data in the user JWT.                             |
-| **`hooks`**            | Provide Field Hooks to control logic for this field. [More details](../hooks/fields).                                                                                       |
-| **`access`**           | Provide Field Access Control to denote what users can see and do with this field's data. [More details](../access-control/fields).                                          |
-| **`hidden`**           | Restrict this field's visibility from all APIs entirely. Will still be saved to the database, but will not appear in any API or the Admin Panel.                            |
-| **`defaultValue`**     | Provide data to be used for this field's default value. [More](/docs/fields/overview#default-values)                                                                        |
-| **`localized`**        | Enable localization for this field. Requires [localization to be enabled](/docs/configuration/localization) in the Base config.                                             |
-| **`required`**         | Require this field to have a value.                                                                                                                                         |
-| **`admin`**            | Admin-specific configuration. See below for [more detail](#admin-options).                                                                                                  |
-| **`custom`**           | Extension point for adding custom data (e.g. for plugins)                                                                                                                   |
-| **`typescriptSchema`** | Override field type generation with providing a JSON schema                                                                                                                 |
-| **`virtual`**          | Provide `true` to disable field in the database. See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges)            |
-
-_* An asterisk denotes that a property is required._
-
-## Admin Options
-
-To customize the appearance and behavior of the Code Field in the [Admin Panel](../admin/overview), you can use the `admin` option:
-
-```ts
-import type { Field } from 'payload'
-
-export const MyCodeField: Field = {
-  // ...
-  admin: { // highlight-line
-    // ...
-  },
-}
-```
-
-The Code Field inherits all of the default options from the base [Field Admin Config](./overview#admin-options), plus the following additional options:
-
-| Option              | Description                                                                                                                                                                     |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`language`**      | This property can be set to any language listed [here](https://github.com/microsoft/monaco-editor/tree/main/src/basic-languages).                                               |
-| **`editorOptions`** | Options that can be passed to the monaco editor, [view the full list](https://microsoft.github.io/monaco-editor/typedoc/interfaces/editor.IDiffEditorConstructionOptions.html). |
-
-## Example
-
-`collections/ExampleCollection.ts
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const ExampleCollection: CollectionConfig = {
-  slug: 'example-collection',
-  fields: [
-    {
-      name: 'trackingCode', // required
-      type: 'code', // required
-      required: true,
-      admin: {
-        language: 'javascript',
-      },
-    },
-  ],
-}
-```
-
-## Custom Components
-
-### Field
-
-#### Server Component
-
-```tsx
-import type React from 'react'
-import { CodeField } from '@payloadcms/ui'
-import type { CodeFieldServerComponent } from 'payload'
-
-export const CustomCodeFieldServer: CodeFieldServerComponent = ({
-  clientField,
-  path,
-  schemaPath,
-  permissions,
-}) => {
-  return (
-    <CodeField field={clientField} path={path} schemaPath={schemaPath} permissions={permissions} />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { CodeField } from '@payloadcms/ui'
-import type { CodeFieldClientComponent } from 'payload'
-
-export const CustomCodeFieldClient: CodeFieldClientComponent = (props) => {
-  return <CodeField {...props} />
-}
-```
-
-### Label
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import { FieldLabel } from '@payloadcms/ui'
-import type { CodeFieldLabelServerComponent } from 'payload'
-
-export const CustomCodeFieldLabelServer: CodeFieldLabelServerComponent = ({
-  clientField,
-  path,
-}) => {
-  return (
-    <FieldLabel
-      label={clientField?.label || clientField?.name}
-      path={path}
-      required={clientField?.required}
-    />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { FieldLabel } from '@payloadcms/ui'
-import type { CodeFieldLabelClientComponent } from 'payload'
-
-export const CustomCodeFieldLabelClient: CodeFieldLabelClientComponent = ({
-  field,
-  path,
-}) => {
-  return (
-    <FieldLabel
-      label={field?.label || field?.name}
-      path={path}
-      required={field?.required}
-    />
-  )
-}
-```
-````
-
-## File: fields/collapsible.mdx
+## File: fields_collapsible.mdx
 ````
 ---
 title: Collapsible Field
@@ -10875,12 +7869,12 @@ export const MyCollapsibleField: Field = {
 
 | Option          | Description                                                                                                                                                                  |
 | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`label`** *  | A label to render within the header of the collapsible component. This can be a string, function or react component. Function/components receive `({ data, path })` as args. |
-| **`fields`** * | Array of field types to nest within this Collapsible.                                                                                                                        |
-| **`admin`**     | Admin-specific configuration. [More details](#admin-options).                                                                                                    |
+| **`label`** \*  | A label to render within the header of the collapsible component. This can be a string, function or react component. Function/components receive `({ data, path })` as args. |
+| **`fields`** \* | Array of field types to nest within this Collapsible.                                                                                                                        |
+| **`admin`**     | Admin-specific configuration. [More details](#admin-options).                                                                                                                |
 | **`custom`**    | Extension point for adding custom data (e.g. for plugins)                                                                                                                    |
 
-_* An asterisk denotes that a property is required._
+_\* An asterisk denotes that a property is required._
 
 ## Admin Options
 
@@ -10891,7 +7885,8 @@ import type { Field } from 'payload'
 
 export const MyCollapsibleField: Field = {
   // ...
-  admin: { // highlight-line
+  admin: {
+    // highlight-line
     // ...
   },
 }
@@ -10935,434 +7930,7 @@ export const ExampleCollection: CollectionConfig = {
 ```
 ````
 
-## File: fields/date.mdx
-````
----
-title: Date Field
-label: Date
-order: 70
-desc: The Date field type stores a Date in the database. Learn how to use and customize the Date field, see examples and options.
-keywords: date, fields, config, configuration, documentation, Content Management System, cms, headless, javascript, node, react, nextjs
----
-
-The Date Field saves a Date in the database and provides the [Admin Panel](../admin/overview) with a customizable time picker interface.
-
-<LightDarkImage
-  srcLight="https://payloadcms.com/images/docs/fields/date.png"
-  srcDark="https://payloadcms.com/images/docs/fields/date-dark.png"
-  alt="Shows a Date field in the Payload Admin Panel"
-  caption="This field is using the `react-datepicker` component for UI."
-/>
-
-To add a Date Field, set the `type` to `date` in your [Field Config](./overview):
-
-```ts
-import type { Field } from 'payload'
-
-export const MyDateField: Field = {
-  // ...
-  type: 'date', // highlight-line
-}
-```
-
-## Config Options
-
-| Option                 | Description                                                                                                                                                                 |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`name`** *          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                      |
-| **`label`**            | Text used as a field label in the Admin Panel or an object with keys for each language.                                                                                     |
-| **`index`**            | Build an [index](/docs/database/overview) for this field to produce faster queries. Set this field to `true` if your users will perform queries on this field's data often. |
-| **`validate`**         | Provide a custom validation function that will be executed on both the Admin Panel and the backend. [More](/docs/fields/overview#validation)                                |
-| **`saveToJWT`**        | If this field is top-level and nested in a config supporting [Authentication](/docs/authentication/overview), include its data in the user JWT.                             |
-| **`hooks`**            | Provide Field Hooks to control logic for this field. [More details](../hooks/fields).                                                                                       |
-| **`access`**           | Provide Field Access Control to denote what users can see and do with this field's data. [More details](../access-control/fields).                                          |
-| **`hidden`**           | Restrict this field's visibility from all APIs entirely. Will still be saved to the database, but will not appear in any API or the Admin Panel.                            |
-| **`defaultValue`**     | Provide data to be used for this field's default value. [More](/docs/fields/overview#default-values)                                                                        |
-| **`localized`**        | Enable localization for this field. Requires [localization to be enabled](/docs/configuration/localization) in the Base config.                                             |
-| **`required`**         | Require this field to have a value.                                                                                                                                         |
-| **`admin`**            | Admin-specific configuration. [More details](#admin-options).                                                                                                               |
-| **`custom`**           | Extension point for adding custom data (e.g. for plugins)                                                                                                                   |
-| **`timezone`** *           | Set to `true` to enable timezone selection on this field. [More details](#timezones).                                                                                                                                                                |
-| **`typescriptSchema`** | Override field type generation with providing a JSON schema                                                                                                                 |
-| **`virtual`**          | Provide `true` to disable field in the database. See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges)            |
-
-_* An asterisk denotes that a property is required._
-
-## Admin Options
-
-To customize the appearance and behavior of the Date Field in the [Admin Panel](../admin/overview), you can use the `admin` option:
-
-```ts
-import type { Field } from 'payload'
-
-export const MyDateField: Field = {
-  // ...
-  admin: { // highlight-line
-    // ...
-  },
-}
-```
-
-The Date Field inherits all of the default options from the base [Field Admin Config](./overview#admin-options), plus the following additional options:
-
-| Property                       | Description                                                                                                                            |
-| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| **`placeholder`**              | Placeholder text for the field.                                                                                                        |
-| **`date`**                     | Pass options to customize date field appearance.                                                                                       |
-| **`date.displayFormat`**       | Format date to be shown in field **cell**.                                                                                             |
-| **`date.pickerAppearance`** * | Determines the appearance of the datepicker: `dayAndTime` `timeOnly` `dayOnly` `monthOnly`.                                            |
-| **`date.monthsToShow`** *     | Number of months to display max is 2. Defaults to 1.                                                                                   |
-| **`date.minDate`** *          | Min date value to allow.                                                                                                               |
-| **`date.maxDate`** *          | Max date value to allow.                                                                                                               |
-| **`date.minTime`** *          | Min time value to allow.                                                                                                               |
-| **`date.maxTime`** *          | Max date value to allow.                                                                                                               |
-| **`date.overrides`** *        | Pass any valid props directly to the [react-datepicker](https://github.com/Hacker0x01/react-datepicker/blob/master/docs/datepicker.md) |
-| **`date.timeIntervals`** *    | Time intervals to display. Defaults to 30 minutes.                                                                                     |
-| **`date.timeFormat`** *       | Determines time format. Defaults to `'h:mm aa'`.                                                                                       |
-
-_* This property is passed directly to [react-datepicker](https://github.com/Hacker0x01/react-datepicker/blob/master/docs/datepicker.md)._
-
-### Display Format and Picker Appearance
-
-These properties only affect how the date is displayed in the UI. The full date is always stored in the format `YYYY-MM-DDTHH:mm:ss.SSSZ` (e.g. `1999-01-01T8:00:00.000+05:00`).
-
-`displayFormat` determines how the date is presented in the field **cell**, you can pass any valid [unicode date format](https://date-fns.org/v4.1.0/docs/format).
-
-`pickerAppearance` sets the appearance of the **react datepicker**, the options available are `dayAndTime`, `dayOnly`, `timeOnly`, and `monthOnly`. By default, the datepicker will display `dayOnly`.
-
-When only `pickerAppearance` is set, an equivalent format will be rendered in the date field cell. To overwrite this format, set `displayFormat`.
-
-## Example
-
-`collections/ExampleCollection.ts`
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const ExampleCollection: CollectionConfig = {
-  slug: 'example-collection',
-  fields: [
-    {
-      name: 'dateOnly',
-      type: 'date',
-      admin: {
-        date: {
-          pickerAppearance: 'dayOnly',
-          displayFormat: 'd MMM yyy',
-        },
-      },
-    },
-    {
-      name: 'timeOnly',
-      type: 'date',
-      admin: {
-        date: {
-          pickerAppearance: 'timeOnly',
-          displayFormat: 'h:mm:ss a',
-        },
-      },
-    },
-    {
-      name: 'monthOnly',
-      type: 'date',
-      admin: {
-        date: {
-          pickerAppearance: 'monthOnly',
-          displayFormat: 'MMMM yyyy',
-        },
-      },
-    },
-  ],
-}
-```
-
-## Custom Components
-
-### Field
-
-#### Server Component
-
-```tsx
-import type React from 'react'
-import { DateTimeField } from '@payloadcms/ui'
-import type { DateFieldServerComponent } from 'payload'
-
-export const CustomDateFieldServer: DateFieldServerComponent = ({
-  clientField,
-  path,
-  schemaPath,
-  permissions,
-}) => {
-  return (
-    <DateTimeField
-      field={clientField}
-      path={path}
-      schemaPath={schemaPath}
-      permissions={permissions}
-    />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { DateTimeField } from '@payloadcms/ui'
-import type { DateFieldClientComponent } from 'payload'
-
-export const CustomDateFieldClient: DateFieldClientComponent = (props) => {
-  return <DateTimeField {...props} />
-}
-```
-
-### Label
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import { FieldLabel } from '@payloadcms/ui'
-import type { DateFieldLabelServerComponent } from 'payload'
-
-export const CustomDateFieldLabelServer: DateFieldLabelServerComponent = ({
-  clientField,
-  path,
-}) => {
-  return (
-    <FieldLabel
-      label={clientField?.label || clientField?.name}
-      path={path}
-      required={clientField?.required}
-    />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { FieldLabel } from '@payloadcms/ui'
-import type { DateFieldLabelClientComponent } from 'payload'
-
-export const CustomDateFieldLabelClient: DateFieldLabelClientComponent = ({
-  field,
-  path,
-}) => {
-  return (
-    <FieldLabel
-      label={field?.label || field?.name}
-      path={path}
-      required={field?.required}
-    />
-  )
-}
-```
-
-## Timezones
-
-To enable timezone selection on a Date field, set the `timezone` property to `true`:
-
-```ts
-{
-  name: 'date',
-  type: 'date',
-  timezone: true,
-}
-```
-
-This will add a dropdown to the date picker that allows users to select a timezone. The selected timezone will be saved in the database along with the date in a new column named `date_tz`.
-
-You can customise the available list of timezones in the [global admin config](../admin/overview#timezones).
-
-<Banner type="info">
-  **Good to know:**
-  The date itself will be stored in UTC so it's up to you to handle the conversion to the user's timezone when displaying the date in your frontend.
-
-  Dates without a specific time are normalised to 12:00 in the selected timezone.
-</Banner>
-````
-
-## File: fields/email.mdx
-````
----
-title: Email Field
-label: Email
-order: 80
-desc: The Email field enforces that the value provided is a valid email address. Learn how to use Email fields, see examples and options.
-keywords: email, fields, config, configuration, documentation, Content Management System, cms, headless, javascript, node, react, nextjs
----
-
-The Email Field enforces that the value provided is a valid email address.
-
-<LightDarkImage
-  srcLight="https://payloadcms.com/images/docs/fields/email.png"
-  srcDark="https://payloadcms.com/images/docs/fields/email-dark.png"
-  alt="Shows an Email field in the Payload Admin Panel"
-  caption="Admin Panel screenshot of an Email field"
-/>
-
-To create an Email Field, set the `type` to `email` in your [Field Config](./overview):
-
-```ts
-import type { Field } from 'payload'
-
-export const MyEmailField: Field = {
-  // ...
-  type: 'email', // highlight-line
-}
-```
-
-## Config Options
-
-| Option                 | Description                                                                                                                                                                 |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`name`** *          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                      |
-| **`label`**            | Text used as a field label in the Admin Panel or an object with keys for each language.                                                                                     |
-| **`unique`**           | Enforce that each entry in the Collection has a unique value for this field.                                                                                                |
-| **`index`**            | Build an [index](/docs/database/overview) for this field to produce faster queries. Set this field to `true` if your users will perform queries on this field's data often. |
-| **`validate`**         | Provide a custom validation function that will be executed on both the Admin Panel and the backend. [More](/docs/fields/overview#validation)                                |
-| **`saveToJWT`**        | If this field is top-level and nested in a config supporting [Authentication](/docs/authentication/overview), include its data in the user JWT.                             |
-| **`hooks`**            | Provide Field Hooks to control logic for this field. [More details](../hooks/fields).                                                                                       |
-| **`access`**           | Provide Field Access Control to denote what users can see and do with this field's data. [More details](../access-control/fields).                                          |
-| **`hidden`**           | Restrict this field's visibility from all APIs entirely. Will still be saved to the database, but will not appear in any API or the Admin Panel.                            |
-| **`defaultValue`**     | Provide data to be used for this field's default value. [More](/docs/fields/overview#default-values)                                                                        |
-| **`localized`**        | Enable localization for this field. Requires [localization to be enabled](/docs/configuration/localization) in the Base config.                                             |
-| **`required`**         | Require this field to have a value.                                                                                                                                         |
-| **`admin`**            | Admin-specific configuration. [More details](#admin-options).                                                                                                               |
-| **`custom`**           | Extension point for adding custom data (e.g. for plugins)                                                                                                                   |
-| **`typescriptSchema`** | Override field type generation with providing a JSON schema                                                                                                                 |
-| **`virtual`**          | Provide `true` to disable field in the database. See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges)            |
-
-_* An asterisk denotes that a property is required._
-
-## Admin Options
-
-To customize the appearance and behavior of the Email Field in the [Admin Panel](../admin/overview), you can use the `admin` option:
-
-```ts
-import type { Field } from 'payload'
-
-export const MyEmailField: Field = {
-  // ...
-  admin: { // highlight-line
-    // ...
-  },
-}
-```
-
-The Email Field inherits all of the default options from the base [Field Admin Config](./overview#admin-options), plus the following additional options:
-
-| Property                       | Description                                                                                                                            |
-| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| **`placeholder`**              | Set this property to define a placeholder string for the field.                                                                         |
-| **`autoComplete`**             | Set this property to a string that will be used for browser autocomplete.                                                               |
-
-## Example
-
-`collections/ExampleCollection.ts`
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const ExampleCollection: CollectionConfig = {
-  slug: 'example-collection',
-  fields: [
-    {
-      name: 'contact', // required
-      type: 'email', // required
-      label: 'Contact Email Address',
-      required: true,
-    },
-  ],
-}
-```
-
-## Custom Components
-
-### Field
-
-#### Server Component
-
-```tsx
-import type React from 'react'
-import { EmailField } from '@payloadcms/ui'
-import type { EmailFieldServerComponent } from 'payload'
-
-export const CustomEmailFieldServer: EmailFieldServerComponent = ({
-  clientField,
-  path,
-  schemaPath,
-  permissions,
-}) => {
-  return (
-    <EmailField field={clientField} path={path} schemaPath={schemaPath} permissions={permissions} />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { EmailField } from '@payloadcms/ui'
-import type { EmailFieldClientComponent } from 'payload'
-
-export const CustomEmailFieldClient: EmailFieldClientComponent = (props) => {
-  return <EmailField {...props} />
-}
-```
-
-### Label
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import { FieldLabel } from '@payloadcms/ui'
-import type { EmailFieldLabelServerComponent } from 'payload'
-
-export const CustomEmailFieldLabelServer: EmailFieldLabelServerComponent = ({
-  clientField,
-  path,
-}) => {
-  return (
-    <FieldLabel
-      label={clientField?.label || clientField?.name}
-      path={path}
-      required={clientField?.required}
-    />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { FieldLabel } from '@payloadcms/ui'
-import type { EmailFieldLabelClientComponent } from 'payload'
-
-export const CustomEmailFieldLabelClient: EmailFieldLabelClientComponent = ({
-  field,
-  path,
-}) => {
-  return (
-    <FieldLabel
-      label={field?.label || field?.name}
-      path={path}
-      required={field?.required}
-    />
-  )}
-```
-````
-
-## File: fields/group.mdx
+## File: fields_group.mdx
 ````
 ---
 title: Group Field
@@ -11401,8 +7969,8 @@ export const MyGroupField: Field = {
 
 | Option                 | Description                                                                                                                                                                                                                                                                        |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`name`** *          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                                                                                                                             |
-| **`fields`** *        | Array of field types to nest within this Group.                                                                                                                                                                                                                                    |
+| **`name`** \*          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                                                                                                                             |
+| **`fields`** \*        | Array of field types to nest within this Group.                                                                                                                                                                                                                                    |
 | **`label`**            | Used as a heading in the Admin Panel and to name the generated GraphQL type.                                                                                                                                                                                                       |
 | **`validate`**         | Provide a custom validation function that will be executed on both the Admin Panel and the backend. [More](/docs/fields/overview#validation)                                                                                                                                       |
 | **`saveToJWT`**        | If this field is top-level and nested in a config supporting [Authentication](/docs/authentication/overview), include its data in the user JWT.                                                                                                                                    |
@@ -11417,7 +7985,7 @@ export const MyGroupField: Field = {
 | **`typescriptSchema`** | Override field type generation with providing a JSON schema                                                                                                                                                                                                                        |
 | **`virtual`**          | Provide `true` to disable field in the database. See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges)                                                                                                                   |
 
-_* An asterisk denotes that a property is required._
+_\* An asterisk denotes that a property is required._
 
 ## Admin Options
 
@@ -11428,7 +7996,8 @@ import type { Field } from 'payload'
 
 export const MyGroupField: Field = {
   // ...
-  admin: { // highlight-line
+  admin: {
+    // highlight-line
     // ...
   },
 }
@@ -11436,9 +8005,9 @@ export const MyGroupField: Field = {
 
 The Group Field inherits all of the default options from the base [Field Admin Config](./overview#admin-options), plus the following additional options:
 
-| Option              | Description                                                                                                                                                                                                                   |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`hideGutter`**    | Set this property to `true` to hide this field's gutter within the Admin Panel. The field gutter is rendered as a vertical line and padding, but often if this field is nested within a Group, Block, or Array, you may want to hide the gutter. |
+| Option           | Description                                                                                                                                                                                                                                      |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`hideGutter`** | Set this property to `true` to hide this field's gutter within the Admin Panel. The field gutter is rendered as a vertical line and padding, but often if this field is nested within a Group, Block, or Array, you may want to hide the gutter. |
 
 ## Example
 
@@ -11477,764 +8046,7 @@ export const ExampleCollection: CollectionConfig = {
 ```
 ````
 
-## File: fields/join.mdx
-````
----
-title: Join Field
-label: Join
-order: 140
-desc: The Join field provides the ability to work on related documents. Learn how to use Join field, see examples and options.
-keywords: join, relationship, junction, fields, config, configuration, documentation, Content Management System, cms, headless, javascript, node, react, nextjs
----
-
-The Join Field is used to make Relationship and Upload fields available in the opposite direction. With a Join you can
-edit and view collections
-having reference to a specific collection document. The field itself acts as a virtual field, in that no new data is
-stored on the collection with a Join
-field. Instead, the Admin UI surfaces the related documents for a better editing experience and is surfaced by Payload's
-APIs.
-
-The Join field is useful in scenarios including:
-
-- To surface `Orders` for a given `Product`
-- To view and edit `Posts` belonging to a `Category`
-- To work with any bi-directional relationship data
-- Displaying where a document or upload is used in other documents
-
-<LightDarkImage
-srcLight="https://payloadcms.com/images/docs/fields/join.png"
-srcDark="https://payloadcms.com/images/docs/fields/join-dark.png"
-alt="Shows Join field in the Payload Admin Panel"
-caption="Admin Panel screenshot of Join field"
-/>
-
-For the Join field to work, you must have an existing [relationship](./relationship) or [upload](./upload) field in the
-collection you are joining. This will reference the collection and path of the field of the related documents.
-To add a Relationship Field, set the `type` to `join` in your [Field Config](./overview):
-
-```ts
-import type { Field } from 'payload'
-
-export const MyJoinField: Field = {
-  // highlight-start
-  name: 'relatedPosts',
-  type: 'join',
-  collection: 'posts',
-  on: 'category',
-  // highlight-end
-}
-
-// relationship field in another collection:
-export const MyRelationshipField: Field = {
-  name: 'category',
-  type: 'relationship',
-  relationTo: 'categories',
-}
-```
-
-In this example, the field is defined to show the related `posts` when added to a `category` collection. The `on`
-property is used to specify the relationship field name of the field that relates to the collection document.
-
-With this example, if you navigate to a Category in the Admin UI or an API response, you'll now see that the Posts which
-are related to the Category are populated for you. This is extremely powerful and can be used to define a wide variety
-of relationship types in an easy manner.
-
-<Banner type="success">
-  The Join field is extremely performant and does not add additional query overhead to your API responses until you add depth of 1 or above. It works in all database adapters. In MongoDB, we use **aggregations** to automatically join in related documents, and in relational databases, we use joins.
-</Banner>
-
-<Banner type="warning">
-  The Join Field is not supported in [DocumentDB](https://aws.amazon.com/documentdb/) and [Azure Cosmos DB](https://azure.microsoft.com/en-us/products/cosmos-db), as we internally use MongoDB aggregations to query data for that field, which are limited there. This can be changed in the future.
-</Banner>
-
-### Schema advice
-
-When modeling your database, you might come across many places where you'd like to feature bi-directional relationships.
-But here's an important consideration—you generally only want to store information about a given relationship in _one_
-place.
-
-Let's take the Posts and Categories example. It makes sense to define which category a post belongs to while editing the
-post.
-
-It would generally not be necessary to have a list of post IDs stored directly on the category as well, for a few
-reasons:
-
-- You want to have a "single source of truth" for relationships, and not worry about keeping two sources in sync with
-  one another
-- If you have hundreds, thousands, or even millions of posts, you would not want to store all of those post IDs on a
-  given category
-- Etc.
-
-This is where the `join` field is especially powerful. With it, you only need to store the `category_id` on the `post`,
-and Payload will automatically join in related posts for you when you query for categories. The related category is only
-stored on the post itself - and is not duplicated on both sides. However, the `join` field is what enables
-bi-directional APIs and UI for you.
-
-### Using the Join field to have full control of your database schema
-
-For typical polymorphic / many relationships, if you're using Postgres or SQLite, Payload will automatically create
-a `posts_rels` table, which acts as a junction table to store all of a given document's relationships.
-
-However, this might not be appropriate for your use case if you'd like to have more control over your database
-architecture. You might not want to have that `_rels` table, and would prefer to maintain / control your own junction
-table design.
-
-<Banner type="success">
-  With the Join field, you can control your own junction table design, and avoid Payload's automatic _rels table creation.
-</Banner>
-
-The `join` field can be used in conjunction with _any_ collection - and if you wanted to define your own "junction"
-collection, which, say, is called `categories_posts` and has a `post_id` and a `category_id` column, you can achieve
-complete control over the shape of that junction table.
-
-You could go a step further and leverage the `admin.hidden` property of the `categories_posts` collection to hide the
-collection from appearing in the Admin UI navigation.
-
-#### Specifying additional fields on relationships
-
-Another very powerful use case of the `join` field is to be able to define "context" fields on your relationships. Let's
-say that you have Posts and Categories, and use join fields on both your Posts and Categories collection to join in
-related docs from a new pseudo-junction collection called `categories_posts`. Now, the relations are stored in this
-third junction collection, and can be surfaced on both Posts and Categories. But, importantly, you could add
-additional "context" fields to this shared junction collection.
-
-For example, on this `categories_posts` collection, in addition to having the `category` and `post` fields, we could add
-custom "context" fields like `featured` or `spotlight`,
-which would allow you to store additional information directly on relationships.
-The `join` field gives you complete control over any type of relational architecture in Payload, all wrapped up in a
-powerful Admin UI.
-
-## Config Options
-
-| Option                 | Description                                                                                                                                                                                                                            |
-| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`name`** *           | To be used as the property name when retrieved from the database. [More](./overview#field-names)                                                                                                                                       |
-| **`collection`** *     | The `slug`s having the relationship field or an array of collection slugs.                                                                                                                                                             |
-| **`on`** *             | The name of the relationship or upload field that relates to the collection document. Use dot notation for nested paths, like 'myGroup.relationName'. If `collection` is an array, this field must exist for all specified collections |
-| **`where`**            | A `Where` query to hide related documents from appearing. Will be merged with any `where` specified in the request.                                                                                                                    |
-| **`maxDepth`**         | Default is 1, Sets a maximum population depth for this field, regardless of the remaining depth when this field is reached. [Max Depth](../queries/depth#max-depth).                                                                   |
-| **`label`**            | Text used as a field label in the Admin Panel or an object with keys for each language.                                                                                                                                                |
-| **`hooks`**            | Provide Field Hooks to control logic for this field. [More details](../hooks/fields).                                                                                                                                                  |
-| **`access`**           | Provide Field Access Control to denote what users can see and do with this field's data. [More details](../access-control/fields).                                                                                                     |
-| **`defaultLimit`**     | The number of documents to return. Set to 0 to return all related documents.                                                                                                                                                           |
-| **`defaultSort`**      | The field name used to specify the order the joined documents are returned.                                                                                                                                                            |
-| **`admin`**            | Admin-specific configuration. [More details](#admin-config-options).                                                                                                                                                                   |
-| **`custom`**           | Extension point for adding custom data (e.g. for plugins).                                                                                                                                                                             |
-| **`typescriptSchema`** | Override field type generation with providing a JSON schema.                                                                                                                                                                           |
-| **`graphQL`**          | Custom graphQL configuration for the field. [More details](/docs/graphql/overview#field-complexity)                                                                                                                                    |
-
-_* An asterisk denotes that a property is required._
-
-
-## Admin Config Options
-
-You can control the user experience of the join field using the `admin` config properties. The following options are supported:
-
-| Option                 | Description                                                                                                               |
-|------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| **`defaultColumns`**   | Array of field names that correspond to which columns to show in the relationship table. Default is the collection config. |
-| **`allowCreate`**      | Set to `false` to remove the controls for making new related documents from this field.                                   |
-| **`components.Label`** | Override the default Label of the Field Component. [More details](./overview#label)                                  |
-
-## Join Field Data
-
-When a document is returned that for a Join field is populated with related documents. The structure returned is an
-object with:
-
-- `docs` an array of related documents or only IDs if the depth is reached
-- `hasNextPage` a boolean indicating if there are additional documents
-- `totalDocs` a total number of documents, exists only if `count: true` is passed to the join query
-
-```json
-{
-  "id": "66e3431a3f23e684075aae9c",
-  "relatedPosts": {
-    "docs": [
-      {
-        "id": "66e3431a3f23e684075aaeb9",
-        // other fields...
-        "category": "66e3431a3f23e684075aae9c"
-      }
-      // { ... }
-    ],
-    "hasNextPage": false,
-    "totalDocs": 10, // if count: true is passed
-  }
-  // other fields...
-}
-```
-
-## Join Field Data (polymorphic)
-
-When a document is returned that for a polymorphic Join field (with `collection` as an array) is populated with related documents. The structure returned is an
-object with:
-
-- `docs` an array of `relationTo` - the collection slug of the document and `value` - the document itself or the ID if the depth is reached
-- `hasNextPage` a boolean indicating if there are additional documents
-- `totalDocs` a total number of documents, exists only if `count: true` is passed to the join query
-
-```json
-{
-  "id": "66e3431a3f23e684075aae9c",
-  "relatedPosts": {
-    "docs": [
-      {
-        "relationTo": "posts",
-        "value": {
-          "id": "66e3431a3f23e684075aaeb9",
-           // other fields...
-          "category": "66e3431a3f23e684075aae9c"
-        }
-      }
-      // { ... }
-    ],
-    "hasNextPage": false,
-    "totalDocs": 10, // if count: true is passed
-  }
-  // other fields...
-}
-```
-
-## Query Options
-
-The Join Field supports custom queries to filter, sort, and limit the related documents that will be returned. In
-addition to the specific query options for each Join Field, you can pass `joins: false` to disable all Join Field from
-returning. This is useful for performance reasons when you don't need the related documents.
-
-The following query options are supported:
-
-| Property    | Description                                                                                         |
-| ----------- | --------------------------------------------------------------------------------------------------- |
-| **`limit`** | The maximum related documents to be returned, default is 10.                                        |
-| **`where`** | An optional `Where` query to filter joined documents. Will be merged with the field `where` object. |
-| **`sort`**  | A string used to order related results                                                              |
-| **`count`** | Whether include the count of related documents or not. Not included by default                      |
-
-These can be applied to the local API, GraphQL, and REST API.
-
-### Local API
-
-By adding `joins` to the local API you can customize the request for each join field by the `name` of the field.
-
-```js
-const result = await payload.find({
-  collection: 'categories',
-  where: {
-    title: {
-      equals: 'My Category'
-    }
-  },
-  joins: {
-    relatedPosts: {
-      limit: 5,
-      where: {
-        title: {
-          equals: 'My Post'
-        }
-      },
-      sort: 'title'
-    }
-  }
-})
-```
-
-<Banner type="warning">
-  Currently, `Where` query support on joined documents for join fields with an array of `collection` is limited and not supported for fields inside arrays and blocks.
-</Banner>
-
-<Banner type="warning">
-  Currently, querying by the Join Field itself is not supported, meaning:
-  ```ts
-  payload.find({
-    collection: 'categories',
-    where: {
-      'relatedPosts.title': { // relatedPosts is a join field
-        equals: "post"
-      }
-    }
-  })
-  ```
-  does not work yet.
-</Banner>
-
-### Rest API
-
-The rest API supports the same query options as the local API. You can use the `joins` query parameter to customize the
-request for each join field by the `name` of the field. For example, an API call to get a document with the related
-posts limited to 5 and sorted by title:
-
-`/api/categories/${id}?joins[relatedPosts][limit]=5&joins[relatedPosts][sort]=title`
-
-You can specify as many `joins` parameters as needed for the same or different join fields for a single request.
-
-### GraphQL
-
-The GraphQL API supports the same query options as the local and REST APIs. You can specify the query options for each
-join field in your query.
-
-Example:
-
-```graphql
-query {
-  Categories {
-    docs {
-      relatedPosts(
-        sort: "createdAt"
-        limit: 5
-        where: {
-          author: {
-            equals: "66e3431a3f23e684075aaeb9"
-          }
-        }
-      ) {
-        docs {
-          title
-        }
-        hasNextPage
-      }
-    }
-  }
-}
-```
-````
-
-## File: fields/json.mdx
-````
----
-title: JSON Field
-label: JSON
-order: 50
-desc: The JSON field type will store any string in the Database. Learn how to use JSON fields, see examples and options.
-
-keywords: json, jsonSchema, schema, validation, fields, config, configuration, documentation, Content Management System, cms, headless, javascript, node, react, nextjs
----
-
-The JSON Field saves raw JSON to the database and provides the [Admin Panel](../admin/overview) with a code editor styled interface. This is different from the [Code Field](./code) which saves the value as a string in the database.
-
-<LightDarkImage
-  srcLight="https://payloadcms.com/images/docs/fields/json.png"
-  srcDark="https://payloadcms.com/images/docs/fields/json-dark.png"
-  alt="Shows a JSON field in the Payload Admin Panel"
-  caption="This field is using the `monaco-react` editor syntax highlighting."
-/>
-
-To add a JSON Field, set the `type` to `json` in your [Field Config](./overview):
-
-```ts
-import type { Field } from 'payload'
-
-export const MyJSONField: Field = {
-  // ...
-  type: 'json', // highlight-line
-}
-```
-
-## Config Options
-
-| Option                 | Description                                                                                                                                                                 |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`name`** *          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                      |
-| **`label`**            | Text used as a field label in the Admin Panel or an object with keys for each language.                                                                                     |
-| **`unique`**           | Enforce that each entry in the Collection has a unique value for this field.                                                                                                |
-| **`index`**            | Build an [index](/docs/database/overview) for this field to produce faster queries. Set this field to `true` if your users will perform queries on this field's data often. |
-| **`validate`**         | Provide a custom validation function that will be executed on both the Admin Panel and the backend. [More](/docs/fields/overview#validation)                                |
-| **`jsonSchema`**       | Provide a JSON schema that will be used for validation. [JSON schemas](https://json-schema.org/learn/getting-started-step-by-step)                                          |
-| **`saveToJWT`**        | If this field is top-level and nested in a config supporting [Authentication](/docs/authentication/overview), include its data in the user JWT.                             |
-| **`hooks`**            | Provide Field Hooks to control logic for this field. [More details](../hooks/fields).                                                                                       |
-| **`access`**           | Provide Field Access Control to denote what users can see and do with this field's data. [More details](../access-control/fields).                                          |
-| **`hidden`**           | Restrict this field's visibility from all APIs entirely. Will still be saved to the database, but will not appear in any API or the Admin Panel.                            |
-| **`defaultValue`**     | Provide data to be used for this field's default value. [More](/docs/fields/overview#default-values)                                                                        |
-| **`localized`**        | Enable localization for this field. Requires [localization to be enabled](/docs/configuration/localization) in the Base config.                                             |
-| **`required`**         | Require this field to have a value.                                                                                                                                         |
-| **`admin`**            | Admin-specific configuration. [More details](#admin-options).                                                                                                               |
-| **`custom`**           | Extension point for adding custom data (e.g. for plugins)                                                                                                                   |
-| **`typescriptSchema`** | Override field type generation with providing a JSON schema                                                                                                                 |
-| **`virtual`**          | Provide `true` to disable field in the database. See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges)            |
-
-_* An asterisk denotes that a property is required._
-
-## Admin Options
-
-To customize the appearance and behavior of the JSON Field in the [Admin Panel](../admin/overview), you can use the `admin` option:
-
-```ts
-import type { Field } from 'payload'
-
-export const MyJSONField: Field = {
-  // ...
-  admin: { // highlight-line
-    // ...
-  },
-}
-```
-
-The JSON Field inherits all of the default options from the base [Field Admin Config](./overview#admin-options), plus the following additional options:
-
-| Option              | Description                                                                                                                                                   |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`editorOptions`** | Options that can be passed to the monaco editor, [view the full list](https://microsoft.github.io/monaco-editor/typedoc/variables/editor.EditorOptions.html). |
-
-## Example
-
-`collections/ExampleCollection.ts`
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const ExampleCollection: CollectionConfig = {
-  slug: 'example-collection',
-  fields: [
-    {
-      name: 'customerJSON', // required
-      type: 'json', // required
-      required: true,
-    },
-  ],
-}
-```
-## JSON Schema Validation
-
-Payload JSON fields fully support the [JSON schema](https://json-schema.org/) standard. By providing a schema in your field config, the editor will be guided in the admin UI, getting typeahead for properties and their formats automatically. When the document is saved, the default validation will prevent saving any invalid data in the field according to the schema in your config.
-
-If you only provide a URL to a schema, Payload will fetch the desired schema if it is publicly available. If not, it is recommended to add the schema directly to your config or import it from another file so that it can be implemented consistently in your project.
-
-
-### Local JSON Schema
-
-`collections/ExampleCollection.ts`
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const ExampleCollection: CollectionConfig = {
-  slug: 'example-collection',
-  fields: [
-    {
-      name: 'customerJSON', // required
-      type: 'json', // required
-      jsonSchema: {
-        uri: 'a://b/foo.json', // required
-        fileMatch: ['a://b/foo.json'], // required
-        schema: {
-          type: 'object',
-          properties: {
-            foo: {
-              enum: ['bar', 'foobar'],
-            }
-          },
-        },
-      },
-
-    },
-  ],
-}
-// {"foo": "bar"} or {"foo": "foobar"} - ok
-// Attempting to create {"foo": "not-bar"} will throw an error
-```
-
-### Remote JSON Schema
-
-`collections/ExampleCollection.ts`
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const ExampleCollection: CollectionConfig = {
-  slug: 'example-collection',
-  fields: [
-    {
-      name: 'customerJSON', // required
-      type: 'json', // required
-      jsonSchema: {
-        uri: 'https://example.com/customer.schema.json', // required
-        fileMatch: ['https://example.com/customer.schema.json'], // required
-      },
-    },
-  ],
-}
-// If 'https://example.com/customer.schema.json' has a JSON schema
-// {"foo": "bar"} or {"foo": "foobar"} - ok
-// Attempting to create {"foo": "not-bar"} will throw an error
-```
-
-## Custom Components
-
-### Field
-
-#### Server Component
-
-```tsx
-import type React from 'react'
-import { JSONField } from '@payloadcms/ui'
-import type { JSONFieldServerComponent } from 'payload'
-
-export const CustomJSONFieldServer: JSONFieldServerComponent = ({
-  clientField,
-  path,
-  schemaPath,
-  permissions,
-}) => {
-  return (
-    <JSONField
-      field={clientField}
-      path={path}
-      schemaPath={schemaPath}
-      permissions={permissions}
-    />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { JSONField } from '@payloadcms/ui'
-import type { JSONFieldClientComponent } from 'payload'
-
-export const CustomJSONFieldClient: JSONFieldClientComponent = (props) => {
-  return <JSONField {...props} />
-}
-```
-
-### Label
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import { FieldLabel } from '@payloadcms/ui'
-import type { JSONFieldLabelServerComponent } from 'payload'
-
-export const CustomJSONFieldLabelServer: JSONFieldLabelServerComponent = ({
-  clientField,
-  path,
-}) => {
-  return (
-    <FieldLabel
-      label={clientField?.label || clientField?.name}
-      path={path}
-      required={clientField?.required}
-    />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { FieldLabel } from '@payloadcms/ui'
-import type { JSONFieldLabelClientComponent } from 'payload'
-
-export const CustomJSONFieldLabelClient: JSONFieldLabelClientComponent = ({
-  field,
-  path,
-}) => {
-  return (
-    <FieldLabel
-      label={field?.label || field?.name}
-      path={path}
-      required={field?.required}
-    />
-  )
-}
-```
-````
-
-## File: fields/number.mdx
-````
----
-title: Number Field
-label: Number
-order: 100
-desc: Number fields store and validate numeric data. Learn how to use and format Number fields, see examples and Number field options.
-keywords: number, fields, config, configuration, documentation, Content Management System, cms, headless, javascript, node, react, nextjs
----
-
-The Number Field stores and validates numeric entry and supports additional numerical validation and formatting features.
-
-<LightDarkImage
-  srcLight="https://payloadcms.com/images/docs/fields/number.png"
-  srcDark="https://payloadcms.com/images/docs/fields/number-dark.png"
-  alt="Shows a Number field in the Payload Admin Panel"
-  caption="Admin Panel screenshot of a Number field"
-/>
-
-To add a Number Field, set the `type` to `number` in your [Field Config](./overview):
-
-```ts
-import type { Field } from 'payload'
-
-export const MyNumberField: Field = {
-  // ...
-  type: 'number', // highlight-line
-}
-```
-
-## Config Options
-
-| Option                 | Description                                                                                                                                                                 |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`name`** *          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                      |
-| **`label`**            | Text used as a field label in the Admin Panel or an object with keys for each language.                                                                                     |
-| **`min`**              | Minimum value accepted. Used in the default `validation` function.                                                                                                          |
-| **`max`**              | Maximum value accepted. Used in the default `validation` function.                                                                                                          |
-| **`hasMany`**          | Makes this field an ordered array of numbers instead of just a single number.                                                                                               |
-| **`minRows`**          | Minimum number of numbers in the numbers array, if `hasMany` is set to true.                                                                                                |
-| **`maxRows`**          | Maximum number of numbers in the numbers array, if `hasMany` is set to true.                                                                                                |
-| **`unique`**           | Enforce that each entry in the Collection has a unique value for this field.                                                                                                |
-| **`index`**            | Build an [index](/docs/database/overview) for this field to produce faster queries. Set this field to `true` if your users will perform queries on this field's data often. |
-| **`validate`**         | Provide a custom validation function that will be executed on both the Admin Panel and the backend. [More](/docs/fields/overview#validation)                                |
-| **`saveToJWT`**        | If this field is top-level and nested in a config supporting [Authentication](/docs/authentication/overview), include its data in the user JWT.                             |
-| **`hooks`**            | Provide Field Hooks to control logic for this field. [More details](../hooks/fields).                                                                                       |
-| **`access`**           | Provide Field Access Control to denote what users can see and do with this field's data. [More details](../access-control/fields).                                          |
-| **`hidden`**           | Restrict this field's visibility from all APIs entirely. Will still be saved to the database, but will not appear in any API or the Admin Panel.                            |
-| **`defaultValue`**     | Provide data to be used for this field's default value. [More](/docs/fields/overview#default-values)                                                                        |
-| **`localized`**        | Enable localization for this field. Requires [localization to be enabled](/docs/configuration/localization) in the Base config.                                             |
-| **`required`**         | Require this field to have a value.                                                                                                                                         |
-| **`admin`**            | Admin-specific configuration. [More details](#admin-options).                                                                                                               |
-| **`custom`**           | Extension point for adding custom data (e.g. for plugins)                                                                                                                   |
-| **`typescriptSchema`** | Override field type generation with providing a JSON schema                                                                                                                 |
-| **`virtual`**          | Provide `true` to disable field in the database. See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges)            |
-
-_* An asterisk denotes that a property is required._
-
-## Admin Options
-
-To customize the appearance and behavior of the Number Field in the [Admin Panel](../admin/overview), you can use the `admin` option:
-
-```ts
-import type { Field } from 'payload'
-
-export const MyNumberField: Field = {
-  // ...
-  admin: { // highlight-line
-    // ...
-  },
-}
-```
-
-The Number Field inherits all of the default options from the base [Field Admin Config](./overview#admin-options), plus the following additional options:
-
-| Property                       | Description                                                                                                                            |
-| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| **`step`**                     | Set a value for the number field to increment / decrement using browser controls.                                                      |
-| **`placeholder`**              | Set this property to define a placeholder string for the field.                                                                       |
-| **`autoComplete`**             | Set this property to a string that will be used for browser autocomplete.                                                             |
-
-## Example
-
-`collections/ExampleCollection.ts`
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const ExampleCollection: CollectionConfig = {
-  slug: 'example-collection',
-  fields: [
-    {
-      name: 'age', // required
-      type: 'number', // required
-      required: true,
-      admin: {
-        step: 1,
-      },
-    },
-  ],
-}
-```
-
-## Custom Components
-
-### Field
-
-#### Server Component
-
-```tsx
-import type React from 'react'
-import { NumberField } from '@payloadcms/ui'
-import type { NumberFieldServerComponent } from 'payload'
-
-export const CustomNumberFieldServer: NumberFieldServerComponent = ({
-  clientField,
-  path,
-  schemaPath,
-  permissions,
-}) => {
-  return (
-    <NumberField
-      field={clientField}
-      path={path}
-      schemaPath={schemaPath}
-      permissions={permissions}
-    />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { NumberField } from '@payloadcms/ui'
-import type { NumberFieldClientComponent } from 'payload'
-
-export const CustomNumberFieldClient: NumberFieldClientComponent = (props) => {
-  return <NumberField {...props} />
-}
-```
-
-### Label
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import { FieldLabel } from '@payloadcms/ui'
-import type { NumberFieldLabelServerComponent } from 'payload'
-
-export const CustomNumberFieldLabelServer: NumberFieldLabelServerComponent = ({
-  clientField,
-  path,
-}) => {
-  return (
-    <FieldLabel
-      label={clientField?.label || clientField?.name}
-      path={path}
-      required={clientField?.required}
-    />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { FieldLabel } from '@payloadcms/ui'
-import type { NumberFieldLabelClientComponent } from 'payload'
-
-export const CustomNumberFieldLabelClient: NumberFieldLabelClientComponent = ({
-  field,
-  path,
-}) => {
-  return (
-    <FieldLabel
-      label={field?.label || field?.name}
-      path={path}
-      required={field?.required}
-    />
-  )
-}
-```
-````
-
-## File: fields/overview.mdx
+## File: fields_overview.mdx
 ````
 ---
 description: Fields are the building blocks of Payload, find out how to add or remove a field, change field type, add hooks, define Access Control and Validation.
@@ -12257,9 +8069,10 @@ import type { CollectionConfig } from 'payload'
 
 export const Page: CollectionConfig = {
   // ...
-  fields: [ // highlight-line
+  fields: [
+    // highlight-line
     // ...
-  ]
+  ],
 }
 ```
 
@@ -12279,14 +8092,16 @@ export const Page: CollectionConfig = {
     {
       name: 'field',
       type: 'text',
-    }
-  ]
+    },
+  ],
   // highlight-end
 }
 ```
 
 <Banner type="warning">
-  **Reminder:** Each field is an object with at least the `type` property. This matches the field to its corresponding Field Type. [More details](#field-options).
+  **Reminder:** Each field is an object with at least the `type` property. This
+  matches the field to its corresponding Field Type. [More
+  details](#field-options).
 </Banner>
 
 There are three main categories of fields in Payload:
@@ -12342,7 +8157,11 @@ Here are the available Virtual Fields:
 - [Join](../fields/join) - achieves two-way data binding between fields
 
 <Banner type="success">
-  **Tip:** Don't see a built-in field type that you need? Build it! Using a combination of [Field Validations](#validation) and [Custom Components](../custom-components/overview), you can override the entirety of how a component functions within the [Admin Panel](../admin/overview) to effectively create your own field type.
+  **Tip:** Don't see a built-in field type that you need? Build it! Using a
+  combination of [Field Validations](#validation) and [Custom
+  Components](../custom-components/overview), you can override the entirety of
+  how a component functions within the [Admin Panel](../admin/overview) to
+  effectively create your own field type.
 </Banner>
 
 ## Field Options
@@ -12361,7 +8180,8 @@ export const MyField: Field = {
 ```
 
 <Banner type="warning">
-  For a full list of configuration options, see the documentation for each [Field Type](#field-types).
+  For a full list of configuration options, see the documentation for each
+  [Field Type](#field-types).
 </Banner>
 
 ### Field Names
@@ -12403,7 +8223,7 @@ export const MyField: Field = {
   // highlight-start
   hooks: {
     // ...
-  }
+  },
   // highlight-end
 }
 ```
@@ -12425,7 +8245,7 @@ export const MyField: Field = {
   // highlight-start
   access: {
     // ...
-  }
+  },
   // highlight-end
 }
 ```
@@ -12477,7 +8297,8 @@ export const myField: Field = {
 ```
 
 <Banner type="success">
-  **Tip:** You can use async `defaultValue` functions to fill fields with data from API requests or Local API using `req.payload`.
+  **Tip:** You can use async `defaultValue` functions to fill fields with data
+  from API requests or Local API using `req.payload`.
 </Banner>
 
 ### Validation
@@ -12492,7 +8313,7 @@ import type { Field } from 'payload'
 export const MyField: Field = {
   type: 'text',
   name: 'myField',
-  validate: value => Boolean(value) || 'This field is required' // highlight-line
+  validate: (value) => Boolean(value) || 'This field is required', // highlight-line
 }
 ```
 
@@ -12500,10 +8321,10 @@ Custom validation functions should return either `true` or a `string` representi
 
 The following arguments are provided to the `validate` function:
 
-|    Argument    |    Description                                                                                      |
-| --- | --- |
-|    `value`     |    The value of the field being validated.                                                           |
-|    `ctx`      |    An object with additional data and context. [More details](#validation-context)    |
+| Argument | Description                                                                     |
+| -------- | ------------------------------------------------------------------------------- |
+| `value`  | The value of the field being validated.                                         |
+| `ctx`    | An object with additional data and context. [More details](#validation-context) |
 
 #### Validation Context
 
@@ -12524,15 +8345,15 @@ export const MyField: Field = {
 
 The following additional properties are provided in the `ctx` object:
 
-|    Property         |    Description                                                                                                                                                  |
-| --- | --- |
-|    `data`           |    An object containing the full collection or global document currently being edited.                                                                          |
-|    `siblingData`    |    An object containing document data that is scoped to only fields within the same parent of this field.                                                       |
-|    `operation`      |    Will be `create` or `update` depending on the UI action or API call.                                                                                         |
-|    `path`           |    The full path to the field in the schema, represented as an array of string segments, including array indexes. I.e `['group', 'myArray', '1', 'textField']`. |
-|    `id`             |    The `id` of the current document being edited. `id` is `undefined` during the `create` operation.                                                            |
-|    `req`            |    The current HTTP request object. Contains `payload`, `user`, etc.                                                                                            |
-|    `event`          |    Either `onChange` or `submit` depending on the current action. Used as a performance opt-in. [More details](#async-field-validations).                       |
+| Property      | Description                                                                                                                                                  |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `data`        | An object containing the full collection or global document currently being edited.                                                                          |
+| `siblingData` | An object containing document data that is scoped to only fields within the same parent of this field.                                                       |
+| `operation`   | Will be `create` or `update` depending on the UI action or API call.                                                                                         |
+| `path`        | The full path to the field in the schema, represented as an array of string segments, including array indexes. I.e `['group', 'myArray', '1', 'textField']`. |
+| `id`          | The `id` of the current document being edited. `id` is `undefined` during the `create` operation.                                                            |
+| `req`         | The current HTTP request object. Contains `payload`, `user`, etc.                                                                                            |
+| `event`       | Either `onChange` or `submit` depending on the current action. Used as a performance opt-in. [More details](#async-field-validations).                       |
 
 #### Reusing Default Field Validations
 
@@ -12638,7 +8459,9 @@ export const MyCollection: CollectionConfig = {
 ```
 
 <Banner type="warning">
-  **Reminder:** The Custom ID Fields can only be of type [`Number`](./number) or [`Text`](./text). Custom ID fields with type `text` must not contain `/` or `.` characters.
+  **Reminder:** The Custom ID Fields can only be of type [`Number`](./number) or
+  [`Text`](./text). Custom ID fields with type `text` must not contain `/` or
+  `.` characters.
 </Banner>
 
 ## Admin Options
@@ -12655,31 +8478,32 @@ export const CollectionConfig: CollectionConfig = {
     {
       name: 'myField',
       type: 'text',
-      admin: { // highlight-line
+      admin: {
+        // highlight-line
         // ...
       },
-    }
-  ]
+    },
+  ],
 }
 ```
 
 The following options are available:
 
-|    Option                     |    Description                                                                                                                                                                                                                         |
-| --- | --- |
-|    **`condition`**            |    Programmatically show / hide fields based on other fields. [More details](#conditional-logic).                                                                                                                       |
-|    **`components`**           |    All Field Components can be swapped out for [Custom Components](../custom-components/overview) that you define.                                                                                              |
-|    **`description`**          |    Helper text to display alongside the field to provide more information for the editor. [More details](#description).                                                                                                 |
-|    **`position`**             |    Specify if the field should be rendered in the sidebar by defining `position: 'sidebar'`.                                                                                                                                           |
-|    **`width`**                |    Restrict the width of a field. You can pass any string-based value here, be it pixels, percentages, etc. This property is especially useful when fields are nested within a `Row` type where they can be organized horizontally.    |
-|    **`style`**                |    [CSS Properties](https://developer.mozilla.org/en-US/docs/Web/CSS) to inject into the root element of the field.                                                                                                                    |
-|    **`className`**            |    Attach a [CSS class attribute](https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors) to the root DOM element of a field.                                                                                                |
-|    **`readOnly`**             |    Setting a field to `readOnly` has no effect on the API whatsoever but disables the admin component's editability to prevent editors from modifying the field's value.                                                               |
-|    **`disabled`**             |    If a field is `disabled`, it is completely omitted from the [Admin Panel](../admin/overview) entirely.                                                                                                                              |
-|    **`disableBulkEdit`**      |    Set `disableBulkEdit` to `true` to prevent fields from appearing in the select options when making edits for multiple documents. Defaults to `true` for UI fields.                                                                  |
-|    **`disableListColumn`**    |    Set `disableListColumn` to `true` to prevent fields from appearing in the list view column selector.                                                                                                                                |
-|    **`disableListFilter`**    |    Set `disableListFilter` to `true` to prevent fields from appearing in the list view filter options.                                                                                                                                 |
-|    **`hidden`**               |    Will transform the field into a `hidden` input type. Its value will still submit with requests in the Admin Panel, but the field itself will not be visible to editors.                                                             |
+| Option                  | Description                                                                                                                                                                                                                      |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`condition`**         | Programmatically show / hide fields based on other fields. [More details](#conditional-logic).                                                                                                                                   |
+| **`components`**        | All Field Components can be swapped out for [Custom Components](../custom-components/overview) that you define.                                                                                                                  |
+| **`description`**       | Helper text to display alongside the field to provide more information for the editor. [More details](#description).                                                                                                             |
+| **`position`**          | Specify if the field should be rendered in the sidebar by defining `position: 'sidebar'`.                                                                                                                                        |
+| **`width`**             | Restrict the width of a field. You can pass any string-based value here, be it pixels, percentages, etc. This property is especially useful when fields are nested within a `Row` type where they can be organized horizontally. |
+| **`style`**             | [CSS Properties](https://developer.mozilla.org/en-US/docs/Web/CSS) to inject into the root element of the field.                                                                                                                 |
+| **`className`**         | Attach a [CSS class attribute](https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors) to the root DOM element of a field.                                                                                             |
+| **`readOnly`**          | Setting a field to `readOnly` has no effect on the API whatsoever but disables the admin component's editability to prevent editors from modifying the field's value.                                                            |
+| **`disabled`**          | If a field is `disabled`, it is completely omitted from the [Admin Panel](../admin/overview) entirely.                                                                                                                           |
+| **`disableBulkEdit`**   | Set `disableBulkEdit` to `true` to prevent fields from appearing in the select options when making edits for multiple documents. Defaults to `true` for UI fields.                                                               |
+| **`disableListColumn`** | Set `disableListColumn` to `true` to prevent fields from appearing in the list view column selector.                                                                                                                             |
+| **`disableListFilter`** | Set `disableListFilter` to `true` to prevent fields from appearing in the list view filter options.                                                                                                                              |
+| **`hidden`**            | Will transform the field into a `hidden` input type. Its value will still submit with requests in the Admin Panel, but the field itself will not be visible to editors.                                                          |
 
 ### Field Descriptions
 
@@ -12704,22 +8528,24 @@ export const MyCollectionConfig: CollectionConfig = {
       name: 'myField',
       type: 'text',
       admin: {
-        description: 'Hello, world!' // highlight-line
+        description: 'Hello, world!', // highlight-line
       },
     },
-  ]
+  ],
 }
 ```
 
 <Banner type="warning">
-  **Reminder:** To replace the Field Description with a [Custom Component](../custom-components/overview), use the `admin.components.Description` property. [More details](#description).
+  **Reminder:** To replace the Field Description with a [Custom
+  Component](../custom-components/overview), use the
+  `admin.components.Description` property. [More details](#description).
 </Banner>
 
 #### Description Functions
 
 Custom Descriptions can also be defined as a function. Description Functions are executed on the server and can be used to format simple descriptions based on the user's current [Locale](../configuration/localization).
 
-To add a Description Function to a field, set the `admin.description` property to a *function* in your Field Config:
+To add a Description Function to a field, set the `admin.description` property to a _function_ in your Field Config:
 
 ```ts
 import type { CollectionConfig } from 'payload'
@@ -12732,40 +8558,41 @@ export const MyCollectionConfig: CollectionConfig = {
       name: 'myField',
       type: 'text',
       admin: {
-        description: ({ t }) => `${t('Hello, world!')}` // highlight-line
+        description: ({ t }) => `${t('Hello, world!')}`, // highlight-line
       },
     },
-  ]
+  ],
 }
 ```
 
 All Description Functions receive the following arguments:
 
-|    Argument          |    Description                                                                                         |
-| --- | --- |
-|    **`t`**           |    The `t` function used to internationalize the Admin Panel. [More details](../configuration/i18n)    |
+| Argument | Description                                                                                      |
+| -------- | ------------------------------------------------------------------------------------------------ |
+| **`t`**  | The `t` function used to internationalize the Admin Panel. [More details](../configuration/i18n) |
 
 <Banner type="info">
-  **Note:** If you need to subscribe to live updates within your form, use a Description Component instead. [More details](#description).
+  **Note:** If you need to subscribe to live updates within your form, use a
+  Description Component instead. [More details](#description).
 </Banner>
 
 ### Conditional Logic
 
 You can show and hide fields based on what other fields are doing by utilizing conditional logic on a field by field basis. The `condition` property on a field's admin config accepts a function which takes the following arguments:
 
-|    Argument             |    Description                                                                      |
-| --- | --- |
-|    **`data`**           |    The entire document's data that is currently being edited.                       |
-|    **`siblingData`**    |    Only the fields that are direct siblings to the field with the condition.        |
-|    **`ctx`**            |    An object containing additional information about the field’s location and user. |
+| Argument          | Description                                                                      |
+| ----------------- | -------------------------------------------------------------------------------- |
+| **`data`**        | The entire document's data that is currently being edited.                       |
+| **`siblingData`** | Only the fields that are direct siblings to the field with the condition.        |
+| **`ctx`**         | An object containing additional information about the field’s location and user. |
 
 The `ctx` object:
 
-|    Property           |    Description                                                                                                                                                  |
-| --- | --- |
-|    **`blockData`**    |    The nearest parent block's data. If the field is not inside a block, this will be `undefined`.                                                               |
-|    **`path`**         |    The full path to the field in the schema, represented as an array of string segments, including array indexes. I.e `['group', 'myArray', '1', 'textField']`. |
-|    **`user`**         |    The currently authenticated user object.                                                                                                                     |
+| Property        | Description                                                                                                                                                  |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`blockData`** | The nearest parent block's data. If the field is not inside a block, this will be `undefined`.                                                               |
+| **`path`**      | The full path to the field in the schema, represented as an array of string segments, including array indexes. I.e `['group', 'myArray', '1', 'textField']`. |
+| **`user`**      | The currently authenticated user object.                                                                                                                     |
 
 The `condition` function should return a boolean that will control if the field should be displayed or not.
 
@@ -12819,28 +8646,29 @@ export const CollectionConfig: CollectionConfig = {
     {
       // ...
       admin: {
-        components: { // highlight-line
+        components: {
+          // highlight-line
           // ...
         },
       },
-    }
-  ]
+    },
+  ],
 }
 ```
 
 The following options are available:
 
-|    Component       |    Description                                                                                                                    |
-| --- | --- |
-|    **`Field`**     |    The form field rendered of the Edit View. [More details](#field).                                                   |
-|    **`Cell`**      |    The table cell rendered of the List View. [More details](#cell).                 |
-|    **`Filter`**    |    The filter component rendered in the List View. [More details](#filter).    |
-|    **`Label`**          |    Override the default Label of the Field Component. [More details](#label).                                       |
-|    **`Error`**          |    Override the default Error of the Field Component. [More details](#error).                                       |
-|   **`Diff`**   |   Override the default Diff component rendered in the Version Diff View. [More details](#diff).                 |
-|    **`Description`**    |    Override the default Description of the Field Component. [More details](#description).                         |
-|    **`beforeInput`**    |    An array of elements that will be added before the input of the Field Component. [More details](#afterinput-and-beforeinput).   |
-|    **`afterInput`**     |    An array of elements that will be added after the input of the Field Component. [More details](#afterinput-and-beforeinput).    |
+| Component         | Description                                                                                                                   |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| **`Field`**       | The form field rendered of the Edit View. [More details](#field).                                                             |
+| **`Cell`**        | The table cell rendered of the List View. [More details](#cell).                                                              |
+| **`Filter`**      | The filter component rendered in the List View. [More details](#filter).                                                      |
+| **`Label`**       | Override the default Label of the Field Component. [More details](#label).                                                    |
+| **`Error`**       | Override the default Error of the Field Component. [More details](#error).                                                    |
+| **`Diff`**        | Override the default Diff component rendered in the Version Diff View. [More details](#diff).                                 |
+| **`Description`** | Override the default Description of the Field Component. [More details](#description).                                        |
+| **`beforeInput`** | An array of elements that will be added before the input of the Field Component. [More details](#afterinput-and-beforeinput). |
+| **`afterInput`**  | An array of elements that will be added after the input of the Field Component. [More details](#afterinput-and-beforeinput).  |
 
 #### Field
 
@@ -12862,46 +8690,49 @@ export const CollectionConfig: CollectionConfig = {
           Field: '/path/to/MyFieldComponent', // highlight-line
         },
       },
-    }
-  ]
+    },
+  ],
 }
 ```
 
-*For details on how to build Custom Components, see [Building Custom Components](../custom-components/overview#building-custom-components).*
+_For details on how to build Custom Components, see [Building Custom Components](../custom-components/overview#building-custom-components)._
 
 <Banner type="warning">
-  Instead of replacing the entire Field Component, you can alternately replace or slot-in only specific parts by using the [`Label`](#label), [`Error`](#error), [`beforeInput`](#afterinput-and-beforinput), and [`afterInput`](#afterinput-and-beforinput) properties.
+  Instead of replacing the entire Field Component, you can alternately replace
+  or slot-in only specific parts by using the [`Label`](#label),
+  [`Error`](#error), [`beforeInput`](#afterinput-and-beforinput), and
+  [`afterInput`](#afterinput-and-beforinput) properties.
 </Banner>
 
 ##### Default Props
 
 All Field Components receive the following props by default:
 
-|    Property                |    Description                                                                                                                                                                                                                            |
-| --- | --- |
-|    **`docPreferences`**    |    An object that contains the [Preferences](../admin/preferences) for the document.                                                                                                                                                             |
-|    **`field`**             |    In Client Components, this is the sanitized Client Field Config. In Server Components, this is the original Field Config. Server Components will also receive the sanitized field config through the`clientField` prop (see below).    |
-|    **`locale`**            |    The locale of the field. [More details](../configuration/localization).                                                                                                                                                                |
-|    **`readOnly`**          |    A boolean value that represents if the field is read-only or not.                                                                                                                                                                      |
-|    **`user`**              |    The currently authenticated user. [More details](../authentication/overview).                                                                                                                                                          |
-|    **`validate`**          |    A function that can be used to validate the field.                                                                                                                                                                                     |
-|    **`path`**              |    A string representing the direct, dynamic path to the field at runtime, i.e. `myGroup.myArray.0.myField`.                                                                                                                              |
-|    **`schemaPath`**        |    A string representing the direct, static path to the Field Config, i.e. `posts.myGroup.myArray.myField`.                                                                                                         |
-|    **`indexPath`**         |    A hyphen-notated string representing the path to the field *within the nearest named ancestor field*, i.e. `0-0`                                                                                                                       |
+| Property             | Description                                                                                                                                                                                                                         |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`docPreferences`** | An object that contains the [Preferences](../admin/preferences) for the document.                                                                                                                                                   |
+| **`field`**          | In Client Components, this is the sanitized Client Field Config. In Server Components, this is the original Field Config. Server Components will also receive the sanitized field config through the`clientField` prop (see below). |
+| **`locale`**         | The locale of the field. [More details](../configuration/localization).                                                                                                                                                             |
+| **`readOnly`**       | A boolean value that represents if the field is read-only or not.                                                                                                                                                                   |
+| **`user`**           | The currently authenticated user. [More details](../authentication/overview).                                                                                                                                                       |
+| **`validate`**       | A function that can be used to validate the field.                                                                                                                                                                                  |
+| **`path`**           | A string representing the direct, dynamic path to the field at runtime, i.e. `myGroup.myArray.0.myField`.                                                                                                                           |
+| **`schemaPath`**     | A string representing the direct, static path to the Field Config, i.e. `posts.myGroup.myArray.myField`.                                                                                                                            |
+| **`indexPath`**      | A hyphen-notated string representing the path to the field _within the nearest named ancestor field_, i.e. `0-0`                                                                                                                    |
 
 In addition to the above props, all Server Components will also receive the following props:
 
-|    Property             |    Description                                                                      |
-| --- | --- |
-|    **`clientField`**    |    The serializable Client Field Config.                                            |
-|    **`field`**          |    The Field Config.                                                                |
-|    **`data`**           |    The current document being edited.                                               |
-|    **`i18n`**           |    The [i18n](../configuration/i18n) object.                                        |
-|    **`payload`**        |    The [Payload](../local-api/overview) class.                                      |
-|    **`permissions`**    |    The field permissions based on the currently authenticated user.                 |
-|    **`siblingData`**    |    The data of the field's siblings.                                                |
-|    **`user`**           |    The currently authenticated user. [More details](../authentication/overview).    |
-|    **`value`**          |    The value of the field at render-time.                                           |
+| Property          | Description                                                                   |
+| ----------------- | ----------------------------------------------------------------------------- |
+| **`clientField`** | The serializable Client Field Config.                                         |
+| **`field`**       | The Field Config.                                                             |
+| **`data`**        | The current document being edited.                                            |
+| **`i18n`**        | The [i18n](../configuration/i18n) object.                                     |
+| **`payload`**     | The [Payload](../local-api/overview) class.                                   |
+| **`permissions`** | The field permissions based on the currently authenticated user.              |
+| **`siblingData`** | The data of the field's siblings.                                             |
+| **`user`**        | The currently authenticated user. [More details](../authentication/overview). |
+| **`value`**       | The value of the field at render-time.                                        |
 
 ##### Sending and receiving values from the form
 
@@ -12916,17 +8747,14 @@ import { useField } from '@payloadcms/ui'
 export const CustomTextField: React.FC = () => {
   const { value, setValue } = useField() // highlight-line
 
-  return (
-    <input
-      onChange={(e) => setValue(e.target.value)}
-      value={value}
-    />
-  )
+  return <input onChange={(e) => setValue(e.target.value)} value={value} />
 }
 ```
 
 <Banner type="success">
-  For a complete list of all available React hooks, see the [Payload React Hooks](../admin/react-hooks) documentation. For additional help, see [Building Custom Components](../custom-components/overview#building-custom-components).
+  For a complete list of all available React hooks, see the [Payload React
+  Hooks](../admin/react-hooks) documentation. For additional help, see [Building
+  Custom Components](../custom-components/overview#building-custom-components).
 </Banner>
 
 ##### TypeScript#field-component-types
@@ -12967,10 +8795,10 @@ export const myField: Field = {
 
 All Cell Components receive the same [Default Field Component Props](#field), plus the following:
 
-|    Property            |    Description                                                          |
-| --- | --- |
-|    **`link`**    |    A boolean representing whether this cell should be wrapped in a link.    |
-|    **`onClick`**    |    A function that is called when the cell is clicked.    |
+| Property      | Description                                                           |
+| ------------- | --------------------------------------------------------------------- |
+| **`link`**    | A boolean representing whether this cell should be wrapped in a link. |
+| **`onClick`** | A function that is called when the cell is clicked.                   |
 
 For details on how to build Custom Components themselves, see [Building Custom Components](../custom-components/overview#building-custom-components).
 
@@ -13053,10 +8881,10 @@ export const MyCollectionConfig: CollectionConfig = {
       admin: {
         components: {
           Description: '/path/to/MyCustomDescriptionComponent', // highlight-line
-        }
-      }
-    }
-  ]
+        },
+      },
+    },
+  ],
 }
 ```
 
@@ -13150,7 +8978,7 @@ import type {
 
 #### afterInput and beforeInput
 
-With these properties you can add multiple components *before* and *after* the input element, as their name suggests. This is useful when you need to render additional elements alongside the field without replacing the entire field component.
+With these properties you can add multiple components _before_ and _after_ the input element, as their name suggests. This is useful when you need to render additional elements alongside the field without replacing the entire field component.
 
 To add components before and after the input element, use the `admin.components.beforeInput` and `admin.components.afterInput` properties in your Field Config:
 
@@ -13170,10 +8998,10 @@ export const MyCollectionConfig: CollectionConfig = {
           beforeInput: ['/path/to/MyCustomComponent'],
           afterInput: ['/path/to/MyOtherCustomComponent'],
           // highlight-end
-        }
-      }
-    }
-  ]
+        },
+      },
+    },
+  ],
 }
 ```
 
@@ -13190,7 +9018,7 @@ import type { Field } from 'payload'
 ```
 ````
 
-## File: fields/point.mdx
+## File: fields_point.mdx
 ````
 ---
 title: Point Field
@@ -13221,15 +9049,14 @@ export const MyPointField: Field = {
 ```
 
 <Banner type="warning">
-  **Important:**
-  The Point Field currently is not supported in SQLite.
+  **Important:** The Point Field currently is not supported in SQLite.
 </Banner>
 
 ## Config
 
 | Option                 | Description                                                                                                                                                                               |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`name`** *          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                                    |
+| **`name`** \*          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                                    |
 | **`label`**            | Used as a field label in the Admin Panel and to name the generated GraphQL type.                                                                                                          |
 | **`unique`**           | Enforce that each entry in the Collection has a unique value for this field.                                                                                                              |
 | **`index`**            | Build an [index](/docs/database/overview) for this field to produce faster queries. To support location queries, point index defaults to `2dsphere`, to disable the index set to `false`. |
@@ -13241,12 +9068,12 @@ export const MyPointField: Field = {
 | **`defaultValue`**     | Provide data to be used for this field's default value. [More](/docs/fields/overview#default-values)                                                                                      |
 | **`localized`**        | Enable localization for this field. Requires [localization to be enabled](/docs/configuration/localization) in the Base config.                                                           |
 | **`required`**         | Require this field to have a value.                                                                                                                                                       |
-| **`admin`**            | Admin-specific configuration. [More details](./overview#admin-options).                                                                                                              |
+| **`admin`**            | Admin-specific configuration. [More details](./overview#admin-options).                                                                                                                   |
 | **`custom`**           | Extension point for adding custom data (e.g. for plugins)                                                                                                                                 |
 | **`typescriptSchema`** | Override field type generation with providing a JSON schema                                                                                                                               |
 | **`virtual`**          | Provide `true` to disable field in the database. See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges)                          |
 
-_* An asterisk denotes that a property is required._
+_\* An asterisk denotes that a property is required._
 
 ## Example
 
@@ -13275,6 +9102,7 @@ In order to do query based on the distance to another point, you can use the `ne
 
 In order to do query based on whether points are within a specific area defined in GeoJSON, you can use the `within` operator.
 Example:
+
 ```ts
 const polygon: Point[] = [
   [9.0, 19.0], // bottom-left
@@ -13285,7 +9113,7 @@ const polygon: Point[] = [
 ]
 
 payload.find({
-  collection: "points",
+  collection: 'points',
   where: {
     point: {
       within: {
@@ -13297,11 +9125,11 @@ payload.find({
 })
 ```
 
-
 ## Querying - intersects
 
 In order to do query based on whether points intersect a specific area defined in GeoJSON, you can use the `intersects` operator.
 Example:
+
 ```ts
 const polygon: Point[] = [
   [9.0, 19.0], // bottom-left
@@ -13312,7 +9140,7 @@ const polygon: Point[] = [
 ]
 
 payload.find({
-  collection: "points",
+  collection: 'points',
   where: {
     point: {
       intersects: {
@@ -13342,7 +9170,12 @@ export const CustomPointFieldServer: PointFieldServerComponent = ({
   permissions,
 }) => {
   return (
-    <PointField field={clientField} path={path} schemaPath={schemaPath} permissions={permissions} />
+    <PointField
+      field={clientField}
+      path={path}
+      schemaPath={schemaPath}
+      permissions={permissions}
+    />
   )
 }
 ```
@@ -13406,218 +9239,7 @@ export const CustomPointFieldLabelClient: PointFieldLabelClientComponent = ({
 ```
 ````
 
-## File: fields/radio.mdx
-````
----
-title: Radio Group Field
-label: Radio Group
-order: 120
-desc: The Radio field type allows for the selection of one value from a predefined set of possible values. Learn how to use Radio fields, see examples and options.
-keywords: radio, fields, config, configuration, documentation, Content Management System, cms, headless, javascript, node, react, nextjs
----
-
-The Radio Field allows for the selection of one value from a predefined set of possible values and presents a radio group-style set of inputs to the [Admin Panel](../admin/overview).
-
-<LightDarkImage
-  srcLight="https://payloadcms.com/images/docs/fields/radio.png"
-  srcDark="https://payloadcms.com/images/docs/fields/radio-dark.png"
-  alt="Shows a Radio field in the Payload Admin Panel"
-  caption="Admin Panel screenshot of a Radio field"
-/>
-
-To add a Radio Field, set the `type` to `radio` in your [Field Config](./overview):
-
-```ts
-import type { Field } from 'payload'
-
-export const MyRadioField: Field = {
-  // ...
-  // highlight-start
-  type: 'radio',
-  options: [
-    // ...
-  ]
-  // highlight-end
-}
-```
-
-## Config Options
-
-| Option                 | Description                                                                                                                                                                 |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`name`** *          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                      |
-| **`options`** *       | Array of options to allow the field to store. Can either be an array of strings, or an array of objects containing an `label` string and a `value` string.                  |
-| **`label`**            | Text used as a field label in the Admin Panel or an object with keys for each language.                                                                                     |
-| **`validate`**         | Provide a custom validation function that will be executed on both the Admin Panel and the backend. [More](/docs/fields/overview#validation)                                |
-| **`index`**            | Build an [index](/docs/database/overview) for this field to produce faster queries. Set this field to `true` if your users will perform queries on this field's data often. |
-| **`saveToJWT`**        | If this field is top-level and nested in a config supporting [Authentication](/docs/authentication/overview), include its data in the user JWT.                             |
-| **`hooks`**            | Provide Field Hooks to control logic for this field. [More details](../hooks/fields).                                                                                       |
-| **`access`**           | Provide Field Access Control to denote what users can see and do with this field's data. [More details](../access-control/fields).                                          |
-| **`hidden`**           | Restrict this field's visibility from all APIs entirely. Will still be saved to the database, but will not appear in any API or the Admin Panel.                            |
-| **`defaultValue`**     | Provide data to be used for this field's default value. The default value must exist within provided values in `options`. [More](/docs/fields/overview#default-values)      |
-| **`localized`**        | Enable localization for this field. Requires [localization to be enabled](/docs/configuration/localization) in the Base config.                                             |
-| **`required`**         | Require this field to have a value.                                                                                                                                         |
-| **`admin`**            | Admin-specific configuration. [More details](#admin-options).                                                                                                               |
-| **`custom`**           | Extension point for adding custom data (e.g. for plugins)                                                                                                                   |
-| **`enumName`**         | Custom enum name for this field when using SQL Database Adapter ([Postgres](/docs/database/postgres)). Auto-generated from name if not defined.                             |
-| **`interfaceName`**    | Create a top level, reusable [Typescript interface](/docs/typescript/generating-types#custom-field-interfaces) & [GraphQL type](/docs/graphql/graphql-schema#custom-field-schemas).                                                                                                |
-| **`typescriptSchema`** | Override field type generation with providing a JSON schema                                                                                                                 |
-| **`virtual`**          | Provide `true` to disable field in the database. See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges)            |
-
-_* An asterisk denotes that a property is required._
-
-<Banner type="warning">
-  **Important:**
-
-  Option values should be strings that do not contain hyphens or special characters due to GraphQL
-  enumeration naming constraints. Underscores are allowed. If you determine you need your option
-  values to be non-strings or contain special characters, they will be formatted accordingly before
-  being used as a GraphQL enum.
-</Banner>
-
-## Admin Options
-
-To customize the appearance and behavior of the Radio Field in the [Admin Panel](../admin/overview), you can use the `admin` option:
-
-```ts
-import type { Field } from 'payload'
-
-export const MyRadioField: Field = {
-  // ...
-  admin: { // highlight-line
-    // ...
-  },
-}
-```
-
-The Radio Field inherits all of the default options from the base [Field Admin Config](./overview#admin-options), plus the following additional options:
-
-| Property                       | Description                                                                                                                            |
-| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| **`layout`**                   | Allows for the radio group to be styled as a horizontally or vertically distributed list. The default value is `horizontal`.          |
-
-## Example
-
-`collections/ExampleCollection.ts`
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const ExampleCollection: CollectionConfig = {
-  slug: 'example-collection',
-  fields: [
-    {
-      name: 'color', // required
-      type: 'radio', // required
-      options: [
-        // required
-        {
-          label: 'Mint',
-          value: 'mint',
-        },
-        {
-          label: 'Dark Gray',
-          value: 'dark_gray',
-        },
-      ],
-      defaultValue: 'mint', // The first value in options.
-      admin: {
-        layout: 'horizontal',
-      },
-    },
-  ],
-}
-```
-
-## Custom Components
-
-### Field
-
-#### Server Component
-
-```tsx
-import type React from 'react'
-import { RadioGroupField } from '@payloadcms/ui'
-import type { RadioFieldServerComponent } from 'payload'
-
-export const CustomRadioFieldServer: RadioFieldServerComponent = ({
-  clientField,
-  path,
-  schemaPath,
-  permissions,
-}) => {
-  return (
-    <RadioGroupField
-      field={clientField}
-      path={path}
-      schemaPath={schemaPath}
-      permissions={permissions}
-    />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { RadioGroupField } from '@payloadcms/ui'
-import type { RadioFieldClientComponent } from 'payload'
-
-export const CustomRadioFieldClient: RadioFieldClientComponent = (props) => {
-  return <RadioGroupField {...props} />
-}
-```
-
-### Label
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import { FieldLabel } from '@payloadcms/ui'
-import type { RadioFieldLabelServerComponent } from 'payload'
-
-export const CustomRadioFieldLabelServer: RadioFieldLabelServerComponent = ({
-  clientField,
-  path,
-  required,
-}) => {
-  return (
-    <FieldLabel
-      label={clientField?.label || clientField?.name}
-      path={path}
-      required={clientField?.required}
-    />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { FieldLabel } from '@payloadcms/ui'
-import type { RadioFieldLabelClientComponent } from 'payload'
-
-export const CustomRadioFieldLabelClient: RadioFieldLabelClientComponent = ({
-  field,
-  path,
-}) => {
-  return (
-    <FieldLabel
-      label={field?.label || field?.name}
-      path={path}
-      required={field?.required}
-    />
-  )
-}
-```
-````
-
-## File: fields/relationship.mdx
+## File: fields_relationship.mdx
 ````
 ---
 title: Relationship Field
@@ -13658,40 +9280,41 @@ export const MyRelationshipField: Field = {
 
 ## Config Options
 
-| Option                 | Description                                                                                                                                                                     |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`name`** *          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                           |
-| **`relationTo`** *    | Provide one or many collection `slug`s to be able to assign relationships to.                                                                                                    |
-| **`filterOptions`**    | A query to filter which options appear in the UI and validate against. [More](#filtering-relationship-options).                                                                 |
-| **`hasMany`**          | Boolean when, if set to `true`, allows this field to have many relations instead of only one.                                                                                   |
-| **`minRows`**          | A number for the fewest allowed items during validation when a value is present. Used with `hasMany`.                                                                           |
-| **`maxRows`**          | A number for the most allowed items during validation when a value is present. Used with `hasMany`.                                                                             |
-| **`maxDepth`**         | Sets a maximum population depth for this field, regardless of the remaining depth when this field is reached. [Max Depth](/docs/queries/depth#max-depth)                        |
-| **`label`**            | Text used as a field label in the Admin Panel or an object with keys for each language.                                                                                         |
-| **`unique`**           | Enforce that each entry in the Collection has a unique value for this field.                                                                                                    |
-| **`validate`**         | Provide a custom validation function that will be executed on both the Admin Panel and the backend. [More](/docs/fields/overview#validation)                                    |
-| **`index`**            | Build an [index](/docs/database/overview) for this field to produce faster queries. Set this field to `true` if your users will perform queries on this field's data often.     |
-| **`saveToJWT`**        | If this field is top-level and nested in a config supporting [Authentication](/docs/authentication/overview), include its data in the user JWT.                                 |
-| **`hooks`**            | Provide Field Hooks to control logic for this field. [More details](../hooks/fields).                                                                                           |
-| **`access`**           | Provide Field Access Control to denote what users can see and do with this field's data. [More details](../access-control/fields).                                              |
-| **`hidden`**           | Restrict this field's visibility from all APIs entirely. Will still be saved to the database, but will not appear in any API or the Admin Panel.                                |
-| **`defaultValue`**     | Provide data to be used for this field's default value. [More](/docs/fields/overview#default-values)                                                                            |
-| **`localized`**        | Enable localization for this field. Requires [localization to be enabled](/docs/configuration/localization) in the Base config.                                                 |
-| **`required`**         | Require this field to have a value.                                                                                                                                             |
-| **`admin`**            | Admin-specific configuration. [More details](#admin-options).                                                                                                                   |
-| **`custom`**           | Extension point for adding custom data (e.g. for plugins)                                                                                                                       |
-| **`typescriptSchema`** | Override field type generation with providing a JSON schema                                                                                                                     |
-| **`virtual`**          | Provide `true` to disable field in the database. See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges)                |
-| **`graphQL`**          | Custom graphQL configuration for the field. [More details](/docs/graphql/overview#field-complexity)                                                                             |
+| Option                 | Description                                                                                                                                                                 |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`name`** \*          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                      |
+| **`relationTo`** \*    | Provide one or many collection `slug`s to be able to assign relationships to.                                                                                               |
+| **`filterOptions`**    | A query to filter which options appear in the UI and validate against. [More](#filtering-relationship-options).                                                             |
+| **`hasMany`**          | Boolean when, if set to `true`, allows this field to have many relations instead of only one.                                                                               |
+| **`minRows`**          | A number for the fewest allowed items during validation when a value is present. Used with `hasMany`.                                                                       |
+| **`maxRows`**          | A number for the most allowed items during validation when a value is present. Used with `hasMany`.                                                                         |
+| **`maxDepth`**         | Sets a maximum population depth for this field, regardless of the remaining depth when this field is reached. [Max Depth](/docs/queries/depth#max-depth)                    |
+| **`label`**            | Text used as a field label in the Admin Panel or an object with keys for each language.                                                                                     |
+| **`unique`**           | Enforce that each entry in the Collection has a unique value for this field.                                                                                                |
+| **`validate`**         | Provide a custom validation function that will be executed on both the Admin Panel and the backend. [More](/docs/fields/overview#validation)                                |
+| **`index`**            | Build an [index](/docs/database/overview) for this field to produce faster queries. Set this field to `true` if your users will perform queries on this field's data often. |
+| **`saveToJWT`**        | If this field is top-level and nested in a config supporting [Authentication](/docs/authentication/overview), include its data in the user JWT.                             |
+| **`hooks`**            | Provide Field Hooks to control logic for this field. [More details](../hooks/fields).                                                                                       |
+| **`access`**           | Provide Field Access Control to denote what users can see and do with this field's data. [More details](../access-control/fields).                                          |
+| **`hidden`**           | Restrict this field's visibility from all APIs entirely. Will still be saved to the database, but will not appear in any API or the Admin Panel.                            |
+| **`defaultValue`**     | Provide data to be used for this field's default value. [More](/docs/fields/overview#default-values)                                                                        |
+| **`localized`**        | Enable localization for this field. Requires [localization to be enabled](/docs/configuration/localization) in the Base config.                                             |
+| **`required`**         | Require this field to have a value.                                                                                                                                         |
+| **`admin`**            | Admin-specific configuration. [More details](#admin-options).                                                                                                               |
+| **`custom`**           | Extension point for adding custom data (e.g. for plugins)                                                                                                                   |
+| **`typescriptSchema`** | Override field type generation with providing a JSON schema                                                                                                                 |
+| **`virtual`**          | Provide `true` to disable field in the database. See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges)            |
+| **`graphQL`**          | Custom graphQL configuration for the field. [More details](/docs/graphql/overview#field-complexity)                                                                         |
 
-_* An asterisk denotes that a property is required._
+_\* An asterisk denotes that a property is required._
 
 <Banner type="success">
-  **Tip:**
-  The [Depth](../queries/depth) parameter can be used to automatically populate related documents that are returned by the API.
+  **Tip:** The [Depth](../queries/depth) parameter can be used to automatically
+  populate related documents that are returned by the API.
 </Banner>
 
 ## Admin Options
+
 To the appearance and behavior of the Relationship Field in the [Admin Panel](../admin/overview), you can use the `admin` option:
 
 ```ts
@@ -13699,7 +9322,8 @@ import type { Field } from 'payload'
 
 export const MyRelationshipField: Field = {
   // ...
-  admin: { // highlight-line
+  admin: {
+    // highlight-line
     // ...
   },
 }
@@ -13707,12 +9331,12 @@ export const MyRelationshipField: Field = {
 
 The Relationship Field inherits all of the default options from the base [Field Admin Config](./overview#admin-options), plus the following additional options:
 
-| Property                       | Description                                                                                                                                 |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`isSortable`**               | Set to `true` if you'd like this field to be sortable within the Admin UI using drag and drop (only works when `hasMany` is set to `true`). |
-| **`allowCreate`**              | Set to `false` if you'd like to disable the ability to create new documents from within the relationship field.                             |
-| **`allowEdit`**                | Set to `false` if you'd like to disable the ability to edit documents from within the relationship field.                                   |
-| **`sortOptions`**              | Define a default sorting order for the options within a Relationship field's dropdown. [More](#sort-options)                                |
+| Property          | Description                                                                                                                                 |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`isSortable`**  | Set to `true` if you'd like this field to be sortable within the Admin UI using drag and drop (only works when `hasMany` is set to `true`). |
+| **`allowCreate`** | Set to `false` if you'd like to disable the ability to create new documents from within the relationship field.                             |
+| **`allowEdit`**   | Set to `false` if you'd like to disable the ability to edit documents from within the relationship field.                                   |
+| **`sortOptions`** | Define a default sorting order for the options within a Relationship field's dropdown. [More](#sort-options)                                |
 
 ### Sort Options
 
@@ -13762,7 +9386,7 @@ The `filterOptions` property can either be a `Where` query, or a function return
 
 | Property      | Description                                                                                                                                                                              |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `blockData`        | The data of the nearest parent block. Will be `undefined` if the field is not within a block or when called on a `Filter` component within the list view.                           |
+| `blockData`   | The data of the nearest parent block. Will be `undefined` if the field is not within a block or when called on a `Filter` component within the list view.                                |
 | `data`        | An object containing the full collection or global document currently being edited. Will be an empty object when called on a `Filter` component within the list view.                    |
 | `id`          | The `id` of the current document being edited. Will be `undefined` during the `create` operation or when called on a `Filter` component within the list view.                            |
 | `relationTo`  | The collection `slug` to filter against, limited to this field's `relationTo` property.                                                                                                  |
@@ -13806,10 +9430,11 @@ You can learn more about writing queries [here](/docs/queries/overview).
 <Banner type="warning">
   **Note:**
 
-  When a relationship field has both **filterOptions** and a custom
-  **validate** function, the api will not validate **filterOptions**
-  unless you call the default relationship field validation function imported from
-  **payload/shared** in your validate function.
+When a relationship field has both **filterOptions** and a custom
+**validate** function, the api will not validate **filterOptions**
+unless you call the default relationship field validation function imported from
+**payload/shared** in your validate function.
+
 </Banner>
 
 ## Bi-directional relationships
@@ -13988,8 +9613,9 @@ Since we are referencing multiple collections, the field you are querying on may
 <Banner type="warning">
   **Note:**
 
-  You **cannot** query on a field within a polymorphic relationship as you would with a
-  non-polymorphic relationship.
+You **cannot** query on a field within a polymorphic relationship as you would with a
+non-polymorphic relationship.
+
 </Banner>
 
 ## Custom Components
@@ -14003,21 +9629,17 @@ import type React from 'react'
 import { RelationshipField } from '@payloadcms/ui'
 import type { RelationshipFieldServerComponent } from 'payload'
 
-export const CustomRelationshipFieldServer: RelationshipFieldServerComponent = ({
-  clientField,
-  path,
-  schemaPath,
-  permissions,
-}) => {
-  return (
-    <RelationshipField
-      field={clientField}
-      path={path}
-      schemaPath={schemaPath}
-      permissions={permissions}
-    />
-  )
-}
+export const CustomRelationshipFieldServer: RelationshipFieldServerComponent =
+  ({ clientField, path, schemaPath, permissions }) => {
+    return (
+      <RelationshipField
+        field={clientField}
+        path={path}
+        schemaPath={schemaPath}
+        permissions={permissions}
+      />
+    )
+  }
 ```
 
 #### Client Component
@@ -14028,7 +9650,9 @@ import React from 'react'
 import { RelationshipField } from '@payloadcms/ui'
 import type { RelationshipFieldClientComponent } from 'payload'
 
-export const CustomRelationshipFieldClient: RelationshipFieldClientComponent = (props) => {
+export const CustomRelationshipFieldClient: RelationshipFieldClientComponent = (
+  props,
+) => {
   return <RelationshipField {...props} />
 }
 ```
@@ -14042,18 +9666,16 @@ import React from 'react'
 import { FieldLabel } from '@payloadcms/ui'
 import type { RelationshipFieldLabelServerComponent } from 'payload'
 
-export const CustomRelationshipFieldLabelServer: RelationshipFieldLabelServerComponent = (
-  clientField,
-  path
-) => {
-  return (
-    <FieldLabel
-      label={clientField?.label || clientField?.name}
-      path={path}
-      required={clientField?.required}
-    />
-  )
-}
+export const CustomRelationshipFieldLabelServer: RelationshipFieldLabelServerComponent =
+  (clientField, path) => {
+    return (
+      <FieldLabel
+        label={clientField?.label || clientField?.name}
+        path={path}
+        required={clientField?.required}
+      />
+    )
+  }
 ```
 
 #### Client Component
@@ -14064,22 +9686,20 @@ import React from 'react'
 import { FieldLabel } from '@payloadcms/ui'
 import type { RelationshipFieldLabelClientComponent } from 'payload'
 
-export const CustomRelationshipFieldLabelClient: RelationshipFieldLabelClientComponent = ({
-  field,
-  path,
-}) => {
-  return (
-    <FieldLabel
-      label={field?.label || field?.name}
-      path={path}
-      required={field?.required}
-    />
-  )
-}
+export const CustomRelationshipFieldLabelClient: RelationshipFieldLabelClientComponent =
+  ({ field, path }) => {
+    return (
+      <FieldLabel
+        label={field?.label || field?.name}
+        path={path}
+        required={field?.required}
+      />
+    )
+  }
 ```
 ````
 
-## File: fields/rich-text.mdx
+## File: fields_rich-text.mdx
 ````
 ---
 description: The Rich Text field allows dynamic content to be written through the Admin Panel. Learn how to use Rich Text fields, see examples and options.
@@ -14095,29 +9715,34 @@ Consistent with Payload's goal of making you learn as little of Payload as possi
 
 Instead, you can invest your time and effort into learning the underlying open-source tools that will allow you to apply your learnings elsewhere as well.
 
-<LightDarkImage alt="Shows a Rich Text field in the Payload Admin Panel" caption="Admin Panel screenshot of a Rich Text field" srcDark="https://payloadcms.com/images/docs/fields/richtext-dark.png" srcLight="https://payloadcms.com/images/docs/fields/richtext.png"/>
+<LightDarkImage
+  alt="Shows a Rich Text field in the Payload Admin Panel"
+  caption="Admin Panel screenshot of a Rich Text field"
+  srcDark="https://payloadcms.com/images/docs/fields/richtext-dark.png"
+  srcLight="https://payloadcms.com/images/docs/fields/richtext.png"
+/>
 
 ## Config Options
 
-|   Option                   |   Description                                                                                                                                                        |
-| --- | --- |
-|   **`name`** *            |   To be used as the property name when stored and retrieved from the database. [More](./overview#field-names)                                             |
-|   **`label`**              |   Text used as a field label in the Admin Panel or an object with keys for each language.                                                                            |
-|   **`validate`**           |   Provide a custom validation function that will be executed on both the Admin Panel and the backend. [More](./overview#validation)                       |
-|   **`saveToJWT`**          |   If this field is top-level and nested in a config supporting [Authentication](../authentication/overview), include its data in the user JWT.                    |
-|   **`hooks`**              |   Provide Field Hooks to control logic for this field. [More details](../hooks/fields).                                                                              |
-|   **`access`**             |   Provide Field Access Control to denote what users can see and do with this field's data. [More details](../access-control/fields).                                 |
-|   **`hidden`**             |   Restrict this field's visibility from all APIs entirely. Will still be saved to the database, but will not appear in any API or the Admin Panel.                   |
-|   **`defaultValue`**       |   Provide data to be used for this field's default value. [More](./overview#default-values)                                                               |
-|   **`localized`**          |   Enable localization for this field. Requires [localization to be enabled](../configuration/localization) in the Base config.                                    |
-|   **`required`**           |   Require this field to have a value.                                                                                                                                |
-|   **`admin`**              |   Admin-specific configuration. [More details](#admin-options).                                                                                                      |
-|   **`editor`**             |   Customize or override the rich text editor. [More details](../rich-text/overview).                                                                                 |
-|   **`custom`**             |   Extension point for adding custom data (e.g. for plugins)                                                                                                          |
-|   **`typescriptSchema`**   |   Override field type generation with providing a JSON schema                                                                                                        |
-|   **`virtual`**            |   Provide `true` to disable field in the database. See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges)   |
+| Option                 | Description                                                                                                                                                      |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`name`** \*          | To be used as the property name when stored and retrieved from the database. [More](./overview#field-names)                                                      |
+| **`label`**            | Text used as a field label in the Admin Panel or an object with keys for each language.                                                                          |
+| **`validate`**         | Provide a custom validation function that will be executed on both the Admin Panel and the backend. [More](./overview#validation)                                |
+| **`saveToJWT`**        | If this field is top-level and nested in a config supporting [Authentication](../authentication/overview), include its data in the user JWT.                     |
+| **`hooks`**            | Provide Field Hooks to control logic for this field. [More details](../hooks/fields).                                                                            |
+| **`access`**           | Provide Field Access Control to denote what users can see and do with this field's data. [More details](../access-control/fields).                               |
+| **`hidden`**           | Restrict this field's visibility from all APIs entirely. Will still be saved to the database, but will not appear in any API or the Admin Panel.                 |
+| **`defaultValue`**     | Provide data to be used for this field's default value. [More](./overview#default-values)                                                                        |
+| **`localized`**        | Enable localization for this field. Requires [localization to be enabled](../configuration/localization) in the Base config.                                     |
+| **`required`**         | Require this field to have a value.                                                                                                                              |
+| **`admin`**            | Admin-specific configuration. [More details](#admin-options).                                                                                                    |
+| **`editor`**           | Customize or override the rich text editor. [More details](../rich-text/overview).                                                                               |
+| **`custom`**           | Extension point for adding custom data (e.g. for plugins)                                                                                                        |
+| **`typescriptSchema`** | Override field type generation with providing a JSON schema                                                                                                      |
+| **`virtual`**          | Provide `true` to disable field in the database. See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges) |
 
-** An asterisk denotes that a property is required.*
+\*_ An asterisk denotes that a property is required._
 
 ## Admin Options
 
@@ -14128,7 +9753,8 @@ import type { Field } from 'payload'
 
 export const MyRichTextField: Field = {
   // ...
-  admin: { // highlight-line
+  admin: {
+    // highlight-line
     // ...
   },
 }
@@ -14142,7 +9768,7 @@ For a ton more editor-specific options, including how to build custom rich text 
 take a look at the [rich text editor documentation](../rich-text/overview).
 ````
 
-## File: fields/row.mdx
+## File: fields_row.mdx
 ````
 ---
 title: Row Field
@@ -14172,20 +9798,20 @@ export const MyRowField: Field = {
   type: 'row',
   fields: [
     // ...
-  ]
+  ],
   // highlight-end
 }
 ```
 
 ## Config Options
 
-| Option          | Description                                                                                                                                                                |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`fields`** * | Array of field types to nest within this Row.                                                                                                                              |
+| Option          | Description                                                                                                               |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **`fields`** \* | Array of field types to nest within this Row.                                                                             |
 | **`admin`**     | Admin-specific configuration excluding `description`, `readOnly`, and `hidden`. [More details](./overview#admin-options). |
-| **`custom`**    | Extension point for adding custom data (e.g. for plugins)                                                                                                                  |
+| **`custom`**    | Extension point for adding custom data (e.g. for plugins)                                                                 |
 
-_* An asterisk denotes that a property is required._
+_\* An asterisk denotes that a property is required._
 
 ## Example
 
@@ -14224,7 +9850,7 @@ export const ExampleCollection: CollectionConfig = {
 ```
 ````
 
-## File: fields/select.mdx
+## File: fields_select.mdx
 ````
 ---
 title: Select Field
@@ -14254,45 +9880,45 @@ export const MySelectField: Field = {
   type: 'select',
   options: [
     // ...
-  ]
+  ],
   // highlight-end
 }
 ```
 
 ## Config Options
 
-| Option                 | Description                                                                                                                                                                                  |
-| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`name`** *          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                                       |
-| **`options`** *       | Array of options to allow the field to store. Can either be an array of strings, or an array of objects containing a `label` string and a `value` string.                                    |
-| **`hasMany`**          | Boolean when, if set to `true`, allows this field to have many selections instead of only one.                                                                                               |
-| **`label`**            | Text used as a field label in the Admin Panel or an object with keys for each language.                                                                                                      |
-| **`unique`**           | Enforce that each entry in the Collection has a unique value for this field.                                                                                                                 |
-| **`validate`**         | Provide a custom validation function that will be executed on both the Admin Panel and the backend. [More](/docs/fields/overview#validation)                                                 |
-| **`index`**            | Build an [index](/docs/database/overview) for this field to produce faster queries. Set this field to `true` if your users will perform queries on this field's data often.                  |
-| **`saveToJWT`**        | If this field is top-level and nested in a config supporting [Authentication](/docs/authentication/overview), include its data in the user JWT.                                              |
-| **`hooks`**            | Provide Field Hooks to control logic for this field. [More details](../hooks/fields).                                                                                                        |
-| **`access`**           | Provide Field Access Control to denote what users can see and do with this field's data. [More details](../access-control/fields).                                                           |
-| **`hidden`**           | Restrict this field's visibility from all APIs entirely. Will still be saved to the database, but will not appear in any API or the Admin Panel.                                             |
-| **`defaultValue`**     | Provide data to be used for this field's default value. [More](/docs/fields/overview#default-values)                                                                                         |
-| **`localized`**        | Enable localization for this field. Requires [localization to be enabled](/docs/configuration/localization) in the Base config.                                                              |
-| **`required`**         | Require this field to have a value.                                                                                                                                                          |
-| **`admin`**            | Admin-specific configuration. See the [default field admin config](/docs/fields/overview#admin-options) for more details.                                                                    |
-| **`custom`**           | Extension point for adding custom data (e.g. for plugins)                                                                                                                                    |
-| **`enumName`**         | Custom enum name for this field when using SQL Database Adapter ([Postgres](/docs/database/postgres)). Auto-generated from name if not defined.                                              |
-| **`dbName`**           | Custom table name (if `hasMany` set to `true`) for this field when using SQL Database Adapter ([Postgres](/docs/database/postgres)). Auto-generated from name if not defined.                |
-| **`interfaceName`**    | Create a top level, reusable [Typescript interface](/docs/typescript/generating-types#custom-field-interfaces) & [GraphQL type](/docs/graphql/graphql-schema#custom-field-schemas).                                                                                                |
-| **`typescriptSchema`** | Override field type generation with providing a JSON schema                                                                                                                                  |
-| **`virtual`**          | Provide `true` to disable field in the database. See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges)                             |
+| Option                 | Description                                                                                                                                                                         |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`name`** \*          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                              |
+| **`options`** \*       | Array of options to allow the field to store. Can either be an array of strings, or an array of objects containing a `label` string and a `value` string.                           |
+| **`hasMany`**          | Boolean when, if set to `true`, allows this field to have many selections instead of only one.                                                                                      |
+| **`label`**            | Text used as a field label in the Admin Panel or an object with keys for each language.                                                                                             |
+| **`unique`**           | Enforce that each entry in the Collection has a unique value for this field.                                                                                                        |
+| **`validate`**         | Provide a custom validation function that will be executed on both the Admin Panel and the backend. [More](/docs/fields/overview#validation)                                        |
+| **`index`**            | Build an [index](/docs/database/overview) for this field to produce faster queries. Set this field to `true` if your users will perform queries on this field's data often.         |
+| **`saveToJWT`**        | If this field is top-level and nested in a config supporting [Authentication](/docs/authentication/overview), include its data in the user JWT.                                     |
+| **`hooks`**            | Provide Field Hooks to control logic for this field. [More details](../hooks/fields).                                                                                               |
+| **`access`**           | Provide Field Access Control to denote what users can see and do with this field's data. [More details](../access-control/fields).                                                  |
+| **`hidden`**           | Restrict this field's visibility from all APIs entirely. Will still be saved to the database, but will not appear in any API or the Admin Panel.                                    |
+| **`defaultValue`**     | Provide data to be used for this field's default value. [More](/docs/fields/overview#default-values)                                                                                |
+| **`localized`**        | Enable localization for this field. Requires [localization to be enabled](/docs/configuration/localization) in the Base config.                                                     |
+| **`required`**         | Require this field to have a value.                                                                                                                                                 |
+| **`admin`**            | Admin-specific configuration. See the [default field admin config](/docs/fields/overview#admin-options) for more details.                                                           |
+| **`custom`**           | Extension point for adding custom data (e.g. for plugins)                                                                                                                           |
+| **`enumName`**         | Custom enum name for this field when using SQL Database Adapter ([Postgres](/docs/database/postgres)). Auto-generated from name if not defined.                                     |
+| **`dbName`**           | Custom table name (if `hasMany` set to `true`) for this field when using SQL Database Adapter ([Postgres](/docs/database/postgres)). Auto-generated from name if not defined.       |
+| **`interfaceName`**    | Create a top level, reusable [Typescript interface](/docs/typescript/generating-types#custom-field-interfaces) & [GraphQL type](/docs/graphql/graphql-schema#custom-field-schemas). |
+| **`typescriptSchema`** | Override field type generation with providing a JSON schema                                                                                                                         |
+| **`virtual`**          | Provide `true` to disable field in the database. See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges)                    |
 
-_* An asterisk denotes that a property is required._
+_\* An asterisk denotes that a property is required._
 
 <Banner type="warning">
-  **Important:**
-  Option values should be strings that do not contain hyphens or special characters due to GraphQL
-  enumeration naming constraints. Underscores are allowed. If you determine you need your option
-  values to be non-strings or contain special characters, they will be formatted accordingly before
-  being used as a GraphQL enum.
+  **Important:** Option values should be strings that do not contain hyphens or
+  special characters due to GraphQL enumeration naming constraints. Underscores
+  are allowed. If you determine you need your option values to be non-strings or
+  contain special characters, they will be formatted accordingly before being
+  used as a GraphQL enum.
 </Banner>
 
 ## Admin Options
@@ -14304,7 +9930,8 @@ import type { Field } from 'payload'
 
 export const MySelectField: Field = {
   // ...
-  admin: { // highlight-line
+  admin: {
+    // highlight-line
     // ...
   },
 }
@@ -14312,10 +9939,10 @@ export const MySelectField: Field = {
 
 The Select Field inherits all of the default options from the base [Field Admin Config](./overview#admin-options), plus the following additional options:
 
-| Property                       | Description                                                                                                                              |
-| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| **`isClearable`**              | Set to `true` if you'd like this field to be clearable within the Admin UI.                                                              |
-| **`isSortable`**               | Set to `true` if you'd like this field to be sortable within the Admin UI using drag and drop. (Only works when `hasMany` is set to `true`) |
+| Property          | Description                                                                                                                                 |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`isClearable`** | Set to `true` if you'd like this field to be clearable within the Admin UI.                                                                 |
+| **`isSortable`**  | Set to `true` if you'd like this field to be sortable within the Admin UI using drag and drop. (Only works when `hasMany` is set to `true`) |
 
 ## Example
 
@@ -14443,7 +10070,7 @@ export const CustomSelectFieldLabelClient: SelectFieldLabelClientComponent = ({
 ```
 ````
 
-## File: fields/tabs.mdx
+## File: fields_tabs.mdx
 ````
 ---
 title: Tabs Field
@@ -14473,18 +10100,18 @@ export const MyTabsField: Field = {
   type: 'tabs',
   tabs: [
     // ...
-  ]
+  ],
   // highlight-end
 }
 ```
 
 ## Config Options
 
-| Option        | Description                                                                                                              |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| **`tabs`** * | Array of tabs to render within this Tabs field.                                                                          |
+| Option        | Description                                                             |
+| ------------- | ----------------------------------------------------------------------- |
+| **`tabs`** \* | Array of tabs to render within this Tabs field.                         |
 | **`admin`**   | Admin-specific configuration. [More details](./overview#admin-options). |
-| **`custom`**  | Extension point for adding custom data (e.g. for plugins)                                                                |
+| **`custom`**  | Extension point for adding custom data (e.g. for plugins)               |
 
 ### Tab-specific Config
 
@@ -14494,12 +10121,12 @@ Each tab must have either a `name` or `label` and the required `fields` array. Y
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **`name`**          | Groups field data into an object when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                                                      |
 | **`label`**         | The label to render on the tab itself. Required when name is undefined, defaults to name converted to words.                                                                                                 |
-| **`fields`** *     | The fields to render within this tab.                                                                                                                                                                        |
+| **`fields`** \*     | The fields to render within this tab.                                                                                                                                                                        |
 | **`description`**   | Optionally render a description within this tab to describe the contents of the tab itself.                                                                                                                  |
 | **`interfaceName`** | Create a top level, reusable [Typescript interface](/docs/typescript/generating-types#custom-field-interfaces) & [GraphQL type](/docs/graphql/graphql-schema#custom-field-schemas). (`name` must be present) |
 | **`virtual`**       | Provide `true` to disable field in the database (`name` must be present). See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges)                    |
 
-_* An asterisk denotes that a property is required._
+_\* An asterisk denotes that a property is required._
 
 ## Example
 
@@ -14547,375 +10174,7 @@ export const ExampleCollection: CollectionConfig = {
 ```
 ````
 
-## File: fields/text.mdx
-````
----
-title: Text Field
-label: Text
-order: 180
-desc: Text field types simply save a string to the database and provide the Admin Panel with a text input. Learn how to use Text fields, see examples and options.
-keywords: text, fields, config, configuration, documentation, Content Management System, cms, headless, javascript, node, react, nextjs
----
-
-The Text Field is one of the most commonly used fields. It saves a string to the database and provides the [Admin Panel](../admin/overview) with a simple text input.
-
-<LightDarkImage
-  srcLight="https://payloadcms.com/images/docs/fields/text.png"
-  srcDark="https://payloadcms.com/images/docs/fields/text-dark.png"
-  alt="Shows a text field and read-only text field in the Payload Admin Panel"
-  caption="Admin Panel screenshot of a Text field and read-only Text field"
-/>
-
-To add a Text Field, set the `type` to `text` in your [Field Config](./overview):
-
-```ts
-import type { Field } from 'payload'
-
-export const MyTextField: Field = {
-  // ...
-  type: 'text', // highlight-line
-}
-```
-
-## Config Options
-
-| Option                 | Description                                                                                                                                                                 |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`name`** *          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                      |
-| **`label`**            | Text used as a field label in the Admin Panel or an object with keys for each language.                                                                                     |
-| **`unique`**           | Enforce that each entry in the Collection has a unique value for this field.                                                                                                |
-| **`minLength`**        | Used by the default validation function to ensure values are of a minimum character length.                                                                                 |
-| **`maxLength`**        | Used by the default validation function to ensure values are of a maximum character length.                                                                                 |
-| **`validate`**         | Provide a custom validation function that will be executed on both the Admin Panel and the backend. [More](/docs/fields/overview#validation)                                |
-| **`index`**            | Build an [index](/docs/database/overview) for this field to produce faster queries. Set this field to `true` if your users will perform queries on this field's data often. |
-| **`saveToJWT`**        | If this field is top-level and nested in a config supporting [Authentication](/docs/authentication/overview), include its data in the user JWT.                             |
-| **`hooks`**            | Provide Field Hooks to control logic for this field. [More details](../hooks/fields).                                                                                       |
-| **`access`**           | Provide Field Access Control to denote what users can see and do with this field's data. [More details](../access-control/fields).                                          |
-| **`hidden`**           | Restrict this field's visibility from all APIs entirely. Will still be saved to the database, but will not appear in any API or the Admin Panel.                            |
-| **`defaultValue`**     | Provide data to be used for this field's default value. [More](/docs/fields/overview#default-values)                                                                        |
-| **`localized`**        | Enable localization for this field. Requires [localization to be enabled](/docs/configuration/localization) in the Base config.                                             |
-| **`required`**         | Require this field to have a value.                                                                                                                                         |
-| **`admin`**            | Admin-specific configuration. [More details](#admin-options).                                                                                                               |
-| **`custom`**           | Extension point for adding custom data (e.g. for plugins)                                                                                                                   |
-| **`hasMany`**          | Makes this field an ordered array of text instead of just a single text.                                                                                                    |
-| **`minRows`**          | Minimum number of texts in the array, if `hasMany` is set to true.                                                                                                          |
-| **`maxRows`**          | Maximum number of texts in the array, if `hasMany` is set to true.                                                                                                          |
-| **`typescriptSchema`** | Override field type generation with providing a JSON schema                                                                                                                 |
-| **`virtual`**          | Provide `true` to disable field in the database. See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges)            |
-
-_* An asterisk denotes that a property is required._
-
-## Admin Options
-
-To customize the appearance and behavior of the Text Field in the [Admin Panel](../admin/overview), you can use the `admin` option:
-
-```ts
-import type { Field } from 'payload'
-
-export const MyTextField: Field = {
-  // ...
-  admin: { // highlight-line
-    // ...
-  },
-}
-```
-
-The Text Field inherits all of the default options from the base [Field Admin Config](./overview#admin-options), plus the following additional options:
-
-| Option         | Description                                                                                                      |
-| -------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **`placeholder`** | Set this property to define a placeholder string in the text input.                                              |
-| **`autoComplete`** | Set this property to a string that will be used for browser autocomplete.                                        |
-| **`rtl`**        | Override the default text direction of the Admin Panel for this field. Set to `true` to force right-to-left text direction. |
-
-## Example
-
-`collections/ExampleCollection.ts`
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const ExampleCollection: CollectionConfig = {
-  slug: 'example-collection',
-  fields: [
-    {
-      name: 'pageTitle', // required
-      type: 'text', // required
-      required: true,
-    },
-  ],
-}
-```
-
-## Custom Components
-
-### Field
-
-#### Server Component
-
-```tsx
-import type React from 'react'
-import { TextField } from '@payloadcms/ui'
-import type { TextFieldServerComponent } from 'payload'
-
-export const CustomTextFieldServer: TextFieldServerComponent = ({
-  clientField,
-  path,
-  schemaPath,
-  permissions,
-}) => {
-  return (
-    <TextField field={clientField} path={path} schemaPath={schemaPath} permissions={permissions} />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { TextField } from '@payloadcms/ui'
-import type { TextFieldClientComponent } from 'payload'
-
-export const CustomTextFieldClient: TextFieldClientComponent = (props) => {
-  return <TextField {...props} />
-}
-```
-
-### Label
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import { FieldLabel } from '@payloadcms/ui'
-import type { TextFieldLabelServerComponent } from 'payload'
-
-export const CustomTextFieldLabelServer: TextFieldLabelServerComponent = ({
-  clientField,
-  path,
-  required,
-}) => {
-  return (
-    <FieldLabel
-      label={clientField?.label || clientField?.name}
-      path={path}
-      required={clientField?.required}
-    />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { FieldLabel } from '@payloadcms/ui'
-import type { TextFieldLabelClientComponent } from 'payload'
-
-export const CustomTextFieldLabelClient: TextFieldLabelClientComponent = ({
-  field,
-  path,
-}) => {
-  return (
-    <FieldLabel
-      label={field?.label || field?.name}
-      path={path}
-      required={field?.required}
-    />
-  )
-}
-```
-````
-
-## File: fields/textarea.mdx
-````
----
-title: Textarea Field
-label: Textarea
-order: 190
-desc: Textarea field types save a string to the database, similar to the Text field type but equipped for longer text. Learn how to use Textarea fields, see examples and options.
-keywords: textarea, fields, config, configuration, documentation, Content Management System, cms, headless, javascript, node, react, nextjs
----
-
-The Textarea Field is nearly identical to the [Text Field](./text) but it features a slightly larger input that is better suited to edit longer text.
-
-<LightDarkImage
-  srcLight="https://payloadcms.com/images/docs/fields/textarea.png"
-  srcDark="https://payloadcms.com/images/docs/fields/textarea-dark.png"
-  alt="Shows a textarea field and read-only textarea field in the Payload Admin Panel"
-  caption="Admin Panel screenshot of a Textarea field and read-only Textarea field"
-/>
-
-To add a Textarea Field, set the `type` to `textarea` in your [Field Config](./overview):
-
-```ts
-import type { Field } from 'payload'
-
-export const MyTextareaField: Field = {
-  // ...
-  type: 'textarea', // highlight-line
-}
-```
-
-## Config Options
-
-| Option                 | Description                                                                                                                                                                 |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`name`** *          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                      |
-| **`label`**            | Text used as a field label in the Admin Panel or an object with keys for each language.                                                                                     |
-| **`unique`**           | Enforce that each entry in the Collection has a unique value for this field.                                                                                                |
-| **`minLength`**        | Used by the default validation function to ensure values are of a minimum character length.                                                                                 |
-| **`maxLength`**        | Used by the default validation function to ensure values are of a maximum character length.                                                                                 |
-| **`validate`**         | Provide a custom validation function that will be executed on both the Admin Panel and the backend. [More](/docs/fields/overview#validation)                                |
-| **`index`**            | Build an [index](/docs/database/overview) for this field to produce faster queries. Set this field to `true` if your users will perform queries on this field's data often. |
-| **`saveToJWT`**        | If this field is top-level and nested in a config supporting [Authentication](/docs/authentication/overview), include its data in the user JWT.                             |
-| **`hooks`**            | Provide Field Hooks to control logic for this field. [More details](../hooks/fields).                                                                                       |
-| **`access`**           | Provide Field Access Control to denote what users can see and do with this field's data. [More details](../access-control/fields).                                          |
-| **`hidden`**           | Restrict this field's visibility from all APIs entirely. Will still be saved to the database, but will not appear in any API or the Admin Panel.                            |
-| **`defaultValue`**     | Provide data to be used for this field's default value. [More](/docs/fields/overview#default-values)                                                                        |
-| **`localized`**        | Enable localization for this field. Requires [localization to be enabled](/docs/configuration/localization) in the Base config.                                             |
-| **`required`**         | Require this field to have a value.                                                                                                                                         |
-| **`admin`**            | Admin-specific configuration. [More details](#admin-options).                                                                                                               |
-| **`custom`**           | Extension point for adding custom data (e.g. for plugins)                                                                                                                   |
-| **`typescriptSchema`** | Override field type generation with providing a JSON schema                                                                                                                 |
-| **`virtual`**          | Provide `true` to disable field in the database. See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges)            |
-
-_* An asterisk denotes that a property is required._
-
-## Admin Options
-
-To customize the appearance and behavior of the Textarea Field in the [Admin Panel](../admin/overview), you can use the `admin` option:
-
-```ts
-import type { Field } from 'payload'
-
-export const MyTextareaField: Field = {
-  // ...
-  admin: { // highlight-line
-    // ...
-  },
-}
-```
-
-The Textarea Field inherits all of the default options from the base [Field Admin Config](./overview#admin-options), plus the following additional options:
-
-| Option             | Description                                                                                                                 |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------------- |
-| **`placeholder`**  | Set this property to define a placeholder string in the textarea.                                                           |
-| **`autoComplete`** | Set this property to a string that will be used for browser autocomplete.                                                   |
-| **`rows`**         | Set the number of visible text rows in the textarea. Defaults to `2` if not specified.                                      |
-| **`rtl`**          | Override the default text direction of the Admin Panel for this field. Set to `true` to force right-to-left text direction. |
-
-## Example
-
-`collections/ExampleCollection.ts`
-
-```ts
-import type { CollectionConfig } from 'payload'
-
-export const ExampleCollection: CollectionConfig = {
-  slug: 'example-collection',
-  fields: [
-    {
-      name: 'metaDescription', // required
-      type: 'textarea', // required
-      required: true,
-    },
-  ],
-}
-```
-
-## Custom Components
-
-### Field
-
-#### Server Component
-
-```tsx
-import type React from 'react'
-import { TextareaField } from '@payloadcms/ui'
-import type { TextareaFieldServerComponent } from 'payload'
-
-export const CustomTextareaFieldServer: TextareaFieldServerComponent = ({
-  clientField,
-  path,
-  schemaPath,
-  permissions,
-}) => {
-  return (
-    <TextareaField
-      field={clientField}
-      path={path}
-      schemaPath={schemaPath}
-      permissions={permissions}
-    />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { TextareaField } from '@payloadcms/ui'
-import type { TextareaFieldClientComponent } from 'payload'
-
-export const CustomTextareaFieldClient: TextareaFieldClientComponent = (props) => {
-  return <TextareaField {...props} />
-}
-```
-
-### Label
-
-#### Server Component
-
-```tsx
-import React from 'react'
-import { FieldLabel } from '@payloadcms/ui'
-import type { TextareaFieldLabelServerComponent } from 'payload'
-
-export const CustomTextareaFieldLabelServer: TextareaFieldLabelServerComponent = ({
-  clientField,
-  path,
-}) => {
-  return (
-    <FieldLabel
-      label={clientField?.label || clientField?.name}
-      path={path}
-      required={clientField?.required}
-    />
-  )
-}
-```
-
-#### Client Component
-
-```tsx
-'use client'
-import React from 'react'
-import { FieldLabel } from '@payloadcms/ui'
-import type { TextareaFieldLabelClientComponent } from 'payload'
-
-export const CustomTextareaFieldLabelClient: TextareaFieldLabelClientComponent = ({
-  field,
-  path,
-}) => {
-  return (
-    <FieldLabel
-      label={field?.label || field?.name}
-      path={path}
-      required={field?.required}
-    />
-  )
-}
-```
-````
-
-## File: fields/ui.mdx
+## File: fields_ui.mdx
 ````
 ---
 title: UI Field
@@ -14947,16 +10206,16 @@ export const MyUIField: Field = {
 
 ## Config Options
 
-| Option                          | Description                                                                                                         |
-| ------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| **`name`** *                    | A unique identifier for this field.                                                                                 |
-| **`label`**                     | Human-readable label for this UI field.                                                                             |
-| **`admin.components.Field`** *  | React component to be rendered for this field within the Edit View. [More](./overview#field)                   |
-| **`admin.components.Cell`**     | React component to be rendered as a Cell within collection List views. [More](./overview#cell)                 |
-| **`admin.disableListColumn`**   | Set `disableListColumn` to `true` to prevent the UI field from appearing in the list view column selector.          |
-| **`custom`**                    | Extension point for adding custom data (e.g. for plugins)                                                           |
+| Option                          | Description                                                                                                |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| **`name`** \*                   | A unique identifier for this field.                                                                        |
+| **`label`**                     | Human-readable label for this UI field.                                                                    |
+| **`admin.components.Field`** \* | React component to be rendered for this field within the Edit View. [More](./overview#field)               |
+| **`admin.components.Cell`**     | React component to be rendered as a Cell within collection List views. [More](./overview#cell)             |
+| **`admin.disableListColumn`**   | Set `disableListColumn` to `true` to prevent the UI field from appearing in the list view column selector. |
+| **`custom`**                    | Extension point for adding custom data (e.g. for plugins)                                                  |
 
-_* An asterisk denotes that a property is required._
+_\* An asterisk denotes that a property is required._
 
 ## Example
 
@@ -14983,7 +10242,7 @@ export const ExampleCollection: CollectionConfig = {
 ```
 ````
 
-## File: fields/upload.mdx
+## File: fields_upload.mdx
 ````
 ---
 title: Upload Field
@@ -15003,10 +10262,10 @@ Upload fields are useful for a variety of use cases, such as:
 - To give a layout building block the ability to feature a background image
 
 <LightDarkImage
-srcLight="https://payloadcms.com/images/docs/fields/upload.png"
-srcDark="https://payloadcms.com/images/docs/fields/upload-dark.png"
-alt="Shows an upload field in the Payload Admin Panel"
-caption="Admin Panel screenshot of an Upload field"
+  srcLight="https://payloadcms.com/images/docs/fields/upload.png"
+  srcDark="https://payloadcms.com/images/docs/fields/upload-dark.png"
+  alt="Shows an upload field in the Payload Admin Panel"
+  caption="Admin Panel screenshot of an Upload field"
 />
 
 To create an Upload Field, set the `type` to `upload` in your [Field Config](./overview):
@@ -15024,16 +10283,17 @@ export const MyUploadField: Field = {
 ```
 
 <Banner type="warning">
-  **Important:**
-  To use the Upload Field, you must have a [Collection](../configuration/collections) configured to allow [Uploads](../upload/overview).
+  **Important:** To use the Upload Field, you must have a
+  [Collection](../configuration/collections) configured to allow
+  [Uploads](../upload/overview).
 </Banner>
 
 ## Config Options
 
 | Option                 | Description                                                                                                                                                                 |
-|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **`name`** *          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                      |
-| **`relationTo`** *    | Provide a single collection `slug` to allow this field to accept a relation to. **Note: the related collection must be configured to support Uploads.**        |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`name`** \*          | To be used as the property name when stored and retrieved from the database. [More](/docs/fields/overview#field-names)                                                      |
+| **`relationTo`** \*    | Provide a single collection `slug` to allow this field to accept a relation to. **Note: the related collection must be configured to support Uploads.**                     |
 | **`filterOptions`**    | A query to filter which options appear in the UI and validate against. [More](#filtering-upload-options).                                                                   |
 | **`hasMany`**          | Boolean which, if set to true, allows this field to have many relations instead of only one.                                                                                |
 | **`minRows`**          | A number for the fewest allowed items during validation when a value is present. Used with hasMany.                                                                         |
@@ -15051,13 +10311,13 @@ export const MyUploadField: Field = {
 | **`displayPreview`**   | Enable displaying preview of the uploaded file. Overrides related Collection's `displayPreview` option. [More](/docs/upload/overview#collection-upload-options).            |
 | **`localized`**        | Enable localization for this field. Requires [localization to be enabled](/docs/configuration/localization) in the Base config.                                             |
 | **`required`**         | Require this field to have a value.                                                                                                                                         |
-| **`admin`**            | Admin-specific configuration. [Admin Options](./overview#admin-options).                                                                                               |
+| **`admin`**            | Admin-specific configuration. [Admin Options](./overview#admin-options).                                                                                                    |
 | **`custom`**           | Extension point for adding custom data (e.g. for plugins)                                                                                                                   |
 | **`typescriptSchema`** | Override field type generation with providing a JSON schema                                                                                                                 |
 | **`virtual`**          | Provide `true` to disable field in the database. See [Virtual Fields](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges)            |
 | **`graphQL`**          | Custom graphQL configuration for the field. [More details](/docs/graphql/overview#field-complexity)                                                                         |
 
-_* An asterisk denotes that a property is required._
+_\* An asterisk denotes that a property is required._
 
 ## Example
 
@@ -15089,7 +10349,7 @@ prevent all, or a `Where` query. When using a function, it will be
 called with an argument object with the following properties:
 
 | Property      | Description                                                                                           |
-|---------------|-------------------------------------------------------------------------------------------------------|
+| ------------- | ----------------------------------------------------------------------------------------------------- |
 | `relationTo`  | The collection `slug` to filter against, limited to this field's `relationTo` property                |
 | `data`        | An object containing the full collection or global document currently being edited                    |
 | `siblingData` | An object containing document data that is scoped to only fields within the same parent of this field |
@@ -15115,10 +10375,11 @@ You can learn more about writing queries [here](/docs/queries/overview).
 <Banner type="warning">
   **Note:**
 
-  When an upload field has both **filterOptions** and a custom
-  **validate** function, the api will not validate **filterOptions**
-  unless you call the default upload field validation function imported from
-  **payload/shared** in your validate function.
+When an upload field has both **filterOptions** and a custom
+**validate** function, the api will not validate **filterOptions**
+unless you call the default upload field validation function imported from
+**payload/shared** in your validate function.
+
 </Banner>
 
 ## Bi-directional relationships
@@ -15129,7 +10390,7 @@ the `join` field in the upload enabled collection. Read more about bi-directiona
 the [Join field](./join)
 ````
 
-## File: getting-started/concepts.mdx
+## File: getting-started_concepts.mdx
 ````
 ---
 title: Payload Concepts
@@ -15186,8 +10447,8 @@ Everything Payload does (create, read, update, delete, login, logout, etc.) is e
 - [GraphQL](#graphql-api) - A full GraphQL API with a GraphQL Playground
 
 <Banner type="success">
-  **Note:**
-  All of these APIs share the exact same query language. [More details](../queries/overview).
+  **Note:** All of these APIs share the exact same query language. [More
+  details](../queries/overview).
 </Banner>
 
 ### Local API
@@ -15260,8 +10521,9 @@ You can use any GraphQL client with Payload's GraphQL endpoint. Here are a few p
 Payload is abstracted into a set of dedicated packages to keep the core `payload` package as lightweight as possible. This allows you to only install the parts of Payload based on your unique project requirements.
 
 <Banner type="warning">
-  **Important:**
-  Version numbers of all official Payload packages are always published in sync. You should make sure that you always use matching versions for all official Payload packages.
+  **Important:** Version numbers of all official Payload packages are always
+  published in sync. You should make sure that you always use matching versions
+  for all official Payload packages.
 </Banner>
 
 `payload`
@@ -15299,12 +10561,12 @@ You can choose which Database Adapter you'd like to use for your project, and no
 Payload's Rich Text functionality is abstracted into separate packages and if you want to enable Rich Text in your project, you'll need to install one of these packages. We recommend Lexical for all new projects, and this is where Payload will focus its efforts on from this point, but Slate is still supported if you have already built with it.
 
 <Banner type="info">
-  **Note:**
-  Rich Text is entirely optional and you may not need it for your project.
+  **Note:** Rich Text is entirely optional and you may not need it for your
+  project.
 </Banner>
 ````
 
-## File: getting-started/installation.mdx
+## File: getting-started_installation.mdx
 ````
 ---
 title: Installation
@@ -15323,8 +10585,8 @@ Payload requires the following software:
 - Any [compatible database](/docs/database/overview) (MongoDB, Postgres or SQLite)
 
 <Banner type="warning">
-  **Important:**
-  Before proceeding any further, please ensure that you have the above requirements met.
+  **Important:** Before proceeding any further, please ensure that you have the
+  above requirements met.
 </Banner>
 
 ## Quickstart with create-payload-app
@@ -15356,8 +10618,8 @@ pnpm i payload @payloadcms/next @payloadcms/richtext-lexical sharp graphql
 ```
 
 <Banner type="warning">
-  **Note:**
-  Swap out `pnpm` for your package manager. If you are using npm, you might need to install using legacy peer deps: `npm i --legacy-peer-deps`.
+  **Note:** Swap out `pnpm` for your package manager. If you are using npm, you
+  might need to install using legacy peer deps: `npm i --legacy-peer-deps`.
 </Banner>
 
 Next, install a [Database Adapter](/docs/database/overview). Payload requires a Database Adapter to establish a database connection. Payload works with all types of databases, but the most common are MongoDB and Postgres.
@@ -15365,23 +10627,25 @@ Next, install a [Database Adapter](/docs/database/overview). Payload requires a 
 To install a Database Adapter, you can run **one** of the following commands:
 
 - To install the [MongoDB Adapter](../database/mongodb), run:
-    ```bash
-    pnpm i @payloadcms/db-mongodb
-    ```
+
+  ```bash
+  pnpm i @payloadcms/db-mongodb
+  ```
 
 - To install the [Postgres Adapter](../database/postgres), run:
-    ```bash
-    pnpm i @payloadcms/db-postgres
-    ```
+  ```bash
+  pnpm i @payloadcms/db-postgres
+  ```
 
 <Banner type="success">
-  **Note:**
-  New [Database Adapters](/docs/database/overview) are becoming available every day. Check the docs for the most up-to-date list of what's available.
+  **Note:** New [Database Adapters](/docs/database/overview) are becoming
+  available every day. Check the docs for the most up-to-date list of what's
+  available.
 </Banner>
 
 #### 2. Copy Payload files into your Next.js app folder
 
-Payload installs directly in your Next.js `/app` folder, and you'll need to place some files into that folder for Payload to run. You can copy these files from the [Blank Template](https://github.com/payloadcms/payload/tree/main/templates/blank/src/app/(payload)) on GitHub. Once you have the required Payload files in place in your `/app` folder, you should have something like this:
+Payload installs directly in your Next.js `/app` folder, and you'll need to place some files into that folder for Payload to run. You can copy these files from the [Blank Template](<https://github.com/payloadcms/payload/tree/main/templates/blank/src/app/(payload)>) on GitHub. Once you have the required Payload files in place in your `/app` folder, you should have something like this:
 
 ```plaintext
 app/
@@ -15394,7 +10658,10 @@ app/
 _For an exact reference of the `(payload)` directory, see [Project Structure](../admin/overview#project-structure)._
 
 <Banner type="warning">
-  You may need to copy all of your existing frontend files, including your existing root layout, into its own newly created [Route Group](https://nextjs.org/docs/app/building-your-application/routing/route-groups), i.e. `(my-app)`.
+  You may need to copy all of your existing frontend files, including your
+  existing root layout, into its own newly created [Route
+  Group](https://nextjs.org/docs/app/building-your-application/routing/route-groups),
+  i.e. `(my-app)`.
 </Banner>
 
 The files that Payload needs to have in your `/app` folder do not regenerate, and will never change. Once you slot them in, you never have to revisit them. They are not meant to be edited and simply import Payload dependencies from `@payloadcms/next` for the REST / GraphQL API and Admin Panel.
@@ -15414,8 +10681,8 @@ import { withPayload } from '@payloadcms/next/withPayload'
 const nextConfig = {
   // Your Next.js config here
   experimental: {
-    reactCompiler: false
-  }
+    reactCompiler: false,
+  },
 }
 
 // Make sure you wrap your `nextConfig`
@@ -15424,8 +10691,8 @@ export default withPayload(nextConfig) // highlight-line
 ```
 
 <Banner type="warning">
-  **Important:**
-  Payload is a fully ESM project, and that means the `withPayload` function is an ECMAScript module.
+  **Important:** Payload is a fully ESM project, and that means the
+  `withPayload` function is an ECMAScript module.
 </Banner>
 
 To import the Payload Plugin, you need to make sure your `next.config` file is set up to use ESM.
@@ -15479,11 +10746,9 @@ Once you have a Payload Config, update your `tsconfig` to include a `path` that 
 {
   "compilerOptions": {
     "paths": {
-      "@payload-config": [
-        "./payload.config.ts"
-      ]
+      "@payload-config": ["./payload.config.ts"]
     }
-  },
+  }
 }
 ```
 
@@ -15494,7 +10759,7 @@ After you've reached this point, it's time to boot up Payload. Start your projec
 After it starts, you can go to `http://localhost:3000/admin` to create your first Payload user!
 ````
 
-## File: getting-started/what-is-payload.mdx
+## File: getting-started_what-is-payload.mdx
 ````
 ---
 title: What is Payload?
@@ -15551,7 +10816,10 @@ Payload has restored a little love back into the dev / marketer equation with fe
 If you're building a website and your frontend is on Next.js, then Payload is a no-brainer.
 
 <Banner type="success">
-  Instead of going out and signing up for a SaaS vendor that makes it so you have to manage two completely separate concerns, with little to no native connection back and forth, just install Payload in your existing Next.js repo and instantly get a full CMS.
+  Instead of going out and signing up for a SaaS vendor that makes it so you
+  have to manage two completely separate concerns, with little to no native
+  connection back and forth, just install Payload in your existing Next.js repo
+  and instantly get a full CMS.
 </Banner>
 
 Get started with Payload as a CMS using our official Website template:
@@ -15625,7 +10893,7 @@ Payload is a great choice for applications of all sizes and types, but it might 
 Ready to get started? First, let's review some high-level concepts that are used in Payload.
 ````
 
-## File: graphql/extending.mdx
+## File: graphql_extending.mdx
 ````
 ---
 title: Adding your own Queries and Mutations
@@ -15699,7 +10967,7 @@ export default buildConfig({
 
 ## Resolver function
 
-In your resolver, make sure you set `depth: 0` if you're returning data directly from the local API so that GraphQL can correctly resolve queries to nested values such as relationship data.
+In your resolver, make sure you set `depth: 0` if you're returning data directly from the Local API so that GraphQL can correctly resolve queries to nested values such as relationship data.
 
 Your function will receive four arguments you can make use of:
 
@@ -15744,9 +11012,9 @@ import { GraphQL } from '@payloadcms/graphql/types'
 ```
 
 <Banner type="warning">
-  For queries, mutations and handlers make sure you use the `GraphQL` and `payload` instances provided via arguments.
+  For queries, mutations and handlers make sure you use the `GraphQL` and
+  `payload` instances provided via arguments.
 </Banner>
-
 
 **`buildPaginatedListType`**
 
@@ -15763,7 +11031,10 @@ export const getMyPosts = (GraphQL, payload) => {
     args: {},
     resolve: Resolver,
     // The name of your new type has to be unique
-    type: buildPaginatedListType('AuthorPosts', payload.collections['posts'].graphQL?.type),
+    type: buildPaginatedListType(
+      'AuthorPosts',
+      payload.collections['posts'].graphQL?.type,
+    ),
   }
 }
 ```
@@ -15802,7 +11073,7 @@ src/graphql
 ```
 ````
 
-## File: graphql/graphql-schema.mdx
+## File: graphql_graphql-schema.mdx
 ````
 ---
 title: GraphQL Schema
@@ -15866,14 +11137,15 @@ type Collection1 {
 }
 ```
 
-The above example outputs all your definitions to a file relative from your payload config as `./graphql/schema.graphql`. By default, the file will be output to your current working directory as `schema.graphql`.
+The above example outputs all your definitions to a file relative from your Payload config as `./graphql/schema.graphql`. By default, the file will be output to your current working directory as `schema.graphql`.
 
 ### Adding an npm script
 
 <Banner type="warning">
   **Important**
 
-  Payload needs to be able to find your config to generate your GraphQL schema.
+Payload needs to be able to find your config to generate your GraphQL schema.
+
 </Banner>
 
 Payload will automatically try and locate your config, but might not always be able to find it. For example, if you are working in a `/src` directory or similar, you need to tell Payload where to find your config manually by using an environment variable.
@@ -15893,7 +11165,7 @@ If this applies to you, create an npm script to make generating types easier:
 Now you can run `pnpm generate:graphQLSchema` to easily generate your schema.
 ````
 
-## File: graphql/overview.mdx
+## File: graphql_overview.mdx
 ````
 ---
 title: GraphQL Overview
@@ -15940,17 +11212,17 @@ export const PublicUser: CollectionConfig = {
 
 **Payload will automatically open up the following queries:**
 
-| Query Name          | Operation           |
-| ------------------- | ------------------- |
-| `PublicUser`        | `findByID`          |
-| `PublicUsers`       | `find`              |
-| `countPublicUsers`  | `count`             |
-| `mePublicUser`      | `me` auth operation |
+| Query Name         | Operation           |
+| ------------------ | ------------------- |
+| `PublicUser`       | `findByID`          |
+| `PublicUsers`      | `find`              |
+| `countPublicUsers` | `count`             |
+| `mePublicUser`     | `me` auth operation |
 
 **And the following mutations:**
 
-| Query Name                     | Operation                       |
-| ------------------------------ | ------------------------------- |
+| Query Name                 | Operation                       |
+| -------------------------- | ------------------------------- |
 | `createPublicUser`         | `create`                        |
 | `updatePublicUser`         | `update`                        |
 | `deletePublicUser`         | `delete`                        |
@@ -15979,14 +11251,14 @@ const Header: GlobalConfig = {
 
 **Payload will open the following query:**
 
-| Query Name   | Operation |
-| ------------ | --------- |
-| `Header` | `findOne` |
+| Query Name | Operation |
+| ---------- | --------- |
+| `Header`   | `findOne` |
 
 **And the following mutation:**
 
-| Query Name         | Operation |
-| ------------------ | --------- |
+| Query Name     | Operation |
+| -------------- | --------- |
 | `updateHeader` | `update`  |
 
 ## Preferences
@@ -15995,14 +11267,14 @@ User [preferences](../admin/preferences) for the [Admin Panel](../admin/overview
 
 **Payload will open the following query:**
 
-| Query Name       | Operation |
-| ---------------- | --------- |
+| Query Name   | Operation |
+| ------------ | --------- |
 | `Preference` | `findOne` |
 
 **And the following mutations:**
 
-| Query Name             | Operation |
-| ---------------------- | --------- |
+| Query Name         | Operation |
+| ------------------ | --------- |
 | `updatePreference` | `update`  |
 | `deletePreference` | `delete`  |
 
@@ -16015,11 +11287,12 @@ You can even log in using the `login[collection-singular-label-here]` mutation t
 <Banner type="success">
   **Tip:**
 
-  To see more regarding how the above queries and mutations are used, visit your GraphQL playground
-  (by default at
-  [`${SERVER_URL}/api/graphql-playground`](http://localhost:3000/api/graphql-playground))
-  while your server is running. There, you can use the "Schema" and "Docs" buttons on the right to
-  see a ton of detail about how GraphQL operates within Payload.
+To see more regarding how the above queries and mutations are used, visit your GraphQL playground
+(by default at
+[`${SERVER_URL}/api/graphql-playground`](http://localhost:3000/api/graphql-playground))
+while your server is running. There, you can use the "Schema" and "Docs" buttons on the right to
+see a ton of detail about how GraphQL operates within Payload.
+
 </Banner>
 
 ## Custom Validation Rules
@@ -16033,9 +11306,7 @@ import { buildConfig } from 'payload'
 export default buildConfig({
   // ...
   graphQL: {
-    validationRules: (args) => [
-      NoProductionIntrospection
-    ]
+    validationRules: (args) => [NoProductionIntrospection],
   },
   // ...
 })
@@ -16047,12 +11318,12 @@ const NoProductionIntrospection: GraphQL.ValidationRule = (context) => ({
         context.reportError(
           new GraphQL.GraphQLError(
             'GraphQL introspection is not allowed, but the query contained __schema or __type',
-            { nodes: [node] }
-          )
-        );
+            { nodes: [node] },
+          ),
+        )
       }
     }
-  }
+  },
 })
 ```
 
@@ -16071,12 +11342,12 @@ const fieldWithComplexity = {
   relationship: 'authors',
   graphQL: {
     complexity: 100, // highlight-line
-  }
+  },
 }
 ```
 ````
 
-## File: hooks/collections.mdx
+## File: hooks_collections.mdx
 ````
 ---
 title: Collection Hooks
@@ -16091,19 +11362,20 @@ Collection Hooks are [Hooks](./overview) that run on Documents within a specific
 To add Hooks to a Collection, use the `hooks` property in your [Collection Config](../configuration/collections):
 
 ```ts
-import type { CollectionConfig } from 'payload';
+import type { CollectionConfig } from 'payload'
 
 export const CollectionWithHooks: CollectionConfig = {
   // ...
-  hooks: { // highlight-line
+  hooks: {
+    // highlight-line
     // ...
   },
 }
 ```
 
 <Banner type="info">
-  **Tip:**
-  You can also set hooks on the field-level to isolate hook logic to specific fields. [More details](./fields).
+  **Tip:** You can also set hooks on the field-level to isolate hook logic to
+  specific fields. [More details](./fields).
 </Banner>
 
 ## Config Options
@@ -16162,12 +11434,12 @@ const beforeOperationHook: CollectionBeforeOperationHook = async ({
 
 The following arguments are provided to the `beforeOperation` hook:
 
-| Option                   | Description                                                                                                                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`collection`**         | The [Collection](../configuration/collections) in which this Hook is running against.                                                                                                                       |
-| **`context`**            | Custom context passed between Hooks. [More details](./context).                                                                                                                              |
-| **`operation`**          | The name of the operation that this hook is running within. |
-| **`req`**                | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations.                                                                                                                                                  |
+| Option           | Description                                                                                                                                           |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`collection`** | The [Collection](../configuration/collections) in which this Hook is running against.                                                                 |
+| **`context`**    | Custom context passed between Hooks. [More details](./context).                                                                                       |
+| **`operation`**  | The name of the operation that this hook is running within.                                                                                           |
+| **`req`**        | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations. |
 
 ### beforeValidate
 
@@ -16182,23 +11454,21 @@ Please do note that this does not run before client-side validation. If you rend
 ```ts
 import type { CollectionBeforeValidateHook } from 'payload'
 
-const beforeValidateHook: CollectionBeforeValidateHook = async ({
-  data,
-}) => {
+const beforeValidateHook: CollectionBeforeValidateHook = async ({ data }) => {
   return data
 }
 ```
 
 The following arguments are provided to the `beforeValidate` hook:
 
-| Option                   | Description                                                                                                                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`collection`**         | The [Collection](../configuration/collections) in which this Hook is running against.                                                                                                                       |
-| **`context`**            | Custom context passed between Hooks. [More details](./context).                                                                                                                              |
-| **`data`**               | The incoming data passed through the operation.                                                                                 |
-| **`operation`**          | The name of the operation that this hook is running within. |
-| **`originalDoc`**        | The Document before changes are applied.                                                                                        |
-| **`req`**                | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations.                                                                                                                                                  |
+| Option            | Description                                                                                                                                           |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`collection`**  | The [Collection](../configuration/collections) in which this Hook is running against.                                                                 |
+| **`context`**     | Custom context passed between Hooks. [More details](./context).                                                                                       |
+| **`data`**        | The incoming data passed through the operation.                                                                                                       |
+| **`operation`**   | The name of the operation that this hook is running within.                                                                                           |
+| **`originalDoc`** | The Document before changes are applied.                                                                                                              |
+| **`req`**         | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations. |
 
 ### beforeChange
 
@@ -16207,23 +11477,21 @@ Immediately following validation, `beforeChange` hooks will run within `create` 
 ```ts
 import type { CollectionBeforeChangeHook } from 'payload'
 
-const beforeChangeHook: CollectionBeforeChangeHook = async ({
-  data,
-}) => {
+const beforeChangeHook: CollectionBeforeChangeHook = async ({ data }) => {
   return data
 }
 ```
 
 The following arguments are provided to the `beforeChange` hook:
 
-| Option                   | Description                                                                                                                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`collection`**         | The [Collection](../configuration/collections) in which this Hook is running against.                                                                                                                       |
-| **`context`**            | Custom context passed between hooks. [More details](./context).                                                                                                                              |
-| **`data`**               | The incoming data passed through the operation.                                                                                 |
-| **`operation`**          | The name of the operation that this hook is running within. |
-| **`originalDoc`**        | The Document before changes are applied.                                                                                        |
-| **`req`**                | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations.                                                                                                                                                  |
+| Option            | Description                                                                                                                                           |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`collection`**  | The [Collection](../configuration/collections) in which this Hook is running against.                                                                 |
+| **`context`**     | Custom context passed between hooks. [More details](./context).                                                                                       |
+| **`data`**        | The incoming data passed through the operation.                                                                                                       |
+| **`operation`**   | The name of the operation that this hook is running within.                                                                                           |
+| **`originalDoc`** | The Document before changes are applied.                                                                                                              |
+| **`req`**         | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations. |
 
 ### afterChange
 
@@ -16232,23 +11500,21 @@ After a document is created or updated, the `afterChange` hook runs. This hook i
 ```ts
 import type { CollectionAfterChangeHook } from 'payload'
 
-const afterChangeHook: CollectionAfterChangeHook = async ({
-  doc,
-}) => {
+const afterChangeHook: CollectionAfterChangeHook = async ({ doc }) => {
   return doc
 }
 ```
 
 The following arguments are provided to the `afterChange` hook:
 
-| Option                   | Description                                                                                                                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`collection`**         | The [Collection](../configuration/collections) in which this Hook is running against.                                                                                                                       |
-| **`context`**            | Custom context passed between hooks. [More details](./context).                                                                                                                              |
-| **`doc`**               | The resulting Document after changes are applied. |
-| **`operation`**          | The name of the operation that this hook is running within. |
-| **`previousDoc`**        | The Document before changes were applied. |
-| **`req`**                | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations.                                                                                                                                                  |
+| Option            | Description                                                                                                                                           |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`collection`**  | The [Collection](../configuration/collections) in which this Hook is running against.                                                                 |
+| **`context`**     | Custom context passed between hooks. [More details](./context).                                                                                       |
+| **`doc`**         | The resulting Document after changes are applied.                                                                                                     |
+| **`operation`**   | The name of the operation that this hook is running within.                                                                                           |
+| **`previousDoc`** | The Document before changes were applied.                                                                                                             |
+| **`req`**         | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations. |
 
 ### beforeRead
 
@@ -16257,9 +11523,7 @@ Runs before `find` and `findByID` operations are transformed for output by `afte
 ```ts
 import type { CollectionBeforeReadHook } from 'payload'
 
-const beforeReadHook: CollectionBeforeReadHook = async ({
-  doc,
-}) => {
+const beforeReadHook: CollectionBeforeReadHook = async ({ doc }) => {
   return doc
 }
 ```
@@ -16281,9 +11545,7 @@ Runs as the last step before documents are returned. Flattens locales, hides pro
 ```ts
 import type { CollectionAfterReadHook } from 'payload'
 
-const afterReadHook: CollectionAfterReadHook = async ({
-  doc,
-}) => {
+const afterReadHook: CollectionAfterReadHook = async ({ doc }) => {
   return doc
 }
 ```
@@ -16313,12 +11575,12 @@ const beforeDeleteHook: CollectionBeforeDeleteHook = async ({
 
 The following arguments are provided to the `beforeDelete` hook:
 
-| Option                   | Description                                                                                                                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`collection`**         | The [Collection](../configuration/collections) in which this Hook is running against.                                                                                                                       |
-| **`context`**            | Custom context passed between hooks. [More details](./context).                                                                                                                              |
-| **`id`**               | The ID of the Document being deleted. |
-| **`req`**                | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations.                                                                                                                                                  |
+| Option           | Description                                                                                                                                           |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`collection`** | The [Collection](../configuration/collections) in which this Hook is running against.                                                                 |
+| **`context`**    | Custom context passed between hooks. [More details](./context).                                                                                       |
+| **`id`**         | The ID of the Document being deleted.                                                                                                                 |
+| **`req`**        | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations. |
 
 ### afterDelete
 
@@ -16336,13 +11598,13 @@ const afterDeleteHook: CollectionAfterDeleteHook = async ({
 
 The following arguments are provided to the `afterDelete` hook:
 
-| Option                   | Description                                                                                                                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`collection`**         | The [Collection](../configuration/collections) in which this Hook is running against.                                                                                                                       |
-| **`context`**            | Custom context passed between hooks. [More details](./context).                                                                                                                              |
-| **`doc`**               | The resulting Document after changes are applied. |
-| **`id`**          | The ID of the Document that was deleted. |
-| **`req`**                | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations.                                                                                                                                                  |
+| Option           | Description                                                                                                                                           |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`collection`** | The [Collection](../configuration/collections) in which this Hook is running against.                                                                 |
+| **`context`**    | Custom context passed between hooks. [More details](./context).                                                                                       |
+| **`doc`**        | The resulting Document after changes are applied.                                                                                                     |
+| **`id`**         | The ID of the Document that was deleted.                                                                                                              |
+| **`req`**        | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations. |
 
 ### afterOperation
 
@@ -16353,22 +11615,20 @@ Available Collection operations include `create`, `find`, `findByID`, `update`, 
 ```ts
 import type { CollectionAfterOperationHook } from 'payload'
 
-const afterOperationHook: CollectionAfterOperationHook = async ({
-  result,
-}) => {
+const afterOperationHook: CollectionAfterOperationHook = async ({ result }) => {
   return result
 }
 ```
 
 The following arguments are provided to the `afterOperation` hook:
 
-| Option                   | Description                                                                                                                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`args`**               | The arguments passed into the operation.                                                                                 |
-| **`collection`**         | The [Collection](../configuration/collections) in which this Hook is running against.                                                                                                                       |
-| **`req`**                | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations.                                                                                                                                                  |
-| **`operation`**          | The name of the operation that this hook is running within. |
-| **`result`**          |  The result of the operation, before modifications. |
+| Option           | Description                                                                                                                                           |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`args`**       | The arguments passed into the operation.                                                                                                              |
+| **`collection`** | The [Collection](../configuration/collections) in which this Hook is running against.                                                                 |
+| **`req`**        | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations. |
+| **`operation`**  | The name of the operation that this hook is running within.                                                                                           |
+| **`result`**     | The result of the operation, before modifications.                                                                                                    |
 
 ### afterError
 
@@ -16377,12 +11637,13 @@ The `afterError` Hook is triggered when an error occurs in the Payload applicati
 ```ts
 import type { CollectionAfterErrorHook } from 'payload';
 
-const afterDeleteHook: CollectionAfterErrorHook = async ({
+const afterErrorHook: CollectionAfterErrorHook = async ({
   req,
   id,
   doc,
 }) => {...}
 ```
+
 The following arguments are provided to the `afterError` Hook:
 
 | Argument            | Description                                                                                                                                                                                     |
@@ -16401,21 +11662,19 @@ For [Auth-enabled Collections](../authentication/overview), this hook runs durin
 ```ts
 import type { CollectionBeforeLoginHook } from 'payload'
 
-const beforeLoginHook: CollectionBeforeLoginHook = async ({
-  user,
-}) => {
+const beforeLoginHook: CollectionBeforeLoginHook = async ({ user }) => {
   return user
 }
 ```
 
 The following arguments are provided to the `beforeLogin` hook:
 
-| Option                   | Description                                                                                                                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`collection`**         | The [Collection](../configuration/collections) in which this Hook is running against.                                                                                                                       |
-| **`context`**            | Custom context passed between hooks. [More details](./context).                                                                                                                              |
-| **`req`**                | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations.                                                                                                                                                  |
-| **`user`**               | The user being logged in. |
+| Option           | Description                                                                                                                                           |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`collection`** | The [Collection](../configuration/collections) in which this Hook is running against.                                                                 |
+| **`context`**    | Custom context passed between hooks. [More details](./context).                                                                                       |
+| **`req`**        | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations. |
+| **`user`**       | The user being logged in.                                                                                                                             |
 
 ### afterLogin
 
@@ -16432,13 +11691,13 @@ const afterLoginHook: CollectionAfterLoginHook = async ({
 
 The following arguments are provided to the `afterLogin` hook:
 
-| Option                   | Description                                                                                                                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`collection`**         | The [Collection](../configuration/collections) in which this Hook is running against.                                                                                                                       |
-| **`context`**            | Custom context passed between hooks. [More details](./context).                                                                                                                              |
-| **`req`**                | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations.                                                                                                                                                  |
-| **`token`**              | The token generated for the user. |
-| **`user`**               | The user being logged in. |
+| Option           | Description                                                                                                                                           |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`collection`** | The [Collection](../configuration/collections) in which this Hook is running against.                                                                 |
+| **`context`**    | Custom context passed between hooks. [More details](./context).                                                                                       |
+| **`req`**        | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations. |
+| **`token`**      | The token generated for the user.                                                                                                                     |
+| **`user`**       | The user being logged in.                                                                                                                             |
 
 ### afterLogout
 
@@ -16454,11 +11713,11 @@ const afterLogoutHook: CollectionAfterLogoutHook = async ({
 
 The following arguments are provided to the `afterLogout` hook:
 
-| Option                   | Description                                                                                                                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`collection`**         | The [Collection](../configuration/collections) in which this Hook is running against.                                                                                                                       |
-| **`context`**            | Custom context passed between hooks. [More details](./context).                                                                                                                              |
-| **`req`**                | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations.                                                                                                                                                  |
+| Option           | Description                                                                                                                                           |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`collection`** | The [Collection](../configuration/collections) in which this Hook is running against.                                                                 |
+| **`context`**    | Custom context passed between hooks. [More details](./context).                                                                                       |
+| **`req`**        | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations. |
 
 ### afterMe
 
@@ -16475,12 +11734,12 @@ const afterMeHook: CollectionAfterMeHook = async ({
 
 The following arguments are provided to the `afterMe` hook:
 
-| Option                   | Description                                                                                                                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`collection`**         | The [Collection](../configuration/collections) in which this Hook is running against.                                                                                                                       |
-| **`context`**            | Custom context passed between hooks. [More details](./context).                                                                                                                              |
-| **`req`**                | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations.                                                                                                                                                  |
-| **`response`**           | The response to return. |
+| Option           | Description                                                                                                                                           |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`collection`** | The [Collection](../configuration/collections) in which this Hook is running against.                                                                 |
+| **`context`**    | Custom context passed between hooks. [More details](./context).                                                                                       |
+| **`req`**        | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations. |
+| **`response`**   | The response to return.                                                                                                                               |
 
 ### afterRefresh
 
@@ -16496,13 +11755,13 @@ const afterRefreshHook: CollectionAfterRefreshHook = async ({
 
 The following arguments are provided to the `afterRefresh` hook:
 
-| Option                   | Description                                                                                                                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`collection`**         | The [Collection](../configuration/collections) in which this Hook is running against.                                                                                                                       |
-| **`context`**            | Custom context passed between hooks. [More details](./context).                                                                                                                              |
-| **`exp`**                | The expiration time of the token. |
-| **`req`**                | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations.                                                                                                                                                  |
-| **`token`**              | The newly refreshed user token. |
+| Option           | Description                                                                                                                                           |
+| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`collection`** | The [Collection](../configuration/collections) in which this Hook is running against.                                                                 |
+| **`context`**    | Custom context passed between hooks. [More details](./context).                                                                                       |
+| **`exp`**        | The expiration time of the token.                                                                                                                     |
+| **`req`**        | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations. |
+| **`token`**      | The newly refreshed user token.                                                                                                                       |
 
 ### afterForgotPassword
 
@@ -16520,11 +11779,11 @@ const afterForgotPasswordHook: CollectionAfterForgotPasswordHook = async ({
 
 The following arguments are provided to the `afterForgotPassword` hook:
 
-| Option                   | Description                                                                                                                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`args`**               | The arguments passed into the operation.                                                                                 |
-| **`collection`**         | The [Collection](../configuration/collections) in which this Hook is running against.                                                                                                                       |
-| **`context`**            | Custom context passed between hooks. [More details](./context).                                                                                                                              |
+| Option           | Description                                                                           |
+| ---------------- | ------------------------------------------------------------------------------------- |
+| **`args`**       | The arguments passed into the operation.                                              |
+| **`collection`** | The [Collection](../configuration/collections) in which this Hook is running against. |
+| **`context`**    | Custom context passed between hooks. [More details](./context).                       |
 
 ### refresh
 
@@ -16541,10 +11800,10 @@ const myRefreshHook: CollectionRefreshHook = async ({
 
 The following arguments are provided to the `afterRefresh` hook:
 
-| Option                   | Description                                                                                                                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`args`**               | The arguments passed into the operation.                                                                                 |
-| **`user`**               | The user being logged in. |
+| Option     | Description                              |
+| ---------- | ---------------------------------------- |
+| **`args`** | The arguments passed into the operation. |
+| **`user`** | The user being logged in.                |
 
 ### me
 
@@ -16561,10 +11820,10 @@ const meHook: CollectionMeHook = async ({
 
 The following arguments are provided to the `me` hook:
 
-| Option                   | Description                                                                                                                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`args`**               | The arguments passed into the operation.                                                                                 |
-| **`user`**               | The user being logged in. |
+| Option     | Description                              |
+| ---------- | ---------------------------------------- |
+| **`args`** | The arguments passed into the operation. |
+| **`user`** | The user being logged in.                |
 
 ## TypeScript
 
@@ -16592,7 +11851,7 @@ import type {
 ```
 ````
 
-## File: hooks/context.mdx
+## File: hooks_context.mdx
 ````
 ---
 title: Context
@@ -16610,7 +11869,7 @@ Context gives you a way forward on otherwise difficult problems such as:
 
 1. **Passing data between Hooks**: Needing data in multiple Hooks from a 3rd party API, it could be retrieved and used in `beforeChange` and later used again in an `afterChange` hook without having to fetch it twice.
 2. **Preventing infinite loops**: Calling `payload.update()` on the same document that triggered an `afterChange` hook will create an infinite loop, control the flow by assigning a no-op condition to context
-3. **Passing data to local API**: Setting values on the `req.context` and pass it to `payload.create()` you can provide additional data to hooks without adding extraneous fields.
+3. **Passing data to Local API**: Setting values on the `req.context` and pass it to `payload.create()` you can provide additional data to hooks without adding extraneous fields.
 4. **Passing data between hooks and middleware or custom endpoints**: Hooks could set context across multiple collections and then be used in a final `postMiddleware`.
 
 ## How To Use Context
@@ -16743,7 +12002,7 @@ declare module 'payload' {
 This will add the property `myObject` with a type of string to every context object. Make sure to follow this example correctly, as type augmentation can mess up your types if you do it wrong.
 ````
 
-## File: hooks/fields.mdx
+## File: hooks_fields.mdx
 ````
 ---
 title: Field Hooks
@@ -16758,11 +12017,12 @@ Field Hooks are [Hooks](./overview) that run on Documents on a per-field basis. 
 To add Hooks to a Field, use the `hooks` property in your [Field Config](../fields/overview):
 
 ```ts
-import type { Field } from 'payload';
+import type { Field } from 'payload'
 
 export const FieldWithHooks: Field = {
   // ...
-  hooks: { // highlight-line
+  hooks: {
+    // highlight-line
     // ...
   },
 }
@@ -16773,8 +12033,11 @@ export const FieldWithHooks: Field = {
 All Field Hooks accept an array of synchronous or asynchronous functions. These functions can optionally modify the return value of the field before the operation continues. All Field Hooks are formatted to accept the same arguments, although some arguments may be `undefined` based the specific hook type.
 
 <Banner type="warning">
-  **Important:**
-  Due to GraphQL's typed nature, changing the type of data that you return from a field will produce errors in the [GraphQL API](../graphql/overview). If you need to change the shape or type of data, consider [Collection Hooks](./collections) or [Global Hooks](./globals) instead.
+  **Important:** Due to GraphQL's typed nature, changing the type of data that
+  you return from a field will produce errors in the [GraphQL
+  API](../graphql/overview). If you need to change the shape or type of data,
+  consider [Collection Hooks](./collections) or [Global Hooks](./globals)
+  instead.
 </Banner>
 
 To add hooks to a Field, use the `hooks` property in your [Field Config](../fields/overview):
@@ -16799,31 +12062,33 @@ const FieldWithHooks: Field = {
 
 The following arguments are provided to all Field Hooks:
 
-| Option                   | Description                                                                                                                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`collection`**         | The [Collection](../configuration/collections) in which this Hook is running against. If the field belongs to a Global, this will be `null`.                                                                                                                       |
-| **`context`**            | Custom context passed between Hooks. [More details](./context).                                                                                                                              |
-| **`data`**               | In the `afterRead` hook this is the full Document. In the `create` and `update` operations, this is the incoming data passed through the operation.                                                                                 |
-| **`field`**              | The [Field](../fields/overview) which the Hook is running against.                                                                                                                                                                          |
-| **`findMany`**           | Boolean to denote if this hook is running against finding one, or finding many within the `afterRead` hook.                                                                                                           |
-| **`global`**             | The [Global](../configuration/globals) in which this Hook is running against. If the field belongs to a Collection, this will be `null`.                                                                                                                       |
-| **`operation`**          | The name of the operation that this hook is running within. Useful within `beforeValidate`, `beforeChange`, and `afterChange` hooks to differentiate between `create` and `update` operations. |
-| **`originalDoc`**        | In the `update` operation, this is the Document before changes were applied. In the `afterChange` hook, this is the resulting Document.                                                                                        |
-| **`overrideAccess`**        | A boolean to denote if the current operation is overriding [Access Control](../access-control/overview).                                                                                                                                                                          |
-| **`path`**             | The path to the [Field](../fields/overview) in the schema.                                                                                                                                                                          |
-| **`previousDoc`**        | In the `afterChange` Hook, this is the Document before changes were applied.                                                                                                                                                |
-| **`previousSiblingDoc`** | The sibling data of the Document before changes being applied, only in `beforeChange` and `afterChange` hook.                                                                                                         |
-| **`previousValue`**      | The previous value of the field, before changes, only in `beforeChange` and `afterChange` hooks.                                                                                                                      |
-| **`req`**                | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations.                                                                                                                                                  |
-| **`schemaPath`**         | The path of the [Field](../fields/overview) in the schema.                                                                                                                                                                                  |
-| **`siblingData`**        | The data of sibling fields adjacent to the field that the Hook is running against.        |
-| **`siblingDocWithLocales`**      | The sibling data of the Document with all [Locales](../configuration/localization).        |
-| **`siblingFields`**      | The sibling fields of the field which the hook is running against.        |
-| **`value`**              | The value of the [Field](../fields/overview).                                                                                                                                                                                               |
+| Option                      | Description                                                                                                                                                                                    |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`collection`**            | The [Collection](../configuration/collections) in which this Hook is running against. If the field belongs to a Global, this will be `null`.                                                   |
+| **`context`**               | Custom context passed between Hooks. [More details](./context).                                                                                                                                |
+| **`data`**                  | In the `afterRead` hook this is the full Document. In the `create` and `update` operations, this is the incoming data passed through the operation.                                            |
+| **`field`**                 | The [Field](../fields/overview) which the Hook is running against.                                                                                                                             |
+| **`findMany`**              | Boolean to denote if this hook is running against finding one, or finding many within the `afterRead` hook.                                                                                    |
+| **`global`**                | The [Global](../configuration/globals) in which this Hook is running against. If the field belongs to a Collection, this will be `null`.                                                       |
+| **`operation`**             | The name of the operation that this hook is running within. Useful within `beforeValidate`, `beforeChange`, and `afterChange` hooks to differentiate between `create` and `update` operations. |
+| **`originalDoc`**           | In the `update` operation, this is the Document before changes were applied. In the `afterChange` hook, this is the resulting Document.                                                        |
+| **`overrideAccess`**        | A boolean to denote if the current operation is overriding [Access Control](../access-control/overview).                                                                                       |
+| **`path`**                  | The path to the [Field](../fields/overview) in the schema.                                                                                                                                     |
+| **`previousDoc`**           | In the `afterChange` Hook, this is the Document before changes were applied.                                                                                                                   |
+| **`previousSiblingDoc`**    | The sibling data of the Document before changes being applied, only in `beforeChange` and `afterChange` hook.                                                                                  |
+| **`previousValue`**         | The previous value of the field, before changes, only in `beforeChange` and `afterChange` hooks.                                                                                               |
+| **`req`**                   | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations.                                          |
+| **`schemaPath`**            | The path of the [Field](../fields/overview) in the schema.                                                                                                                                     |
+| **`siblingData`**           | The data of sibling fields adjacent to the field that the Hook is running against.                                                                                                             |
+| **`siblingDocWithLocales`** | The sibling data of the Document with all [Locales](../configuration/localization).                                                                                                            |
+| **`siblingFields`**         | The sibling fields of the field which the hook is running against.                                                                                                                             |
+| **`value`**                 | The value of the [Field](../fields/overview).                                                                                                                                                  |
 
 <Banner type="success">
-  **Tip:**
-  It's a good idea to conditionally scope your logic based on which operation is executing. For example, if you are writing a `beforeChange` hook, you may want to perform different logic based on if the current `operation` is `create` or `update`.
+  **Tip:** It's a good idea to conditionally scope your logic based on which
+  operation is executing. For example, if you are writing a `beforeChange` hook,
+  you may want to perform different logic based on if the current `operation` is
+  `create` or `update`.
 </Banner>
 
 ### beforeValidate
@@ -16967,10 +12232,12 @@ const numberField: Field = {
   type: 'number',
   hooks: {
     // increment existing value by 1
-    beforeDuplicate: [({ value }) => {
-      return (value ?? 0) + 1
-    }],
-  }
+    beforeDuplicate: [
+      ({ value }) => {
+        return (value ?? 0) + 1
+      },
+    ],
+  },
 }
 ```
 
@@ -17005,7 +12272,7 @@ const exampleFieldHook: ExampleFieldHook = (args) => {
 ```
 ````
 
-## File: hooks/globals.mdx
+## File: hooks_globals.mdx
 ````
 ---
 title: Global Hooks
@@ -17020,19 +12287,20 @@ Global Hooks are [Hooks](./overview) that run on [Global](../configuration/globa
 To add Hooks to a Global, use the `hooks` property in your [Global Config](../configuration/globals):
 
 ```ts
-import type { GlobalConfig } from 'payload';
+import type { GlobalConfig } from 'payload'
 
 export const GlobalWithHooks: GlobalConfig = {
   // ...
-  hooks: { // highlight-line
+  hooks: {
+    // highlight-line
     // ...
   },
 }
 ```
 
 <Banner type="info">
-  **Tip:**
-  You can also set hooks on the field-level to isolate hook logic to specific fields. [More details](./fields).
+  **Tip:** You can also set hooks on the field-level to isolate hook logic to
+  specific fields. [More details](./fields).
 </Banner>
 
 ## Config Options
@@ -17080,13 +12348,13 @@ const beforeValidateHook: GlobalBeforeValidateHook = async ({
 
 The following arguments are provided to the `beforeValidate` hook:
 
-| Option                   | Description                                                                                                                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`global`**         | The [Global](../configuration/globals) in which this Hook is running against.                                                                                                                       |
-| **`context`**            | Custom context passed between Hooks. [More details](./context).                                                                                                                              |
-| **`data`**               | The incoming data passed through the operation.                                                                                 |
-| **`originalDoc`**        | The Document before changes are applied.                                                                                        |
-| **`req`**                | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations.                                                                                                                                                  |
+| Option            | Description                                                                                                                                           |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`global`**      | The [Global](../configuration/globals) in which this Hook is running against.                                                                         |
+| **`context`**     | Custom context passed between Hooks. [More details](./context).                                                                                       |
+| **`data`**        | The incoming data passed through the operation.                                                                                                       |
+| **`originalDoc`** | The Document before changes are applied.                                                                                                              |
+| **`req`**         | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations. |
 
 ### beforeChange
 
@@ -17106,13 +12374,13 @@ const beforeChangeHook: GlobalBeforeChangeHook = async ({
 
 The following arguments are provided to the `beforeChange` hook:
 
-| Option                   | Description                                                                                                                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`global`**         | The [Global](../configuration/globals) in which this Hook is running against.                                                                                                                       |
-| **`context`**            | Custom context passed between hooks. [More details](./context).                                                                                                                              |
-| **`data`**               | The incoming data passed through the operation.                                                                                 |
-| **`originalDoc`**        | The Document before changes are applied.                                                                                        |
-| **`req`**                | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations.                                                                                                                                                  |
+| Option            | Description                                                                                                                                           |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`global`**      | The [Global](../configuration/globals) in which this Hook is running against.                                                                         |
+| **`context`**     | Custom context passed between hooks. [More details](./context).                                                                                       |
+| **`data`**        | The incoming data passed through the operation.                                                                                                       |
+| **`originalDoc`** | The Document before changes are applied.                                                                                                              |
+| **`req`**         | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations. |
 
 ### afterChange
 
@@ -17132,13 +12400,13 @@ const afterChangeHook: GlobalAfterChangeHook = async ({
 
 The following arguments are provided to the `afterChange` hook:
 
-| Option                   | Description                                                                                                                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`global`**         | The [Global](../configuration/globals) in which this Hook is running against.                                                                                                                       |
-| **`context`**            | Custom context passed between hooks. [More details](./context).                                                                                                                              |
-| **`doc`**               | The resulting Document after changes are applied. |
-| **`previousDoc`**        | The Document before changes were applied. |
-| **`req`**                | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations.                                                                                                                                                  |
+| Option            | Description                                                                                                                                           |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`global`**      | The [Global](../configuration/globals) in which this Hook is running against.                                                                         |
+| **`context`**     | Custom context passed between hooks. [More details](./context).                                                                                       |
+| **`doc`**         | The resulting Document after changes are applied.                                                                                                     |
+| **`previousDoc`** | The Document before changes were applied.                                                                                                             |
+| **`req`**         | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations. |
 
 ### beforeRead
 
@@ -17155,12 +12423,12 @@ const beforeReadHook: GlobalBeforeReadHook = async ({
 
 The following arguments are provided to the `beforeRead` hook:
 
-| Option                   | Description                                                                                                                                                                                                           |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`global`**         | The [Global](../configuration/globals) in which this Hook is running against.                                                                                                                       |
-| **`context`**            | Custom context passed between hooks. [More details](./context).                                                                                                                              |
-| **`doc`**               | The resulting Document after changes are applied. |
-| **`req`**                | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations.                                                                                                                                                  |
+| Option        | Description                                                                                                                                           |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`global`**  | The [Global](../configuration/globals) in which this Hook is running against.                                                                         |
+| **`context`** | Custom context passed between hooks. [More details](./context).                                                                                       |
+| **`doc`**     | The resulting Document after changes are applied.                                                                                                     |
+| **`req`**     | The [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request) object. This is mocked for [Local API](../local-api/overview) operations. |
 
 ### afterRead
 
@@ -17202,7 +12470,7 @@ import type {
 ```
 ````
 
-## File: hooks/overview.mdx
+## File: hooks_overview.mdx
 ````
 ---
 title: Hooks Overview
@@ -17232,8 +12500,10 @@ There are four main types of Hooks in Payload:
 - [Field Hooks](/docs/hooks/fields)
 
 <Banner type="warning">
-  **Reminder:**
-  Payload also ships a set of _React_ hooks that you can use in your frontend application. Although they share a common name, these are very different things and should not be confused. [More details](../admin/react-hooks).
+  **Reminder:** Payload also ships a set of _React_ hooks that you can use in
+  your frontend application. Although they share a common name, these are very
+  different things and should not be confused. [More
+  details](../admin/react-hooks).
 </Banner>
 
 ## Root Hooks
@@ -17257,9 +12527,9 @@ export default buildConfig({
 
 The following options are available:
 
-| Option       | Description                                                                                   |
-|--------------|-----------------------------------------------------------------------------------------------|
-| **`afterError`** | Runs after an error occurs in the Payload application.                                         |
+| Option           | Description                                            |
+| ---------------- | ------------------------------------------------------ |
+| **`afterError`** | Runs after an error occurs in the Payload application. |
 
 ### afterError
 
@@ -17271,9 +12541,11 @@ import { buildConfig } from 'payload'
 export default buildConfig({
   // ...
   hooks: {
-    afterError: [async ({ error }) => {
-      // Do something
-    }]
+    afterError: [
+      async ({ error }) => {
+        // Do something
+      },
+    ],
   },
 })
 ```
@@ -17288,6 +12560,7 @@ The following arguments are provided to the `afterError` Hook:
 | **`req`**           | The `PayloadRequest` object that extends [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request). Contains currently authenticated `user` and the Local API instance `payload`. |
 | **`collection`**    | The [Collection](../configuration/collections) in which this Hook is running against. This will be `undefined` if the hook is executed from a non-collection endpoint or GraphQL.               |
 | **`result`**        | The formatted error result object, available if the hook is executed from a REST context.                                                                                                       |
+
 ## Async vs. Synchronous
 
 All Hooks can be written as either synchronous or asynchronous functions. Choosing the right type depends on your use case, but switching between the two is as simple as adding or removing the `async` keyword.
@@ -17305,114 +12578,7 @@ If your Hook simply performs a side-effect, such as updating a CRM, it might be 
 Hooks are only triggered on the server and are automatically excluded from the client-side bundle. This means that you can safely use sensitive business logic in your Hooks without worrying about exposing it to the client.
 ````
 
-## File: integrations/vercel-content-link.mdx
-````
----
-title: Vercel Content Link
-label: Vercel Content Link
-order: 10
-desc: Payload + Vercel Content Link allows yours editors to navigate directly from the content rendered on your front-end to the fields in Payload that control it.
-keywords: vercel, vercel content link, content link, visual editing, content source maps, Content Management System, cms, headless, javascript, node, react, nextjs
----
-
-[Vercel Content Link](https://vercel.com/docs/workflow-collaboration/edit-mode#content-link) will allow your editors to navigate directly from the content rendered on your front-end to the fields in Payload that control it. This requires no changes to your front-end code and very few changes to your Payload Config.
-
-![Versions](/images/docs/vercel-visual-editing.jpg)
-
-<Banner type="warning">
-  Vercel Content Link is an enterprise-only feature and only available for deployments hosted on
-  Vercel. If you are an existing enterprise customer, [contact our sales
-  team](https://payloadcms.com/for-enterprise) for help with your integration.
-</Banner>
-
-## How it works
-
-To power Vercel Content Link, Payload embeds Content Source Maps into its API responses. Content Source Maps are invisible, encoded JSON values that include a link back to the field in the CMS that generated the content. When rendered on the page, Vercel detects and decodes these values to display the Content Link interface.
-
-For full details on how the encoding and decoding algorithm works, check out [`@vercel/stega`](https://www.npmjs.com/package/@vercel/stega).
-
-## Getting Started
-
-Setting up Payload with Vercel Content Link is easy. First, install the `@payloadcms/plugin-csm` plugin into your project. This plugin requires an API key to install, [contact our sales team](https://payloadcms.com/for-enterprise) if you don't already have one.
-
-```bash
-npm i @payloadcms/plugin-csm
-```
-
-Then in the `plugins` array of your Payload Config, call the plugin and enable any collections that require Content Source Maps.
-
-```ts
-import { buildConfig } from "payload/config"
-import contentSourceMaps from "@payloadcms/plugin-csm"
-
-const config = buildConfig({
-  collections: [
-    {
-      slug: "pages",
-      fields: [
-        {
-          name: 'slug',
-          type: 'text',
-        },
-        {
-          name: 'title,'
-          type: 'text',
-        },
-      ],
-    },
-  ],
-  plugins: [
-    contentSourceMaps({
-      collections: ["pages"],
-    }),
-  ],
-})
-
-export default config
-```
-
-Now in your Next.js app, include the `?encodeSourceMaps=true` parameter in any of your API requests. For performance reasons, this should only be done when in draft mode or on preview deployments.
-
-```ts
-if (isDraftMode || process.env.VERCEL_ENV === 'preview') {
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_PAYLOAD_CMS_URL}/api/pages?where[slug][equals]=${slug}&encodeSourceMaps=true`,
-  )
-}
-```
-
-And that's it! You are now ready to enter Edit Mode and begin visually editing your content.
-
-#### Edit Mode
-
-To see Content Link on your site, you first need to visit any preview deployment on Vercel and login using the Vercel Toolbar. When Content Source Maps are detected on the page, a pencil icon will appear in the toolbar. Clicking this icon will enable Edit Mode, highlighting all editable fields on the page in blue.
-
-![Versions](/images/docs/vercel-toolbar.jpg)
-
-## Troubleshooting
-
-### Date Fields
-
-The plugin does not encode `date` fields by default, but for some cases like text that uses negative CSS letter-spacing, it may be necessary to split the encoded data out from the rendered text. This way you can safely use the cleaned data as expected.
-
-```ts
-import { vercelStegaSplit } from '@vercel/stega'
-const { cleaned, encoded } = vercelStegaSplit(text)
-```
-
-### Blocks and array fields
-
-All `blocks` and `array` fields by definition do not have plain text strings to encode. For this reason, they are given an additional `_encodedSourceMap` property, which you can use to enable Content Link on entire _sections_ of your site. You can then specify the editing container by adding the `data-vercel-edit-target` HTML attribute to any top-level element of your block.
-
-```ts
-<div data-vercel-edit-target>
-  <span style={{ display: "none" }}>{_encodedSourceMap}</span>
-  {children}
-</div>
-```
-````
-
-## File: jobs-queue/jobs.mdx
+## File: jobs-queue_jobs.mdx
 ````
 ---
 title: Jobs
@@ -17425,7 +12591,9 @@ keywords: jobs queue, application framework, typescript, node, react, nextjs
 Now that we have covered Tasks and Workflows, we can tie them together with a concept called a Job.
 
 <Banner type="default">
-  Whereas you define Workflows and Tasks, which control your business logic, a **Job** is an individual instance of either a Task or a Workflow which contains many tasks.
+  Whereas you define Workflows and Tasks, which control your business logic, a
+  **Job** is an individual instance of either a Task or a Workflow which
+  contains many tasks.
 </Banner>
 
 For example, let's say we have a Workflow or Task that describes the logic to sync information from Payload to a third-party system. This is how you'd declare how to sync that info, but it wouldn't do anything on its own. In order to run that task or workflow, you'd create a Job that references the corresponding Task or Workflow.
@@ -17490,7 +12658,7 @@ await payload.jobs.cancel({
 ```
 ````
 
-## File: jobs-queue/overview.mdx
+## File: jobs-queue_overview.mdx
 ````
 ---
 title: Jobs Queue
@@ -17564,7 +12732,7 @@ Here's a quick overview:
 - A Queue is a way to segment your jobs into different "groups" - for example, some to run nightly, and others to run every 10 minutes
 ````
 
-## File: jobs-queue/queues.mdx
+## File: jobs-queue_queues.mdx
 ````
 ---
 title: Queues
@@ -17577,7 +12745,8 @@ keywords: jobs queue, application framework, typescript, node, react, nextjs
 Queues are the final aspect of Payload's Jobs Queue and deal with how to _run your jobs_. Up to this point, all we've covered is how to queue up jobs to run, but so far, we aren't actually running any jobs.
 
 <Banner type="default">
-  A **Queue** is a grouping of jobs that should be executed in order of when they were added.
+  A **Queue** is a grouping of jobs that should be executed in order of when
+  they were added.
 </Banner>
 
 When you go to run jobs, Payload will query for any jobs that are added to the queue and then run them. By default, all queued jobs are added to the `default` queue.
@@ -17606,7 +12775,7 @@ export default buildConfig({
     tasks: [
       // your tasks here
     ],
-    // autoRun can optionally be a function that receives payload as an argument
+    // autoRun can optionally be a function that receives `payload` as an argument
     autoRun: [
       {
         cron: '0 * * * *', // every hour at minute 0
@@ -17620,12 +12789,15 @@ export default buildConfig({
       // This function will be invoked each time Payload goes to pick up and run jobs.
       // If this function ever returns false, the cron schedule will be stopped.
       return true
-    }
+    },
   },
 })
 ```
 
-<Banner type="warning">autoRun is intended for use with a dedicated server that is always running, and should not be used on serverless platforms like Vercel.</Banner>
+<Banner type="warning">
+  autoRun is intended for use with a dedicated server that is always running,
+  and should not be used on serverless platforms like Vercel.
+</Banner>
 
 #### Endpoint
 
@@ -17637,9 +12809,9 @@ You can execute jobs by making a fetch request to the `/api/payload-jobs/run` en
 await fetch('/api/payload-jobs/run?limit=100&queue=nightly', {
   method: 'GET',
   headers: {
-    'Authorization': `Bearer ${token}`,
+    Authorization: `Bearer ${token}`,
   },
-});
+})
 ```
 
 This endpoint is automatically mounted for you and is helpful in conjunction with serverless platforms like Vercel, where you might want to use Vercel Cron to invoke a serverless function that executes your jobs.
@@ -17681,12 +12853,12 @@ export default buildConfig({
         // If there is no logged in user, then check
         // for the Vercel Cron secret to be present as an
         // Authorization header:
-        const authHeader = req.headers.get('authorization');
-        return authHeader === `Bearer ${process.env.CRON_SECRET}`;
+        const authHeader = req.headers.get('authorization')
+        return authHeader === `Bearer ${process.env.CRON_SECRET}`
       },
     },
     // Other job configurations...
-  }
+  },
 })
 ```
 
@@ -17707,14 +12879,16 @@ const results = await payload.jobs.run()
 await payload.jobs.run({ queue: 'nightly', limit: 100 })
 
 // You can provide a where clause to filter the jobs that should be run:
-await payload.jobs.run({ where: { 'input.message': { equals: 'secret' } } })
+await payload.jobs.run({
+  where: { 'input.message': { equals: 'secret' } },
+})
 ```
 
 **Run a single job:**
 
 ```ts
 const results = await payload.jobs.runByID({
-  id: myJobID
+  id: myJobID,
 })
 ```
 
@@ -17733,7 +12907,7 @@ npx payload jobs:run --cron "*/5 * * * *"
 ```
 ````
 
-## File: jobs-queue/tasks.mdx
+## File: jobs-queue_tasks.mdx
 ````
 ---
 title: Tasks
@@ -17744,30 +12918,31 @@ keywords: jobs queue, application framework, typescript, node, react, nextjs
 ---
 
 <Banner type="default">
-  A **"Task"** is a function definition that performs business logic and whose input and output are both strongly typed.
+  A **"Task"** is a function definition that performs business logic and whose
+  input and output are both strongly typed.
 </Banner>
 
 You can register Tasks on the Payload config, and then create [Jobs](/docs/jobs-queue/jobs) or [Workflows](/docs/jobs-queue/workflows) that use them. Think of Tasks like tidy, isolated "functions that do one specific thing".
 
 Payload Tasks can be configured to automatically retried if they fail, which makes them valuable for "durable" workflows like AI applications where LLMs can return non-deterministic results, and might need to be retried.
 
-Tasks can either be defined within the `jobs.tasks` array in your payload config, or they can be defined inline within a workflow.
+Tasks can either be defined within the `jobs.tasks` array in your Payload config, or they can be defined inline within a workflow.
 
 ### Defining tasks in the config
 
 Simply add a task to the `jobs.tasks` array in your Payload config. A task consists of the following fields:
 
-| Option                      | Description                                                                      |
-| --------------------------- | -------------------------------------------------------------------------------- |
-| `slug` | Define a slug-based name for this job. This slug needs to be unique among both tasks and workflows.|
-| `handler`   | The function that should be responsible for running the job. You can either pass a string-based path to the job function file, or the job function itself. If you are using large dependencies within your job, you might prefer to pass the string path because that will avoid bundling large dependencies in your Next.js app. Passing a string path is an advanced feature that may require a sophisticated build pipeline in order to work.         |
-| `inputSchema` | Define the input field schema - payload will generate a type for this schema. |
-| `interfaceName` | You can use interfaceName to change the name of the interface that is generated for this task. By default, this is "Task" + the capitalized task slug. |
-| `outputSchema` | Define the output field schema - payload will generate a type for this schema. |
-| `label` | Define a human-friendly label for this task. |
-| `onFail` | Function to be executed if the task fails. |
-| `onSuccess` | Function to be executed if the task succeeds. |
-| `retries` | Specify the number of times that this step should be retried if it fails. If this is undefined, the task will either inherit the retries from the workflow or have no retries. If this is 0, the task will not be retried. By default, this is undefined. |
+| Option          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `slug`          | Define a slug-based name for this job. This slug needs to be unique among both tasks and workflows.                                                                                                                                                                                                                                                                                                                                              |
+| `handler`       | The function that should be responsible for running the job. You can either pass a string-based path to the job function file, or the job function itself. If you are using large dependencies within your job, you might prefer to pass the string path because that will avoid bundling large dependencies in your Next.js app. Passing a string path is an advanced feature that may require a sophisticated build pipeline in order to work. |
+| `inputSchema`   | Define the input field schema - Payload will generate a type for this schema.                                                                                                                                                                                                                                                                                                                                                                    |
+| `interfaceName` | You can use interfaceName to change the name of the interface that is generated for this task. By default, this is "Task" + the capitalized task slug.                                                                                                                                                                                                                                                                                           |
+| `outputSchema`  | Define the output field schema - Payload will generate a type for this schema.                                                                                                                                                                                                                                                                                                                                                                   |
+| `label`         | Define a human-friendly label for this task.                                                                                                                                                                                                                                                                                                                                                                                                     |
+| `onFail`        | Function to be executed if the task fails.                                                                                                                                                                                                                                                                                                                                                                                                       |
+| `onSuccess`     | Function to be executed if the task succeeds.                                                                                                                                                                                                                                                                                                                                                                                                    |
+| `retries`       | Specify the number of times that this step should be retried if it fails. If this is undefined, the task will either inherit the retries from the workflow or have no retries. If this is 0, the task will not be retried. By default, this is undefined.                                                                                                                                                                                        |
 
 The logic for the Task is defined in the `handler` - which can be defined as a function, or a path to a function. The `handler` will run once a worker picks picks up a Job that includes this task.
 
@@ -17823,8 +12998,8 @@ export default buildConfig({
           }
         },
       } as TaskConfig<'createPost'>,
-    ]
-  }
+    ],
+  },
 })
 ```
 
@@ -17849,10 +13024,12 @@ export default buildConfig({
       {
         // ...
         // The #createPostHandler is a named export within the `createPost.ts` file
-        handler: path.resolve(dirname, 'src/tasks/createPost.ts') + '#createPostHandler',
-      }
-    ]
-  }
+        handler:
+          path.resolve(dirname, 'src/tasks/createPost.ts') +
+          '#createPostHandler',
+      },
+    ],
+  },
 })
 ```
 
@@ -17863,7 +13040,11 @@ Then, the `createPost` file itself:
 ```ts
 import type { TaskHandler } from 'payload'
 
-export const createPostHandler: TaskHandler<'createPost'> = async ({ input, job, req }) => {
+export const createPostHandler: TaskHandler<'createPost'> = async ({
+  input,
+  job,
+  req,
+}) => {
   const newPost = await req.payload.create({
     collection: 'post',
     req,
@@ -17902,11 +13083,11 @@ export default buildConfig({
         slug: 'myTask',
         retries: {
           shouldRestore: false,
-        }
+        },
         // ...
       } as TaskConfig<'myTask'>,
-    ]
-  }
+    ],
+  },
 })
 ```
 
@@ -17928,23 +13109,22 @@ export default buildConfig({
         ],
         retries: {
           shouldRestore: ({ input }) => {
-            if(new Date(input.someDate) > new Date()) {
+            if (new Date(input.someDate) > new Date()) {
               return false
             }
             return true
           },
-        }
+        },
         // ...
       } as TaskConfig<'myTask'>,
-    ]
-  }
+    ],
+  },
 })
 ```
 
 ## Nested tasks
 
 You can run sub-tasks within an existing task, by using the `tasks` or `ìnlineTask` arguments passed to the task `handler` function:
-
 
 ```ts
 export default buildConfig({
@@ -17959,11 +13139,10 @@ export default buildConfig({
         inputSchema: [
           {
             name: 'text',
-            type: 'text'
+            type: 'text',
           },
         ],
         handler: async ({ input, req, tasks, inlineTask }) => {
-
           await inlineTask('Sub Task 1', {
             task: () => {
               // Do something
@@ -17980,15 +13159,15 @@ export default buildConfig({
           return {
             output: {},
           }
-        }
+        },
       } as TaskConfig<'parentTask'>,
-    ]
-  }
+    ],
+  },
 })
 ```
 ````
 
-## File: jobs-queue/workflows.mdx
+## File: jobs-queue_workflows.mdx
 ````
 ---
 title: Workflows
@@ -17999,7 +13178,8 @@ keywords: jobs queue, application framework, typescript, node, react, nextjs
 ---
 
 <Banner type="default">
-  A **"Workflow"** is an optional way to *combine multiple tasks together* in a way that can be gracefully retried from the point of failure.
+  A **"Workflow"** is an optional way to *combine multiple tasks together* in a
+  way that can be gracefully retried from the point of failure.
 </Banner>
 
 They're most helpful when you have multiple tasks in a row, and you want to configure each task to be able to be retried if they fail.
@@ -18014,15 +13194,15 @@ However, importantly, tasks that have successfully been completed will simply re
 
 To define a JS-based workflow, simply add a workflow to the `jobs.workflows` array in your Payload config. A workflow consists of the following fields:
 
-| Option                      | Description                                                                      |
-| --------------------------- | -------------------------------------------------------------------------------- |
-| `slug` | Define a slug-based name for this workflow. This slug needs to be unique among both tasks and workflows.|
-| `handler`   | The function that should be responsible for running the workflow. You can either pass a string-based path to the workflow function file, or workflow job function itself. If you are using large dependencies within your workflow, you might prefer to pass the string path because that will avoid bundling large dependencies in your Next.js app. Passing a string path is an advanced feature that may require a sophisticated build pipeline in order to work.       |
-| `inputSchema` | Define the input field schema - payload will generate a type for this schema. |
-| `interfaceName` | You can use interfaceName to change the name of the interface that is generated for this workflow. By default, this is "Workflow" + the capitalized workflow slug. |
-| `label` | Define a human-friendly label for this workflow. |
-| `queue` | Optionally, define the queue name that this workflow should be tied to. Defaults to "default". |
-| `retries` | You can define `retries` on the workflow level, which will enforce that the workflow can only fail up to that number of retries. If a task does not have retries specified, it will inherit the retry count as specified on the workflow. You can specify `0` as `workflow` retries, which will disregard all `task` retry specifications and fail the entire workflow on any task failure. You can leave `workflow` retries as undefined, in which case, the workflow will respect what each task dictates as their own retry count. By default this is undefined, meaning workflows retries are defined by their tasks |
+| Option          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `slug`          | Define a slug-based name for this workflow. This slug needs to be unique among both tasks and workflows.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| `handler`       | The function that should be responsible for running the workflow. You can either pass a string-based path to the workflow function file, or workflow job function itself. If you are using large dependencies within your workflow, you might prefer to pass the string path because that will avoid bundling large dependencies in your Next.js app. Passing a string path is an advanced feature that may require a sophisticated build pipeline in order to work.                                                                                                                                                     |
+| `inputSchema`   | Define the input field schema - Payload will generate a type for this schema.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| `interfaceName` | You can use interfaceName to change the name of the interface that is generated for this workflow. By default, this is "Workflow" + the capitalized workflow slug.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| `label`         | Define a human-friendly label for this workflow.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| `queue`         | Optionally, define the queue name that this workflow should be tied to. Defaults to "default".                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| `retries`       | You can define `retries` on the workflow level, which will enforce that the workflow can only fail up to that number of retries. If a task does not have retries specified, it will inherit the retry count as specified on the workflow. You can specify `0` as `workflow` retries, which will disregard all `task` retry specifications and fail the entire workflow on any task failure. You can leave `workflow` retries as undefined, in which case, the workflow will respect what each task dictates as their own retry count. By default this is undefined, meaning workflows retries are defined by their tasks |
 
 Example:
 
@@ -18143,7 +13323,7 @@ export default buildConfig({
 ```
 ````
 
-## File: live-preview/client.mdx
+## File: live-preview_client.mdx
 ````
 ---
 title: Client-side Live Preview
@@ -18154,7 +13334,9 @@ keywords: live preview, frontend, react, next.js, vue, nuxt.js, svelte, hook, us
 ---
 
 <Banner type="info">
-  If your front-end application supports Server Components like the [Next.js App Router](https://nextjs.org/docs/app), etc., we suggest setting up [server-side Live Preview](./server) instead.
+  If your front-end application supports Server Components like the [Next.js App
+  Router](https://nextjs.org/docs/app), etc., we suggest setting up [server-side
+  Live Preview](./server) instead.
 </Banner>
 
 While using Live Preview, the [Admin Panel](../admin/overview) emits a new `window.postMessage` event every time your document has changed. Your front-end application can listen for these events and re-render accordingly.
@@ -18165,12 +13347,12 @@ By default, all hooks accept the following args:
 
 | Path               | Description                                                                            |
 | ------------------ | -------------------------------------------------------------------------------------- |
-| **`serverURL`** * | The URL of your Payload server.                                                        |
+| **`serverURL`** \* | The URL of your Payload server.                                                        |
 | **`initialData`**  | The initial data of the document. The live data will be merged in as changes are made. |
 | **`depth`**        | The depth of the relationships to fetch. Defaults to `0`.                              |
 | **`apiRoute`**     | The path of your API route as defined in `routes.api`. Defaults to `/api`.             |
 
-_* An asterisk denotes that a property is required._
+_\* An asterisk denotes that a property is required._
 
 And return the following values:
 
@@ -18180,15 +13362,19 @@ And return the following values:
 | **`isLoading`** | A boolean that indicates whether or not the document is loading. |
 
 <Banner type="info">
-  If your front-end is tightly coupled to required fields, you should ensure that your UI does not
-  break when these fields are removed. For example, if you are rendering something like
-  `data.relatedPosts[0].title`, your page will break once you remove the first related post. To get
-  around this, use conditional logic, optional chaining, or default values in your UI where needed.
-  For example, `data?.relatedPosts?.[0]?.title`.
+  If your front-end is tightly coupled to required fields, you should ensure
+  that your UI does not break when these fields are removed. For example, if you
+  are rendering something like `data.relatedPosts[0].title`, your page will
+  break once you remove the first related post. To get around this, use
+  conditional logic, optional chaining, or default values in your UI where
+  needed. For example, `data?.relatedPosts?.[0]?.title`.
 </Banner>
 
 <Banner type="info">
-  It is important that the `depth` argument matches exactly with the depth of your initial page request. The depth property is used to populated relationships and uploads beyond their IDs. See [Depth](../queries/depth) for more information.
+  It is important that the `depth` argument matches exactly with the depth of
+  your initial page request. The depth property is used to populated
+  relationships and uploads beyond their IDs. See [Depth](../queries/depth) for
+  more information.
 </Banner>
 
 ## Frameworks
@@ -18236,8 +13422,9 @@ export const PageClient: React.FC<{
 ```
 
 <Banner type="warning">
-  **Reminder:**
-  If you are using [React Server Components](https://react.dev/reference/rsc/server-components), we strongly suggest setting up [server-side Live Preview](./server) instead.
+  **Reminder:** If you are using [React Server
+  Components](https://react.dev/reference/rsc/server-components), we strongly
+  suggest setting up [server-side Live Preview](./server) instead.
 </Banner>
 
 ### Vue
@@ -18287,19 +13474,19 @@ npm install @payloadcms/live-preview
 
 This package provides the following functions:
 
-| Path                     | Description                                                                                                                |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
-| **`subscribe`**          | Subscribes to the Admin Panel's `window.postMessage` events and calls the provided callback function.                      |
-| **`unsubscribe`**        | Unsubscribes from the Admin Panel's `window.postMessage` events.                                                           |
-| **`ready`**              | Sends a `window.postMessage` event to the Admin Panel to indicate that the front-end is ready to receive messages.         |
-| **`isLivePreviewEvent`** | Checks if a `MessageEvent` originates from the Admin Panel and is a Live Preview event, i.e. debounced form state.         |
+| Path                     | Description                                                                                                        |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| **`subscribe`**          | Subscribes to the Admin Panel's `window.postMessage` events and calls the provided callback function.              |
+| **`unsubscribe`**        | Unsubscribes from the Admin Panel's `window.postMessage` events.                                                   |
+| **`ready`**              | Sends a `window.postMessage` event to the Admin Panel to indicate that the front-end is ready to receive messages. |
+| **`isLivePreviewEvent`** | Checks if a `MessageEvent` originates from the Admin Panel and is a Live Preview event, i.e. debounced form state. |
 
 The `subscribe` function takes the following args:
 
 | Path               | Description                                                                                 |
 | ------------------ | ------------------------------------------------------------------------------------------- |
-| **`callback`** *  | A callback function that is called with `data` every time a change is made to the document. |
-| **`serverURL`** * | The URL of your Payload server.                                                             |
+| **`callback`** \*  | A callback function that is called with `data` every time a change is made to the document. |
+| **`serverURL`** \* | The URL of your Payload server.                                                             |
 | **`initialData`**  | The initial data of the document. The live data will be merged in as changes are made.      |
 | **`depth`**        | The depth of the relationships to fetch. Defaults to `0`.                                   |
 
@@ -18380,8 +13567,9 @@ export const useLivePreview = <T extends any>(props: {
 ```
 
 <Banner type="info">
-  When building your own hook, ensure that the args and return values are consistent with the ones
-  listed at the top of this document. This will ensure that all hooks follow the same API.
+  When building your own hook, ensure that the args and return values are
+  consistent with the ones listed at the top of this document. This will ensure
+  that all hooks follow the same API.
 </Banner>
 
 ## Example
@@ -18446,7 +13634,7 @@ frame-ancestors: "self" localhost:* https://your-site.com;
 ```
 ````
 
-## File: live-preview/frontend.mdx
+## File: live-preview_frontend.mdx
 ````
 ---
 title: Implementing Live Preview in your frontend
@@ -18462,11 +13650,13 @@ There are two ways to use Live Preview in your own application depending on whet
 - [Client-side Live Preview](./client)
 
 <Banner type="info">
-  We suggest using server-side Live Preview if your framework supports Server Components, it is both simpler to setup and more performant to run than the client-side alternative.
+  We suggest using server-side Live Preview if your framework supports Server
+  Components, it is both simpler to setup and more performant to run than the
+  client-side alternative.
 </Banner>
 ````
 
-## File: live-preview/overview.mdx
+## File: live-preview_overview.mdx
 ````
 ---
 title: Live Preview
@@ -18492,16 +13682,19 @@ const config = buildConfig({
     // highlight-start
     livePreview: {
       url: 'http://localhost:3000',
-      collections: ['pages']
+      collections: ['pages'],
     },
     // highlight-end
-  }
+  },
 })
 ```
 
 <Banner type="warning">
-  **Reminder:**
-  Alternatively, you can define the `admin.livePreview` property on individual [Collection Admin Configs](../configuration/collections#admin-options) and [Global Admin Configs](../configuration/globals#admin-options). Settings defined here will be merged into the top-level as overrides.
+  **Reminder:** Alternatively, you can define the `admin.livePreview` property
+  on individual [Collection Admin
+  Configs](../configuration/collections#admin-options) and [Global Admin
+  Configs](../configuration/globals#admin-options). Settings defined here will
+  be merged into the top-level as overrides.
 </Banner>
 
 ## Options
@@ -18512,12 +13705,12 @@ The following options are available:
 
 | Path              | Description                                                                                                                                           |
 | ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **`url`** *      | String, or function that returns a string, pointing to your front-end application. This value is used as the iframe `src`. [More details](#url).      |
+| **`url`** \*      | String, or function that returns a string, pointing to your front-end application. This value is used as the iframe `src`. [More details](#url).      |
 | **`breakpoints`** | Array of breakpoints to be used as “device sizes” in the preview window. Each item appears as an option in the toolbar. [More details](#breakpoints). |
 | **`collections`** | Array of collection slugs to enable Live Preview on.                                                                                                  |
 | **`globals`**     | Array of global slugs to enable Live Preview on.                                                                                                      |
 
-_* An asterisk denotes that a property is required._
+_\* An asterisk denotes that a property is required._
 
 ### URL
 
@@ -18536,7 +13729,7 @@ const config = buildConfig({
       url: 'http://localhost:3000', // highlight-line
       collections: ['pages'],
     },
-  }
+  },
 })
 ```
 
@@ -18571,13 +13764,13 @@ const config = buildConfig({
 
 The following arguments are provided to the `url` function:
 
-| Path               | Description                                                                                                       |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------- |
-| **`data`**         | The data of the Document being edited. This includes changes that have not yet been saved.                        |
-| **`locale`**       | The locale currently being edited (if applicable). [More details](../configuration/localization).                 |
-| **`collectionConfig`** | The Collection Admin Config of the Document being edited. [More details](../configuration/collections#admin-options).                 |
-| **`globalConfig`** | The Global Admin Config of the Document being edited. [More details](../configuration/globals#admin-options).                          |
-| **`req`**          | The Payload Request object.  |
+| Path                   | Description                                                                                                           |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **`data`**             | The data of the Document being edited. This includes changes that have not yet been saved.                            |
+| **`locale`**           | The locale currently being edited (if applicable). [More details](../configuration/localization).                     |
+| **`collectionConfig`** | The Collection Admin Config of the Document being edited. [More details](../configuration/collections#admin-options). |
+| **`globalConfig`**     | The Global Admin Config of the Document being edited. [More details](../configuration/globals#admin-options).         |
+| **`req`**              | The Payload Request object.                                                                                           |
 
 You can return either an absolute URL or relative URL from this function. If you don't know the URL of your frontend at build-time, you can return a relative URL, and in that case, Payload will automatically construct an absolute URL by injecting the protocol, domain, and port from your browser window. Returning a relative URL is helpful for platforms like Vercel where you may have preview deployment URLs that are unknown at build time.
 
@@ -18613,7 +13806,7 @@ const config = buildConfig({
       ],
       // highlight-end
     },
-  }
+  },
 })
 ```
 
@@ -18621,12 +13814,12 @@ The following options are available for each breakpoint:
 
 | Path            | Description                                                                 |
 | --------------- | --------------------------------------------------------------------------- |
-| **`label`** *  | The label to display in the drop-down. This is what the user will see.      |
-| **`name`** *   | The name of the breakpoint.                                                 |
-| **`width`** *  | The width of the breakpoint. This is used to set the width of the iframe.   |
-| **`height`** * | The height of the breakpoint. This is used to set the height of the iframe. |
+| **`label`** \*  | The label to display in the drop-down. This is what the user will see.      |
+| **`name`** \*   | The name of the breakpoint.                                                 |
+| **`width`** \*  | The width of the breakpoint. This is used to set the width of the iframe.   |
+| **`height`** \* | The height of the breakpoint. This is used to set the height of the iframe. |
 
-_* An asterisk denotes that a property is required._
+_\* An asterisk denotes that a property is required._
 
 The "Responsive" option is always available in the drop-down and requires no additional configuration. This is the default breakpoint that will be used on initial load. This option styles the iframe with a width and height of `100%` so that it fills the screen at its maximum size and automatically resizes as the window changes size.
 
@@ -18639,7 +13832,7 @@ If you prefer to freely resize the Live Preview without the use of breakpoints, 
 For a working demonstration of this, check out the official [Live Preview Example](https://github.com/payloadcms/payload/tree/main/examples/live-preview).
 ````
 
-## File: live-preview/server.mdx
+## File: live-preview_server.mdx
 ````
 ---
 title: Server-side Live Preview
@@ -18650,13 +13843,20 @@ keywords: live preview, frontend, react, next.js, vue, nuxt.js, svelte, hook, us
 ---
 
 <Banner type="info">
-  Server-side Live Preview is only for front-end frameworks that support the concept of Server Components, i.e. [React Server Components](https://react.dev/reference/rsc/server-components). If your front-end application is built with a client-side framework like the [Next.js Pages Router](https://nextjs.org/docs/pages), [React Router](https://reactrouter.com), [Vue 3](https://vuejs.org), etc., see [client-side Live Preview](./client).
+  Server-side Live Preview is only for front-end frameworks that support the
+  concept of Server Components, i.e. [React Server
+  Components](https://react.dev/reference/rsc/server-components). If your
+  front-end application is built with a client-side framework like the [Next.js
+  Pages Router](https://nextjs.org/docs/pages), [React
+  Router](https://reactrouter.com), [Vue 3](https://vuejs.org), etc., see
+  [client-side Live Preview](./client).
 </Banner>
 
 Server-side Live Preview works by making a roundtrip to the server every time your document is saved, i.e. draft save, autosave, or publish. While using Live Preview, the Admin Panel emits a new `window.postMessage` event which your front-end application can use to invoke this process. In Next.js, this means simply calling `router.refresh()` which will hydrate the HTML using new data straight from the [Local API](../local-api/overview).
 
 <Banner type="warning">
-  It is recommended that you enable [Autosave](../versions/autosave) alongside Live Preview to make the experience feel more responsive.
+  It is recommended that you enable [Autosave](../versions/autosave) alongside
+  Live Preview to make the experience feel more responsive.
 </Banner>
 
 If your front-end application is built with [React](#react), you can use the `RefreshRouteOnChange` function that Payload provides. In the future, all other major frameworks like Vue and Svelte will be officially supported. If you are using any of these frameworks today, you can still integrate with Live Preview yourself using the underlying tooling that Payload provides. See [building your own router refresh component](#building-your-own-router-refresh-component) for more information.
@@ -18686,7 +13886,7 @@ export default async function Page() {
   const page = await payload.findByID({
     collection: 'pages',
     id: '123',
-    draft: true
+    draft: true,
   })
 
   return (
@@ -18730,10 +13930,10 @@ npm install @payloadcms/live-preview
 
 This package provides the following functions:
 
-| Path                  | Description                                                                                                                                |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| **`ready`**           | Sends a `window.postMessage` event to the Admin Panel to indicate that the front-end is ready to receive messages.                         |
-| **`isDocumentEvent`** | Checks if a `MessageEvent` originates from the Admin Panel and is a document-level event, i.e. draft save, autosave, publish, etc.         |
+| Path                  | Description                                                                                                                        |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| **`ready`**           | Sends a `window.postMessage` event to the Admin Panel to indicate that the front-end is ready to receive messages.                 |
+| **`isDocumentEvent`** | Checks if a `MessageEvent` originates from the Admin Panel and is a document-level event, i.e. draft save, autosave, publish, etc. |
 
 With these functions, you can build your own hook using your front-end framework of choice:
 
@@ -18835,7 +14035,7 @@ frame-ancestors: "self" localhost:* https://your-site.com;
 ```
 ````
 
-## File: local-api/outside-nextjs.mdx
+## File: local-api_outside-nextjs.mdx
 ````
 ---
 title: Using Payload outside Next.js
@@ -18848,9 +14048,9 @@ keywords: local api, config, configuration, documentation, Content Management Sy
 Payload can be used completely outside of Next.js which is helpful in cases like running scripts, using Payload in a separate backend service, or using Payload's Local API to fetch your data directly from your database in other frontend frameworks like SvelteKit, Remix, Nuxt, and similar.
 
 <Banner>
-  **Note:**
-  
-  Payload and all of its official packages are fully ESM. If you want to use Payload within your own projects, make sure you are writing your scripts in ESM format or dynamically importing the Payload Config.
+  **Note:** Payload and all of its official packages are fully ESM. If you want
+  to use Payload within your own projects, make sure you are writing your
+  scripts in ESM format or dynamically importing the Payload Config.
 </Banner>
 
 ## Importing the Payload Config outside of Next.js
@@ -18871,8 +14071,8 @@ const seed = async () => {
     collection: 'users',
     data: {
       email: 'dev@payloadcms.com',
-      password: 'some-password'
-    }
+      password: 'some-password',
+    },
   })
 
   const page = await payload.create({
@@ -18880,7 +14080,7 @@ const seed = async () => {
     data: {
       title: 'My Homepage',
       // other data to seed here
-    }
+    },
   })
 }
 
@@ -18906,6 +14106,7 @@ If you encounter import-related errors, you have 2 options:
 #### Option 1: enable swc mode by appending `--use-swc` to the `payload` command:
 
 Example:
+
 ```sh
 payload run src/seed.ts --use-swc
 ```
@@ -18914,7 +14115,7 @@ Note: Install @swc-node/register in your project first. While swc mode is faster
 
 #### Option 2: use an alternative runtime like bun
 
-While we do not guarantee support for alternative runtimes, you are free to use them and disable payloads own transpilation by appending the `--disable-transpilation` flag to the `payload` command:
+While we do not guarantee support for alternative runtimes, you are free to use them and disable Payload's own transpilation by appending the `--disable-transpile` flag to the `payload` command:
 
 ```sh
 bunx --bun payload run src/seed.ts --disable-transpile
@@ -18923,7 +14124,7 @@ bunx --bun payload run src/seed.ts --disable-transpile
 You will need to have bun installed on your system for this to work.
 ````
 
-## File: local-api/overview.mdx
+## File: local-api_overview.mdx
 ````
 ---
 title: Local API
@@ -18938,7 +14139,8 @@ The Payload Local API gives you the ability to execute the same operations that 
 <Banner type="success">
   **Tip:**
 
-  The Local API is incredibly powerful when used in React Server Components and other similar server-side contexts. With other headless CMS, you need to request your data from third-party servers via an HTTP layer, which can add significant loading time to your server-rendered pages. With Payload, you don't have to leave your server to gather the data you need. It can be incredibly fast and is definitely a game changer.
+The Local API is incredibly powerful when used in React Server Components and other similar server-side contexts. With other headless CMS, you need to request your data from third-party servers via an HTTP layer, which can add significant loading time to your server-rendered pages. With Payload, you don't have to leave your server to gather the data you need. It can be incredibly fast and is definitely a game changer.
+
 </Banner>
 
 Here are some common examples of how you can use the Local API:
@@ -18959,7 +14161,9 @@ In most places within Payload itself, you can access `payload` directly from the
 Example:
 
 ```ts
-const afterChangeHook: CollectionAfterChangeHook = async ({ req: { payload } }) => {
+const afterChangeHook: CollectionAfterChangeHook = async ({
+  req: { payload },
+}) => {
   const posts = await payload.find({
     collection: 'posts',
   })
@@ -19021,8 +14225,9 @@ const post = await payload.find({
 <Banner type="warning">
   **Note:**
 
-  By default, all access control checks are disabled in the Local API, but you can re-enable them if
-  you'd like, as well as pass a specific user to run the operation with.
+By default, all access control checks are disabled in the Local API, but you can re-enable them if
+you'd like, as well as pass a specific user to run the operation with.
+
 </Banner>
 
 ## Collections
@@ -19243,7 +14448,7 @@ available:
 // you'll also have to await headers inside your function, or component, like so:
 // const headers = await nextHeaders()
 
-// If you're using payload outside of Next.js, you'll have to provide headers accordingly.
+// If you're using Payload outside of Next.js, you'll have to provide headers accordingly.
 
 // result will be formatted as follows:
 // {
@@ -19252,7 +14457,7 @@ available:
 //    responseHeaders: { ... } // returned headers from the response
 // }
 
-const result = await payload.auth({headers})
+const result = await payload.auth({ headers })
 ```
 
 ### Login
@@ -19405,7 +14610,7 @@ const post = await payload.create({
 ```
 ````
 
-## File: migration-guide/overview.mdx
+## File: migration-guide_overview.mdx
 ````
 ---
 title: 2.0 to 3.0 Migration Guide
@@ -19451,88 +14656,89 @@ For more details, see the [Documentation](https://payloadcms.com/docs/getting-st
 
 1. **Install new dependencies of Payload, Next.js and React**:
 
-    Refer to the package.json file made in the create-payload-app, including peerDependencies, devDependencies, and dependencies. The core package and plugins require all versions to be synced. Previously, on 2.x it was possible to be running the latest version of payload 2.x with an older version of db-mongodb for example. This is no longer the case.
+   Refer to the package.json file made in the create-payload-app, including peerDependencies, devDependencies, and dependencies. The core package and plugins require all versions to be synced. Previously, on 2.x it was possible to be running the latest version of Payload 2.x with an older version of db-mongodb for example. This is no longer the case.
 
-    ```bash
-      pnpm i next react react-dom payload @payloadcms/ui @payloadcms/next
-    ```
+   ```bash
+     pnpm i next react react-dom payload @payloadcms/ui @payloadcms/next
+   ```
 
-    Also install the other @payloadcms packages specific to the plugins and adapters you are using. Depending on your project, these may include:
-      - @payloadcms/db-mongodb
-      - @payloadcms/db-postgres
-      - @payloadcms/richtext-slate
-      - @payloadcms/richtext-lexical
-      - @payloadcms/plugin-form-builder
-      - @payloadcms/plugin-nested-docs
-      - @payloadcms/plugin-redirects
-      - @payloadcms/plugin-relationship
-      - @payloadcms/plugin-search
-      - @payloadcms/plugin-sentry
-      - @payloadcms/plugin-seo
-      - @payloadcms/plugin-stripe
-      - @payloadcms/plugin-cloud-storage - Read [More](#@payloadcms/plugin-cloud-storage).
+   Also install the other @payloadcms packages specific to the plugins and adapters you are using. Depending on your project, these may include:
+
+   - @payloadcms/db-mongodb
+   - @payloadcms/db-postgres
+   - @payloadcms/richtext-slate
+   - @payloadcms/richtext-lexical
+   - @payloadcms/plugin-form-builder
+   - @payloadcms/plugin-nested-docs
+   - @payloadcms/plugin-redirects
+   - @payloadcms/plugin-relationship
+   - @payloadcms/plugin-search
+   - @payloadcms/plugin-sentry
+   - @payloadcms/plugin-seo
+   - @payloadcms/plugin-stripe
+   - @payloadcms/plugin-cloud-storage - Read [More](#@payloadcms/plugin-cloud-storage).
 
 1. Uninstall deprecated packages:
 
-    ```bash
-    pnpm remove express nodemon @payloadcms/bundler-webpack @payloadcms/bundler-vite
-    ```
+   ```bash
+   pnpm remove express nodemon @payloadcms/bundler-webpack @payloadcms/bundler-vite
+   ```
 
 1. Database Adapter Migrations
 
-    _If you have existing data_ and are using the MongoDB or Postgres adapters, you will need to run the database migrations to ensure your database schema is up-to-date.
+   _If you have existing data_ and are using the MongoDB or Postgres adapters, you will need to run the database migrations to ensure your database schema is up-to-date.
 
-    - [postgres](https://github.com/payloadcms/payload/releases/tag/v3.0.0-beta.39)
-    - [mongodb](https://github.com/payloadcms/payload/releases/tag/v3.0.0-beta.131)
+   - [postgres](https://github.com/payloadcms/payload/releases/tag/v3.0.0-beta.39)
+   - [mongodb](https://github.com/payloadcms/payload/releases/tag/v3.0.0-beta.131)
 
-2. For Payload Cloud users, the plugin has changed.
+1. For Payload Cloud users, the plugin has changed.
 
-    Uninstall the old package:
+   Uninstall the old package:
 
-    ```bash
-    pnpm remove @payloadcms/plugin-cloud
-    ```
+   ```bash
+   pnpm remove @payloadcms/plugin-cloud
+   ```
 
-    Install the new package:
+   Install the new package:
 
-    ```bash
-    pnpm i @payloadcms/payload-cloud
-    ```
+   ```bash
+   pnpm i @payloadcms/payload-cloud
+   ```
 
-    ```diff
-    // payload.config.ts
-    - import { payloadCloud } from '@payloadcms/plugin-cloud'
-    + import { payloadCloudPlugin } from '@payloadcms/payload-cloud'
+   ```diff
+   // payload.config.ts
+   - import { payloadCloud } from '@payloadcms/plugin-cloud'
+   + import { payloadCloudPlugin } from '@payloadcms/payload-cloud'
 
-    buildConfig({
-      // ...
-      plugins: [
-    -   payloadCloud()
-    +   payloadCloudPlugin()
-      ]
-    })
-    ```
+   buildConfig({
+     // ...
+     plugins: [
+   -   payloadCloud()
+   +   payloadCloudPlugin()
+     ]
+   })
+   ```
 
-3. **Optional** sharp dependency
+1. **Optional** sharp dependency
 
    If you have upload enabled collections that use `formatOptions`, `imageSizes`, or `resizeOptions`—payload expects to have `sharp` installed. In 2.0 this was a dependency was installed for you. Now it is only installed if needed. If you have any of these options set, you will need to install `sharp` and add it to your payload.config.ts:
 
-    ```bash
-    pnpm i sharp
-    ```
+   ```bash
+   pnpm i sharp
+   ```
 
-    ```diff
-    // payload.config.ts
-    import sharp from 'sharp'
-    buildConfig({
-    // ...
-    +   sharp,
-    })
-    ```
+   ```diff
+   // payload.config.ts
+   import sharp from 'sharp'
+   buildConfig({
+   // ...
+   +   sharp,
+   })
+   ```
 
 ## Breaking Changes
 
-1. Delete the `admin.bundler` property from your Payload Config. Payload no longer bundles the Admin Panel. Instead, we rely directly on Next.js for bundling.
+1.  Delete the `admin.bundler` property from your Payload Config. Payload no longer bundles the Admin Panel. Instead, we rely directly on Next.js for bundling.
 
     ```diff
     // payload.config.ts
@@ -19549,7 +14755,7 @@ For more details, see the [Documentation](https://payloadcms.com/docs/getting-st
 
     This also means that the `@payloadcms/bundler-webpack` and `@payloadcms/bundler-vite` packages have been deprecated. You can completely uninstall those from your project by removing them from your `package.json` file and re-running your package manager’s installation process, i.e. `pnpm i`.
 
-1. Add the `secret` property to your Payload Config. This used to be set in the `payload.init()` function of your `server.ts` file. Instead, move it to `payload.config.ts`:
+1.  Add the `secret` property to your Payload Config. This used to be set in the `payload.init()` function of your `server.ts` file. Instead, move it to `payload.config.ts`:
 
     ```diff
     // payload.config.ts
@@ -19560,7 +14766,7 @@ For more details, see the [Documentation](https://payloadcms.com/docs/getting-st
     })
     ```
 
-1. Environment variables prefixed with `PAYLOAD_PUBLIC` will no longer be available on the client. In order to access them on the client, those will now have to be prefixed with `NEXT_PUBLIC` instead.
+1.  Environment variables prefixed with `PAYLOAD_PUBLIC` will no longer be available on the client. In order to access them on the client, those will now have to be prefixed with `NEXT_PUBLIC` instead.
 
     ```diff
     'use client'
@@ -19570,14 +14776,14 @@ For more details, see the [Documentation](https://payloadcms.com/docs/getting-st
 
     For more details, see the [Documentation](https://payloadcms.com/docs/configuration/environment-vars).
 
-1. The `req` object used to extend the [Express Request](https://expressjs.com/), but now extends the [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request). You may need to update your code accordingly to reflect this change. For example:
+1.  The `req` object used to extend the [Express Request](https://expressjs.com/), but now extends the [Web Request](https://developer.mozilla.org/en-US/docs/Web/API/Request). You may need to update your code accordingly to reflect this change. For example:
 
     ```diff
     - req.headers['content-type']
     + req.headers.get('content-type')
     ```
 
-1. The `admin.css` and `admin.scss` properties in the Payload Config have been removed.
+1.  The `admin.css` and `admin.scss` properties in the Payload Config have been removed.
 
     ```diff
     // payload.config.ts
@@ -19597,35 +14803,35 @@ For more details, see the [Documentation](https://payloadcms.com/docs/getting-st
     1. For most use cases, you can simply customize the file located at `(payload)/custom.scss`. You can import or add your own styles here, such as for Tailwind.
     1. For plugins author, you can use a Custom Provider at `admin.components.providers` to import your stylesheet:
 
-        ```tsx
-        // payload.config.js
+       ```tsx
+       // payload.config.js
 
-        //...
-        admin: {
-          components: {
-            providers: [
-              MyProvider: './providers/MyProvider.tsx'
-            ]
-          }
-        },
-        //...
+       //...
+       admin: {
+         components: {
+           providers: [
+             MyProvider: './providers/MyProvider.tsx'
+           ]
+         }
+       },
+       //...
 
-        // providers/MyProvider.tsx
+       // providers/MyProvider.tsx
 
-        'use client'
-        import React from 'react'
-        import './globals.css'
+       'use client'
+       import React from 'react'
+       import './globals.css'
 
-        export const MyProvider: React.FC<{children?: any}= ({ children }) ={
-          return (
-            <React.fragment>
-              {children}
-            </React.fragment>
-          )
-        }
-        ```
+       export const MyProvider: React.FC<{children?: any}= ({ children }) ={
+         return (
+           <React.fragment>
+             {children}
+           </React.fragment>
+         )
+       }
+       ```
 
-1. The `admin.indexHTML` property has been removed. Delete this from your Payload Config.
+1.  The `admin.indexHTML` property has been removed. Delete this from your Payload Config.
 
     ```diff
     // payload.config.ts
@@ -19639,7 +14845,7 @@ For more details, see the [Documentation](https://payloadcms.com/docs/getting-st
     })
     ```
 
-1. The `collection.admin.hooks` property has been removed. Instead, use the new `beforeDuplicate` field-level hook which take the usual field hook arguments.
+1.  The `collection.admin.hooks` property has been removed. Instead, use the new `beforeDuplicate` field-level hook which take the usual field hook arguments.
 
     ```diff
     // collections/Posts.ts
@@ -19671,9 +14877,9 @@ For more details, see the [Documentation](https://payloadcms.com/docs/getting-st
     }
     ```
 
-1. Fields with `unique: true` now automatically be appended with “- Copy” through the new `admin.beforeDuplicate` field hooks (see previous bullet).
+1.  Fields with `unique: true` now automatically be appended with “- Copy” through the new `admin.beforeDuplicate` field hooks (see previous bullet).
 
-1. The `upload.staticDir` property must now be an absolute path. Before it would attempt to use the location of the Payload Config and merge the relative path set for staticDir.
+1.  The `upload.staticDir` property must now be an absolute path. Before it would attempt to use the location of the Payload Config and merge the relative path set for staticDir.
 
     ```diff
     // collections/Media.ts
@@ -19693,7 +14899,7 @@ For more details, see the [Documentation](https://payloadcms.com/docs/getting-st
     }
     ```
 
-1. The `upload.staticURL` property has been removed. If you were using this format URLs when using an external provider, you can leverage the `generateFileURL` functions in order to do the same.
+1.  The `upload.staticURL` property has been removed. If you were using this format URLs when using an external provider, you can leverage the `generateFileURL` functions in order to do the same.
 
     ```diff
     // collections/Media.ts
@@ -19707,7 +14913,7 @@ For more details, see the [Documentation](https://payloadcms.com/docs/getting-st
     }
     ```
 
-1. The `admin.favicon` property is now `admin.icons` and the types have changed:
+1.  The `admin.favicon` property is now `admin.icons` and the types have changed:
 
     ```diff
     // payload.config.ts
@@ -19727,7 +14933,7 @@ For more details, see the [Documentation](https://payloadcms.com/docs/getting-st
 
     For more details, see the [Documentation](https://payloadcms.com/docs/admin/metadata#icons).
 
-1. The `admin.meta.ogImage` property has been replaced by `admin.meta.openGraph.images`:
+1.  The `admin.meta.ogImage` property has been replaced by `admin.meta.openGraph.images`:
 
     ```diff
     // payload.config.ts
@@ -19748,7 +14954,7 @@ For more details, see the [Documentation](https://payloadcms.com/docs/getting-st
 
     For more details, see the [Documentation](https://payloadcms.com/docs/admin/metadata#open-graph).
 
-1. The args of the `admin.livePreview.url` function have changed. It no longer receives `documentInfo` as an arg, and instead, now has `collectionConfig` and `globalConfig`.
+1.  The args of the `admin.livePreview.url` function have changed. It no longer receives `documentInfo` as an arg, and instead, now has `collectionConfig` and `globalConfig`.
 
     ```diff
     // payload.config.ts
@@ -19767,7 +14973,7 @@ For more details, see the [Documentation](https://payloadcms.com/docs/getting-st
     })
     ```
 
-1. The `admin.logoutRoute` and `admin.inactivityRoute` properties have been consolidated into a single `admin.routes` property. To migrate, simply move those two keys as follows:
+1.  The `admin.logoutRoute` and `admin.inactivityRoute` properties have been consolidated into a single `admin.routes` property. To migrate, simply move those two keys as follows:
 
     ```diff
     // payload.config.ts
@@ -19786,7 +14992,7 @@ For more details, see the [Documentation](https://payloadcms.com/docs/getting-st
     })
     ```
 
-1. The `custom` property in the Payload Config, i.e. Collections, Globals, and Fields is now **server only** and will **not** appear in the client-side bundle. To add custom properties to the client bundle, use the new `admin.custom` property, which will be available on _both_ the server and the client.
+1.  The `custom` property in the Payload Config, i.e. Collections, Globals, and Fields is now **server only** and will **not** appear in the client-side bundle. To add custom properties to the client bundle, use the new `admin.custom` property, which will be available on _both_ the server and the client.
 
     ```diff
     // payload.config.ts
@@ -19804,7 +15010,7 @@ For more details, see the [Documentation](https://payloadcms.com/docs/getting-st
     })
     ```
 
-1. `hooks.afterError` is now an array of functions instead of a single function. The args have also been expanded. Read [More](https://payloadcms.com/docs/hooks/overview#root-hooks).
+1.  `hooks.afterError` is now an array of functions instead of a single function. The args have also been expanded. Read [More](https://payloadcms.com/docs/hooks/overview#root-hooks).
 
     ```diff
     // payload.config.ts
@@ -19821,502 +15027,503 @@ For more details, see the [Documentation](https://payloadcms.com/docs/getting-st
       }
     })
     ```
-1. The `./src/public` directory is now located directly at root level `./public` [see Next.js docs for details](https://nextjs.org/docs/pages/building-your-application/optimizing/static-assets)
+
+1.  The `./src/public` directory is now located directly at root level `./public` [see Next.js docs for details](https://nextjs.org/docs/pages/building-your-application/optimizing/static-assets)
 
 1.  Payload now automatically removes `localized: true` property from sub-fields if a parent is localized, as it's redunant and unnecessary. If you have some existing data in this structure and you want to disable that behavior, you need to enable `allowLocalizedWithinLocalized` flag in your payload.config [read more in documentation](https://payloadcms.com/docs/configuration/overview#compatibility-flags), or create a migration script that aligns your data.
-Mongodb example for a link in a page layout.
+    Mongodb example for a link in a page layout.
 
-    ```diff
-    - layout.columns.en.link.en.type.en
-    + layout.columns.en.link.type
-    ```
-
+        ```diff
+        - layout.columns.en.link.en.type.en
+        + layout.columns.en.link.type
+        ```
 
 ## Custom Components
 
 1. All Payload React components have been moved from the `payload` package to `@payloadcms/ui`. If you were previously importing components into your app from the `payload` package, for example to create Custom Components, you will need to change your import paths:
 
-    ```diff
-    - import { TextField, useField, etc. } from 'payload'
-    + import { TextField, useField, etc. } from '@payloadcms/ui'
-    ```
-    *Note: for brevity, not _all_ modules are listed here*
+   ```diff
+   - import { TextField, useField, etc. } from 'payload'
+   + import { TextField, useField, etc. } from '@payloadcms/ui'
+   ```
+
+   _Note: for brevity, not *all* modules are listed here_
 
 1. All Custom Components are now defined as _file paths_ instead of direct imports. If you are using Custom Components in your Payload Config, remove the imported module and point to the file's path instead:
 
-    ```diff
-    import { buildConfig } from 'payload'
-    - import { MyComponent } from './src/components/Logout'
+   ```diff
+   import { buildConfig } from 'payload'
+   - import { MyComponent } from './src/components/Logout'
 
-    const config = buildConfig({
-      // ...
-      admin: {
-        components: {
-          logout: {
-    -       Button: MyComponent,
-    +       Button: '/src/components/Logout#MyComponent'
-          }
-        }
-      },
-    })
-    ```
+   const config = buildConfig({
+     // ...
+     admin: {
+       components: {
+         logout: {
+   -       Button: MyComponent,
+   +       Button: '/src/components/Logout#MyComponent'
+         }
+       }
+     },
+   })
+   ```
 
-    For more details, see the [Documentation](https://payloadcms.com/docs/custom-components/overview#component-paths).
+   For more details, see the [Documentation](https://payloadcms.com/docs/custom-components/overview#component-paths).
 
 1. All Custom Components are now server-rendered by default, and therefore, cannot use state or hooks directly. If you’re using Custom Components in your app that requires state or hooks, add the `'use client'` directive at the top of the file.
 
-    ```diff
-    // components/MyClientComponent.tsx
-    + 'use client'
-    import React, { useState } from 'react'
+   ```diff
+   // components/MyClientComponent.tsx
+   + 'use client'
+   import React, { useState } from 'react'
 
-    export const MyClientComponent = () => {
-      const [state, setState] = useState()
+   export const MyClientComponent = () => {
+     const [state, setState] = useState()
 
-      return (
-        <div>
-          {state}
-        </div>
-      )
-    }
-    ```
+     return (
+       <div>
+         {state}
+       </div>
+     )
+   }
+   ```
 
-    For more details, see the [Documentation](https://payloadcms.com/docs/custom-components/overview#client-components).
+   For more details, see the [Documentation](https://payloadcms.com/docs/custom-components/overview#client-components).
 
 1. The `admin.description` property within Collection, Globals, and Fields no longer accepts a React Component. Instead, you must define it as a Custom Component.
 
-    1. For Collections, use the `admin.components.edit.Description` key:
+   1. For Collections, use the `admin.components.edit.Description` key:
 
-    ```diff
-    // collections/Posts.ts
-    import type { CollectionConfig } from 'payload'
-    - import { MyCustomDescription } from '../components/MyCustomDescription'
+   ```diff
+   // collections/Posts.ts
+   import type { CollectionConfig } from 'payload'
+   - import { MyCustomDescription } from '../components/MyCustomDescription'
 
-    export const PostsCollection: CollectionConfig = {
-      slug: 'posts',
-      admin: {
-    -    description: MyCustomDescription,
-    +    components: {
-    +      edit: {
-    +        Description: 'path/to/MyCustomDescription'
-    +      }
-    +    }
-      }
-    }
-    ```
+   export const PostsCollection: CollectionConfig = {
+     slug: 'posts',
+     admin: {
+   -    description: MyCustomDescription,
+   +    components: {
+   +      edit: {
+   +        Description: 'path/to/MyCustomDescription'
+   +      }
+   +    }
+     }
+   }
+   ```
 
-    2. For Globals, use the `admin.components.elements.Description` key:
+   2. For Globals, use the `admin.components.elements.Description` key:
 
-    ```diff
-    // globals/Site.ts
-    import type { GlobalConfig } from 'payload'
-    - import { MyCustomDescription } from '../components/MyCustomDescription'
+   ```diff
+   // globals/Site.ts
+   import type { GlobalConfig } from 'payload'
+   - import { MyCustomDescription } from '../components/MyCustomDescription'
 
-    export const SiteGlobal: GlobalConfig = {
-      slug: 'site',
-      admin: {
-    -    description: MyCustomDescription,
-    +    components: {
-    +      elements: {
-    +        Description: 'path/to/MyCustomDescription'
-    +      }
-    +    }
-      }
-    }
-    ```
+   export const SiteGlobal: GlobalConfig = {
+     slug: 'site',
+     admin: {
+   -    description: MyCustomDescription,
+   +    components: {
+   +      elements: {
+   +        Description: 'path/to/MyCustomDescription'
+   +      }
+   +    }
+     }
+   }
+   ```
 
-    3. For Fields, use the `admin.components.Description` key:
+   3. For Fields, use the `admin.components.Description` key:
 
-    ```diff
-    // fields/MyField.ts
-    import type { FieldConfig } from 'payload'
-    - import { MyCustomDescription } from '../components/MyCustomDescription'
+   ```diff
+   // fields/MyField.ts
+   import type { FieldConfig } from 'payload'
+   - import { MyCustomDescription } from '../components/MyCustomDescription'
 
-    export const MyField: FieldConfig = {
-      type: 'text',
-      admin: {
-    -    description: MyCustomDescription,
-    +    components: {
-    +      Description: 'path/to/MyCustomDescription'
-    +    }
-      }
-    }
-    ```
+   export const MyField: FieldConfig = {
+     type: 'text',
+     admin: {
+   -    description: MyCustomDescription,
+   +    components: {
+   +      Description: 'path/to/MyCustomDescription'
+   +    }
+     }
+   }
+   ```
 
 1. Array Field row labels and Collapsible Field label now _only_ accepts a React Component, and no longer accepts a plain string or record:
 
-    ```diff
-    // file: Collection.tsx
-    import type { CollectionConfig } from 'payload'
-    - import { MyCustomRowLabel } from './components/MyCustomRowLabel.tsx'
+   ```diff
+   // file: Collection.tsx
+   import type { CollectionConfig } from 'payload'
+   - import { MyCustomRowLabel } from './components/MyCustomRowLabel.tsx'
 
-    export const MyCollection: CollectionConfig = {
-      slug: 'my-collection',
-      fields: [
-        {
-          name: 'my-array',
-          type: 'array',
-          admin: {
-            components: {
-    -         RowLabel: 'My Array Row Label,
-    +         RowLabel: './components/RowLabel.ts'
-            }
-          },
-          fields: [...]
-        },
-        {
-          name: 'my-collapsible',
-          type: 'collapsible',
-          admin: {
-            components: {
-    -         Label: 'My Collapsible Label',
-    +         Label: './components/RowLabel.ts'
-            }
-          },
-          fields: [...]
-        }
-      ]
-    }
-    ```
+   export const MyCollection: CollectionConfig = {
+     slug: 'my-collection',
+     fields: [
+       {
+         name: 'my-array',
+         type: 'array',
+         admin: {
+           components: {
+   -         RowLabel: 'My Array Row Label,
+   +         RowLabel: './components/RowLabel.ts'
+           }
+         },
+         fields: [...]
+       },
+       {
+         name: 'my-collapsible',
+         type: 'collapsible',
+         admin: {
+           components: {
+   -         Label: 'My Collapsible Label',
+   +         Label: './components/RowLabel.ts'
+           }
+         },
+         fields: [...]
+       }
+     ]
+   }
+   ```
 
 1. All default view keys are now camelcase:
 
-    For example, for Root Views:
+   For example, for Root Views:
 
-    ```diff
-    // file: payload.config.ts
+   ```diff
+   // file: payload.config.ts
 
-    import { buildConfig } from 'payload'
+   import { buildConfig } from 'payload'
 
-    export default buildConfig({
-    admin: {
-      views: {
-    -    Account: ...
-    +    account: ...
-      }
-    })
-    ```
+   export default buildConfig({
+   admin: {
+     views: {
+   -    Account: ...
+   +    account: ...
+     }
+   })
+   ```
 
-    Or Document Views:
+   Or Document Views:
 
-    ```diff
-    // file: Collection.tsx
+   ```diff
+   // file: Collection.tsx
 
-    import type { CollectionConfig } from 'payload'
+   import type { CollectionConfig } from 'payload'
 
-    export const MyCollection: CollectionConfig = {
-      slug: 'my-collection',
-      admin: {
-        views: {
-    -     Edit: {
-    -       Default: ...
-    -     }
-    +     edit: {
-    +       default: ...
-    +     }
-        }
-      }
-    }
-    ```
+   export const MyCollection: CollectionConfig = {
+     slug: 'my-collection',
+     admin: {
+       views: {
+   -     Edit: {
+   -       Default: ...
+   -     }
+   +     edit: {
+   +       default: ...
+   +     }
+       }
+     }
+   }
+   ```
 
 1. Custom Views within the config no longer accept React Components directly, instead, you must use their `Component` property:
 
-    ```diff
-    // file: Collection.tsx
-    import type { CollectionConfig } from 'payload'
-    - import { MyCustomView } from './components/MyCustomView.tsx'
+   ```diff
+   // file: Collection.tsx
+   import type { CollectionConfig } from 'payload'
+   - import { MyCustomView } from './components/MyCustomView.tsx'
 
-    export const MyCollection: CollectionConfig = {
-      slug: 'my-collection',
-      admin: {
-        views: {
-    -     Edit: MyCustomView
-    +     edit: {
-    +       Component: './components/MyCustomView.tsx'
-    +     }
-        }
-      }
-    }
-    ```
+   export const MyCollection: CollectionConfig = {
+     slug: 'my-collection',
+     admin: {
+       views: {
+   -     Edit: MyCustomView
+   +     edit: {
+   +       Component: './components/MyCustomView.tsx'
+   +     }
+       }
+     }
+   }
+   ```
 
-    This also means that Custom Root Views are no longer defined on the `edit` key. Instead, use the new `views.root` key:
+   This also means that Custom Root Views are no longer defined on the `edit` key. Instead, use the new `views.root` key:
 
-    ```diff
-    // file: Collection.tsx
-    import type { CollectionConfig } from 'payload'
-    - import { MyCustomRootView } from './components/MyCustomRootView.tsx'
+   ```diff
+   // file: Collection.tsx
+   import type { CollectionConfig } from 'payload'
+   - import { MyCustomRootView } from './components/MyCustomRootView.tsx'
 
-    export const MyCollection: CollectionConfig = {
-      slug: 'my-collection',
-      admin: {
-        views: {
-    -     Edit: MyCustomRootView
-          edit: {
-    +       root: {
-    +         Component: './components/MyCustomRootView.tsx'
-    +       }
-          }
-        }
-      }
-    }
-    ```
+   export const MyCollection: CollectionConfig = {
+     slug: 'my-collection',
+     admin: {
+       views: {
+   -     Edit: MyCustomRootView
+         edit: {
+   +       root: {
+   +         Component: './components/MyCustomRootView.tsx'
+   +       }
+         }
+       }
+     }
+   }
+   ```
 
 1. The `href` and `isActive` functions on View Tabs no longer includes the `match` or `location` arguments. This is is a property specific to React Router, not Next.js. If you need to do URL matching similar to this, use a custom tab that fires of some hooks, i.e. `usePathname()` and run it through your own utility functions:
 
-    ```diff
-    // collections/Posts.ts
-    import type { CollectionConfig } from 'payload'
+   ```diff
+   // collections/Posts.ts
+   import type { CollectionConfig } from 'payload'
 
-    export const PostsCollection: CollectionConfig = {
-      slug: 'posts',
-      admin: {
-        components: {
-          views: {
-    -        Edit: {
-    -          Tab: {
-    -            isActive: ({ href, location, match }) => true,
-    -            href: ({ href, location, match }) => ''
-    -          },
-    -       },
-    +       edit: {
-    +         tab: {
-    +           isActive: ({ href }) => true,
-    +           href: ({ href }) => '' // or use a Custom Component (see below)
-    +           // Component: './path/to/CustomComponent.tsx'
-    +         }
-    +       },
-          },
-        },
-      },
-    }
-    ```
+   export const PostsCollection: CollectionConfig = {
+     slug: 'posts',
+     admin: {
+       components: {
+         views: {
+   -        Edit: {
+   -          Tab: {
+   -            isActive: ({ href, location, match }) => true,
+   -            href: ({ href, location, match }) => ''
+   -          },
+   -       },
+   +       edit: {
+   +         tab: {
+   +           isActive: ({ href }) => true,
+   +           href: ({ href }) => '' // or use a Custom Component (see below)
+   +           // Component: './path/to/CustomComponent.tsx'
+   +         }
+   +       },
+         },
+       },
+     },
+   }
+   ```
 
 1. The `admin.components.views[key].Tab.pillLabel` has been replaced with `admin.components.views[key].tab.Pill`:
 
-    ```diff
-    // collections/Posts.ts
-    import type { CollectionConfig } from 'payload'
+   ```diff
+   // collections/Posts.ts
+   import type { CollectionConfig } from 'payload'
 
-    export const PostsCollection: CollectionConfig = {
-      slug: 'posts',
-      admin: {
-        components: {
-    -     views: {
-    -       Edit: {
-    -         Tab: {
-    -           pillLabel: 'Hello, world!',
-    -         },
-    -       },
-    +       edit: {
-    +         tab: {
-    +           Pill: './path/to/CustomPill.tsx',
-    +         }
-    +       },
-          },
-        },
-      },
-    }
-    ```
+   export const PostsCollection: CollectionConfig = {
+     slug: 'posts',
+     admin: {
+       components: {
+   -     views: {
+   -       Edit: {
+   -         Tab: {
+   -           pillLabel: 'Hello, world!',
+   -         },
+   -       },
+   +       edit: {
+   +         tab: {
+   +           Pill: './path/to/CustomPill.tsx',
+   +         }
+   +       },
+         },
+       },
+     },
+   }
+   ```
 
 1. `react-i18n` was removed, the `Trans` component from `react-i18n` has been replaced with a Payload-provided solution:
 
-    ```diff
-    'use client'
-    - import { Trans } from "react-i18n"
-    + import { Translation } from "@payloadcms/ui"
+   ```diff
+   'use client'
+   - import { Trans } from "react-i18n"
+   + import { Translation } from "@payloadcms/ui"
 
-    // Example string to translate:
-    // "loggedInChangePassword": "To change your password, go to your <0>account</0> and edit your password there."
+   // Example string to translate:
+   // "loggedInChangePassword": "To change your password, go to your <0>account</0> and edit your password there."
 
-    export const MyComponent = () => {
-      return (
-    -     <Trans i18nKey="loggedInChangePassword" t={t}>
-    -       <Link to={`${admin}/account`}>account</Link>
-    -     </Trans>
+   export const MyComponent = () => {
+     return (
+   -     <Trans i18nKey="loggedInChangePassword" t={t}>
+   -       <Link to={`${admin}/account`}>account</Link>
+   -     </Trans>
 
-    +     <Translation
-    +       t={t}
-    +       i18nKey="authentication:loggedInChangePassword"
-    +       elements={{
-    +         '0': ({ children }) => <Link href={`${admin}/account`} children={children} />,
-    +       }}
-    +     />
-      )
-    }
-    ```
+   +     <Translation
+   +       t={t}
+   +       i18nKey="authentication:loggedInChangePassword"
+   +       elements={{
+   +         '0': ({ children }) => <Link href={`${admin}/account`} children={children} />,
+   +       }}
+   +     />
+     )
+   }
+   ```
 
 ## Endpoints
 
 1. All endpoint handlers have changed. The args no longer include `res`, and `next`, and the return type now expects a valid HTTP [`Response`](https://developer.mozilla.org/en-US/docs/Web/API/Response) instead of `res.json`, `res.send`, etc.:
 
-    ```diff
-    // collections/Posts.ts
-    import type { CollectionConfig } from 'payload'
+   ```diff
+   // collections/Posts.ts
+   import type { CollectionConfig } from 'payload'
 
-    export const PostsCollection: CollectionConfig = {
-      slug: 'posts',
-      endpoints: [
-    -   {
-    -     path: '/whoami/:parameter',
-    -     method: 'post',
-    -     handler: (req, res) => {
-    -       res.json({
-    -         parameter: req.params.parameter,
-    -         name: req.body.name,
-    -         age: req.body.age,
-    -       })
-    -     }
-    -   },
-    +   {
-    +     path: '/whoami/:parameter',
-    +     method: 'post',
-    +     handler: (req) => {
-    +       return Response.json({
-    +         parameter: req.routeParams.parameter,
-    +         // ^^ `params` is now `routeParams`
-    +         name: req.data.name,
-    +         age: req.data.age,
-    +       })
-    +     }
-    +   }
-      ]
-    }
-    ```
+   export const PostsCollection: CollectionConfig = {
+     slug: 'posts',
+     endpoints: [
+   -   {
+   -     path: '/whoami/:parameter',
+   -     method: 'post',
+   -     handler: (req, res) => {
+   -       res.json({
+   -         parameter: req.params.parameter,
+   -         name: req.body.name,
+   -         age: req.body.age,
+   -       })
+   -     }
+   -   },
+   +   {
+   +     path: '/whoami/:parameter',
+   +     method: 'post',
+   +     handler: (req) => {
+   +       return Response.json({
+   +         parameter: req.routeParams.parameter,
+   +         // ^^ `params` is now `routeParams`
+   +         name: req.data.name,
+   +         age: req.data.age,
+   +       })
+   +     }
+   +   }
+     ]
+   }
+   ```
 
 1. Endpoint handlers no longer resolves `data`, `locale`, or `fallbackLocale` for you on the request. Instead, you must resolve them yourself or use the Payload-provided utilities:
 
-    ```diff
-    // collections/Posts.ts
-    import type { CollectionConfig } from 'payload'
-    + import { addDataAndFileToRequest } from '@payloadcms/next/utilities'
-    + import { addLocalesToRequest } from '@payloadcms/next/utilities'
+   ```diff
+   // collections/Posts.ts
+   import type { CollectionConfig } from 'payload'
+   + import { addDataAndFileToRequest } from '@payloadcms/next/utilities'
+   + import { addLocalesToRequest } from '@payloadcms/next/utilities'
 
-    export const PostsCollection: CollectionConfig = {
-      slug: 'posts',
-      endpoints: [
-    -   {
-    -     path: '/whoami/:parameter',
-    -     method: 'post',
-    -     handler: async (req) => {
-    -       return Response.json({
-    -         name: req.data.name, // data will be undefined
-    -       })
-    -     }
-    -   },
-    +   {
-    +     path: '/whoami/:parameter',
-    +     method: 'post',
-    +     handler: async (req) => {
-    +       // mutates req, must be awaited
-    +       await addDataAndFileToRequest(req)
-    +       await addLocalesToRequest(req)
-    +
-    +       return Response.json({
-    +         name: req.data.name, // data is now available
-    +    	    fallbackLocale: req.fallbackLocale,
-    +         locale: req.locale,
-    +       })
-    +     }
-    +   }
-      ]
-    }
-    ```
+   export const PostsCollection: CollectionConfig = {
+     slug: 'posts',
+     endpoints: [
+   -   {
+   -     path: '/whoami/:parameter',
+   -     method: 'post',
+   -     handler: async (req) => {
+   -       return Response.json({
+   -         name: req.data.name, // data will be undefined
+   -       })
+   -     }
+   -   },
+   +   {
+   +     path: '/whoami/:parameter',
+   +     method: 'post',
+   +     handler: async (req) => {
+   +       // mutates req, must be awaited
+   +       await addDataAndFileToRequest(req)
+   +       await addLocalesToRequest(req)
+   +
+   +       return Response.json({
+   +         name: req.data.name, // data is now available
+   +    	    fallbackLocale: req.fallbackLocale,
+   +         locale: req.locale,
+   +       })
+   +     }
+   +   }
+     ]
+   }
+   ```
 
 ## React Hooks
 
 1. The `useTitle` hook has been consolidated into the `useDocumentInfo` hook. Instead, you can get title directly from document info context:
 
-    ```diff
-    'use client'
-    - import { useTitle } from 'payload'
-    + import { useDocumentInfo } from '@payloadcms/ui'
+   ```diff
+   'use client'
+   - import { useTitle } from 'payload'
+   + import { useDocumentInfo } from '@payloadcms/ui'
 
-    export const MyComponent = () => {
-    - const title = useTitle()
-    + const { title } = useDocumentInfo()
+   export const MyComponent = () => {
+   - const title = useTitle()
+   + const { title } = useDocumentInfo()
 
-      // ...
-    }
-    ```
+     // ...
+   }
+   ```
 
 1. The `useDocumentInfo` hook no longer returns `collection` or `global`. Instead, various properties of the config are passed, like `collectionSlug` and `globalSlug`. You can use these to access a client-side config, if needed, through the `useConfig` hook (see next bullet).
 
-    ```diff
-    'use client'
-    import { useDocumentInfo } from '@payloadcms/ui'
+   ```diff
+   'use client'
+   import { useDocumentInfo } from '@payloadcms/ui'
 
-    export const MyComponent = () => {
-      const {
-    -   collection,
-    -   global,
-    +   collectionSlug,
-    +   globalSlug
-      } = useDocumentInfo()
+   export const MyComponent = () => {
+     const {
+   -   collection,
+   -   global,
+   +   collectionSlug,
+   +   globalSlug
+     } = useDocumentInfo()
 
-      // ...
-    }
-    ```
+     // ...
+   }
+   ```
 
 1. The `useConfig` hook now returns a `ClientConfig` and not a `SanitizedConfig`. This is because the config itself is not serializable and so it is not able to be thread through to the client. This means that all non-serializable props have been omitted from the Client Config, such as `db`, `bundler`, etc.
 
-    ```diff
-    'use client'
-    - import { useConfig } from 'payload'
-    + import { useConfig } from '@payloadcms/ui'
+   ```diff
+   'use client'
+   - import { useConfig } from 'payload'
+   + import { useConfig } from '@payloadcms/ui'
 
-    export const MyComponent = () => {
-    - const config = useConfig() // used to be a 'SanitizedConfig'
-    + const { config } = useConfig() // now is a 'ClientConfig'
+   export const MyComponent = () => {
+   - const config = useConfig() // used to be a 'SanitizedConfig'
+   + const { config } = useConfig() // now is a 'ClientConfig'
 
-      // ...
-    }
-    ```
+     // ...
+   }
+   ```
 
-    For more details, see the [Documentation](https://payloadcms.com/docs/admin/custom-components/overview#accessing-the-payload-config).
+   For more details, see the [Documentation](https://payloadcms.com/docs/admin/custom-components/overview#accessing-the-payload-config).
 
 1. The `useCollapsible` hook has had slight changes to its property names. `collapsed` is now `isCollapsed` and `withinCollapsible` is now `isWithinCollapsible`.
 
-    ```diff
-    'use client'
-    import { useCollapsible } from '@payloadcms/ui'
+   ```diff
+   'use client'
+   import { useCollapsible } from '@payloadcms/ui'
 
-    export const MyComponent = () => {
-    - const { collapsed, withinCollapsible } = useCollapsible()
-    + const { isCollapsed, isWithinCollapsible } = useCollapsible()
-    }
-    ```
+   export const MyComponent = () => {
+   - const { collapsed, withinCollapsible } = useCollapsible()
+   + const { isCollapsed, isWithinCollapsible } = useCollapsible()
+   }
+   ```
 
 1. The `useTranslation` hook no longer takes any options, any translations using shorthand accessors will need to use the entire `group:key`
 
-    ```diff
-    'use client'
-    - import { useTranslation } from 'payload'
-    + import { useTranslation } from '@payloadcms/ui'
+   ```diff
+   'use client'
+   - import { useTranslation } from 'payload'
+   + import { useTranslation } from '@payloadcms/ui'
 
-    export const MyComponent = () => {
-    - const { i18n, t } = useTranslation('general')
-    + const { i18n, t } = useTranslation()
+   export const MyComponent = () => {
+   - const { i18n, t } = useTranslation('general')
+   + const { i18n, t } = useTranslation()
 
-    - return <p>{t('cancel')}</p>
-    + return <p>{t('general:cancel')}</p>
-    }
-    ```
+   - return <p>{t('cancel')}</p>
+   + return <p>{t('general:cancel')}</p>
+   }
+   ```
 
 ## Types
 
 1. The `Fields` type was renamed to `FormState` for improved semantics. If you were previously importing this type in your own application, simply change the import name:
 
-    ```diff
-    - import type { Fields } from 'payload'
-    + import type { FormState } from 'payload'
-    ```
+   ```diff
+   - import type { Fields } from 'payload'
+   + import type { FormState } from 'payload'
+   ```
 
 1. The `BlockField` and related types have been renamed to `BlocksField` for semantic accuracy.
 
-    ```diff
-    - import type { BlockField, BlockFieldProps } from 'payload'
-    + import type { BlocksField, BlocksFieldProps } from 'payload'
-    ```
+   ```diff
+   - import type { BlockField, BlockFieldProps } from 'payload'
+   + import type { BlocksField, BlocksFieldProps } from 'payload'
+   ```
 
 ## Email Adapters
 
@@ -20384,22 +15591,22 @@ export default buildConfig({
 
 ## Plugins
 
-1. *All* plugins have been standardized to use _named exports_ (as opposed to default exports). Most also have a suffix of `Plugin` to make it clear what is being imported.
+1. _All_ plugins have been standardized to use _named exports_ (as opposed to default exports). Most also have a suffix of `Plugin` to make it clear what is being imported.
 
-    ```diff
-    - import seo from '@payloadcms/plugin-seo'
-    + import { seoPlugin } from '@payloadcms/plugin-seo'
+   ```diff
+   - import seo from '@payloadcms/plugin-seo'
+   + import { seoPlugin } from '@payloadcms/plugin-seo'
 
-    - import stripePlugin from '@payloadcms/plugin-stripe'
-    + import { stripePlugin } from '@payloadcms/plugin-stripe'
+   - import stripePlugin from '@payloadcms/plugin-stripe'
+   + import { stripePlugin } from '@payloadcms/plugin-stripe'
 
-    // and so on for every plugin
-    ```
+   // and so on for every plugin
+   ```
 
 ## `@payloadcms/plugin-cloud-storage`
 
 - The adapters that are exported from `@payloadcms/plugin-cloud-storage` (ie. `@payloadcms/plugin-cloud-storage/s3`) package have been removed.
-- New *standalone* packages have been created for each of the existing adapters. Please see the documentation for the one that you use.
+- New _standalone_ packages have been created for each of the existing adapters. Please see the documentation for the one that you use.
 - `@payloadcms/plugin-cloud-storage` is still fully supported but should only to be used if you are providing a custom adapter that does not have a dedicated package.
 - If you have created a custom adapter, the type must now provide a `name` property.
 
@@ -20460,63 +15667,63 @@ plugins: [
 
 1. Field overrides for form and form submission collections now accept a function with a `defaultFields` inside the args instead of an array of config
 
-    ```diff
-    // payload.config.ts
-    import { buildConfig } from 'payload'
-    import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
+   ```diff
+   // payload.config.ts
+   import { buildConfig } from 'payload'
+   import { formBuilderPlugin } from '@payloadcms/plugin-form-builder'
 
-    const config = buildConfig({
-      // ...
-      plugins: formBuilderPlugin({
-    -   fields: [
-    -     {
-    -       name: 'custom',
-    -       type: 'text',
-    -     }
-    -   ],
-    +   fields: ({ defaultFields }) => {
-    +     return [
-    +       ...defaultFields,
-    +       {
-    +         name: 'custom',
-    +         type: 'text',
-    +       },
-    +     ]
-    +   }
-      })
-    })
-    ```
+   const config = buildConfig({
+     // ...
+     plugins: formBuilderPlugin({
+   -   fields: [
+   -     {
+   -       name: 'custom',
+   -       type: 'text',
+   -     }
+   -   ],
+   +   fields: ({ defaultFields }) => {
+   +     return [
+   +       ...defaultFields,
+   +       {
+   +         name: 'custom',
+   +         type: 'text',
+   +       },
+   +     ]
+   +   }
+     })
+   })
+   ```
 
 ## `@payloadcms/plugin-redirects`
 
 1. Field overrides for the redirects collection now accepts a function with a `defaultFields` inside the args instead of an array of config
 
-    ```diff
-    // payload.config.ts
-    import { buildConfig } from 'payload'
-    import { redirectsPlugin } from '@payloadcms/plugin-redirects'
+   ```diff
+   // payload.config.ts
+   import { buildConfig } from 'payload'
+   import { redirectsPlugin } from '@payloadcms/plugin-redirects'
 
-    const config = buildConfig({
-      // ...
-      plugins: redirectsPlugin({
-    -   fields: [
-    -     {
-    -       name: 'custom',
-    -       type: 'text',
-    -     }
-    -   ],
-    +   fields: ({ defaultFields }) => {
-    +     return [
-    +       ...defaultFields,
-    +       {
-    +         name: 'custom',
-    +         type: 'text',
-    +       },
-    +     ]
-    +   }
-      })
-    })
-    ```
+   const config = buildConfig({
+     // ...
+     plugins: redirectsPlugin({
+   -   fields: [
+   -     {
+   -       name: 'custom',
+   -       type: 'text',
+   -     }
+   -   ],
+   +   fields: ({ defaultFields }) => {
+   +     return [
+   +       ...defaultFields,
+   +       {
+   +         name: 'custom',
+   +         type: 'text',
+   +       },
+   +     ]
+   +   }
+     })
+   })
+   ```
 
 ## `@payloadcms/richtext-lexical`
 
@@ -20543,6 +15750,7 @@ Payload reserves certain field names for internal use. Using any of the followin
 ### Auth-Related Reserved Names
 
 These are restricted if your collection uses `auth: true` and does not have `disableAuthStrategy: true`:
+
 - `salt`
 - `hash`
 - `apiKey` (when `auth.useAPIKey: true` is enabled)
@@ -20580,7 +15788,7 @@ Reference this [community-made site](https://payload-releases-filter.vercel.app/
 Then go through each one of the breaking changes and make the adjustments. You can optionally reference the [blank template](https://github.com/payloadcms/payload/tree/main/templates/blank) for how things should end up.
 ````
 
-## File: plugins/build-your-own.mdx
+## File: plugins_build-your-own.mdx
 ````
 ---
 title: Building Your Own Plugin
@@ -20593,8 +15801,8 @@ keywords: plugins, template, config, configuration, extensions, custom, document
 Building your own [Payload Plugin](./overview) is easy, and if you're already familiar with Payload then you'll have everything you need to get started. You can either start from scratch or use the [Plugin Template](#plugin-template) to get up and running quickly.
 
 <Banner type="success">
-  To use the template, run `npx create-payload-app@latest --template plugin` directly in
-  your terminal.
+  To use the template, run `npx create-payload-app@latest --template plugin`
+  directly in your terminal.
 </Banner>
 
 Our plugin template includes everything you need to build a full life-cycle plugin:
@@ -20746,7 +15954,6 @@ export const seed = async (payload: Payload): Promise<void> => {
 
 Now that we have our environment setup and dev project ready to go - it's time to build the plugin!
 
-
 ```
 import type { Config } from 'payload'
 
@@ -20794,7 +16001,6 @@ export const samplePlugin =
 
 To reiterate, the essence of a [Payload Plugin](./overview) is simply to extend the [Payload Config](../configuration/overview) - and that is exactly what we are doing in this file.
 
-
 ### Spread syntax
 
 [Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) (or the spread operator) is a feature in JavaScript that uses the dot notation **(...)** to spread elements from arrays, strings, or objects into various contexts.
@@ -20828,6 +16034,7 @@ config.hooks = {
 ```
 
 ### Extending functions
+
 Function properties cannot use spread syntax. The way to extend them is to execute the existing function if it exists and then run your additional functionality.
 
 Here is an example extending the `onInit` property:
@@ -20883,7 +16090,7 @@ Apply the tag **payload-plugin** to your GitHub repository. This will boost the 
 With the [Semantic Versioning](https://semver.org/) (SemVer) system you release version numbers that reflect the nature of changes (major, minor, patch). Ensure all major versions reference their Payload compatibility.
 ````
 
-## File: plugins/form-builder.mdx
+## File: plugins_form-builder.mdx
 ````
 ---
 title: Form Builder Plugin
@@ -20903,9 +16110,10 @@ Forms can be as simple or complex as you need, from a basic contact form, to a m
 
 <Banner type="info">
   This plugin is completely open-source and the [source code can be found
-  here](https://github.com/payloadcms/payload/tree/main/packages/plugin-form-builder). If you need
-  help, check out our [Community Help](https://payloadcms.com/community-help). If you think you've
-  found a bug, please [open a new
+  here](https://github.com/payloadcms/payload/tree/main/packages/plugin-form-builder).
+  If you need help, check out our [Community
+  Help](https://payloadcms.com/community-help). If you think you've found a bug,
+  please [open a new
   issue](https://github.com/payloadcms/payload/issues/new?assignees=&labels=plugin%3A%20form-builder&template=bug_report.md&title=plugin-form-builder%3A)
   with as much detail as possible.
 </Banner>
@@ -21011,10 +16219,13 @@ For full types with `beforeChangeParams`, you can import the types from the plug
 ```ts
 import type { BeforeEmail } from '@payloadcms/plugin-form-builder'
 // Your generated FormSubmission type
-import type {FormSubmission} from '@payload-types'
+import type { FormSubmission } from '@payload-types'
 
 // Pass it through and 'data' or 'originalDoc' will now be typed
-const beforeEmail: BeforeEmail<FormSubmission> = (emailsToSend, beforeChangeParams) => {
+const beforeEmail: BeforeEmail<FormSubmission> = (
+  emailsToSend,
+  beforeChangeParams,
+) => {
   // modify the emails in any way before they are sent
   return emails.map((email) => ({
     ...email,
@@ -21042,7 +16253,11 @@ Override anything on the `forms` collection by sending a [Payload Collection Con
 Note that the `fields` property is a function that receives the default fields and returns an array of fields. This is because the `fields` property is a special case that is merged with the default fields, rather than replacing them. This allows you to map over default fields and modify them as needed.
 
 <Banner type="warning">
-Good to know: The form collection is publicly available to read by default. The emails field is locked for authenticated users only. If you have any frontend users you should override the access permissions for both the collection and the emails field to make sure you don't leak out any private emails.
+  Good to know: The form collection is publicly available to read by default.
+  The emails field is locked for authenticated users only. If you have any
+  frontend users you should override the access permissions for both the
+  collection and the emails field to make sure you don't leak out any private
+  emails.
 </Banner>
 
 ```ts
@@ -21074,10 +16289,11 @@ Override anything on the `form-submissions` collection by sending a [Payload Col
 
 <Banner type="warning">
   By default, this plugin relies on [Payload access
-  control](https://payloadcms.com/docs/access-control/collections) to restrict the `update` and
-  `read` operations on the `form-submissions` collection. This is because _anyone_ should be able to
-  create a form submission, even from a public-facing website, but _no one_ should be able to update
-  a submission once it has been created, or read a submission unless they have permission. You can
+  control](https://payloadcms.com/docs/access-control/collections) to restrict
+  the `update` and `read` operations on the `form-submissions` collection. This
+  is because _anyone_ should be able to create a form submission, even from a
+  public-facing website, but _no one_ should be able to update a submission once
+  it has been created, or read a submission unless they have permission. You can
   override this behavior or any other property as needed.
 </Banner>
 
@@ -21119,7 +16335,9 @@ formBuilderPlugin({
   // ...
   handlePayment: async ({ form, submissionData }) => {
     // first calculate the price
-    const paymentField = form.fields?.find((field) => field.blockType === 'payment')
+    const paymentField = form.fields?.find(
+      (field) => field.blockType === 'payment',
+    )
     const price = getPaymentTotal({
       basePrice: paymentField.basePrice,
       priceConditions: paymentField.priceConditions,
@@ -21135,9 +16353,9 @@ formBuilderPlugin({
 Each field represents a form input. To override default settings pass either a boolean value or a partial [Payload Block](https://payloadcms.com/docs/fields/blocks) _keyed to the block's slug_. See [Field Overrides](#field-overrides) for more details on how to do this.
 
 <Banner type="info">
-  **Note:**
-  "Fields" here is in reference to the _fields to build forms with_, not to be confused with the _fields
-  of a collection_ which are set via `formOverrides.fields`.
+  **Note:** "Fields" here is in reference to the _fields to build forms with_,
+  not to be confused with the _fields of a collection_ which are set via
+  `formOverrides.fields`.
 </Banner>
 
 ### Text
@@ -21299,7 +16517,7 @@ formBuilderPlugin({
 
 ## Email
 
-This plugin relies on the [email configuration](../email/overview) defined in your payload configuration. It will read from your config and attempt to send your emails using the credentials provided.
+This plugin relies on the [email configuration](../email/overview) defined in your Payload configuration. It will read from your config and attempt to send your emails using the credentials provided.
 
 ### Email formatting
 
@@ -21345,7 +16563,6 @@ Below are some common troubleshooting tips. To help other developers, please con
 
 ![screenshot 1](https://github.com/payloadcms/plugin-form-builder/blob/main/images/screenshot-1.jpg?raw=true)
 
-
 ![screenshot 2](https://github.com/payloadcms/plugin-form-builder/blob/main/images/screenshot-2.jpg?raw=true)
 
 ![screenshot 3](https://github.com/payloadcms/plugin-form-builder/blob/main/images/screenshot-3.jpg?raw=true)
@@ -21357,7 +16574,7 @@ Below are some common troubleshooting tips. To help other developers, please con
 ![screenshot 6](https://github.com/payloadcms/plugin-form-builder/blob/main/images/screenshot-6.jpg?raw=true)
 ````
 
-## File: plugins/multi-tenant.mdx
+## File: plugins_multi-tenant.mdx
 ````
 ---
 title: Multi-Tenant Plugin
@@ -21371,12 +16588,12 @@ keywords: plugins, multi-tenant, multi-tenancy, plugin, payload, cms, seo, index
 
 This plugin sets up multi-tenancy for your application from within your [Admin Panel](../admin/overview). It does so by adding a `tenant` field to all specified collections. Your front-end application can then query data by tenant. You must add the Tenants collection so you control what fields are available for each tenant.
 
-
 <Banner type="info">
   This plugin is completely open-source and the [source code can be found
-  here](https://github.com/payloadcms/payload/tree/main/packages/plugin-multi-tenant). If you need
-  help, check out our [Community Help](https://payloadcms.com/community-help). If you think you've
-  found a bug, please [open a new
+  here](https://github.com/payloadcms/payload/tree/main/packages/plugin-multi-tenant).
+  If you need help, check out our [Community
+  Help](https://payloadcms.com/community-help). If you think you've found a bug,
+  please [open a new
   issue](https://github.com/payloadcms/payload/issues/new?assignees=&labels=plugin%3A%multi-tenant&template=bug_report.md&title=plugin-multi-tenant%3A)
   with as much detail as possible.
 </Banner>
@@ -21393,10 +16610,11 @@ This plugin sets up multi-tenancy for your application from within your [Admin P
 <Banner type="error">
   **Warning**
 
-  By default this plugin cleans up documents when a tenant is deleted. You should ensure you have
-  strong access control on your tenants collection to prevent deletions by unauthorized users.
+By default this plugin cleans up documents when a tenant is deleted. You should ensure you have
+strong access control on your tenants collection to prevent deletions by unauthorized users.
 
-  You can disabled this behavior by setting `cleanupAfterTenantDelete` to `false` in the plugin options.
+You can disabled this behavior by setting `cleanupAfterTenantDelete` to `false` in the plugin options.
+
 </Banner>
 
 ## Installation
@@ -21522,7 +16740,7 @@ type MultiTenantPluginConfig<ConfigTypes = unknown> = {
   /**
    * Customize tenant selector label
    *
-   * Either a string or an object where the keys are locales and the values are the string labels
+   * Either a string or an object where the keys are i18n codes and the values are the string labels
    */
   tenantSelectorLabel?:
     | Partial<{
@@ -21614,7 +16832,6 @@ export default config
 
 The plugin scaffolds out everything you will need to separate data by tenant. You can use the `tenant` field to filter data from enabled collections in your front-end application.
 
-
 In your frontend you can query and constrain data by tenant with the following:
 
 ```tsx
@@ -21693,21 +16910,23 @@ type ContextType = {
   setPreventRefreshOnChange: React.Dispatch<React.SetStateAction<boolean>>
   /**
    * Sets the selected tenant ID
-   * 
+   *
    * @param args.id - The ID of the tenant to select
    * @param args.refresh - Whether to refresh the page after changing the tenant
    */
-  setTenant: (args: { id: number | string | undefined; refresh?: boolean }) => void
+  setTenant: (args: {
+    id: number | string | undefined
+    refresh?: boolean
+  }) => void
 }
 ```
-
 
 ## Examples
 
 The [Examples Directory](https://github.com/payloadcms/payload/tree/main/examples) also contains an official [Multi-Tenant](https://github.com/payloadcms/payload/tree/main/examples/multi-tenant) example.
 ````
 
-## File: plugins/nested-docs.mdx
+## File: plugins_nested-docs.mdx
 ````
 ---
 title: Nested Docs Plugin
@@ -21737,9 +16956,10 @@ but different parents.
 
 <Banner type="info">
   This plugin is completely open-source and the [source code can be found
-  here](https://github.com/payloadcms/payload/tree/main/packages/plugin-nested-docs). If you need
-  help, check out our [Community Help](https://payloadcms.com/community-help). If you think you've
-  found a bug, please [open a new
+  here](https://github.com/payloadcms/payload/tree/main/packages/plugin-nested-docs).
+  If you need help, check out our [Community
+  Help](https://payloadcms.com/community-help). If you think you've found a bug,
+  please [open a new
   issue](https://github.com/payloadcms/payload/issues/new?assignees=&labels=plugin%3A%20nested-docs&template=bug_report.md&title=plugin-nested-docs%3A)
   with as much detail as possible.
 </Banner>
@@ -21790,7 +17010,8 @@ const config = buildConfig({
     nestedDocsPlugin({
       collections: ['pages'],
       generateLabel: (_, doc) => doc.title,
-      generateURL: (docs) => docs.reduce((url, doc) => `${url}/${doc.slug}`, ''),
+      generateURL: (docs) =>
+        docs.reduce((url, doc) => `${url}/${doc.slug}`, ''),
     }),
   ],
 })
@@ -21876,9 +17097,10 @@ own `breadcrumbs` field to each collection manually. Set this property to the `n
 <Banner type="info">
   **Note:**
 
-  If you opt out of automatically being provided a `parent` or `breadcrumbs` field, you need to make
-  sure that both fields are placed at the top-level of your document. They cannot exist within any
-  nested data structures like a `group`, `array`, or `blocks`.
+If you opt out of automatically being provided a `parent` or `breadcrumbs` field, you need to make
+sure that both fields are placed at the top-level of your document. They cannot exist within any
+nested data structures like a `group`, `array`, or `blocks`.
+
 </Banner>
 
 ## Overrides
@@ -21928,8 +17150,9 @@ const examplePageConfig: CollectionConfig = {
 <Banner type="warning">
   **Note:**
 
-  If overriding the `name` of either `breadcrumbs` or `parent` fields, you must specify the
-  `breadcrumbsFieldSlug` or `parentFieldSlug` respectively.
+If overriding the `name` of either `breadcrumbs` or `parent` fields, you must specify the
+`breadcrumbsFieldSlug` or `parentFieldSlug` respectively.
+
 </Banner>
 
 ## Localization
@@ -21943,7 +17166,11 @@ the [Localization](https://payloadcms.com/docs/configuration/localization) docs.
 All types can be directly imported:
 
 ```ts
-import { PluginConfig, GenerateURL, GenerateLabel } from '@payloadcms/plugin-nested-docs/types'
+import {
+  PluginConfig,
+  GenerateURL,
+  GenerateLabel,
+} from '@payloadcms/plugin-nested-docs/types'
 ```
 
 ## Examples
@@ -21951,7 +17178,7 @@ import { PluginConfig, GenerateURL, GenerateLabel } from '@payloadcms/plugin-nes
 The [Templates Directory](https://github.com/payloadcms/payload/tree/main/templates) also contains an official [Website Template](https://github.com/payloadcms/payload/tree/main/templates/website) and [E-commerce Template](https://github.com/payloadcms/payload/tree/main/templates/ecommerce), both of which use this plugin.
 ````
 
-## File: plugins/overview.mdx
+## File: plugins_overview.mdx
 ````
 ---
 title: Plugins
@@ -21983,9 +17210,9 @@ const config = buildConfig({
 Writing Plugins is no more complex than writing regular JavaScript. If you know the basic concept of [callback functions](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function) or how [spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) works, and are up to speed with Payload concepts, then writing a plugin will be a breeze.
 
 <Banner type="success">
-  Because we rely on a simple config-based structure, Payload Plugins simply take in an
-  existing config and returns a _modified_ config with new fields, hooks, collections, admin views, or
-  anything else you can think of.
+  Because we rely on a simple config-based structure, Payload Plugins simply
+  take in an existing config and returns a _modified_ config with new fields,
+  hooks, collections, admin views, or anything else you can think of.
 </Banner>
 
 **Example use cases:**
@@ -22016,7 +17243,9 @@ You can also [build your own plugin](./build-your-own) to easily extend Payload'
 Plugins are changing every day, so be sure to check back often to see what new plugins may have been added. If you have a specific plugin you would like to see, please feel free to start a new [Discussion](https://github.com/payloadcms/payload/discussions).
 
 <Banner type="warning">
-  For a complete list of Official Plugins, visit the [Packages Directory](https://github.com/payloadcms/payload/tree/main/packages) of the [Payload Monorepo](https://github.com/payloadcms/payload).
+  For a complete list of Official Plugins, visit the [Packages
+  Directory](https://github.com/payloadcms/payload/tree/main/packages) of the
+  [Payload Monorepo](https://github.com/payloadcms/payload).
 </Banner>
 
 ## Community Plugins
@@ -22026,7 +17255,9 @@ Community Plugins are those that are maintained entirely by outside contributors
 Some plugins have become so widely used that they are adopted as an [Official Plugin](#official-plugins), such as the [Lexical Plugin](https://github.com/AlessioGr/payload-plugin-lexical). If you have a plugin that you think should be an Official Plugin, please feel free to start a new [Discussion](https://github.com/payloadcms/payload/discussions).
 
 <Banner type="warning">
-  For maintainers building plugins for others to use, please add the `payload-plugin` topic on [GitHub](https://github.com/topics/payload-plugin) to help others find it.
+  For maintainers building plugins for others to use, please add the
+  `payload-plugin` topic on [GitHub](https://github.com/topics/payload-plugin)
+  to help others find it.
 </Banner>
 
 ## Example
@@ -22040,15 +17271,15 @@ import { addLastModified } from './addLastModified.ts'
 const config = buildConfig({
   // ...
   // highlight-start
-  plugins: [
-    addLastModified,
-  ],
+  plugins: [addLastModified],
   // highlight-end
 })
 ```
 
 <Banner type="warning">
-  Payload Plugins are executed _after_ the incoming config is validated, but before it is sanitized and has had default options merged in. After all plugins are executed, the full config with all plugins will be sanitized.
+  Payload Plugins are executed _after_ the incoming config is validated, but
+  before it is sanitized and has had default options merged in. After all
+  plugins are executed, the full config with all plugins will be sanitized.
 </Banner>
 
 Here is an example what the `addLastModified` plugin from above might look like. It adds a `lastModifiedBy` field to all Payload collections. For full details, see [how to build your own plugin](./build-your-own).
@@ -22060,8 +17291,8 @@ export const addLastModified: Plugin = (incomingConfig: Config): Config => {
   // Find all incoming auth-enabled collections
   // so we can create a lastModifiedBy relationship field
   // to all auth collections
-  const authEnabledCollections = incomingConfig.collections.filter((collection) =>
-    Boolean(collection.auth),
+  const authEnabledCollections = incomingConfig.collections.filter(
+    (collection) => Boolean(collection.auth),
   )
 
   // Spread the existing config
@@ -22102,12 +17333,12 @@ export const addLastModified: Plugin = (incomingConfig: Config): Config => {
 ```
 
 <Banner type="success">
-  **Reminder:**
-  See [how to build your own plugin](./build-your-own) for a more in-depth explication on how create your own Payload Plugin.
+  **Reminder:** See [how to build your own plugin](./build-your-own) for a more
+  in-depth explication on how create your own Payload Plugin.
 </Banner>
 ````
 
-## File: plugins/redirects.mdx
+## File: plugins_redirects.mdx
 ````
 ---
 title: Redirects Plugin
@@ -22125,9 +17356,10 @@ For example, if you have a page at `/about` and you want to change it to `/about
 
 <Banner type="info">
   This plugin is completely open-source and the [source code can be found
-  here](https://github.com/payloadcms/payload/tree/main/packages/plugin-redirects). If you need
-  help, check out our [Community Help](https://payloadcms.com/community-help). If you think you've
-  found a bug, please [open a new
+  here](https://github.com/payloadcms/payload/tree/main/packages/plugin-redirects).
+  If you need help, check out our [Community
+  Help](https://payloadcms.com/community-help). If you think you've found a bug,
+  please [open a new
   issue](https://github.com/payloadcms/payload/issues/new?assignees=&labels=plugin%3A%redirects&template=bug_report.md&title=plugin-redirects%3A)
   with as much detail as possible.
 </Banner>
@@ -22173,12 +17405,12 @@ export default config
 
 ### Options
 
-| Option        | Type       | Description                                                                                     |
-| ------------- | ---------- | ----------------------------------------------------------------------------------------------- |
-| `collections` | `string[]` | An array of collection slugs to populate in the `to` field of each redirect.                    |
-| `overrides`   | `object`   | A partial collection config that allows you to override anything on the `redirects` collection. |
-| `redirectTypes`   | `string[]`   | Provide an array of redirects if you want to provide options for the type of redirects to be supported. |
-| `redirectTypeFieldOverride`   | `Field`   | A partial Field config that allows you to override the Redirect Type field if enabled above. |
+| Option                      | Type       | Description                                                                                             |
+| --------------------------- | ---------- | ------------------------------------------------------------------------------------------------------- |
+| `collections`               | `string[]` | An array of collection slugs to populate in the `to` field of each redirect.                            |
+| `overrides`                 | `object`   | A partial collection config that allows you to override anything on the `redirects` collection.         |
+| `redirectTypes`             | `string[]` | Provide an array of redirects if you want to provide options for the type of redirects to be supported. |
+| `redirectTypeFieldOverride` | `Field`    | A partial Field config that allows you to override the Redirect Type field if enabled above.            |
 
 Note that the fields in overrides take a function that receives the default fields and returns an array of fields. This allows you to add fields to the collection.
 
@@ -22216,7 +17448,7 @@ import { PluginConfig } from '@payloadcms/plugin-redirects/types'
 The [Templates Directory](https://github.com/payloadcms/payload/tree/main/templates) also contains an official [Website Template](https://github.com/payloadcms/payload/tree/main/templates/website) and [E-commerce Template](https://github.com/payloadcms/payload/tree/main/templates/ecommerce), both of which use this plugin.
 ````
 
-## File: plugins/search.mdx
+## File: plugins_search.mdx
 ````
 ---
 title: Search Plugin
@@ -22238,9 +17470,10 @@ This plugin is a great way to implement a fast, immersive search experience such
 
 <Banner type="info">
   This plugin is completely open-source and the [source code can be found
-  here](https://github.com/payloadcms/payload/tree/main/packages/plugin-search). If you need help,
-  check out our [Community Help](https://payloadcms.com/community-help). If you think you've found a
-  bug, please [open a new
+  here](https://github.com/payloadcms/payload/tree/main/packages/plugin-search).
+  If you need help, check out our [Community
+  Help](https://payloadcms.com/community-help). If you think you've found a bug,
+  please [open a new
   issue](https://github.com/payloadcms/payload/issues/new?assignees=&labels=plugin%3A%20search&template=bug_report.md&title=plugin-search%3A)
   with as much detail as possible.
 </Banner>
@@ -22397,7 +17630,7 @@ import type { SearchConfig, BeforeSync } from '@payloadcms/plugin-search/types'
 ```
 ````
 
-## File: plugins/sentry.mdx
+## File: plugins_sentry.mdx
 ````
 ---
 title: Sentry Plugin
@@ -22416,7 +17649,8 @@ This plugin allows you to integrate [Sentry](https://sentry.io/) seamlessly with
 Sentry is a powerful error tracking and performance monitoring tool that helps developers identify, diagnose, and resolve issues in their applications.
 
 <Banner type="success">
-  Sentry does smart stuff with error data to make bugs easier to find and fix. - [sentry.io](https://sentry.io/)
+  Sentry does smart stuff with error data to make bugs easier to find and fix. -
+  [sentry.io](https://sentry.io/)
 </Banner>
 
 This multi-faceted software offers a range of features that will help you manage errors with greater ease and ultimately ensure your application is running smoothly:
@@ -22432,7 +17666,13 @@ This multi-faceted software offers a range of features that will help you manage
 - **Integrations**: Connects with various tools and services for enhanced workflow and issue management
 
 <Banner type="info">
-  This plugin is completely open-source and the [source code can be found here](https://github.com/payloadcms/payload/tree/main/packages/plugin-sentry). If you need help, check out our [Community Help](https://payloadcms.com/community-help). If you think you've found a bug, please [open a new issue](https://github.com/payloadcms/payload/issues/new?assignees=&labels=plugin%3A%20seo&template=bug_report.md&title=plugin-sentry%3A) with as much detail as possible.
+  This plugin is completely open-source and the [source code can be found
+  here](https://github.com/payloadcms/payload/tree/main/packages/plugin-sentry).
+  If you need help, check out our [Community
+  Help](https://payloadcms.com/community-help). If you think you've found a bug,
+  please [open a new
+  issue](https://github.com/payloadcms/payload/issues/new?assignees=&labels=plugin%3A%20seo&template=bug_report.md&title=plugin-sentry%3A)
+  with as much detail as possible.
 </Banner>
 
 ## Installation
@@ -22444,12 +17684,15 @@ Install the plugin using any JavaScript package manager like [pnpm](https://pnpm
 ```
 
 ## Sentry for Next.js setup
+
 This plugin requires to complete the [Sentry + Next.js setup](https://docs.sentry.io/platforms/javascript/guides/nextjs/) before.
 
 You can use either the [automatic setup](https://docs.sentry.io/platforms/javascript/guides/nextjs/#install) with the installation wizard:
+
 ```sh
 npx @sentry/wizard@latest -i nextjs
 ```
+
 Or the [Manual Setup](https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/)
 
 ## Basic Usage
@@ -22482,7 +17725,8 @@ export default config
   The `Sentry` instance
 
 <Banner type="warning">
-  Make sure to complete the [Sentry for Next.js Setup](#sentry-for-nextjs-setup) before.
+  Make sure to complete the [Sentry for Next.js Setup](#sentry-for-nextjs-setup)
+  before.
 </Banner>
 
 - `enabled`: boolean | optional
@@ -22542,7 +17786,7 @@ import { PluginOptions } from '@payloadcms/plugin-sentry'
 ```
 ````
 
-## File: plugins/seo.mdx
+## File: plugins_seo.mdx
 ````
 ---
 description: Manage SEO metadata from your Payload admin
@@ -22561,7 +17805,13 @@ As users are editing documents within the Admin Panel, they have the option to "
 To help you visualize what your page might look like in a search engine, a preview is rendered on the page just beneath the meta fields. This preview is updated in real-time as you edit your metadata. There are also visual indicators to help you write effective meta, such as a character counter for the title and description fields. You can even inject your own custom fields into the `meta` field group as your application requires, like `og:title` or `json-ld`. If you've ever used something like Yoast SEO, this plugin might feel very familiar.
 
 <Banner type="info">
-  This plugin is completely open-source and the [source code can be found here](https://github.com/payloadcms/payload/tree/main/packages/plugin-seo). If you need help, check out our [Community Help](https://payloadcms.com/community-help). If you think you've found a bug, please [open a new issue](https://github.com/payloadcms/payload/issues/new?assignees=&labels=plugin%3A%20seo&template=bug_report.md&title=plugin-seo%3A) with as much detail as possible.
+  This plugin is completely open-source and the [source code can be found
+  here](https://github.com/payloadcms/payload/tree/main/packages/plugin-seo). If
+  you need help, check out our [Community
+  Help](https://payloadcms.com/community-help). If you think you've found a bug,
+  please [open a new
+  issue](https://github.com/payloadcms/payload/issues/new?assignees=&labels=plugin%3A%20seo&template=bug_report.md&title=plugin-seo%3A)
+  with as much detail as possible.
 </Banner>
 
 ## Core features
@@ -22642,8 +17892,8 @@ A function that takes in the default fields via an object and expects an array o
       {
         name: 'customField',
         type: 'text',
-      }
-    ]
+      },
+    ],
   })
 }
 ```
@@ -22657,7 +17907,10 @@ Set the `uploadsCollection` to your application's upload-enabled collection slug
 When the `tabbedUI` property is `true`, it appends an `SEO` tab onto your config using Payload's [Tabs Field](../fields/tabs). If your collection is not already tab-enabled, meaning the first field in your config is not of type `tabs`, then one will be created for you called `Content`. Defaults to `false`.
 
 <Banner type="info">
-  If you wish to continue to use top-level or sidebar fields with `tabbedUI`, you must not let the default `Content` tab get created for you (see the note above). Instead, you must define the first field of your config with type `tabs` and place all other fields adjacent to this one.
+  If you wish to continue to use top-level or sidebar fields with `tabbedUI`,
+  you must not let the default `Content` tab get created for you (see the note
+  above). Instead, you must define the first field of your config with type
+  `tabs` and place all other fields adjacent to this one.
 </Banner>
 
 ##### `generateTitle`
@@ -22676,25 +17929,25 @@ A function that allows you to return any meta title, including from the document
 
 All "generate" functions receive the following arguments:
 
-|   Argument   |   Description   |
-| --- | --- |
-|   **`collectionConfig`**   |   The configuration of the collection.   |
-|   **`collectionSlug`**   |   The slug of the collection.   |
-|   **`doc`**   |   The data of the current document.   |
-|   **`docPermissions`**   |   The permissions of the document.   |
-|   **`globalConfig`**   |   The configuration of the global.   |
-|   **`globalSlug`**   |   The slug of the global.   |
-|   **`hasPublishPermission`**   |   Whether the user has permission to publish the document.   |
-|   **`hasSavePermission`**   |   Whether the user has permission to save the document.   |
-|   **`id`**   |   The ID of the document.   |
-|   **`initialData`**   |   The initial data of the document.   |
-|   **`initialState`**   |   The initial state of the document.   |
-|   **`locale`**   |   The locale of the document.   |
-|   **`preferencesKey`**    |   The preferences key of the document.   |
-|   **`publishedDoc`**   |   The published document.   |
-|   **`req`**   |   The Payload request object containing `user`, `payload`, `i18n`, etc.   |
-|   **`title`**   |   The title of the document.   |
-|   **`versionsCount`**   |   The number of versions of the document.   |
+| Argument                   | Description                                                           |
+| -------------------------- | --------------------------------------------------------------------- |
+| **`collectionConfig`**     | The configuration of the collection.                                  |
+| **`collectionSlug`**       | The slug of the collection.                                           |
+| **`doc`**                  | The data of the current document.                                     |
+| **`docPermissions`**       | The permissions of the document.                                      |
+| **`globalConfig`**         | The configuration of the global.                                      |
+| **`globalSlug`**           | The slug of the global.                                               |
+| **`hasPublishPermission`** | Whether the user has permission to publish the document.              |
+| **`hasSavePermission`**    | Whether the user has permission to save the document.                 |
+| **`id`**                   | The ID of the document.                                               |
+| **`initialData`**          | The initial data of the document.                                     |
+| **`initialState`**         | The initial state of the document.                                    |
+| **`locale`**               | The locale of the document.                                           |
+| **`preferencesKey`**       | The preferences key of the document.                                  |
+| **`publishedDoc`**         | The published document.                                               |
+| **`req`**                  | The Payload request object containing `user`, `payload`, `i18n`, etc. |
+| **`title`**                | The title of the document.                                            |
+| **`versionsCount`**        | The number of versions of the document.                               |
 
 ##### `generateDescription`
 
@@ -22764,11 +18017,20 @@ Rename the meta group interface name that is generated for TypeScript and GraphQ
 There is the option to directly import any of the fields from the plugin so that you can include them anywhere as needed.
 
 <Banner type="info">
-  You will still need to configure the plugin in the Payload Config in order to configure the generation functions. Since these fields are imported and used directly, they don't have access to the plugin config so they may need additional arguments to work the same way.
+  You will still need to configure the plugin in the Payload Config in order to
+  configure the generation functions. Since these fields are imported and used
+  directly, they don't have access to the plugin config so they may need
+  additional arguments to work the same way.
 </Banner>
 
 ```ts
-import { MetaDescriptionField, MetaImageField, MetaTitleField, OverviewField, PreviewField } from '@payloadcms/plugin-seo/fields'
+import {
+  MetaDescriptionField,
+  MetaImageField,
+  MetaTitleField,
+  OverviewField,
+  PreviewField,
+} from '@payloadcms/plugin-seo/fields'
 
 // Used as fields
 MetaImageField({
@@ -22807,7 +18069,9 @@ OverviewField({
 ```
 
 <Banner type="info">
-  Tip: You can override the length rules by changing the minLength and maxLength props on the fields. In the case of the OverviewField you can use `titleOverrides` and `descriptionOverrides` to override the length rules.
+  Tip: You can override the length rules by changing the minLength and maxLength
+  props on the fields. In the case of the OverviewField you can use
+  `titleOverrides` and `descriptionOverrides` to override the length rules.
 </Banner>
 
 ## TypeScript
@@ -22826,9 +18090,9 @@ import type {
 You can then pass the collections from your generated Payload types into the generation types, for example:
 
 ```ts
-import type { Page } from './payload-types.ts';
+import type { Page } from './payload-types.ts'
 
-import type { GenerateTitle } from '@payloadcms/plugin-seo/types';
+import type { GenerateTitle } from '@payloadcms/plugin-seo/types'
 
 const generateTitle: GenerateTitle<Page> = async ({ doc, locale }) => {
   return `Website.com — ${doc?.title}`
@@ -22844,7 +18108,7 @@ The [Templates Directory](https://github.com/payloadcms/payload/tree/main/templa
 ![image](https://user-images.githubusercontent.com/70709113/163850633-f3da5f8e-2527-4688-bc79-17233307a883.png)
 ````
 
-## File: plugins/stripe.mdx
+## File: plugins_stripe.mdx
 ````
 ---
 title: Stripe Plugin
@@ -22866,9 +18130,10 @@ The beauty of this plugin is the entirety of your application's content and busi
 
 <Banner type="info">
   This plugin is completely open-source and the [source code can be found
-  here](https://github.com/payloadcms/payload/tree/main/packages/plugin-stripe). If you need help,
-  check out our [Community Help](https://payloadcms.com/community-help). If you think you've found a
-  bug, please [open a new
+  here](https://github.com/payloadcms/payload/tree/main/packages/plugin-stripe).
+  If you need help, check out our [Community
+  Help](https://payloadcms.com/community-help). If you think you've found a bug,
+  please [open a new
   issue](https://github.com/payloadcms/payload/issues/new?assignees=&labels=plugin%3A%20stripe&template=bug_report.md&title=plugin-stripe%3A)
   with as much detail as possible.
 </Banner>
@@ -22913,14 +18178,14 @@ export default config
 
 | Option                         | Type               | Default     | Description                                                                                                              |
 | ------------------------------ | ------------------ | ----------- | ------------------------------------------------------------------------------------------------------------------------ |
-| `stripeSecretKey` *            | string             | `undefined` | Your Stripe secret key                                                                                                   |
+| `stripeSecretKey` \*           | string             | `undefined` | Your Stripe secret key                                                                                                   |
 | `stripeWebhooksEndpointSecret` | string             | `undefined` | Your Stripe webhook endpoint secret                                                                                      |
 | `rest`                         | boolean            | `false`     | When `true`, opens the `/api/stripe/rest` endpoint                                                                       |
 | `webhooks`                     | object or function | `undefined` | Either a function to handle all webhooks events, or an object of Stripe webhook handlers, keyed to the name of the event |
 | `sync`                         | array              | `undefined` | An array of sync configs                                                                                                 |
 | `logs`                         | boolean            | `false`     | When `true`, logs sync events to the console as they happen                                                              |
 
-_* An asterisk denotes that a property is required._
+_\* An asterisk denotes that a property is required._
 
 ## Endpoints
 
@@ -22959,14 +18224,16 @@ If you need to proxy the API server-side, use the [stripeProxy](#node) function.
 <Banner type="info">
   **Note:**
 
-  The `/api` part of these routes may be different based on the settings defined in your Payload
-  config.
+The `/api` part of these routes may be different based on the settings defined in your Payload
+config.
+
 </Banner>
 
 <Banner type="warning">
   **Warning:**
 
-  Opening the REST proxy endpoint in production is a potential security risk. Authenticated users will have open access to the Stripe REST API. In production, open your own endpoint and use the [stripeProxy](#node) function to proxy the Stripe API server-side.
+Opening the REST proxy endpoint in production is a potential security risk. Authenticated users will have open access to the Stripe REST API. In production, open your own endpoint and use the [stripeProxy](#node) function to proxy the Stripe API server-side.
+
 </Banner>
 
 ## Webhooks
@@ -23030,7 +18297,9 @@ On the server you should interface with Stripe directly using the [stripe](https
 import Stripe from 'stripe'
 
 const stripeSecretKey = process.env.STRIPE_SECRET_KEY
-const stripe = new Stripe(stripeSecretKey, { apiVersion: '2022-08-01' })
+const stripe = new Stripe(stripeSecretKey, {
+  apiVersion: '2022-08-01',
+})
 
 export const MyFunction = async () => {
   try {
@@ -23082,8 +18351,9 @@ This option will setup a basic sync between Payload collections and Stripe resou
 <Banner type="info">
   **Note:**
 
-  If you wish to enable a _two-way_ sync, be sure to setup [`webhooks`](#webhooks) and pass the
-  `stripeWebhooksEndpointSecret` through your config.
+If you wish to enable a _two-way_ sync, be sure to setup [`webhooks`](#webhooks) and pass the
+`stripeWebhooksEndpointSecret` through your config.
+
 </Banner>
 
 ```ts
@@ -23118,10 +18388,11 @@ export default config
 <Banner type="warning">
   **Note:**
 
-  Due to limitations in the Stripe API, this currently only works with top-level fields. This is
-  because every Stripe object is a separate entity, making it difficult to abstract into a simple
-  reusable library. In the future, we may find a pattern around this. But for now, cases like that
-  will need to be hard-coded.
+Due to limitations in the Stripe API, this currently only works with top-level fields. This is
+because every Stripe object is a separate entity, making it difficult to abstract into a simple
+reusable library. In the future, we may find a pattern around this. But for now, cases like that
+will need to be hard-coded.
+
 </Banner>
 
 Using `sync` will do the following:
@@ -23156,7 +18427,7 @@ import {
 The [Templates Directory](https://github.com/payloadcms/payload/tree/main/templates) contains an official [E-commerce Template](https://github.com/payloadcms/payload/tree/main/templates/ecommerce) which demonstrates exactly how to configure this plugin in Payload and implement it on your front-end. You can also check out [How to Build An E-Commerce Site With Next.js](https://payloadcms.com/blog/how-to-build-an-e-commerce-site-with-nextjs) post for a bit more context around this template.
 ````
 
-## File: production/deployment.mdx
+## File: production_deployment.mdx
 ````
 ---
 title: Production Deployment
@@ -23167,8 +18438,8 @@ keywords: deployment, production, config, configuration, documentation, Content 
 ---
 
 <Banner type="success">
-  So you've developed a Payload app, it's fully tested, and running great locally. Now it's time to
-  launch. **Awesome! Great work!** Now, what's next?
+  So you've developed a Payload app, it's fully tested, and running great
+  locally. Now it's time to launch. **Awesome! Great work!** Now, what's next?
 </Banner>
 
 There are many ways to deploy Payload to a production environment. When evaluating how you will deploy Payload, you need
@@ -23222,11 +18493,12 @@ wield that power responsibly before deploying to Production.
   But, if you allow public user registration, for example, you will want to make sure that your
   access control functions are more strict - permitting
 
-  **
-    only appropriate users
-  **
+**
+only appropriate users
+**
 
-  to perform appropriate actions.
+to perform appropriate actions.
+
 </Banner>
 
 ### Running in Production
@@ -23294,8 +18566,9 @@ perpetually.
 <Banner type="error">
   **Warning:**
 
-  If you rely on Payload's **Upload** functionality, make sure you either use a host
-  with a persistent filesystem or have an integration with a third-party file host like Amazon S3.
+If you rely on Payload's **Upload** functionality, make sure you either use a host
+with a persistent filesystem or have an integration with a third-party file host like Amazon S3.
+
 </Banner>
 
 ### Using cloud storage providers
@@ -23454,7 +18727,7 @@ volumes:
 ```
 ````
 
-## File: production/preventing-abuse.mdx
+## File: production_preventing-abuse.mdx
 ````
 ---
 title: Preventing Production API Abuse
@@ -23503,7 +18776,7 @@ Review that `create` and `update` access on file upload collections are as restr
 You can also add a [3rd party library](https://github.com/Cisco-Talos/clamav) to scan files in a [hook](/docs/hooks/collections) or have antivirus software in place.
 ````
 
-## File: queries/depth.mdx
+## File: queries_depth.mdx
 ````
 ---
 title: Depth
@@ -23541,8 +18814,8 @@ But with a `depth` of `1`, the response might look like this:
 ```
 
 <Banner type="warning">
-  **Important:**
-  Depth has no effect in the [GraphQL API](../graphql/overview), because there, depth is based on the shape of your queries.
+  **Important:** Depth has no effect in the [GraphQL API](../graphql/overview),
+  because there, depth is based on the shape of your queries.
 </Banner>
 
 ## Local API
@@ -23563,8 +18836,8 @@ const getPosts = async (payload: Payload) => {
 ```
 
 <Banner type="info">
-  **Reminder:**
-  This is the same for [Globals](../configuration/globals) using the `findGlobal` operation.
+  **Reminder:** This is the same for [Globals](../configuration/globals) using
+  the `findGlobal` operation.
 </Banner>
 
 ## REST API
@@ -23578,8 +18851,8 @@ fetch('https://localhost:3000/api/posts?depth=2') // highlight-line
 ```
 
 <Banner type="info">
-  **Reminder:**
-  This is the same for [Globals](../configuration/globals) using the `/api/globals` endpoint.
+  **Reminder:** This is the same for [Globals](../configuration/globals) using
+  the `/api/globals` endpoint.
 </Banner>
 
 ## Max Depth
@@ -23603,7 +18876,7 @@ To set a max depth for a field, use the `maxDepth` property in your field config
 ```
 ````
 
-## File: queries/overview.mdx
+## File: queries_overview.mdx
 ````
 ---
 title: Querying your Documents
@@ -23638,35 +18911,36 @@ const query: Where = {
 _The exact query syntax will depend on the API you are using, but the concepts are the same across all APIs. [More details](#writing-queries)._
 
 <Banner>
-  **Tip:**
-  You can also use queries within [Access Control](../access-control/overview) functions.
+  **Tip:** You can also use queries within [Access
+  Control](../access-control/overview) functions.
 </Banner>
 
 ## Operators
 
 The following operators are available for use in queries:
 
-| Operator             | Description                                                                                                                                                                       |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `equals`             | The value must be exactly equal.                                                                                                                                                  |
-| `not_equals`         | The query will return all documents where the value is not equal.                                                                                                                 |
-| `greater_than`       | For numeric or date-based fields.                                                                                                                                                 |
-| `greater_than_equal` | For numeric or date-based fields.                                                                                                                                                 |
-| `less_than`          | For numeric or date-based fields.                                                                                                                                                 |
-| `less_than_equal`    | For numeric or date-based fields.                                                                                                                                                 |
-| `like`               | Case-insensitive string must be present. If string of words, all words must be present, in any order.                                                                             |
-| `contains`           | Must contain the value entered, case-insensitive.                                                                                                                                 |
-| `in`                 | The value must be found within the provided comma-delimited list of values.                                                                                                       |
-| `not_in`             | The value must NOT be within the provided comma-delimited list of values.                                                                                                         |
-| `all`                | The value must contain all values provided in the comma-delimited list. Note: currently this operator is supported only with the MongoDB adapter.                                 |
-| `exists`             | Only return documents where the value either exists (`true`) or does not exist (`false`).                                                                                         |
-| `near`               | For distance related to a [Point Field](../fields/point) comma separated as `<longitude>, <latitude>, <maxDistance in meters (nullable)>, <minDistance in meters (nullable)>`.    |
-| `within`             | For [Point Fields](../fields/point) to filter documents based on whether points are inside of the given area defined in GeoJSON. [Example](../fields/point#querying-within)       |
-| `intersects`         | For [Point Fields](../fields/point) to filter documents based on whether points intersect with the given area  defined in GeoJSON. [Example](../fields/point#querying-intersects) |
+| Operator             | Description                                                                                                                                                                      |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `equals`             | The value must be exactly equal.                                                                                                                                                 |
+| `not_equals`         | The query will return all documents where the value is not equal.                                                                                                                |
+| `greater_than`       | For numeric or date-based fields.                                                                                                                                                |
+| `greater_than_equal` | For numeric or date-based fields.                                                                                                                                                |
+| `less_than`          | For numeric or date-based fields.                                                                                                                                                |
+| `less_than_equal`    | For numeric or date-based fields.                                                                                                                                                |
+| `like`               | Case-insensitive string must be present. If string of words, all words must be present, in any order.                                                                            |
+| `contains`           | Must contain the value entered, case-insensitive.                                                                                                                                |
+| `in`                 | The value must be found within the provided comma-delimited list of values.                                                                                                      |
+| `not_in`             | The value must NOT be within the provided comma-delimited list of values.                                                                                                        |
+| `all`                | The value must contain all values provided in the comma-delimited list. Note: currently this operator is supported only with the MongoDB adapter.                                |
+| `exists`             | Only return documents where the value either exists (`true`) or does not exist (`false`).                                                                                        |
+| `near`               | For distance related to a [Point Field](../fields/point) comma separated as `<longitude>, <latitude>, <maxDistance in meters (nullable)>, <minDistance in meters (nullable)>`.   |
+| `within`             | For [Point Fields](../fields/point) to filter documents based on whether points are inside of the given area defined in GeoJSON. [Example](../fields/point#querying-within)      |
+| `intersects`         | For [Point Fields](../fields/point) to filter documents based on whether points intersect with the given area defined in GeoJSON. [Example](../fields/point#querying-intersects) |
 
 <Banner type="success">
-  **Tip:**
-  If you know your users will be querying on certain fields a lot, add `index: true` to the Field Config. This will speed up searches using that field immensely.
+  **Tip:** If you know your users will be querying on certain fields a lot, add
+  `index: true` to the Field Config. This will speed up searches using that
+  field immensely.
 </Banner>
 
 ### And / Or Logic
@@ -23679,14 +18953,16 @@ To join queries, use the `and` or `or` keys in your query object:
 import type { Where } from 'payload'
 
 const query: Where = {
-  or: [ // highlight-line
+  or: [
+    // highlight-line
     {
       color: {
         equals: 'mint',
       },
     },
     {
-      and: [ // highlight-line
+      and: [
+        // highlight-line
         {
           color: {
             equals: 'white',
@@ -23790,13 +19066,15 @@ const getPosts = async () => {
     { addQueryPrefix: true },
   )
 
-  const response = await fetch(`http://localhost:3000/api/posts${stringifiedQuery}`)
+  const response = await fetch(
+    `http://localhost:3000/api/posts${stringifiedQuery}`,
+  )
   // Continue to handle the response below...
 }
 ```
 ````
 
-## File: queries/pagination.mdx
+## File: queries_pagination.mdx
 ````
 ---
 title: Pagination
@@ -23865,7 +19143,7 @@ All Payload APIs support the pagination controls below. With them, you can creat
 For `find` operations within the Local API, you can disable pagination to retrieve all documents from a collection by passing `pagination: false` to the `find` local operation.
 ````
 
-## File: queries/select.mdx
+## File: queries_select.mdx
 ````
 ---
 title: Select
@@ -23894,7 +19172,7 @@ const getPosts = async (payload: Payload) => {
       text: true,
       // select a specific field from group
       group: {
-        number: true
+        number: true,
       },
       // select all fields from array
       array: true,
@@ -23912,8 +19190,8 @@ const getPosts = async (payload: Payload) => {
     select: {
       array: false,
       group: {
-        number: false
-      }
+        number: false,
+      },
     }, // highlight-line
   })
 
@@ -23921,19 +19199,23 @@ const getPosts = async (payload: Payload) => {
 }
 ```
 
-
 <Banner type="warning">
-  **Important:**
-  To perform querying with `select` efficiently, Payload implements your `select` query on the database level. Because of that, your `beforeRead` and `afterRead` hooks may not receive the full `doc`.
+  **Important:** To perform querying with `select` efficiently, Payload
+  implements your `select` query on the database level. Because of that, your
+  `beforeRead` and `afterRead` hooks may not receive the full `doc`. To ensure
+  that some fields are always selected for your hooks / access control,
+  regardless of the `select` query you can use `forceSelect` collection config
+  property.
 </Banner>
-
 
 ## REST API
 
 To specify select in the [REST API](../rest-api/overview), you can use the `select` parameter in your query:
 
 ```ts
-fetch('https://localhost:3000/api/posts?select[color]=true&select[group][number]=true') // highlight-line
+fetch(
+  'https://localhost:3000/api/posts?select[color]=true&select[group][number]=true',
+) // highlight-line
   .then((res) => res.json())
   .then((data) => console.log(data))
 ```
@@ -23949,8 +19231,8 @@ import type { Where } from 'payload'
 const select: Where = {
   text: true,
   group: {
-    number: true
-  }
+    number: true,
+  },
   // This query could be much more complex
   // and QS would handle it beautifully
 }
@@ -23963,16 +19245,17 @@ const getPosts = async () => {
     { addQueryPrefix: true },
   )
 
-  const response = await fetch(`http://localhost:3000/api/posts${stringifiedQuery}`)
+  const response = await fetch(
+    `http://localhost:3000/api/posts${stringifiedQuery}`,
+  )
   // Continue to handle the response below...
 }
 ```
 
 <Banner type="info">
-  **Reminder:**
-  This is the same for [Globals](../configuration/globals) using the `/api/globals` endpoint.
+  **Reminder:** This is the same for [Globals](../configuration/globals) using
+  the `/api/globals` endpoint.
 </Banner>
-
 
 ## defaultPopulate collection config property
 
@@ -24007,8 +19290,10 @@ export const Pages: CollectionConfig<'pages'> = {
 ```
 
 <Banner type="warning">
-  **Important:**
-  When using `defaultPopulate` on a collection with [Uploads](/docs/fields/upload) enabled and you want to select the `url` field, it is important to specify `filename: true` as well, otherwise Payload will not be able to construct the correct file URL, instead returning `url: null`.
+  **Important:** When using `defaultPopulate` on a collection with
+  [Uploads](/docs/fields/upload) enabled and you want to select the `url` field,
+  it is important to specify `filename: true` as well, otherwise Payload will
+  not be able to construct the correct file URL, instead returning `url: null`.
 </Banner>
 
 ## populate
@@ -24046,7 +19331,7 @@ fetch('https://localhost:3000/api/posts?populate[pages][text]=true') // highligh
 ```
 ````
 
-## File: queries/sort.mdx
+## File: queries_sort.mdx
 ````
 ---
 title: Sort
@@ -24061,8 +19346,8 @@ Documents in Payload can be easily sorted by a specific [Field](../fields/overvi
 Because sorting is handled by the database, the field cannot be a [Virtual Field](https://payloadcms.com/blog/learn-how-virtual-fields-can-help-solve-common-cms-challenges). It must be stored in the database to be searchable.
 
 <Banner type="success">
-  **Tip:**
-  For performance reasons, it is recommended to enable `index: true` for the fields that will be sorted upon. [More details](../fields/overview).
+  **Tip:** For performance reasons, it is recommended to enable `index: true`
+  for the fields that will be sorted upon. [More details](../fields/overview).
 </Banner>
 
 ## Local API
@@ -24130,7 +19415,7 @@ query {
 ```
 ````
 
-## File: rest-api/overview.mdx
+## File: rest-api_overview.mdx
 ````
 ---
 title: REST API
@@ -24141,7 +19426,8 @@ keywords: rest, api, documentation, Content Management System, cms, headless, ja
 ---
 
 <Banner>
-  A fully functional REST API is automatically generated from your Collection and Global configs.
+  A fully functional REST API is automatically generated from your Collection
+  and Global configs.
 </Banner>
 
 The REST API is a fully functional HTTP client that allows you to interact with your Documents in a RESTful manner. It supports all CRUD operations and is equipped with automatic pagination, depth, and sorting.
@@ -24194,195 +19480,195 @@ Note: Collection slugs must be formatted in kebab-case
 
 The \`find\` endpoint supports the following additional query parameters:
 
--  [sort](/docs/queries/overview#sort) - sort by field
--  [where](/docs/queries/overview) - pass a where query to constrain returned documents
--  [limit](/docs/queries/pagination#pagination-controls) - limit the returned documents to a certain number
--  [page](/docs/queries/pagination#pagination-controls) - get a specific page of documents
-        `
-      },
-    },
-    {
-      operation: "Find By ID",
-      method: "GET",
-      path: "/api/{collection-slug}/{id}",
-      description: "Find a specific document by ID",
-      example: {
-        slug: "findByID",
-        req: true,
-        res: {
-          id: "644a5c24cc1383022535fc7c",
-          title: "Home",
-          content: "REST API examples",
-          slug: "home",
-          createdAt: "2023-04-27T11:27:32.419Z",
-          updatedAt: "2023-04-27T11:27:32.419Z",
-        },
-      },
-    },
-    {
-      operation: "Count",
-      method: "GET",
-      path: "/api/{collection-slug}/count",
-      description: "Count the documents",
-      example: {
-        slug: "count",
-        req: true,
-        res: {
-         totalDocs: 10
-        },
-      },
-    },
-    {
-      operation: "Create",
-      method: "POST",
-      path: "/api/{collection-slug}",
-      description: "Create a new document",
-      example: {
-        slug: "createDocument",
-        req: {
-          credentials: true,
-          headers: true,
-          body: {
-            title: "New page",
-            content: "Here is some content",
-          },
-        },
-        res: {
-          message: "Page successfully created.",
-          doc: {
-            id: "644ba34c86359864f9535932",
-            title: "New page",
-            content: "Here is some content",
-            slug: "new-page",
-            createdAt: "2023-04-28T10:43:24.466Z",
-            updatedAt: "2023-04-28T10:43:24.466Z",
-          },
-        },
-      },
-    },
-    {
-      operation: "Update",
-      method: "PATCH",
-      path: "/api/{collection-slug}",
-      description: "Update all documents matching the where query",
-      example: {
-        slug: "updateDocument",
-        req: {
-          credentials: true,
-          query: true,
-          headers: true,
-          body: {
-            title: "I have been updated!",
-          },
-        },
-        res: {
-          docs: [
-            {
-              id: "644ba34c86359864f9535932",
-              title: "I have been updated!",
-              content: "Here is some content",
-              slug: "new-page",
-              createdAt: "2023-04-28T10:43:24.466Z",
-              updatedAt: "2023-04-28T10:45:23.724Z",
-            },
-          ],
-          errors: [],
-        },
-      },
-    },
-    {
-      operation: "Update By ID",
-      method: "PATCH",
-      path: "/api/{collection-slug}/{id}",
-      description: "Update a document by ID",
-      example: {
-        slug: "updateDocumentByID",
-        req: {
-          credentials: true,
-          headers: true,
-          body: {
-            title: "I have been updated by ID!",
-            categories: "example-uuid",
-            tags: {
-              relationTo: "location",
-              value: "another-example-uuid",
-            },
-          },
-        },
-        res: {
-          message: "Updated successfully.",
-          doc: {
-            id: "644a5c24cc1383022535fc7c",
-            title: "I have been updated by ID!",
-            content: "REST API examples",
-            categories: {
-              id: "example-uuid",
-              name: "Test Category",
-            },
-            tags: [
-              {
-                relationTo: "location",
-                value: {
-                  id: "another-example-uuid",
-                  name: "Test Location",
-                },
-              },
-            ],
-            slug: "home",
-            createdAt: "2023-04-27T11:27:32.419Z",
-            updatedAt: "2023-04-28T10:47:59.259Z",
-          },
-        },
-      },
-    },
-    {
-      operation: "Delete",
-      method: "DELETE",
-      path: "/api/{collection-slug}",
-      description: "Delete all documents matching the where query",
-      example: {
-        slug: "deleteDocuments",
-        req: {
-          credentials: true,
-          query: true,
-          headers: true,
-        },
-        res: {
-          docs: [
-            {
-              id: "644ba4cf86359864f953594b",
-              title: "New page",
-              content: "Here is some content",
-              slug: "new-page",
-              createdAt: "2023-04-28T10:49:51.359Z",
-              updatedAt: "2023-04-28T10:49:51.359Z",
-            },
-          ],
-          errors: [],
-        },
-      },
-    },
-    {
-      operation: "Delete by ID",
-      method: "DELETE",
-      path: "/api/{collection-slug}/{id}",
-      description: "Delete an existing document by ID",
-      example: {
-        slug: "deleteByID",
-        req: {
-          credentials: true,
-          headers: true,
-        },
-        res: {
-          id: "644ba51786359864f9535954",
-          title: "New page",
-          content: "Here is some content",
-          slug: "new-page",
-          createdAt: "2023-04-28T10:51:03.028Z",
-          updatedAt: "2023-04-28T10:51:03.028Z",
-        },
-      },
-    },
+- [sort](/docs/queries/overview#sort) - sort by field
+- [where](/docs/queries/overview) - pass a where query to constrain returned documents
+- [limit](/docs/queries/pagination#pagination-controls) - limit the returned documents to a certain number
+- [page](/docs/queries/pagination#pagination-controls) - get a specific page of documents
+  `
+  },
+  },
+  {
+  operation: "Find By ID",
+  method: "GET",
+  path: "/api/{collection-slug}/{id}",
+  description: "Find a specific document by ID",
+  example: {
+  slug: "findByID",
+  req: true,
+  res: {
+  id: "644a5c24cc1383022535fc7c",
+  title: "Home",
+  content: "REST API examples",
+  slug: "home",
+  createdAt: "2023-04-27T11:27:32.419Z",
+  updatedAt: "2023-04-27T11:27:32.419Z",
+  },
+  },
+  },
+  {
+  operation: "Count",
+  method: "GET",
+  path: "/api/{collection-slug}/count",
+  description: "Count the documents",
+  example: {
+  slug: "count",
+  req: true,
+  res: {
+  totalDocs: 10
+  },
+  },
+  },
+  {
+  operation: "Create",
+  method: "POST",
+  path: "/api/{collection-slug}",
+  description: "Create a new document",
+  example: {
+  slug: "createDocument",
+  req: {
+  credentials: true,
+  headers: true,
+  body: {
+  title: "New page",
+  content: "Here is some content",
+  },
+  },
+  res: {
+  message: "Page successfully created.",
+  doc: {
+  id: "644ba34c86359864f9535932",
+  title: "New page",
+  content: "Here is some content",
+  slug: "new-page",
+  createdAt: "2023-04-28T10:43:24.466Z",
+  updatedAt: "2023-04-28T10:43:24.466Z",
+  },
+  },
+  },
+  },
+  {
+  operation: "Update",
+  method: "PATCH",
+  path: "/api/{collection-slug}",
+  description: "Update all documents matching the where query",
+  example: {
+  slug: "updateDocument",
+  req: {
+  credentials: true,
+  query: true,
+  headers: true,
+  body: {
+  title: "I have been updated!",
+  },
+  },
+  res: {
+  docs: [
+  {
+  id: "644ba34c86359864f9535932",
+  title: "I have been updated!",
+  content: "Here is some content",
+  slug: "new-page",
+  createdAt: "2023-04-28T10:43:24.466Z",
+  updatedAt: "2023-04-28T10:45:23.724Z",
+  },
+  ],
+  errors: [],
+  },
+  },
+  },
+  {
+  operation: "Update By ID",
+  method: "PATCH",
+  path: "/api/{collection-slug}/{id}",
+  description: "Update a document by ID",
+  example: {
+  slug: "updateDocumentByID",
+  req: {
+  credentials: true,
+  headers: true,
+  body: {
+  title: "I have been updated by ID!",
+  categories: "example-uuid",
+  tags: {
+  relationTo: "location",
+  value: "another-example-uuid",
+  },
+  },
+  },
+  res: {
+  message: "Updated successfully.",
+  doc: {
+  id: "644a5c24cc1383022535fc7c",
+  title: "I have been updated by ID!",
+  content: "REST API examples",
+  categories: {
+  id: "example-uuid",
+  name: "Test Category",
+  },
+  tags: [
+  {
+  relationTo: "location",
+  value: {
+  id: "another-example-uuid",
+  name: "Test Location",
+  },
+  },
+  ],
+  slug: "home",
+  createdAt: "2023-04-27T11:27:32.419Z",
+  updatedAt: "2023-04-28T10:47:59.259Z",
+  },
+  },
+  },
+  },
+  {
+  operation: "Delete",
+  method: "DELETE",
+  path: "/api/{collection-slug}",
+  description: "Delete all documents matching the where query",
+  example: {
+  slug: "deleteDocuments",
+  req: {
+  credentials: true,
+  query: true,
+  headers: true,
+  },
+  res: {
+  docs: [
+  {
+  id: "644ba4cf86359864f953594b",
+  title: "New page",
+  content: "Here is some content",
+  slug: "new-page",
+  createdAt: "2023-04-28T10:49:51.359Z",
+  updatedAt: "2023-04-28T10:49:51.359Z",
+  },
+  ],
+  errors: [],
+  },
+  },
+  },
+  {
+  operation: "Delete by ID",
+  method: "DELETE",
+  path: "/api/{collection-slug}/{id}",
+  description: "Delete an existing document by ID",
+  example: {
+  slug: "deleteByID",
+  req: {
+  credentials: true,
+  headers: true,
+  },
+  res: {
+  id: "644ba51786359864f9535954",
+  title: "New page",
+  content: "Here is some content",
+  slug: "new-page",
+  createdAt: "2023-04-28T10:51:03.028Z",
+  updatedAt: "2023-04-28T10:51:03.028Z",
+  },
+  },
+  },
 
 ]}
 />
@@ -24702,9 +19988,9 @@ In addition to the dynamically generated endpoints above Payload also has REST e
 Additional REST API endpoints can be added to your application by providing an array of `endpoints` in various places within a Payload Config. Custom endpoints are useful for adding additional middleware on existing routes or for building custom functionality into Payload apps and plugins. Endpoints can be added at the top of the Payload Config, `collections`, and `globals` and accessed respective of the api and slugs you have configured.
 
 <Banner type="warning">
-  Custom endpoints are not authenticated by default. You are responsible for securing your own endpoints.
+  Custom endpoints are not authenticated by default. You are responsible for
+  securing your own endpoints.
 </Banner>
-
 
 Each endpoint object needs to have:
 
@@ -24736,7 +20022,7 @@ export const Orders: CollectionConfig = {
         const tracking = await getTrackingInfo(req.routeParams.id)
 
         if (!tracking) {
-          return Response.json({ error: 'not found' }, { status: 404})
+          return Response.json({ error: 'not found' }, { status: 404 })
         }
 
         return Response.json({
@@ -24756,12 +20042,12 @@ export const Orders: CollectionConfig = {
           collection: 'tracking',
           data: {
             // data to update the document with
-          }
+          },
         })
         return Response.json({
-          message: 'successfully updated tracking info'
+          message: 'successfully updated tracking info',
         })
-      }
+      },
     },
     {
       path: '/:id/forbidden',
@@ -24775,21 +20061,24 @@ export const Orders: CollectionConfig = {
         // do something
 
         return Response.json({
-          message: 'successfully updated tracking info'
+          message: 'successfully updated tracking info',
         })
-      }
-    }
+      },
+    },
   ],
   // highlight-end
 }
 ```
 
 <Banner>
-  **Note:**
-  **req** will have the **payload** object and can be used inside your endpoint handlers for making calls like req.payload.find() that will make use of [Access Control](../access-control/overview) and [Hooks](../hooks/overview).
+  **Note:** **req** will have the **payload** object and can be used inside your
+  endpoint handlers for making calls like req.payload.find() that will make use
+  of [Access Control](../access-control/overview) and
+  [Hooks](../hooks/overview).
 </Banner>
 
 #### Helpful tips
+
 `req.data`
 
 Data is not automatically appended to the request. You can read the body data by calling `await req.json()`.
@@ -24905,7 +20194,7 @@ const res = await fetch(`${api}/${collectionSlug}?depth=1&locale=en`, {
 ```
 ````
 
-## File: rich-text/converters.mdx
+## File: rich-text_converters.mdx
 ````
 ---
 title: Lexical Converters
@@ -24915,170 +20204,150 @@ desc: Conversion between lexical, markdown, jsx and html
 keywords: lexical, rich text, editor, headless cms, convert, html, mdx, markdown, md, conversion, export, jsx
 ---
 
-Lexical saves data in JSON - this is great for storage and flexibility and allows you to easily to convert it to other formats like JSX, HTML or Markdown.
+Richtext fields save data in JSON - this is great for storage and flexibility and allows you to easily to convert it to other formats:
 
-## Lexical => JSX
+- [Converting JSX](/docs/rich-text/converting-jsx)
+- [Converting HTML](/docs/rich-text/converting-html)
+- [Converting Plaintext](/docs/rich-text/converting-plaintext)
+- [Converting Markdown and MDX](/docs/rich-text/converting-markdown)
 
-For React-based frontends, converting Lexical content to JSX is the recommended rendering approach. Import the RichText component from @payloadcms/richtext-lexical/react and pass the Lexical content to it:
+## Retrieving the Editor Config
 
-```tsx
-import React from 'react'
-import { RichText } from '@payloadcms/richtext-lexical/react'
-import { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
+Some converters require access to the Lexical editor config, which defines available features and behaviors. Payload provides multiple ways to obtain the editor config through the `editorConfigFactory` from `@payloadcms/richtext-lexical`.
 
-export const MyComponent = ({ data }: { data: SerializedEditorState }) => {
-  return (
-    <RichText data={data} />
-  )
-}
+### Importing the Factory
+
+First, import the necessary utilities:
+
+```ts
+import type { SanitizedConfig } from 'payload'
+import { editorConfigFactory } from '@payloadcms/richtext-lexical'
+
+// Your Payload Config needs to be available in order to retrieve the default editor config
+const config: SanitizedConfig = {} as SanitizedConfig
 ```
 
-The `RichText` component includes built-in serializers for common Lexical nodes but allows customization through the `converters` prop. In our [website template](https://github.com/payloadcms/payload/blob/main/templates/website/src/components/RichText/index.tsx) you have an example of how to use `converters` to render custom blocks, custom nodes and override existing converters.
+### Option 1: Default Editor Config
 
-<Banner type="default">
-  When fetching data, ensure your `depth` setting is high enough to fully populate Lexical nodes such as uploads. The JSX converter requires fully populated data to work correctly.
-</Banner>
+If you require the default editor config:
 
-### Converting Internal Links
+```ts
+const defaultEditorConfig = await editorConfigFactory.default({ config })
+```
 
-By default, Payload doesn't know how to convert **internal** links to JSX, as it doesn't know what the corresponding URL of the internal link is. You'll notice that you get a "found internal link, but internalDocToHref is not provided" error in the console when you try to render content with internal links.
+### Option 2: Extract from a Lexical Field
 
-To fix this, you need to pass the `internalDocToHref` prop to `LinkJSXConverter`. This prop is a function that receives the link node and returns the URL of the document.
+When a lexical field config is available, you can extract the editor config directly:
 
-```tsx
-import type { DefaultNodeTypes, SerializedLinkNode } from '@payloadcms/richtext-lexical'
-import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
+```ts
+const fieldEditorConfig = editorConfigFactory.fromField({
+  field: config.collections[0].fields[1],
+})
+```
+
+### Option 3: Create a Custom Editor Config
+
+You can create a custom editor configuration by specifying additional features:
+
+```ts
+import { FixedToolbarFeature } from '@payloadcms/richtext-lexical'
+
+const customEditorConfig = await editorConfigFactory.fromFeatures({
+  config,
+  features: ({ defaultFeatures }) => [
+    ...defaultFeatures,
+    FixedToolbarFeature(),
+  ],
+})
+```
+
+### Option 4: Extract from an Instantiated Editor
+
+If you've created a global or reusable Lexical editor instance, you can access its configuration. This method is typically less efficient and not recommended:
+
+```ts
+const editor = lexicalEditor({
+  features: ({ defaultFeatures }) => [
+    ...defaultFeatures,
+    FixedToolbarFeature(),
+  ],
+})
+
+const instantiatedEditorConfig = await editorConfigFactory.fromEditor({
+  config,
+  editor,
+})
+```
+
+For better efficiency, consider extracting the `features` into a separate variable and using `fromFeatures` instead of this method.
+
+### Example - Retrieving the editor config from an existing field
+
+If you have access to the sanitized collection config, you can access the lexical sanitized editor config, as every lexical richText field returns it. Here is an example how you can retrieve it from another field's afterRead hook:
+
+```ts
+import type { CollectionConfig, RichTextField } from 'payload'
 
 import {
-  type JSXConvertersFunction,
-  LinkJSXConverter,
-  RichText,
-} from '@payloadcms/richtext-lexical/react'
-import React from 'react'
-
-const internalDocToHref = ({ linkNode }: { linkNode: SerializedLinkNode }) => {
-  const { relationTo, value } = linkNode.fields.doc!
-  if (typeof value !== 'object') {
-    throw new Error('Expected value to be an object')
-  }
-  const slug = value.slug
-  return relationTo === 'posts' ? `/posts/${slug}` : `/${slug}`
-}
-
-const jsxConverters: JSXConvertersFunction<DefaultNodeTypes> = ({ defaultConverters }) => ({
-  ...defaultConverters,
-  ...LinkJSXConverter({ internalDocToHref }),
-})
-
-export const MyComponent: React.FC<{
-  lexicalData: SerializedEditorState
-}> = ({ lexicalData }) => {
-  return <RichText converters={jsxConverters} data={lexicalData} />
-}
-```
-
-### Converting Lexical Blocks
-
-To convert Lexical Blocks or Inline Blocks to JSX, pass the converter for your block to the `RichText` component. This converter is not included by default, as Payload doesn't know how to render your custom blocks.
-
-```tsx
-'use client'
-import type { MyInlineBlock, MyNumberBlock, MyTextBlock } from '@/payload-types'
-import type {
-  DefaultNodeTypes,
-  SerializedBlockNode,
-  SerializedInlineBlockNode,
+  editorConfigFactory,
+  getEnabledNodes,
+  lexicalEditor,
 } from '@payloadcms/richtext-lexical'
-import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
 
-import { type JSXConvertersFunction, RichText } from '@payloadcms/richtext-lexical/react'
-import React from 'react'
+export const MyCollection: CollectionConfig = {
+  slug: 'slug',
+  fields: [
+    {
+      name: 'text',
+      type: 'text',
+      hooks: {
+        afterRead: [
+          ({ siblingFields, value }) => {
+            const field: RichTextField = siblingFields.find(
+              (field) => 'name' in field && field.name === 'richText',
+            ) as RichTextField
 
-// Extend the default node types with your custom blocks for full type safety
-type NodeTypes =
-  | DefaultNodeTypes
-  | SerializedBlockNode<MyNumberBlock | MyTextBlock>
-  | SerializedInlineBlockNode<MyInlineBlock>
+            const editorConfig = editorConfigFactory.fromField({
+              field,
+            })
 
-const jsxConverters: JSXConvertersFunction<NodeTypes> = ({ defaultConverters }) => ({
-  ...defaultConverters,
-  blocks: {
-    // Each key should match your block's slug
-    myNumberBlock: ({ node }) => <div>{node.fields.number}</div>,
-    myTextBlock: ({ node }) => <div style={{ backgroundColor: 'red' }}>{node.fields.text}</div>,
-  },
-  inlineBlocks: {
-    // Each key should match your inline block's slug
-    myInlineBlock: ({ node }) => <span>{node.fields.text}</span>,
-  },
-})
+            // Now you can use the editor config
 
-export const MyComponent: React.FC<{
-  lexicalData: SerializedEditorState
-}> = ({ lexicalData }) => {
-  return <RichText converters={jsxConverters} data={lexicalData} />
+            return value
+          },
+        ],
+      },
+    },
+    {
+      name: 'richText',
+      type: 'richText',
+      editor: lexicalEditor(),
+    },
+  ],
 }
 ```
+````
 
-### Overriding Default JSX Converters
+## File: rich-text_converting-html.mdx
+````
+---
+title: Converting HTML
+label: Converting HTML
+order: 22
+desc: Converting between lexical richtext and HTML
+keywords: lexical, richtext, html
+---
 
-You can override any of the default JSX converters by passing passing your custom converter, keyed to the node type, to the `converters` prop / the converters function.
+## Converting Rich Text to HTML
 
-Example - overriding the upload node converter to use next/image:
+There are two main approaches to convert your Lexical-based rich text to HTML:
 
-```tsx
-'use client'
-import type { DefaultNodeTypes, SerializedUploadNode } from '@payloadcms/richtext-lexical'
-import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
+1. **Generate HTML on-demand (Recommended)**: Convert JSON to HTML wherever you need it, on-demand.
+2. **Generate HTML within your Collection**: Create a new field that automatically converts your saved JSON content to HTML. This is not recommended because it adds overhead to the Payload API and may not work well with live preview.
 
-import { type JSXConvertersFunction, RichText } from '@payloadcms/richtext-lexical/react'
-import Image from 'next/image'
-import React from 'react'
+### Generating HTML on-demand (Recommended)
 
-type NodeTypes = DefaultNodeTypes
-
-// Custom upload converter component that uses next/image
-const CustomUploadComponent: React.FC<{
-  node: SerializedUploadNode
-}> = ({ node }) => {
-  if (node.relationTo === 'uploads') {
-    const uploadDoc = node.value
-    if (typeof uploadDoc !== 'object') {
-      return null
-    }
-    const { alt, height, url, width } = uploadDoc
-    return <Image alt={alt} height={height} src={url} width={width} />
-  }
-
-  return null
-}
-
-const jsxConverters: JSXConvertersFunction<NodeTypes> = ({ defaultConverters }) => ({
-  ...defaultConverters,
-  // Override the default upload converter
-  upload: ({ node }) => {
-    return <CustomUploadComponent node={node} />
-  },
-})
-
-export const MyComponent: React.FC<{
-  lexicalData: SerializedEditorState
-}> = ({ lexicalData }) => {
-  return <RichText converters={jsxConverters} data={lexicalData} />
-}
-```
-
-## Lexical => HTML
-
-If you don't have a React-based frontend, or if you need to send the content to a third-party service, you can convert lexical to HTML. There are two ways to do this:
-
-
-1. **Generating HTML in your frontend** Convert JSON to HTML on-demand wherever you need it (Recommended).
-2. **Outputting HTML from the Collection:** Create a new field in your collection to convert saved JSON content to HTML. Payload generates and outputs the HTML for use in your frontend. This is not recommended, as this approach adds additional overhead to the Payload API and may not work with live preview.
-
-### Generating HTML in your frontend
-
-If you wish to convert JSON to HTML ad-hoc, use the `convertLexicalToHTML` function exported from `@payloadcms/richtext-lexical/html`:
+To convert JSON to HTML on-demand, use the `convertLexicalToHTML` function from `@payloadcms/richtext-lexical/html`. Here's an example of how to use it in a React component in your frontend:
 
 ```tsx
 'use client'
@@ -25095,70 +20364,9 @@ export const MyComponent = ({ data }: { data: SerializedEditorState }) => {
 }
 ```
 
-### Generating HTML in your frontend with dynamic population
-
-The default `convertLexicalToHTML` function does not populate data for nodes like uploads or links - it expects you to pass in the fully populated data. If you want the converter to dynamically populate those nodes as they are encountered, you have to use the async version of the converter, imported from `@payloadcms/richtext-lexical/html-async`, and pass in the `populate` function:
-
-```tsx
-'use client'
-
-import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
-
-import { getRestPopulateFn } from '@payloadcms/richtext-lexical/client'
-import { convertLexicalToHTMLAsync } from '@payloadcms/richtext-lexical/html-async'
-import React, { useEffect, useState } from 'react'
-
-export const MyComponent = ({ data }: { data: SerializedEditorState }) => {
-  const [html, setHTML] = useState<null | string>(null)
-  useEffect(() => {
-    async function convert() {
-      const html = await convertLexicalToHTMLAsync({
-        data,
-        populate: getRestPopulateFn({
-          apiURL: `http://localhost:3000/api`,
-        }),
-      })
-      setHTML(html)
-    }
-
-    void convert()
-  }, [data])
-
-  return html && <div dangerouslySetInnerHTML={{ __html: html }} />
-}
-```
-
-Do note that using the REST populate function will result in each node sending a separate request to the REST API, which may be slow for a large amount of nodes. On the server, you can use the payload populate function, which will be more efficient:
-
-```tsx
-import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
-
-import { getPayloadPopulateFn } from '@payloadcms/richtext-lexical'
-import { convertLexicalToHTMLAsync } from '@payloadcms/richtext-lexical/html-async'
-import { getPayload } from 'payload'
-import React from 'react'
-
-import config from '../../config.js'
-
-export const MyRSCComponent = async ({ data }: { data: SerializedEditorState }) => {
-  const payload = await getPayload({
-    config,
-  })
-
-  const html = await convertLexicalToHTMLAsync({
-    data,
-    populate: await getPayloadPopulateFn({
-      currentDepth: 0,
-      depth: 1,
-      payload,
-    }),
-  })
-
-  return html && <div dangerouslySetInnerHTML={{ __html: html }} />
-}
-```
-
 ### Converting Lexical Blocks
+
+If your rich text includes Lexical blocks, you need to provide a way to convert them to HTML. For example:
 
 ```tsx
 'use client'
@@ -25182,7 +20390,9 @@ type NodeTypes =
   | SerializedBlockNode<MyTextBlock>
   | SerializedInlineBlockNode<MyInlineBlock>
 
-const htmlConverters: HTMLConvertersFunction<NodeTypes> = ({ defaultConverters }) => ({
+const htmlConverters: HTMLConvertersFunction<NodeTypes> = ({
+  defaultConverters,
+}) => ({
   ...defaultConverters,
   blocks: {
     // Each key should match your block's slug
@@ -25208,7 +20418,7 @@ export const MyComponent = ({ data }: { data: SerializedEditorState }) => {
 
 ### Outputting HTML from the Collection
 
-To add HTML generation directly within the collection, follow the example below:
+To automatically generate HTML from the saved richText field in your Collection, use the `lexicalHTMLField()` helper. This approach converts the JSON to HTML using an `afterRead` hook. For instance:
 
 ```ts
 import type { HTMLConvertersFunction } from '@payloadcms/richtext-lexical/html'
@@ -25268,269 +20478,641 @@ const Pages: CollectionConfig = {
           myTextBlock: ({ node, providedCSSString }) =>
             `<div style="background-color: red;${providedCSSString}">${node.fields.text}</div>`,
         },
-      })) as HTMLConvertersFunction<DefaultNodeTypes | SerializedBlockNode<MyTextBlock>>,
+      })) as HTMLConvertersFunction<
+        DefaultNodeTypes | SerializedBlockNode<MyTextBlock>
+      >,
     }),
   ],
 }
 ```
 
-The `lexicalHTML()` function creates a new field that automatically converts the referenced lexical richText field into HTML through an afterRead hook.
+### Generating HTML in Your Frontend with Dynamic Population (Advanced)
 
-### CSS
+By default, `convertLexicalToHTML` expects fully populated data (e.g. uploads, links, etc.). If you need to dynamically fetch and populate those nodes, use the async variant, `convertLexicalToHTMLAsync`, from `@payloadcms/richtext-lexical/html-async`. You must provide a `populate` function:
 
-Payload's lexical HTML converter does not generate CSS for you, but it does add classes to the generated HTML. You can use these classes to style the HTML in your frontend.
+```tsx
+'use client'
 
-Here is some "base" CSS you can use to ensure that nested lists render correctly:
+import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
 
-```css
-/* Base CSS for Lexical HTML */
-.nestedListItem, .list-check {
-  list-style-type: none;
+import { getRestPopulateFn } from '@payloadcms/richtext-lexical/client'
+import { convertLexicalToHTMLAsync } from '@payloadcms/richtext-lexical/html-async'
+import React, { useEffect, useState } from 'react'
+
+export const MyComponent = ({ data }: { data: SerializedEditorState }) => {
+  const [html, setHTML] = useState<null | string>(null)
+  useEffect(() => {
+    async function convert() {
+      const html = await convertLexicalToHTMLAsync({
+        data,
+        populate: getRestPopulateFn({
+          apiURL: `http://localhost:3000/api`,
+        }),
+      })
+      setHTML(html)
+    }
+
+    void convert()
+  }, [data])
+
+  return html && <div dangerouslySetInnerHTML={{ __html: html }} />
 }
 ```
 
-## Headless Editor
+Using the REST populate function will send a separate request for each node. If you need to populate a large number of nodes, this may be slow. For improved performance on the server, you can use the `getPayloadPopulateFn` function:
 
-Lexical provides a seamless way to perform conversions between various other formats:
+```tsx
+import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
 
-- HTML to Lexical
-- Markdown to Lexical
-- Lexical to Markdown
+import { getPayloadPopulateFn } from '@payloadcms/richtext-lexical'
+import { convertLexicalToHTMLAsync } from '@payloadcms/richtext-lexical/html-async'
+import { getPayload } from 'payload'
+import React from 'react'
 
-A headless editor can perform such conversions outside of the main editor instance. Follow this method to initiate a headless editor:
+import config from '../../config.js'
 
-```ts
-import { createHeadlessEditor } from '@payloadcms/richtext-lexical/lexical/headless'
-import { getEnabledNodes, editorConfigFactory } from '@payloadcms/richtext-lexical'
+export const MyRSCComponent = async ({
+  data,
+}: {
+  data: SerializedEditorState
+}) => {
+  const payload = await getPayload({
+    config,
+  })
 
-const payloadConfig // <= your Payload Config here
+  const html = await convertLexicalToHTMLAsync({
+    data,
+    populate: await getPayloadPopulateFn({
+      currentDepth: 0,
+      depth: 1,
+      payload,
+    }),
+  })
 
-const headlessEditor = createHeadlessEditor({
-  nodes: getEnabledNodes({
-    editorConfig: await editorConfigFactory.default({config: payloadConfig})
-  }),
-})
+  return html && <div dangerouslySetInnerHTML={{ __html: html }} />
+}
 ```
 
-### Getting the editor config
+## Converting HTML to Richtext
 
-You need to provide an editor config in order to create a headless editor. This is because the editor config is used to determine which nodes & features are enabled, and which converters are used.
-
-To get the editor config, import the `editorConfigFactory` factory - this factory provides a variety of ways to get the editor config, depending on your use case.
+If you need to convert raw HTML into a Lexical editor state, use `convertHTMLToLexical` from `@payloadcms/richtext-lexical`, along with the [editorConfigFactory to retrieve the editor config](/docs/rich-text/converters#retrieving-the-editor-config):
 
 ```ts
-import type { SanitizedConfig } from 'payload'
-
 import {
+  convertHTMLToLexical,
   editorConfigFactory,
-  FixedToolbarFeature,
-  lexicalEditor,
 } from '@payloadcms/richtext-lexical'
-
-// Your config needs to be available in order to retrieve the default editor config
-const config: SanitizedConfig = {} as SanitizedConfig
-
-// Version 1 - use the default editor config
-const yourEditorConfig = await editorConfigFactory.default({ config })
-
-// Version 2 - if you have access to a lexical fields, you can extract the editor config from it
-const yourEditorConfig2 = editorConfigFactory.fromField({
-  field: collectionConfig.fields[1],
-})
-
-// Version 3 - create a new editor config - behaves just like instantiating a new `lexicalEditor`
-const yourEditorConfig3 = await editorConfigFactory.fromFeatures({
-  config,
-  features: ({ defaultFeatures }) => [...defaultFeatures, FixedToolbarFeature()],
-})
-
-// Version 4 - if you have instantiated a lexical editor and are accessing it outside a field (=> this is the unsanitized editor),
-// you can extract the editor config from it.
-// This is common if you define the editor in a re-usable module scope variable and pass it to the richText field.
-// This is the least efficient way to get the editor config, and not recommended. It is recommended to extract the `features` arg
-// into a separate variable and use `fromFeatures` instead.
-const editor = lexicalEditor({
-  features: ({ defaultFeatures }) => [...defaultFeatures, FixedToolbarFeature()],
-})
-
-const yourEditorConfig4 = await editorConfigFactory.fromEditor({
-  config,
-  editor,
-})
-```
-
-### Example - Getting the editor config from an existing field
-
-If you have access to the sanitized collection config, you can get access to the lexical sanitized editor config & features, as every lexical richText field returns it. Here is an example how you can get it from another field's afterRead hook:
-
-```ts
-import type { CollectionConfig, RichTextField } from 'payload'
-
-import { editorConfigFactory, getEnabledNodes, lexicalEditor } from '@payloadcms/richtext-lexical'
-import { createHeadlessEditor } from '@payloadcms/richtext-lexical/lexical/headless'
-
-export const MyCollection: CollectionConfig = {
-  slug: 'slug',
-  fields: [
-    {
-      name: 'text',
-      type: 'text',
-      hooks: {
-        afterRead: [
-          ({ siblingFields, value }) => {
-            const field: RichTextField = siblingFields.find(
-              (field) => 'name' in field && field.name === 'richText',
-            ) as RichTextField
-
-            const editorConfig = editorConfigFactory.fromField({
-              field,
-            })
-
-            const headlessEditor = createHeadlessEditor({
-              nodes: getEnabledNodes({
-                editorConfig,
-              }),
-            })
-
-            // Do whatever you want with the headless editor
-
-            return value
-          },
-        ],
-      },
-    },
-    {
-      name: 'richText',
-      type: 'richText',
-      editor: lexicalEditor(),
-    },
-  ],
-}
-```
-
-## HTML => Lexical
-
-If you have access to the Payload Config and the lexical editor config, you can convert HTML to the lexical editor state with the following:
-
-```ts
-import { convertHTMLToLexical, editorConfigFactory } from '@payloadcms/richtext-lexical'
 // Make sure you have jsdom and @types/jsdom installed
 import { JSDOM } from 'jsdom'
 
 const html = convertHTMLToLexical({
   editorConfig: await editorConfigFactory.default({
-    config, // <= make sure you have access to your Payload Config
+    config, // Your Payload Config
   }),
   html: '<p>text</p>',
-  JSDOM, // pass the JSDOM import. As it's a relatively large package, richtext-lexical does not include it by default.
+  JSDOM, // Pass in the JSDOM import; it's not bundled to keep package size small
 })
-```
-
-## Markdown => Lexical
-
-Convert markdown content to the Lexical editor format with the following:
-
-```ts
-import { $convertFromMarkdownString, editorConfigFactory } from '@payloadcms/richtext-lexical'
-
-const yourEditorConfig = await editorConfigFactory.default({ config })
-const markdown = `# Hello World`
-
-headlessEditor.update(
-  () => {
-    $convertFromMarkdownString(markdown, yourEditorConfig.features.markdownTransformers)
-  },
-  { discrete: true },
-)
-
-// Do this if you then want to get the editor JSON
-const editorJSON = headlessEditor.getEditorState().toJSON()
-```
-
-Functions prefixed with a `$` can only be run inside an `editor.update()` or `editorState.read()` callback.
-
-This has been taken from the [lexical serialization & deserialization docs](https://lexical.dev/docs/concepts/serialization#html---lexical).
-
-<Banner type="success">
-  **Note:**
-
-  Using the `discrete: true` flag ensures instant updates to the editor state. If
-  immediate reading of the updated state isn't necessary, you can omit the flag.
-</Banner>
-
-## Lexical => Markdown
-
-Export content from the Lexical editor into Markdown format using these steps:
-
-1. Import your current editor state into the headless editor.
-2. Convert and fetch the resulting markdown string.
-
-Here's the code for it:
-
-```ts
-import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
-
-import { editorConfigFactory } from '@payloadcms/richtext-lexical'
-import { $convertToMarkdownString } from '@payloadcms/richtext-lexical/lexical/markdown'
-
-const yourEditorConfig = await editorConfigFactory.default({ config })
-const yourEditorState: SerializedEditorState // <= your current editor state here
-
-// Import editor state into your headless editor
-try {
-  headlessEditor.update(
-    () => {
-      headlessEditor.setEditorState(headlessEditor.parseEditorState(yourEditorState))
-    },
-    { discrete: true }, // This should commit the editor state immediately
-  )
-} catch (e) {
-  logger.error({ err: e }, 'ERROR parsing editor state')
-}
-
-// Export to markdown
-let markdown: string
-headlessEditor.getEditorState().read(() => {
-  markdown = $convertToMarkdownString(yourEditorConfig?.features?.markdownTransformers)
-})
-```
-
-## Lexical => Plain Text
-
-Export content from the Lexical editor into plain text using these steps:
-
-1. Import your current editor state into the headless editor.
-2. Convert and fetch the resulting plain text string.
-
-Here's the code for it:
-
-```ts
-import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
-import { $getRoot } from '@payloadcms/richtext-lexical/lexical'
-
-const yourEditorState: SerializedEditorState // <= your current editor state here
-
-// Import editor state into your headless editor
-try {
-  headlessEditor.update(
-    () => {
-      headlessEditor.setEditorState(headlessEditor.parseEditorState(yourEditorState))
-    },
-    { discrete: true }, // This should commit the editor state immediately
-  )
-} catch (e) {
-  logger.error({ err: e }, 'ERROR parsing editor state')
-}
-
-// Export to plain text
-const plainTextContent =
-  headlessEditor.getEditorState().read(() => {
-    return $getRoot().getTextContent()
-  }) || ''
 ```
 ````
 
-## File: rich-text/custom-features.mdx
+## File: rich-text_converting-jsx.mdx
+````
+---
+title: Converting JSX
+label: Converting JSX
+order: 21
+desc: Converting between lexical richtext and JSX
+keywords: lexical, richtext, jsx
+---
+
+## Converting Richtext to JSX
+
+To convert richtext to JSX, import the `RichText` component from `@payloadcms/richtext-lexical/react` and pass the richtext content to it:
+
+```tsx
+import React from 'react'
+import { RichText } from '@payloadcms/richtext-lexical/react'
+import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
+
+export const MyComponent = ({ data }: { data: SerializedEditorState }) => {
+  return <RichText data={data} />
+}
+```
+
+The `RichText` component includes built-in converters for common Lexical nodes. You can add or override converters via the `converters` prop for custom blocks, custom nodes, or any modifications you need. See the [website template](https://github.com/payloadcms/payload/blob/main/templates/website/src/components/RichText/index.tsx) for a working example.
+
+<Banner type="default">
+  When fetching data, ensure your `depth` setting is high enough to fully
+  populate Lexical nodes such as uploads. The JSX converter requires fully
+  populated data to work correctly.
+</Banner>
+
+### Converting Internal Links
+
+By default, Payload doesn't know how to convert **internal** links to JSX, as it doesn't know what the corresponding URL of the internal link is. You'll notice that you get a "found internal link, but internalDocToHref is not provided" error in the console when you try to render content with internal links.
+
+To fix this, you need to pass the `internalDocToHref` prop to `LinkJSXConverter`. This prop is a function that receives the link node and returns the URL of the document.
+
+```tsx
+import type {
+  DefaultNodeTypes,
+  SerializedLinkNode,
+} from '@payloadcms/richtext-lexical'
+import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
+
+import {
+  type JSXConvertersFunction,
+  LinkJSXConverter,
+  RichText,
+} from '@payloadcms/richtext-lexical/react'
+import React from 'react'
+
+const internalDocToHref = ({ linkNode }: { linkNode: SerializedLinkNode }) => {
+  const { relationTo, value } = linkNode.fields.doc!
+  if (typeof value !== 'object') {
+    throw new Error('Expected value to be an object')
+  }
+  const slug = value.slug
+
+  switch (relationTo) {
+    case 'posts':
+      return `/posts/${slug}`
+    case 'categories':
+      return `/category/${slug}`
+    case 'pages':
+      return `/${slug}`
+    default:
+      return `/${relationTo}/${slug}`
+  }
+}
+
+const jsxConverters: JSXConvertersFunction<DefaultNodeTypes> = ({
+  defaultConverters,
+}) => ({
+  ...defaultConverters,
+  ...LinkJSXConverter({ internalDocToHref }),
+})
+
+export const MyComponent: React.FC<{
+  lexicalData: SerializedEditorState
+}> = ({ lexicalData }) => {
+  return <RichText converters={jsxConverters} data={lexicalData} />
+}
+```
+
+### Converting Lexical Blocks
+
+If your rich text includes custom Blocks or Inline Blocks, you must supply custom converters that match each block's slug. This converter is not included by default, as Payload doesn't know how to render your custom blocks.
+
+For example:
+
+```tsx
+'use client'
+import type { MyInlineBlock, MyNumberBlock, MyTextBlock } from '@/payload-types'
+import type {
+  DefaultNodeTypes,
+  SerializedBlockNode,
+  SerializedInlineBlockNode,
+} from '@payloadcms/richtext-lexical'
+import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
+
+import {
+  type JSXConvertersFunction,
+  RichText,
+} from '@payloadcms/richtext-lexical/react'
+import React from 'react'
+
+// Extend the default node types with your custom blocks for full type safety
+type NodeTypes =
+  | DefaultNodeTypes
+  | SerializedBlockNode<MyNumberBlock | MyTextBlock>
+  | SerializedInlineBlockNode<MyInlineBlock>
+
+const jsxConverters: JSXConvertersFunction<NodeTypes> = ({
+  defaultConverters,
+}) => ({
+  ...defaultConverters,
+  blocks: {
+    // Each key should match your block's slug
+    myNumberBlock: ({ node }) => <div>{node.fields.number}</div>,
+    myTextBlock: ({ node }) => (
+      <div style={{ backgroundColor: 'red' }}>{node.fields.text}</div>
+    ),
+  },
+  inlineBlocks: {
+    // Each key should match your inline block's slug
+    myInlineBlock: ({ node }) => <span>{node.fields.text}</span>,
+  },
+})
+
+export const MyComponent: React.FC<{
+  lexicalData: SerializedEditorState
+}> = ({ lexicalData }) => {
+  return <RichText converters={jsxConverters} data={lexicalData} />
+}
+```
+
+### Overriding Default JSX Converters
+
+You can override any of the default JSX converters by passing passing your custom converter, keyed to the node type, to the `converters` prop / the converters function.
+
+Example - overriding the upload node converter to use next/image:
+
+```tsx
+'use client'
+import type {
+  DefaultNodeTypes,
+  SerializedUploadNode,
+} from '@payloadcms/richtext-lexical'
+import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
+
+import {
+  type JSXConvertersFunction,
+  RichText,
+} from '@payloadcms/richtext-lexical/react'
+import Image from 'next/image'
+import React from 'react'
+
+type NodeTypes = DefaultNodeTypes
+
+// Custom upload converter component that uses next/image
+const CustomUploadComponent: React.FC<{
+  node: SerializedUploadNode
+}> = ({ node }) => {
+  if (node.relationTo === 'uploads') {
+    const uploadDoc = node.value
+    if (typeof uploadDoc !== 'object') {
+      return null
+    }
+    const { alt, height, url, width } = uploadDoc
+    return <Image alt={alt} height={height} src={url} width={width} />
+  }
+
+  return null
+}
+
+const jsxConverters: JSXConvertersFunction<NodeTypes> = ({
+  defaultConverters,
+}) => ({
+  ...defaultConverters,
+  // Override the default upload converter
+  upload: ({ node }) => {
+    return <CustomUploadComponent node={node} />
+  },
+})
+
+export const MyComponent: React.FC<{
+  lexicalData: SerializedEditorState
+}> = ({ lexicalData }) => {
+  return <RichText converters={jsxConverters} data={lexicalData} />
+}
+```
+````
+
+## File: rich-text_converting-markdown.mdx
+````
+---
+title: Converting Markdown
+label: Converting Markdown
+order: 23
+desc: Converting between lexical richtext and Markdown / MDX
+keywords: lexical, richtext, markdown, md, mdx
+---
+
+## Converting Richtext to Markdown
+
+If you have access to the Payload Config and the [lexical editor config](/docs/rich-text/converters#retrieving-the-editor-config), you can convert the lexical editor state to Markdown with the following:
+
+```ts
+import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
+
+import {
+  convertLexicalToMarkdown,
+  editorConfigFactory,
+} from '@payloadcms/richtext-lexical'
+
+// Your richtext data here
+const data: SerializedEditorState = {}
+
+const html = convertLexicalToMarkdown({
+  data,
+  editorConfig: await editorConfigFactory.default({
+    config, // <= make sure you have access to your Payload Config
+  }),
+})
+```
+
+### Example - outputting Markdown from the Collection
+
+```ts
+import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
+import type { CollectionConfig, RichTextField } from 'payload'
+
+import {
+  convertLexicalToMarkdown,
+  editorConfigFactory,
+  lexicalEditor,
+} from '@payloadcms/richtext-lexical'
+
+const Pages: CollectionConfig = {
+  slug: 'pages',
+  fields: [
+    {
+      name: 'nameOfYourRichTextField',
+      type: 'richText',
+      editor: lexicalEditor(),
+    },
+    {
+      name: 'markdown',
+      type: 'textarea',
+      admin: {
+        hidden: true,
+      },
+      hooks: {
+        afterRead: [
+          ({ siblingData, siblingFields }) => {
+            const data: SerializedEditorState =
+              siblingData['nameOfYourRichTextField']
+
+            if (!data) {
+              return ''
+            }
+
+            const markdown = convertLexicalToMarkdown({
+              data,
+              editorConfig: editorConfigFactory.fromField({
+                field: siblingFields.find(
+                  (field) =>
+                    'name' in field && field.name === 'nameOfYourRichTextField',
+                ) as RichTextField,
+              }),
+            })
+
+            return markdown
+          },
+        ],
+        beforeChange: [
+          ({ siblingData }) => {
+            // Ensure that the markdown field is not saved in the database
+            delete siblingData['markdown']
+            return null
+          },
+        ],
+      },
+    },
+  ],
+}
+```
+
+## Converting Markdown to Richtext
+
+If you have access to the Payload Config and the [lexical editor config](/docs/rich-text/converters#retrieving-the-editor-config), you can convert Markdown to the lexical editor state with the following:
+
+```ts
+import {
+  convertMarkdownToLexical,
+  editorConfigFactory,
+} from '@payloadcms/richtext-lexical'
+
+const html = convertMarkdownToLexical({
+  editorConfig: await editorConfigFactory.default({
+    config, // <= make sure you have access to your Payload Config
+  }),
+  markdown: '# Hello world\n\nThis is a **test**.',
+})
+```
+
+## Converting MDX
+
+Payload supports serializing and deserializing MDX content. While Markdown converters are stored on the features, MDX converters are stored on the blocks that you pass to the `BlocksFeature`.
+
+### Defining a Custom Block
+
+Here is an example of a `Banner` block.
+
+This block:
+
+- Renders in the admin UI as a normal Lexical block with specific fields (e.g. type, content).
+- Converts to an MDX `Banner` component.
+- Can parse that MDX `Banner` back into a Lexical state.
+
+<LightDarkImage
+  srcLight="https://payloadcms.com/images/docs/mdx-example-light.png"
+  srcDark="https://payloadcms.com/images/docs/mdx-example-dark.png"
+  alt="Shows the Banner field in a lexical editor and the MDX output"
+  caption="Banner field in a lexical editor and the MDX output"
+/>
+
+```ts
+import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
+import type { Block, CollectionConfig, RichTextField } from 'payload'
+
+import {
+  BlocksFeature,
+  convertLexicalToMarkdown,
+  editorConfigFactory,
+  lexicalEditor,
+} from '@payloadcms/richtext-lexical'
+
+const BannerBlock: Block = {
+  slug: 'Banner',
+  fields: [
+    {
+      name: 'type',
+      type: 'select',
+      defaultValue: 'info',
+      options: [
+        { label: 'Info', value: 'info' },
+        { label: 'Warning', value: 'warning' },
+        { label: 'Error', value: 'error' },
+      ],
+    },
+    {
+      name: 'content',
+      type: 'richText',
+      editor: lexicalEditor(),
+    },
+  ],
+  jsx: {
+    /**
+     * Convert from Lexical -> MDX:
+     * <Banner type="..." >child content</Banner>
+     */
+    export: ({ fields, lexicalToMarkdown }) => {
+      const props: any = {}
+      if (fields.type) {
+        props.type = fields.type
+      }
+
+      return {
+        children: lexicalToMarkdown({ editorState: fields.content }),
+        props,
+      }
+    },
+    /**
+     * Convert from MDX -> Lexical:
+     */
+    import: ({ children, markdownToLexical, props }) => {
+      return {
+        type: props?.type,
+        content: markdownToLexical({ markdown: children }),
+      }
+    },
+  },
+}
+
+const Pages: CollectionConfig = {
+  slug: 'pages',
+  fields: [
+    {
+      name: 'nameOfYourRichTextField',
+      type: 'richText',
+      editor: lexicalEditor({
+        features: ({ defaultFeatures }) => [
+          ...defaultFeatures,
+          BlocksFeature({
+            blocks: [BannerBlock],
+          }),
+        ],
+      }),
+    },
+    {
+      name: 'markdown',
+      type: 'textarea',
+      hooks: {
+        afterRead: [
+          ({ siblingData, siblingFields }) => {
+            const data: SerializedEditorState =
+              siblingData['nameOfYourRichTextField']
+
+            if (!data) {
+              return ''
+            }
+
+            const markdown = convertLexicalToMarkdown({
+              data,
+              editorConfig: editorConfigFactory.fromField({
+                field: siblingFields.find(
+                  (field) =>
+                    'name' in field && field.name === 'nameOfYourRichTextField',
+                ) as RichTextField,
+              }),
+            })
+
+            return markdown
+          },
+        ],
+        beforeChange: [
+          ({ siblingData }) => {
+            // Ensure that the markdown field is not saved in the database
+            delete siblingData['markdown']
+            return null
+          },
+        ],
+      },
+    },
+  ],
+}
+```
+
+The conversion is done using the `jsx` property of the block. The `export` function is called when converting from lexical to MDX, and the `import` function is called when converting from MDX to lexical.
+
+### Export
+
+The `export` function takes the block field data and the `lexicalToMarkdown` function as arguments. It returns the following object:
+
+| Property   | Type   | Description                                                        |
+| ---------- | ------ | ------------------------------------------------------------------ |
+| `children` | string | This will be in between the opening and closing tags of the block. |
+| `props`    | object | This will be in the opening tag of the block.                      |
+
+### Import
+
+The `import` function provides data extracted from the MDX. It takes the following arguments:
+
+| Argument   | Type   | Description                                                                          |
+| ---------- | ------ | ------------------------------------------------------------------------------------ |
+| `children` | string | This will be the text between the opening and closing tags of the block.             |
+| `props`    | object | These are the props passed to the block, parsed from the opening tag into an object. |
+
+The returning object is equal to the block field data.
+````
+
+## File: rich-text_converting-plaintext.mdx
+````
+---
+title: Converting Plaintext
+label: Converting Plaintext
+order: 24
+desc: Converting between lexical richtext and plaintext
+keywords: lexical, richtext, plaintext, text
+---
+
+## Converting Richtext to Plaintext
+
+Here's how you can convert richtext data to plaintext using `@payloadcms/richtext-lexical/plaintext`.
+
+```ts
+import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
+
+import { convertLexicalToPlaintext } from '@payloadcms/richtext-lexical/plaintext'
+
+// Your richtext data here
+const data: SerializedEditorState = {}
+
+const plaintext = convertLexicalToPlaintext({ data })
+```
+
+### Custom Converters
+
+The `convertLexicalToPlaintext` functions accepts a `converters` object that allows you to customize how specific nodes are converted to plaintext.
+
+```ts
+import type {
+  DefaultNodeTypes,
+  SerializedBlockNode,
+} from '@payloadcms/richtext-lexical'
+import type { SerializedEditorState } from '@payloadcms/richtext-lexical/lexical'
+import type { MyTextBlock } from '@/payload-types'
+
+import {
+  convertLexicalToPlaintext,
+  type PlaintextConverters,
+} from '@payloadcms/richtext-lexical/plaintext'
+
+// Your richtext data here
+const data: SerializedEditorState = {}
+
+const converters: PlaintextConverters<
+  DefaultNodeTypes | SerializedBlockNode<MyTextBlock>
+> = {
+  blocks: {
+    textBlock: ({ node }) => {
+      return node.fields.text ?? ''
+    },
+  },
+  link: ({ node }) => {
+    return node.fields.url ?? ''
+  },
+}
+
+const plaintext = convertLexicalToPlaintext({
+  converters,
+  data,
+})
+```
+
+Unlike other converters, there are no default converters for plaintext.
+
+If a node does not have a converter defined, the following heuristics are used to convert it to plaintext:
+
+- If the node has a `text` field, it will be used as the plaintext.
+- If the node has a `children` field, the children will be recursively converted to plaintext.
+- If the node has neither, it will be ignored.
+- Paragraph, text and tab nodes insert newline / tab characters.
+````
+
+## File: rich-text_custom-features.mdx
 ````
 ---
 title: Custom Features
@@ -25552,7 +21134,8 @@ That way, we still maintain a clear boundary between server and client code, whi
   **Important:**
   Do not import directly from core lexical packages - this may break in minor Payload version bumps.
 
-  Instead, import the re-exported versions from `@payloadcms/richtext-lexical`. For example, change `import { $insertNodeToNearestRoot } from '@lexical/utils'` to `import { $insertNodeToNearestRoot } from '@payloadcms/richtext-lexical/lexical/utils'`
+Instead, import the re-exported versions from `@payloadcms/richtext-lexical`. For example, change `import { $insertNodeToNearestRoot } from '@lexical/utils'` to `import { $insertNodeToNearestRoot } from '@payloadcms/richtext-lexical/lexical/utils'`
+
 </Banner>
 
 ## Do I need a custom feature?
@@ -25654,7 +21237,9 @@ export const Code: React.FC<CodeFieldClientProps> = ({
   const languageField = useFormFields(([fields]) => fields['language'])
 
   const language: Language =
-    (languageField?.value as Language) || (languageField?.initialValue as Language) || 'ts'
+    (languageField?.value as Language) ||
+    (languageField?.initialValue as Language) ||
+    'ts'
 
   const label = languages[language]
 
@@ -25698,11 +21283,10 @@ Custom Blocks are not enough? To start building a custom feature, you should sta
 **Example myFeature/feature.server.ts:**
 
 ```ts
-import { createServerFeature } from '@payloadcms/richtext-lexical';
+import { createServerFeature } from '@payloadcms/richtext-lexical'
 
 export const MyFeature = createServerFeature({
-  feature: {
-  },
+  feature: {},
   key: 'myFeature',
 })
 ```
@@ -25734,8 +21318,7 @@ By default, this server feature does nothing - you haven't added any functionali
 Each feature can register their own translations, which are automatically scoped to the feature key:
 
 ```ts
-import { createServerFeature } from '@payloadcms/richtext-lexical';
-
+import { createServerFeature } from '@payloadcms/richtext-lexical'
 
 export const MyFeature = createServerFeature({
   feature: {
@@ -25759,13 +21342,9 @@ This allows you to add i18n translations scoped to your feature. This specific e
 The Server Feature, just like the Client Feature, allows you to add markdown transformers. Markdown transformers on the server are used when [converting the editor from or to markdown](/docs/rich-text/converters#markdown-lexical).
 
 ```ts
-import { createServerFeature } from '@payloadcms/richtext-lexical';
+import { createServerFeature } from '@payloadcms/richtext-lexical'
 import type { ElementTransformer } from '@payloadcms/richtext-lexical/lexical/markdown'
-import {
-  $createMyNode,
-  $isMyNode,
-  MyNode
-} from './nodes/MyNode'
+import { $createMyNode, $isMyNode, MyNode } from './nodes/MyNode'
 
 const MyMarkdownTransformer: ElementTransformer = {
   type: 'element',
@@ -25786,7 +21365,6 @@ const MyMarkdownTransformer: ElementTransformer = {
   },
 }
 
-
 export const MyFeature = createServerFeature({
   feature: {
     markdownTransformers: [MyMarkdownTransformer],
@@ -25800,6 +21378,7 @@ In this example, the node will be outputted as `+++` in Markdown, and the markdo
 ### Nodes#server-feature-nodes
 
 While nodes added to the server feature do not control how the node is rendered in the editor, they control other aspects of the node:
+
 - HTML conversion
 - Node Hooks
 - Sub fields
@@ -25808,14 +21387,11 @@ While nodes added to the server feature do not control how the node is rendered 
 The `createNode` helper function is used to create nodes with proper typing. It is recommended to use this function to create nodes.
 
 ```ts
-import { createServerFeature, createNode } from '@payloadcms/richtext-lexical';
-import {
-  MyNode
-} from './nodes/MyNode'
+import { createServerFeature, createNode } from '@payloadcms/richtext-lexical'
+import { MyNode } from './nodes/MyNode'
 
 export const MyFeature = createServerFeature({
   feature: {
-
     nodes: [
       // Use the createNode helper function to more easily create nodes with proper typing
       createNode({
@@ -25841,7 +21417,7 @@ export const MyFeature = createServerFeature({
 While nodes in the client feature are added by themselves to the nodes array, nodes in the server feature can be added together with the following sibling options:
 
 | Option                          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`getSubFields`**              | If a node includes sub-fields (e.g. block and link nodes), passing the subFields schema here will make Payload automatically populate & run hooks for them.                                                                                                                                                                                                                                                                                                   |
 | **`getSubFieldsData`**          | If a node includes sub-fields, the sub-fields data needs to be returned here, alongside `getSubFields` which returns their schema.                                                                                                                                                                                                                                                                                                                            |
 | **`graphQLPopulationPromises`** | Allows you to run population logic when a node's data was requested from GraphQL. While `getSubFields` and `getSubFieldsData` automatically handle populating sub-fields (since they run hooks on them), those are only populated in the Rest API. This is because the Rest API hooks do not have access to the 'depth' property provided by GraphQL. In order for them to be populated correctly in GraphQL, the population logic needs to be provided here. |
@@ -25855,16 +21431,22 @@ While nodes in the client feature are added by themselves to the nodes array, no
 Server features can also accept a function as the `feature` property (useful for sanitizing props, as mentioned below). This function will be called when the feature is loaded during the Payload sanitization process:
 
 ```ts
-import { createServerFeature } from '@payloadcms/richtext-lexical';
+import { createServerFeature } from '@payloadcms/richtext-lexical'
 
 createServerFeature({
   //...
-  feature: async ({ config, isRoot, props, resolvedFeatures, unSanitizedEditorConfig, featureProviderMap }) => {
-
+  feature: async ({
+    config,
+    isRoot,
+    props,
+    resolvedFeatures,
+    unSanitizedEditorConfig,
+    featureProviderMap,
+  }) => {
     return {
       //Actual server feature here...
     }
-  }
+  },
 })
 ```
 
@@ -25876,7 +21458,7 @@ Within lexical, one example where this is done are our list features. Both `Unor
 Here is how we do it:
 
 ```ts
-import { createServerFeature, createNode } from '@payloadcms/richtext-lexical';
+import { createServerFeature, createNode } from '@payloadcms/richtext-lexical'
 
 export const OrderedListFeature = createServerFeature({
   feature: ({ featureProviderMap }) => {
@@ -25900,7 +21482,7 @@ export const OrderedListFeature = createServerFeature({
 If you wanted to make sure a feature is loaded before another feature, you can use the `dependenciesPriority` property:
 
 ```ts
-import { createServerFeature } from '@payloadcms/richtext-lexical';
+import { createServerFeature } from '@payloadcms/richtext-lexical'
 
 export const MyFeature = createServerFeature({
   feature: ({ featureProviderMap }) => {
@@ -25914,7 +21496,7 @@ export const MyFeature = createServerFeature({
 ```
 
 | Option                     | Description                                                                                                                                                                                               |
-|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`dependenciesSoft`**     | Keys of soft-dependencies needed for this feature. These are optional. Payload will attempt to load them before this feature, but doesn't throw an error if that's not possible.                          |
 | **`dependencies`**         | Keys of dependencies needed for this feature. These dependencies do not have to be loaded first, but they have to exist, otherwise an error will be thrown.                                               |
 | **`dependenciesPriority`** | Keys of priority dependencies needed for this feature. These dependencies have to be loaded first AND have to exist, otherwise an error will be thrown. They will be available in the `feature` property. |
@@ -25934,11 +21516,9 @@ To set up your client-side feature, follow these three steps:
 ```ts
 'use client'
 
-import { createClientFeature } from '@payloadcms/richtext-lexical/client';
+import { createClientFeature } from '@payloadcms/richtext-lexical/client'
 
-export const MyClientFeature = createClientFeature({
-
-})
+export const MyClientFeature = createClientFeature({})
 ```
 
 Explore the APIs available through ClientFeature to add the specific functionality you need. Remember, do not import directly from `'@payloadcms/richtext-lexical'` when working on the client-side, as it will cause errors with webpack or turbopack. Instead, use `'@payloadcms/richtext-lexical/client'` for all client-side imports. Type-imports are excluded from this rule and can always be imported.
@@ -25948,7 +21528,7 @@ Explore the APIs available through ClientFeature to add the specific functionali
 Inside of your server feature, you can provide an [import path](/docs/admin/custom-components/overview#component-paths) to the client feature like this:
 
 ```ts
-import { createServerFeature } from '@payloadcms/richtext-lexical';
+import { createServerFeature } from '@payloadcms/richtext-lexical'
 
 export const MyFeature = createServerFeature({
   feature: {
@@ -25970,11 +21550,11 @@ Example:
 ```ts
 'use client'
 
-import { createClientFeature } from '@payloadcms/richtext-lexical/client';
-import { MyNode } from './nodes/MyNode';
+import { createClientFeature } from '@payloadcms/richtext-lexical/client'
+import { MyNode } from './nodes/MyNode'
 
 export const MyClientFeature = createClientFeature({
-  nodes: [MyNode]
+  nodes: [MyNode],
 })
 ```
 
@@ -26127,11 +21707,11 @@ To add a plugin, simply add it to the `plugins` array in your client feature:
 ```ts
 'use client'
 
-import { createClientFeature } from '@payloadcms/richtext-lexical/client';
-import { MyPlugin } from './plugin';
+import { createClientFeature } from '@payloadcms/richtext-lexical/client'
+import { MyPlugin } from './plugin'
 
 export const MyClientFeature = createClientFeature({
-  plugins: [MyPlugin]
+  plugins: [MyPlugin],
 })
 ```
 
@@ -26139,15 +21719,13 @@ Example plugin.tsx:
 
 ```ts
 'use client'
-import type {
-  LexicalCommand,
-} from '@payloadcms/richtext-lexical/lexical'
+import type { LexicalCommand } from '@payloadcms/richtext-lexical/lexical'
 
 import {
   createCommand,
   $getSelection,
   $isRangeSelection,
-  COMMAND_PRIORITY_EDITOR
+  COMMAND_PRIORITY_EDITOR,
 } from '@payloadcms/richtext-lexical/lexical'
 
 import { useLexicalComposerContext } from '@payloadcms/richtext-lexical/lexical/react/LexicalComposerContext'
@@ -26156,9 +21734,7 @@ import { useEffect } from 'react'
 
 import type { PluginComponent } from '@payloadcms/richtext-lexical' // type imports can be imported from @payloadcms/richtext-lexical - even on the client
 
-import {
-  $createMyNode,
-} from '../nodes/MyNode'
+import { $createMyNode } from '../nodes/MyNode'
 import './index.scss'
 
 export const INSERT_MYNODE_COMMAND: LexicalCommand<void> = createCommand(
@@ -26168,7 +21744,7 @@ export const INSERT_MYNODE_COMMAND: LexicalCommand<void> = createCommand(
 /**
  * Plugin which registers a lexical command to insert a new MyNode into the editor
  */
-export const MyNodePlugin: PluginComponent= () => {
+export const MyNodePlugin: PluginComponent = () => {
   // The useLexicalComposerContext hook can be used to access the lexical editor instance
   const [editor] = useLexicalComposerContext()
 
@@ -26203,9 +21779,10 @@ In this example, we register a lexical command, which simply inserts a new MyNod
 
 ### Toolbar groups
 
-Toolbar groups are visual containers which hold toolbar items. There are different toolbar group types which determine *how* a toolbar item is displayed: `dropdown` and `buttons`.
+Toolbar groups are visual containers which hold toolbar items. There are different toolbar group types which determine _how_ a toolbar item is displayed: `dropdown` and `buttons`.
 
 All the default toolbar groups are exported from `@payloadcms/richtext-lexical/client`. You can use them to add your own toolbar items to the editor:
+
 - Dropdown: `toolbarAddDropdownGroupWithItems`
 - Dropdown: `toolbarTextDropdownGroupWithItems`
 - Buttons: `toolbarFormatGroupWithItems`
@@ -26216,17 +21793,23 @@ Within dropdown groups, items are positioned vertically when the dropdown is ope
 #### Custom buttons toolbar group
 
 | Option      | Description                                                                                                                                            |
-|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **`items`** | All toolbar items part of this toolbar group need to be added here.                                                                                    |
 | **`key`**   | Each toolbar group needs to have a unique key. Groups with the same keys will have their items merged together.                                        |
 | **`order`** | Determines where the toolbar group will be.                                                                                                            |
 | **`type`**  | Controls the toolbar group type. Set to `buttons` to create a buttons toolbar group, which displays toolbar items horizontally using only their icons. |
 
 Example:
-```ts
-import type { ToolbarGroup, ToolbarGroupItem } from '@payloadcms/richtext-lexical'
 
-export const toolbarFormatGroupWithItems = (items: ToolbarGroupItem[]): ToolbarGroup => {
+```ts
+import type {
+  ToolbarGroup,
+  ToolbarGroupItem,
+} from '@payloadcms/richtext-lexical'
+
+export const toolbarFormatGroupWithItems = (
+  items: ToolbarGroupItem[],
+): ToolbarGroup => {
   return {
     type: 'buttons',
     items,
@@ -26239,7 +21822,7 @@ export const toolbarFormatGroupWithItems = (items: ToolbarGroupItem[]): ToolbarG
 #### Custom dropdown toolbar group
 
 | Option               | Description                                                                                                                                                                          |
-|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **`items`**          | All toolbar items part of this toolbar group need to be added here.                                                                                                                  |
 | **`key`**            | Each toolbar group needs to have a unique key. Groups with the same keys will have their items merged together.                                                                      |
 | **`order`**          | Determines where the toolbar group will be.                                                                                                                                          |
@@ -26247,12 +21830,18 @@ export const toolbarFormatGroupWithItems = (items: ToolbarGroupItem[]): ToolbarG
 | **`ChildComponent`** | The dropdown toolbar ChildComponent allows you to pass in a React Component which will be displayed within the dropdown button.                                                      |
 
 Example:
+
 ```ts
-import type { ToolbarGroup, ToolbarGroupItem } from '@payloadcms/richtext-lexical'
+import type {
+  ToolbarGroup,
+  ToolbarGroupItem,
+} from '@payloadcms/richtext-lexical'
 
 import { MyIcon } from './icons/MyIcon'
 
-export const toolbarAddDropdownGroupWithItems = (items: ToolbarGroupItem[]): ToolbarGroup => {
+export const toolbarAddDropdownGroupWithItems = (
+  items: ToolbarGroupItem[],
+): ToolbarGroup => {
   return {
     type: 'dropdown',
     ChildComponent: MyIcon,
@@ -26278,14 +21867,17 @@ To add a toolbar item to either the floating or the inline toolbar, you can add 
 ```ts
 'use client'
 
-import { createClientFeature, toolbarAddDropdownGroupWithItems } from '@payloadcms/richtext-lexical/client';
-import { IconComponent } from './icon';
-import { $isHorizontalRuleNode } from './nodes/MyNode';
-import { INSERT_MYNODE_COMMAND } from './plugin';
+import {
+  createClientFeature,
+  toolbarAddDropdownGroupWithItems,
+} from '@payloadcms/richtext-lexical/client'
+import { IconComponent } from './icon'
+import { $isHorizontalRuleNode } from './nodes/MyNode'
+import { INSERT_MYNODE_COMMAND } from './plugin'
 import { $isNodeSelection } from '@payloadcms/richtext-lexical/lexical'
 
 export const MyClientFeature = createClientFeature({
-   toolbarFixed: {
+  toolbarFixed: {
     groups: [
       toolbarAddDropdownGroupWithItems([
         {
@@ -26317,7 +21909,7 @@ You will have to provide a toolbar group first, and then the items for that tool
 A `ToolbarItem` various props you can use to customize its behavior:
 
 | Option               | Description                                                                                                                                                                                |
-|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **`ChildComponent`** | A React component which is rendered within your toolbar item's default button component. Usually, you want this to be an icon.                                                             |
 | **`Component`**      | A React component which is rendered in place of the toolbar item's default button component, thus completely replacing it. The `ChildComponent` and `onSelect` properties will be ignored. |
 | **`label`**          | The label will be displayed in your toolbar item, if it's within a dropdown group. To make use of i18n, this can be a function.                                                            |
@@ -26339,11 +21931,13 @@ import type {
   SlashMenuItem,
 } from '@payloadcms/richtext-lexical'
 
-export function mwnSlashMenuGroupWithItems(items: SlashMenuItem[]): SlashMenuGroup {
+export function mwnSlashMenuGroupWithItems(
+  items: SlashMenuItem[],
+): SlashMenuGroup {
   return {
     items,
     key: 'myGroup',
-    label: 'My Group' // <= This can be a function to make use of i18n
+    label: 'My Group', // <= This can be a function to make use of i18n
   }
 }
 ```
@@ -26351,11 +21945,10 @@ export function mwnSlashMenuGroupWithItems(items: SlashMenuItem[]): SlashMenuGro
 By creating a helper function like this, you can easily re-use it and add items to it. All Slash Menu groups with the same keys will have their items merged together.
 
 | Option      | Description                                                                                                                           |
-|-------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | **`items`** | An array of `SlashMenuItem`'s which will be displayed in the slash menu.                                                              |
 | **`label`** | The label will be displayed before your Slash Menu group. In order to make use of i18n, this can be a function.                       |
 | **`key`**   | Used for class names and, if label is not provided, for display. Slash menus with the same key will have their items merged together. |
-
 
 ### Slash Menu items
 
@@ -26364,9 +21957,12 @@ The API for adding items to the slash menu is similar. There are slash menu grou
 ```ts
 'use client'
 
-import { createClientFeature, slashMenuBasicGroupWithItems } from '@payloadcms/richtext-lexical/client';
-import { INSERT_MYNODE_COMMAND } from './plugin';
-import { IconComponent } from './icon';
+import {
+  createClientFeature,
+  slashMenuBasicGroupWithItems,
+} from '@payloadcms/richtext-lexical/client'
+import { INSERT_MYNODE_COMMAND } from './plugin'
+import { IconComponent } from './icon'
 
 export const MyClientFeature = createClientFeature({
   slashMenu: {
@@ -26390,26 +21986,21 @@ export const MyClientFeature = createClientFeature({
 ```
 
 | Option         | Description                                                                                                                                                                                                                                                                       |
-|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **`Icon`**     | The icon which is rendered in your slash menu item.                                                                                                                                                                                                                               |
 | **`label`**    | The label will be displayed in your slash menu item. In order to make use of i18n, this can be a function.                                                                                                                                                                        |
 | **`key`**      | Each slash menu item needs to have a unique key. The key will be matched when typing, displayed if no `label` property is set, and used for classNames.                                                                                                                           |
 | **`onSelect`** | A function which is called when the slash menu item is selected.                                                                                                                                                                                                                  |
 | **`keywords`** | Keywords are used to match the item for different texts typed after the '/'. E.g. you might want to show a horizontal rule item if you type both /hr, /separator, /horizontal etc. In addition to the keywords, the label and key will be used to find the right slash menu item. |
 
-
 ### Markdown Transformers#client-feature-markdown-transformers
 
 The Client Feature, just like the Server Feature, allows you to add markdown transformers. Markdown transformers on the client are used to create new nodes when a certain markdown pattern is typed in the editor.
 
 ```ts
-import { createClientFeature } from '@payloadcms/richtext-lexical/client';
+import { createClientFeature } from '@payloadcms/richtext-lexical/client'
 import type { ElementTransformer } from '@payloadcms/richtext-lexical/lexical/markdown'
-import {
-  $createMyNode,
-  $isMyNode,
-  MyNode
-} from './nodes/MyNode'
+import { $createMyNode, $isMyNode, MyNode } from './nodes/MyNode'
 
 const MyMarkdownTransformer: ElementTransformer = {
   type: 'element',
@@ -26430,7 +22021,6 @@ const MyMarkdownTransformer: ElementTransformer = {
   },
 }
 
-
 export const MyFeature = createClientFeature({
   markdownTransformers: [MyMarkdownTransformer],
 })
@@ -26445,11 +22035,11 @@ You can add providers to your client feature, which will be nested below the `Ed
 ```ts
 'use client'
 
-import { createClientFeature } from '@payloadcms/richtext-lexical/client';
-import { TableContext } from './context';
+import { createClientFeature } from '@payloadcms/richtext-lexical/client'
+import { TableContext } from './context'
 
 export const MyClientFeature = createClientFeature({
-    providers: [TableContext],
+  providers: [TableContext],
 })
 ```
 
@@ -26479,14 +22069,21 @@ To sanitize those in the server feature, you can pass a function to `feature` in
 ```ts
 createServerFeature<UnSanitizedProps, SanitizedProps, UnSanitizedClientProps>({
   //...
-  feature: async ({ config, isRoot, props, resolvedFeatures, unSanitizedEditorConfig, featureProviderMap }) => {
+  feature: async ({
+    config,
+    isRoot,
+    props,
+    resolvedFeatures,
+    unSanitizedEditorConfig,
+    featureProviderMap,
+  }) => {
     const sanitizedProps = doSomethingWithProps(props)
 
     return {
       sanitizedServerFeatureProps: sanitizedProps,
       //Actual server feature here...
     }
-  }
+  },
 })
 ```
 
@@ -26496,10 +22093,16 @@ In the client feature, it works similarly:
 
 ```ts
 createClientFeature<UnSanitizedClientProps, SanitizedClientProps>(
-  ({ clientFunctions, featureProviderMap, props, resolvedFeatures, unSanitizedEditorConfig }) => {
+  ({
+    clientFunctions,
+    featureProviderMap,
+    props,
+    resolvedFeatures,
+    unSanitizedEditorConfig,
+  }) => {
     const sanitizedProps = doSomethingWithProps(props)
     return {
-      sanitizedClientFeatureProps:  sanitizedProps,
+      sanitizedClientFeatureProps: sanitizedProps,
       //Actual client feature here...
     }
   },
@@ -26519,9 +22122,9 @@ createServerFeature<UnSanitizedProps, SanitizedProps, UnSanitizedClientProps>({
   //...
   feature: {
     clientFeatureProps: {
-      test: 'myValue'
-    }
-  }
+      test: 'myValue',
+    },
+  },
 })
 ```
 
@@ -26532,7 +22135,7 @@ The reason the client feature does not have the same props available as the serv
 Have a look at the [features we've already built](https://github.com/payloadcms/payload/tree/main/packages/richtext-lexical/src/features) - understanding how they work will help you understand how to create your own. There is no difference between the features included by default and the ones you create yourself - since those features are all isolated from the "core", you have access to the same APIs, whether the feature is part of Payload or not!
 ````
 
-## File: rich-text/migration.mdx
+## File: rich-text_migration.mdx
 ````
 ---
 title: Lexical Migration
@@ -26551,6 +22154,7 @@ While both Slate and Lexical save the editor state in JSON, the structure of the
 Just import the `migrateSlateToLexical` function we provide, pass it the `payload` object and run it. Depending on the amount of collections, this might take a while.
 
 IMPORTANT: This will overwrite all slate data. We recommend doing the following first:
+
 1. Take a backup of your entire database. If anything goes wrong and you do not have a backup, you are on your own and will not receive any support.
 2. Make every richText field a lexical editor. This script will only convert lexical richText fields with old Slate data.
 3. Add the SlateToLexicalFeature (as seen below) first, and test it out by loading up the Admin Panel, to see if the migrator works as expected. You might have to build some custom converters for some fields first in order to convert custom Slate nodes. The SlateToLexicalFeature is where the converters are stored. Only fields with this feature added will be migrated.
@@ -26581,7 +22185,10 @@ const Pages: CollectionConfig = {
       name: 'nameOfYourRichTextField',
       type: 'richText',
       editor: lexicalEditor({
-        features: ({ defaultFeatures }) => [...defaultFeatures, SlateToLexicalFeature({})],
+        features: ({ defaultFeatures }) => [
+          ...defaultFeatures,
+          SlateToLexicalFeature({}),
+        ],
       }),
     },
   ],
@@ -26633,7 +22240,7 @@ When using the `SlateToLexicalFeature`, you can add your custom converters to th
 ```ts
 import type { CollectionConfig } from 'payload'
 
-import {  lexicalEditor } from '@payloadcms/richtext-lexical'
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import {
   SlateToLexicalFeature,
   defaultSlateConverters,
@@ -26683,7 +22290,7 @@ await upgradeLexicalData({ payload })
 ```
 ````
 
-## File: rich-text/overview.mdx
+## File: rich-text_overview.mdx
 ````
 ---
 description: The Payload editor, based on Lexical, allows for great customization with unparalleled ease.
@@ -26695,18 +22302,17 @@ title: Rich Text Editor
 
 <Banner type="success">
 
-  This documentation is about our new editor, based on Lexical (Meta's rich text editor). The previous default 
-  editor was based on Slate and is still supported. You can read [its documentation](/docs/rich-text/slate), 
-  or the optional [migration guide](/docs/rich-text/migration) to migrate from Slate to Lexical (recommended).
+This documentation is about our new editor, based on Lexical (Meta's rich text editor). The previous default
+editor was based on Slate and is still supported. You can read [its documentation](/docs/rich-text/slate),
+or the optional [migration guide](/docs/rich-text/migration) to migrate from Slate to Lexical (recommended).
 
 </Banner>
 
 The editor is the most important property of the [rich text field](/docs/fields/rich-text).
 
-As a key part of Payload, we are proud to offer you the best editing experience you can imagine. With healthy 
-defaults out of the box, but also with the flexibility to customize every detail: from the “/” menu 
+As a key part of Payload, we are proud to offer you the best editing experience you can imagine. With healthy
+defaults out of the box, but also with the flexibility to customize every detail: from the “/” menu
 and toolbars (whether inline or fixed) to inserting any component or subfield you can imagine.
-
 
 To use the rich text editor, first you need to install it:
 
@@ -26821,41 +22427,41 @@ import { CallToAction } from '../blocks/CallToAction'
 
 `features` can be both an array of features, or a function returning an array of features. The function provides the following props:
 
-|    Prop                     |    Description                                                                                                                                                                                                                                               |
-| --- | --- |
-|    **`defaultFeatures`**    |    This opinionated array contains all "recommended" default features. You can see which features are included in the default features in the table below.                                                                                                   |
-|    **`rootFeatures`**       |    This array contains all features that are enabled in the root richText editor (the one defined in the payload.config.ts). If this field is the root richText editor, or if the root richText editor is not a lexical editor, this array will be empty.    |
+| Prop                  | Description                                                                                                                                                                                                                                            |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **`defaultFeatures`** | This opinionated array contains all "recommended" default features. You can see which features are included in the default features in the table below.                                                                                                |
+| **`rootFeatures`**    | This array contains all features that are enabled in the root richText editor (the one defined in the payload.config.ts). If this field is the root richText editor, or if the root richText editor is not a lexical editor, this array will be empty. |
 
 ## Features overview
 
 Here's an overview of all the included features:
 
-|   Feature Name                      |   Included by default   |   Description                                                                                                                                                                              |
-| --- | --- | --- |
-|   **`BoldFeature`**             |   Yes                   |   Handles the bold text format                                                                                                                                                             |
-|   **`ItalicFeature`**           |   Yes                   |   Handles the italic text format                                                                                                                                                           |
-|   **`UnderlineFeature`**        |   Yes                   |   Handles the underline text format                                                                                                                                                        |
-|   **`StrikethroughFeature`**    |   Yes                   |   Handles the strikethrough text format                                                                                                                                                    |
-|   **`SubscriptFeature`**        |   Yes                   |   Handles the subscript text format                                                                                                                                                        |
-|   **`SuperscriptFeature`**      |   Yes                   |   Handles the superscript text format                                                                                                                                                      |
-|   **`InlineCodeFeature`**       |   Yes                   |   Handles the inline-code text format                                                                                                                                                      |
-|   **`ParagraphFeature`**            |   Yes                   |   Handles paragraphs. Since they are already a key feature of lexical itself, this Feature mainly handles the Slash and Add-Block menu entries for paragraphs                              |
-|   **`HeadingFeature`**              |   Yes                   |   Adds Heading Nodes (by default, H1 - H6, but that can be customized)                                                                                                                     |
-|   **`AlignFeature`**                |   Yes                   |   Allows you to align text left, centered and right                                                                                                                                        |
-|   **`IndentFeature`**               |   Yes                   |   Allows you to indent text with the tab key                                                                                                                                               |
-|   **`UnorderedListFeature`**        |   Yes                   |   Adds unordered lists (ul)                                                                                                                                                                |
-|   **`OrderedListFeature`**          |   Yes                   |   Adds ordered lists (ol)                                                                                                                                                                  |
-|   **`ChecklistFeature`**            |   Yes                   |   Adds checklists                                                                                                                                                                          |
-|   **`LinkFeature`**                 |   Yes                   |   Allows you to create internal and external links                                                                                                                                         |
-|   **`RelationshipFeature`**         |   Yes                   |   Allows you to create block-level (not inline) relationships to other documents                                                                                                           |
-|   **`BlockquoteFeature`**           |   Yes                   |   Allows you to create block-level quotes                                                                                                                                                  |
-|   **`UploadFeature`**               |   Yes                   |   Allows you to create block-level upload nodes - this supports all kinds of uploads, not just images                                                                                      |
-|   **`HorizontalRuleFeature`**       |   Yes                   |   Horizontal rules / separators. Basically displays an `<hr>` element                                                                                                                      |
-|   **`InlineToolbarFeature`**        |   Yes                   |   The inline toolbar is the floating toolbar which appears when you select text. This toolbar only contains actions relevant for selected text                                             |
-|   **`FixedToolbarFeature`**         |   No                    |   This classic toolbar is pinned to the top and always visible. Both inline and fixed toolbars can be enabled at the same time.                                                            |
-|   **`BlocksFeature`**               |   No                    |   Allows you to use Payload's [Blocks Field](../fields/blocks) directly inside your editor. In the feature props, you can specify the allowed blocks - just like in the Blocks field.   |
-|   **`TreeViewFeature`**             |   No                    |   Adds a debug box under the editor, which allows you to see the current editor state live, the dom, as well as time travel. Very useful for debugging                                     |
-|   **`EXPERIMENTAL_TableFeature`**   |   No                    |   Adds support for tables. This feature may be removed or receive breaking changes in the future - even within a stable lexical release, without needing a major release.                  |
+| Feature Name                    | Included by default | Description                                                                                                                                                                         |
+| ------------------------------- | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`BoldFeature`**               | Yes                 | Handles the bold text format                                                                                                                                                        |
+| **`ItalicFeature`**             | Yes                 | Handles the italic text format                                                                                                                                                      |
+| **`UnderlineFeature`**          | Yes                 | Handles the underline text format                                                                                                                                                   |
+| **`StrikethroughFeature`**      | Yes                 | Handles the strikethrough text format                                                                                                                                               |
+| **`SubscriptFeature`**          | Yes                 | Handles the subscript text format                                                                                                                                                   |
+| **`SuperscriptFeature`**        | Yes                 | Handles the superscript text format                                                                                                                                                 |
+| **`InlineCodeFeature`**         | Yes                 | Handles the inline-code text format                                                                                                                                                 |
+| **`ParagraphFeature`**          | Yes                 | Handles paragraphs. Since they are already a key feature of lexical itself, this Feature mainly handles the Slash and Add-Block menu entries for paragraphs                         |
+| **`HeadingFeature`**            | Yes                 | Adds Heading Nodes (by default, H1 - H6, but that can be customized)                                                                                                                |
+| **`AlignFeature`**              | Yes                 | Allows you to align text left, centered and right                                                                                                                                   |
+| **`IndentFeature`**             | Yes                 | Allows you to indent text with the tab key                                                                                                                                          |
+| **`UnorderedListFeature`**      | Yes                 | Adds unordered lists (ul)                                                                                                                                                           |
+| **`OrderedListFeature`**        | Yes                 | Adds ordered lists (ol)                                                                                                                                                             |
+| **`ChecklistFeature`**          | Yes                 | Adds checklists                                                                                                                                                                     |
+| **`LinkFeature`**               | Yes                 | Allows you to create internal and external links                                                                                                                                    |
+| **`RelationshipFeature`**       | Yes                 | Allows you to create block-level (not inline) relationships to other documents                                                                                                      |
+| **`BlockquoteFeature`**         | Yes                 | Allows you to create block-level quotes                                                                                                                                             |
+| **`UploadFeature`**             | Yes                 | Allows you to create block-level upload nodes - this supports all kinds of uploads, not just images                                                                                 |
+| **`HorizontalRuleFeature`**     | Yes                 | Horizontal rules / separators. Basically displays an `<hr>` element                                                                                                                 |
+| **`InlineToolbarFeature`**      | Yes                 | The inline toolbar is the floating toolbar which appears when you select text. This toolbar only contains actions relevant for selected text                                        |
+| **`FixedToolbarFeature`**       | No                  | This classic toolbar is pinned to the top and always visible. Both inline and fixed toolbars can be enabled at the same time.                                                       |
+| **`BlocksFeature`**             | No                  | Allows you to use Payload's [Blocks Field](../fields/blocks) directly inside your editor. In the feature props, you can specify the allowed blocks - just like in the Blocks field. |
+| **`TreeViewFeature`**           | No                  | Adds a debug box under the editor, which allows you to see the current editor state live, the dom, as well as time travel. Very useful for debugging                                |
+| **`EXPERIMENTAL_TableFeature`** | No                  | Adds support for tables. This feature may be removed or receive breaking changes in the future - even within a stable lexical release, without needing a major release.             |
 
 Notice how even the toolbars are features? That's how extensible our lexical editor is - you could theoretically create your own toolbar if you wanted to!
 
@@ -26934,9 +22540,7 @@ const editorState: TypedEditorState<
 Alternatively, you can use the `DefaultTypedEditorState` type, which includes all types for all nodes included in the `defaultFeatures`:
 
 ```ts
-import type {
-  DefaultTypedEditorState
-} from '@payloadcms/richtext-lexical'
+import type { DefaultTypedEditorState } from '@payloadcms/richtext-lexical'
 
 const editorState: DefaultTypedEditorState = {
   root: {
@@ -26988,12 +22592,11 @@ Lexical does not generate accurate type definitions for your richText fields for
 
 The Rich Text Field editor configuration has an `admin` property with the following options:
 
-|   Property                         |   Description                                                                                                                              |
-| --- | --- |
-|   **`placeholder`**                |   Set this property to define a placeholder string for the field.                                                                          |
-|   **`hideGutter`**                 |   Set this property to `true` to hide this field's gutter within the Admin Panel.                                                          |
-|   **`hideInsertParagraphAtEnd`**   |   Set this property to `true` to hide the "+" button that appears at the end of the editor                                                 |
-
+| Property                       | Description                                                                              |
+| ------------------------------ | ---------------------------------------------------------------------------------------- |
+| **`placeholder`**              | Set this property to define a placeholder string for the field.                          |
+| **`hideGutter`**               | Set this property to `true` to hide this field's gutter within the Admin Panel.          |
+| **`hideInsertParagraphAtEnd`** | Set this property to `true` to hide the "+" button that appears at the end of the editor |
 
 ### Disable the gutter
 
@@ -27028,7 +22631,7 @@ You can customize the placeholder (the text that appears in the editor when it's
 ```
 ````
 
-## File: rich-text/slate.mdx
+## File: rich-text_slate.mdx
 ````
 ---
 title: Slate Editor
@@ -27040,9 +22643,9 @@ keywords: slatejs, slate, rich text, editor, headless cms
 
 <Banner type="warning">
 
-  The [default Payload editor](/docs/rich-text/overview) is currently based on Lexical. This documentation 
-  is about our old Slate-based editor. You can continue using it because it is still supported, or you can 
-  see the optional [migration guide](/docs/rich-text/migration) to migrate from Slate to Lexical (recommended).
+The [default Payload editor](/docs/rich-text/overview) is currently based on Lexical. This documentation
+is about our old Slate-based editor. You can continue using it because it is still supported, or you can
+see the optional [migration guide](/docs/rich-text/migration) to migrate from Slate to Lexical (recommended).
 
 </Banner>
 
@@ -27161,10 +22764,11 @@ Similar to the `relationship` element, the `upload` element is a user-friendly w
 <Banner type="success">
   **Tip:**
 
-  Collections are automatically allowed to be selected within the Rich Text relationship and upload
-  elements by default. If you want to disable a collection from being able to be referenced in Rich
-  Text fields, set the collection admin options of **enableRichTextLink** and
-  **enableRichTextRelationship** to false.
+Collections are automatically allowed to be selected within the Rich Text relationship and upload
+elements by default. If you want to disable a collection from being able to be referenced in Rich
+Text fields, set the collection admin options of **enableRichTextLink** and
+**enableRichTextRelationship** to false.
+
 </Banner>
 
 Relationship and Upload elements are populated dynamically into your Rich Text field' content. Within the REST and Local APIs, any present RichText `relationship` or `upload` elements will respect the `depth` option that you pass, and will be populated accordingly. In GraphQL, each `richText` field accepts an argument of `depth` for you to utilize.
@@ -27187,8 +22791,8 @@ Once you're up to speed with the general concepts involved, you can pass in your
 
 | Property        | Description                                                |
 | --------------- | ---------------------------------------------------------- |
-| **`name`** *   | The default name to be used as a `type` for this element.  |
-| **`Button`** * | A React component to be rendered in the Rich Text toolbar. |
+| **`name`** \*   | The default name to be used as a `type` for this element.  |
+| **`Button`** \* | A React component to be rendered in the Rich Text toolbar. |
 | **`plugins`**   | An array of plugins to provide to the Rich Text editor.    |
 | **`type`**      | A type that overrides the default type used by `name`      |
 
@@ -27344,8 +22948,9 @@ const serialize = (children) =>
 <Banner>
   **Note:**
 
-  The above example is for how to render to JSX, although for plain HTML the pattern is similar.
-  Just remove the JSX and return HTML strings instead!
+The above example is for how to render to JSX, although for plain HTML the pattern is similar.
+Just remove the JSX and return HTML strings instead!
+
 </Banner>
 
 ### Built-in SlateJS Plugins
@@ -27392,11 +22997,14 @@ The plugin itself extends Payload's built-in `shouldBreakOutOnEnter` Slate funct
 If you are building your own custom Rich Text elements or leaves, you may benefit from importing the following types:
 
 ```ts
-import type { RichTextCustomElement, RichTextCustomLeaf } from '@payloadcms/richtext-slate'
+import type {
+  RichTextCustomElement,
+  RichTextCustomLeaf,
+} from '@payloadcms/richtext-slate'
 ```
 ````
 
-## File: troubleshooting/troubleshooting.mdx
+## File: troubleshooting_troubleshooting.mdx
 ````
 ---
 title: Troubleshooting
@@ -27412,7 +23020,7 @@ keywords: admin, components, custom, customize, documentation, Content Managemen
 
 This means that your auth cookie is not being set or accepted correctly upon logging in. To resolve check the following settings in your Payload Config:
 
-- CORS - If you are using the '*', try to explicitly only allow certain domains instead including the one you have specified.
+- CORS - If you are using the '\*', try to explicitly only allow certain domains instead including the one you have specified.
 - CSRF - Do you have this set? if so, make sure your domain is whitelisted within the csrf domains. If not, probably not the issue, but probably can't hurt to whitelist it anyway.
 - Cookie settings. If these are completely undefined, then that's fine. but if you have cookie domain set, or anything similar, make sure you don't have the domain misconfigured
 
@@ -27425,7 +23033,7 @@ To further investigate the issue:
 - The login request should have a Set-Cookie header on the response, and the cookie should be getting set successfully. If it is not, most browsers generally have a little yellow ⚠️ symbol that you can hover over to see why the cookie was rejected.
 ````
 
-## File: typescript/generating-types.mdx
+## File: typescript_generating-types.mdx
 ````
 ---
 title: Generating TypeScript Interfaces
@@ -27519,9 +23127,9 @@ Payload generates your types based on a JSON schema. You can extend that JSON sc
 // This will generate the following type in your payload-types.ts:
 
 export interface Test {
-  title: string;
-  content: string;
-  [k: string]: unknown;
+  title: string
+  content: string
+  [k: string]: unknown
 }
 ```
 
@@ -27547,8 +23155,8 @@ const config: Config = {
           name: 'name',
           type: 'text',
           required: true,
-        }
-      ]
+        },
+      ],
     },
     {
       slug: 'posts',
@@ -27565,9 +23173,9 @@ const config: Config = {
           type: 'relationship',
           relationTo: 'users',
         },
-      ]
-    }
-  ]
+      ],
+    },
+  ],
 }
 ```
 
@@ -27632,22 +23240,24 @@ export interface Collection1 {
 <Banner type="warning">
   **Naming Collisions**
 
-  Since these types are hoisted to the top level, you need to be aware that naming collisions can
-  occur. For example, if you have a collection with the name of `Meta` and you also create a
-  interface with the name `Meta` they will collide. It is recommended to scope your interfaces by
-  appending the field type to the end, i.e. `MetaGroup` or similar.
+Since these types are hoisted to the top level, you need to be aware that naming collisions can
+occur. For example, if you have a collection with the name of `Meta` and you also create a
+interface with the name `Meta` they will collide. It is recommended to scope your interfaces by
+appending the field type to the end, i.e. `MetaGroup` or similar.
+
 </Banner>
 
 ## Using your types
 
-Now that your types have been generated, payloads local API will now be typed. It is common for users to want to use this in their frontend code, we recommend generating them with Payload and then copying the file over to your frontend codebase. This is the simplest way to get your types into your frontend codebase.
+Now that your types have been generated, Payload's Local API will now be typed. It is common for users to want to use this in their frontend code, we recommend generating them with Payload and then copying the file over to your frontend codebase. This is the simplest way to get your types into your frontend codebase.
 
 ### Adding an npm script
 
 <Banner type="warning">
   **Important**
 
-  Payload needs to be able to find your config to generate your types.
+Payload needs to be able to find your config to generate your types.
+
 </Banner>
 
 Payload will automatically try and locate your config, but might not always be able to find it. For example, if you are working in a `/src` directory or similar, you need to tell Payload where to find your config manually by using an environment variable. If this applies to you, you can create an npm script to make generating your types easier.
@@ -27665,7 +23275,7 @@ To add an npm script to generate your types and show Payload where to find your 
 Now you can run `pnpm generate:types` to easily generate your types.
 ````
 
-## File: typescript/overview.mdx
+## File: typescript_overview.mdx
 ````
 ---
 title: TypeScript - Overview
@@ -27705,7 +23315,7 @@ Payload exports a number of types that you may find useful while writing your ow
 - [Field hooks](/docs/hooks/fields#typescript)
 ````
 
-## File: upload/overview.mdx
+## File: upload_overview.mdx
 ````
 ---
 title: Uploads
@@ -27716,8 +23326,9 @@ keywords: uploads, images, media, overview, documentation, Content Management Sy
 ---
 
 <Banner>
-  Payload provides everything you need to enable file upload, storage, and management directly
-  on your server—including extremely powerful file [access control](#access-control).
+  Payload provides everything you need to enable file upload, storage, and
+  management directly on your server—including extremely powerful file [access
+  control](#access-control).
 </Banner>
 
 <LightDarkImage
@@ -27747,7 +23358,8 @@ Every Payload Collection can opt-in to supporting Uploads by specifying the `upl
 <Banner type="success">
   **Tip:**
 
-  A common pattern is to create a **"media"** collection and enable **upload** on that collection.
+A common pattern is to create a **"media"** collection and enable **upload** on that collection.
+
 </Banner>
 
 ```ts
@@ -27797,30 +23409,29 @@ export const Media: CollectionConfig = {
 
 _An asterisk denotes that an option is required._
 
-| Option                         | Description                                                                                                                                                                                                                                   |
-|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **`adminThumbnail`**           | Set the way that the [Admin Panel](../admin/overview) will display thumbnails for this Collection. [More](#admin-thumbnails)                                                                                                                  |
-| **`bulkUpload`**               | Allow users to upload in bulk from the list view, default is true                                                                                                                                                                             |
-| **`cacheTags`**                | Set to `false` to disable the cache tag set in the UI for the admin thumbnail component. Useful for when CDNs don't allow certain cache queries.                                                                                              |
-| **`crop`**                     | Set to `false` to disable the cropping tool in the [Admin Panel](../admin/overview). Crop is enabled by default. [More](#crop-and-focal-point-selector)                                                                                       |
-| **`disableLocalStorage`**      | Completely disable uploading files to disk locally. [More](#disabling-local-upload-storage)                                                                                                                                                   |
-| **`displayPreview`**           | Enable displaying preview of the uploaded file in Upload fields related to this Collection. Can be locally overridden by `displayPreview` option in Upload field. [More](/docs/fields/upload#config-options).                                 |
-| **`externalFileHeaderFilter`** | Accepts existing headers and returns the headers after filtering or modifying.                                                                                                                                                                |
-| **`filesRequiredOnCreate`**    | Mandate file data on creation, default is true.                                                                                                                                                                                               |
-| **`filenameCompoundIndex`**    | Field slugs to use for a compound index instead of the default filename index.                                                                                                                                                                |
-| **`focalPoint`**               | Set to `false` to disable the focal point selection tool in the [Admin Panel](../admin/overview). The focal point selector is only available when `imageSizes` or `resizeOptions` are defined. [More](#crop-and-focal-point-selector)         |
-| **`formatOptions`**            | An object with `format` and `options` that are used with the Sharp image library to format the upload file. [More](https://sharp.pixelplumbing.com/api-output#toformat)                                                                       |
-| **`handlers`**                 | Array of Request handlers to execute when fetching a file, if a handler returns a Response it will be sent to the client. Otherwise Payload will retrieve and send back the file.                                                             |
-| **`imageSizes`**               | If specified, image uploads will be automatically resized in accordance to these image sizes. [More](#image-sizes)                                                                                                                            |
-| **`mimeTypes`**                | Restrict mimeTypes in the file picker. Array of valid mimetypes or mimetype wildcards [More](#mimetypes)                                                                                                                                      |
+| Option                         | Description                                                                                                                                                                                                                                        |
+| ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`adminThumbnail`**           | Set the way that the [Admin Panel](../admin/overview) will display thumbnails for this Collection. [More](#admin-thumbnails)                                                                                                                       |
+| **`bulkUpload`**               | Allow users to upload in bulk from the list view, default is true                                                                                                                                                                                  |
+| **`cacheTags`**                | Set to `false` to disable the cache tag set in the UI for the admin thumbnail component. Useful for when CDNs don't allow certain cache queries.                                                                                                   |
+| **`crop`**                     | Set to `false` to disable the cropping tool in the [Admin Panel](../admin/overview). Crop is enabled by default. [More](#crop-and-focal-point-selector)                                                                                            |
+| **`disableLocalStorage`**      | Completely disable uploading files to disk locally. [More](#disabling-local-upload-storage)                                                                                                                                                        |
+| **`displayPreview`**           | Enable displaying preview of the uploaded file in Upload fields related to this Collection. Can be locally overridden by `displayPreview` option in Upload field. [More](/docs/fields/upload#config-options).                                      |
+| **`externalFileHeaderFilter`** | Accepts existing headers and returns the headers after filtering or modifying.                                                                                                                                                                     |
+| **`filesRequiredOnCreate`**    | Mandate file data on creation, default is true.                                                                                                                                                                                                    |
+| **`filenameCompoundIndex`**    | Field slugs to use for a compound index instead of the default filename index.                                                                                                                                                                     |
+| **`focalPoint`**               | Set to `false` to disable the focal point selection tool in the [Admin Panel](../admin/overview). The focal point selector is only available when `imageSizes` or `resizeOptions` are defined. [More](#crop-and-focal-point-selector)              |
+| **`formatOptions`**            | An object with `format` and `options` that are used with the Sharp image library to format the upload file. [More](https://sharp.pixelplumbing.com/api-output#toformat)                                                                            |
+| **`handlers`**                 | Array of Request handlers to execute when fetching a file, if a handler returns a Response it will be sent to the client. Otherwise Payload will retrieve and send back the file.                                                                  |
+| **`imageSizes`**               | If specified, image uploads will be automatically resized in accordance to these image sizes. [More](#image-sizes)                                                                                                                                 |
+| **`mimeTypes`**                | Restrict mimeTypes in the file picker. Array of valid mimetypes or mimetype wildcards [More](#mimetypes)                                                                                                                                           |
 | **`pasteURL`**                 | Controls whether files can be uploaded from remote URLs by pasting them into the Upload field. **Enabled by default.** Accepts `false` to disable or an object with an `allowList` of valid remote URLs. [More](#uploading-files-from-remote-urls) |
-| **`resizeOptions`**            | An object passed to the the Sharp image library to resize the uploaded file. [More](https://sharp.pixelplumbing.com/api-resize)                                                                                                               |
-| **`staticDir`**                | The folder directory to use to store media in. Can be either an absolute path or relative to the directory that contains your config. Defaults to your collection slug                                                                        |
-| **`trimOptions`**              | An object passed to the the Sharp image library to trim the uploaded file. [More](https://sharp.pixelplumbing.com/api-resize#trim)                                                                                                            |
-| **`withMetadata`**             | If specified, appends metadata to the output image file.  Accepts a boolean or a function that receives `metadata` and `req`, returning a boolean.                                                                                            |
-| **`hideFileInputOnCreate`**    | Set to `true` to prevent the admin UI from showing file inputs during document creation, useful for programmatic file generation.                                                                               |
-| **`hideRemoveFile`**           | Set to `true` to prevent the admin UI having a way to remove an existing file while editing.                                                                                                                                                  |
-
+| **`resizeOptions`**            | An object passed to the the Sharp image library to resize the uploaded file. [More](https://sharp.pixelplumbing.com/api-resize)                                                                                                                    |
+| **`staticDir`**                | The folder directory to use to store media in. Can be either an absolute path or relative to the directory that contains your config. Defaults to your collection slug                                                                             |
+| **`trimOptions`**              | An object passed to the the Sharp image library to trim the uploaded file. [More](https://sharp.pixelplumbing.com/api-resize#trim)                                                                                                                 |
+| **`withMetadata`**             | If specified, appends metadata to the output image file. Accepts a boolean or a function that receives `metadata` and `req`, returning a boolean.                                                                                                  |
+| **`hideFileInputOnCreate`**    | Set to `true` to prevent the admin UI from showing file inputs during document creation, useful for programmatic file generation.                                                                                                                  |
+| **`hideRemoveFile`**           | Set to `true` to prevent the admin UI having a way to remove an existing file while editing.                                                                                                                                                       |
 
 ### Payload-wide Upload Options
 
@@ -27915,8 +23526,9 @@ When an uploaded image is smaller than the defined image size, we have 3 options
 <Banner type="error">
   **Note:**
 
-  By default, the image size will return NULL when the uploaded image is smaller than the defined
-  image size. Use the `withoutEnlargement` prop to change this.
+By default, the image size will return NULL when the uploaded image is smaller than the defined
+image size. Use the `withoutEnlargement` prop to change this.
+
 </Banner>
 
 #### Custom file name per size
@@ -27952,10 +23564,11 @@ If you are using a plugin to send your files off to a third-party file storage h
 <Banner type="warning">
   **Note:**
 
-  This is a fairly advanced feature. If you do disable local file storage, by default, your admin
-  panel's thumbnails will be broken as you will not have stored a file. It will be totally up to you
-  to use either a plugin or your own hooks to store your files in a permanent manner, as well as
-  provide your own admin thumbnail using **upload.adminThumbnail**.
+This is a fairly advanced feature. If you do disable local file storage, by default, your admin
+panel's thumbnails will be broken as you will not have stored a file. It will be totally up to you
+to use either a plugin or your own hooks to store your files in a permanent manner, as well as
+provide your own admin thumbnail using **upload.adminThumbnail**.
+
 </Banner>
 
 ## Admin Thumbnails
@@ -27985,9 +23598,9 @@ export const Media: CollectionConfig = {
         fit: 'cover',
         height: 600,
         width: 1800,
-      }
-    ]
-  }
+      },
+    ],
+  },
 }
 ```
 
@@ -28000,9 +23613,10 @@ export const Media: CollectionConfig = {
   slug: 'media',
   upload: {
     // highlight-start
-    adminThumbnail: ({ doc }) => `https://google.com/custom-path-to-file/${doc.filename}`,
+    adminThumbnail: ({ doc }) =>
+      `https://google.com/custom-path-to-file/${doc.filename}`,
     // highlight-end
-  }
+  },
 }
 ```
 
@@ -28030,8 +23644,9 @@ export const Media: CollectionConfig = {
 <Banner type="warning">
   **Important:**
 
-  Uploading files is currently only possible through the REST and Local APIs due to how GraphQL
-  works. It's difficult and fairly nonsensical to support uploading files through GraphQL.
+Uploading files is currently only possible through the REST and Local APIs due to how GraphQL
+works. It's difficult and fairly nonsensical to support uploading files through GraphQL.
+
 </Banner>
 
 To upload a file, use your collection's [`create`](/docs/rest-api/overview#collections) endpoint. Send it all the data that your Collection requires, as well as a `file` key containing the file that you'd like to upload.
@@ -28039,10 +23654,10 @@ To upload a file, use your collection's [`create`](/docs/rest-api/overview#colle
 Send your request as a `multipart/form-data` request, using [`FormData`](https://developer.mozilla.org/en-US/docs/Web/API/FormData) if possible.
 
 ```ts
-const fileInput = document.querySelector('#your-file-input') ;
-const formData = new FormData();
+const fileInput = document.querySelector('#your-file-input')
+const formData = new FormData()
 
-formData.append('file', fileInput.files[0]);
+formData.append('file', fileInput.files[0])
 
 fetch('api/:upload-slug', {
   method: 'POST',
@@ -28080,8 +23695,9 @@ The `data` property should still include all the required fields of your `media`
 <Banner type="warning">
   **Important:**
 
-  Remember that all custom hooks attached to the `media` collection will still trigger.
-  Ensure that files match the specified mimeTypes or sizes defined in the collection's `formatOptions` or custom `hooks`.
+Remember that all custom hooks attached to the `media` collection will still trigger.
+Ensure that files match the specified mimeTypes or sizes defined in the collection's `formatOptions` or custom `hooks`.
+
 </Banner>
 
 ## Uploading Files from Remote URLs
@@ -28133,21 +23749,20 @@ export const Media: CollectionConfig = {
 
 _An asterisk denotes that an option is required._
 
-| Option           | Description                                                                                          | Example       |
-| ---------------- | ---------------------------------------------------------------------------------------------------- | ------------- |
-| **`hostname`** * | The hostname of the allowed URL. This is required to ensure the URL is coming from a trusted source. | `example.com` |
-| **`pathname`**   | The path portion of the URL. Supports wildcards to match multiple paths.                             | `/images/*`   |
-| **`port`**       | The port number of the URL. If not specified, the default port for the protocol will be used.        | `3000`        |
-| **`protocol`**   | The protocol to match. Must be either `http` or `https`. Defaults to `https`.                        | `https`       |
-| **`search`**     | The query string of the URL. If specified, the URL must match this exact query string.               | `?version=1`  |
-
+| Option            | Description                                                                                          | Example       |
+| ----------------- | ---------------------------------------------------------------------------------------------------- | ------------- |
+| **`hostname`** \* | The hostname of the allowed URL. This is required to ensure the URL is coming from a trusted source. | `example.com` |
+| **`pathname`**    | The path portion of the URL. Supports wildcards to match multiple paths.                             | `/images/*`   |
+| **`port`**        | The port number of the URL. If not specified, the default port for the protocol will be used.        | `3000`        |
+| **`protocol`**    | The protocol to match. Must be either `http` or `https`. Defaults to `https`.                        | `https`       |
+| **`search`**      | The query string of the URL. If specified, the URL must match this exact query string.               | `?version=1`  |
 
 ## Access Control
 
 All files that are uploaded to each Collection automatically support the `read` [Access Control](/docs/access-control/overview) function from the Collection itself. You can use this to control who should be allowed to see your uploads, and who should not.
 ````
 
-## File: upload/storage-adapters.mdx
+## File: upload_storage-adapters.mdx
 ````
 ---
 title: Storage Adapters
@@ -28160,7 +23775,7 @@ keywords: uploads, images, media, storage, adapters, s3, vercel, google cloud, a
 Payload offers additional storage adapters to handle file uploads. These adapters allow you to store files in different locations, such as Amazon S3, Vercel Blob Storage, Google Cloud Storage, and more.
 
 | Service              | Package                                                                                                           |
-| -------------------- |-------------------------------------------------------------------------------------------------------------------|
+| -------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | Vercel Blob          | [`@payloadcms/storage-vercel-blob`](https://github.com/payloadcms/payload/tree/main/packages/storage-vercel-blob) |
 | AWS S3               | [`@payloadcms/storage-s3`](https://github.com/payloadcms/payload/tree/main/packages/storage-s3)                   |
 | Azure                | [`@payloadcms/storage-azure`](https://github.com/payloadcms/payload/tree/main/packages/storage-azure)             |
@@ -28168,6 +23783,7 @@ Payload offers additional storage adapters to handle file uploads. These adapter
 | Uploadthing          | [`@payloadcms/storage-uploadthing`](https://github.com/payloadcms/payload/tree/main/packages/storage-uploadthing) |
 
 ## Vercel Blob Storage
+
 [`@payloadcms/storage-vercel-blob`](https://www.npmjs.com/package/@payloadcms/storage-vercel-blob)
 
 ### Installation#vercel-blob-installation
@@ -28219,6 +23835,7 @@ export default buildConfig({
 | `clientUploads`      | Do uploads directly on the client to bypass limits on Vercel.        |                               |
 
 ## S3 Storage
+
 [`@payloadcms/storage-s3`](https://www.npmjs.com/package/@payloadcms/storage-s3)
 
 ### Installation#s3-installation
@@ -28268,6 +23885,7 @@ export default buildConfig({
 See the the [AWS SDK Package](https://github.com/aws/aws-sdk-js-v3) and [`S3ClientConfig`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/client/s3) object for guidance on AWS S3 configuration.
 
 ## Azure Blob Storage
+
 [`@payloadcms/storage-azure`](https://www.npmjs.com/package/@payloadcms/storage-azure)
 
 ### Installation#azure-installation
@@ -28297,7 +23915,8 @@ export default buildConfig({
           prefix,
         },
       },
-      allowContainerCreate: process.env.AZURE_STORAGE_ALLOW_CONTAINER_CREATE === 'true',
+      allowContainerCreate:
+        process.env.AZURE_STORAGE_ALLOW_CONTAINER_CREATE === 'true',
       baseURL: process.env.AZURE_STORAGE_ACCOUNT_BASEURL,
       connectionString: process.env.AZURE_STORAGE_CONNECTION_STRING,
       containerName: process.env.AZURE_STORAGE_CONTAINER_NAME,
@@ -28319,6 +23938,7 @@ export default buildConfig({
 | `clientUploads`        | Do uploads directly on the client to bypass limits on Vercel.            |         |
 
 ## Google Cloud Storage
+
 [`@payloadcms/storage-gcs`](https://www.npmjs.com/package/@payloadcms/storage-gcs)
 
 ### Installation#gcs-installation
@@ -28369,8 +23989,8 @@ export default buildConfig({
 | `acl`           | Access control list for files that are uploaded                                                     | `Private` |
 | `clientUploads` | Do uploads directly on the client to bypass limits on Vercel.                                       |           |
 
-
 ## Uploadthing Storage
+
 [`@payloadcms/storage-uploadthing`](https://www.npmjs.com/package/@payloadcms/storage-uploadthing)
 
 ### Installation#uploadthing-installation
@@ -28413,7 +24033,6 @@ export default buildConfig({
 | `fetch`          | Custom fetch function                                         | `fetch`       |
 | `defaultKeyType` | Default key type for file operations                          | `fileKey`     |
 | `clientUploads`  | Do uploads directly on the client to bypass limits on Vercel. |               |
-
 
 ## Custom Storage Adapters
 
@@ -28469,14 +24088,14 @@ This plugin is configurable to work across many different Payload collections. A
 
 | Option           | Type                                | Description                                                                                                                       |
 | ---------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| `collections` *  | `Record<string, CollectionOptions>` | Object with keys set to the slug of collections you want to enable the plugin for, and values set to collection-specific options. |
+| `collections` \* | `Record<string, CollectionOptions>` | Object with keys set to the slug of collections you want to enable the plugin for, and values set to collection-specific options. |
 | `enabled`        | `boolean`                           | To conditionally enable/disable plugin. Default: `true`.                                                                          |
 
 ## Collection-specific options
 
 | Option                        | Type                                                                                                              | Description                                                                                                                                                                                                   |
 | ----------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `adapter` *                   | [Adapter](https://github.com/payloadcms/payload/blob/main/packages/plugin-cloud-storage/src/types.ts#L49)         | Pass in the adapter that you'd like to use for this collection. You can also set this field to `null` for local development if you'd like to bypass cloud storage in certain scenarios and use local storage. |
+| `adapter` \*                  | [Adapter](https://github.com/payloadcms/payload/blob/main/packages/plugin-cloud-storage/src/types.ts#L49)         | Pass in the adapter that you'd like to use for this collection. You can also set this field to `null` for local development if you'd like to bypass cloud storage in certain scenarios and use local storage. |
 | `disableLocalStorage`         | `boolean`                                                                                                         | Choose to disable local storage on this collection. Defaults to `true`.                                                                                                                                       |
 | `disablePayloadAccessControl` | `true`                                                                                                            | Set to `true` to disable Payload's Access Control. [More](#payload-access-control)                                                                                                                            |
 | `prefix`                      | `string`                                                                                                          | Set to `media/images` to upload files inside `media/images` folder in the bucket.                                                                                                                             |
@@ -28508,7 +24127,7 @@ cloudStoragePlugin({
 ```
 ````
 
-## File: versions/autosave.mdx
+## File: versions_autosave.mdx
 ````
 ---
 title: Autosave
@@ -28581,13 +24200,14 @@ When `autosave` is enabled, all `update` operations within Payload expose a new 
 If we created a new version for each autosave, you'd quickly find a ton of autosaves that clutter up your `_versions` collection within the database. That would be messy quick because `autosave` is typically set to save a document at ~800ms intervals.
 
 <Banner type="success">
-  Instead of creating a new version each time a document is autosaved, Payload smartly only creates 
-  **one** autosave version, and then updates that specific version with each autosave
-  performed. This makes sure that your versions remain nice and tidy.
+  Instead of creating a new version each time a document is autosaved, Payload
+  smartly only creates **one** autosave version, and then updates that specific
+  version with each autosave performed. This makes sure that your versions
+  remain nice and tidy.
 </Banner>
 ````
 
-## File: versions/drafts.mdx
+## File: versions_drafts.mdx
 ````
 ---
 title: Drafts
@@ -28599,7 +24219,9 @@ keywords: version history, drafts, preview, draft, restore, publish, autosave, C
 
 Payload's Draft functionality builds on top of the Versions functionality to allow you to make changes to your collection documents and globals, but publish only when you're ready. This functionality allows you to build powerful Preview environments for your data, where you can make sure your changes look good before publishing documents.
 
-<Banner type="warning">Drafts rely on Versions being enabled in order to function.</Banner>
+<Banner type="warning">
+  Drafts rely on Versions being enabled in order to function.
+</Banner>
 
 By enabling Versions with Drafts, your collections and globals can maintain _newer_, and _unpublished_ versions of your documents. It's perfect for cases where you might want to work on a document, update it and save your progress, but not necessarily make it publicly published right away. Drafts are extremely helpful when building preview implementations.
 
@@ -28633,9 +24255,9 @@ Within the Admin UI, if drafts are enabled, a document can be shown with one of 
 ## Draft API
 
 <Banner type="success">
-  If drafts are enabled on your collection or global, important and powerful changes are made to
-  your REST, GraphQL, and Local APIs that allow you to specify if you are interacting with drafts or
-  with live documents.
+  If drafts are enabled on your collection or global, important and powerful
+  changes are made to your REST, GraphQL, and Local APIs that allow you to
+  specify if you are interacting with drafts or with live documents.
 </Banner>
 
 #### Updating or creating drafts
@@ -28665,15 +24287,20 @@ If you simply fetch your created document using a `find` or `findByID` operation
 But, if you specify `draft` as `true`, Payload will automatically replace your published document's content with content coming from the most recently saved `version`. In this case, as we have created _two_ versions in the above scenario, Payload will send back data from the newest (second) draft and your document will appear as the most recently drafted version instead of the published version.
 
 <Banner type="error">
-  **Important:** the `draft` argument on its own will not restrict documents with `_status: 'draft'` from being returned from the API. You need to use Access Control to prevent documents with `_status: 'draft'` from being returned to unauthenticated users. Read below for more information on how this works.
+  **Important:** the `draft` argument on its own will not restrict documents
+  with `_status: 'draft'` from being returned from the API. You need to use
+  Access Control to prevent documents with `_status: 'draft'` from being
+  returned to unauthenticated users. Read below for more information on how this
+  works.
 </Banner>
 
 ## Controlling who can see Collection drafts
 
 <Banner type="warning">
-  If you're using the **drafts** feature, it's important for you to consider who can
-  view your drafts, and who can view only published documents. Luckily, Payload makes this extremely
-  simple and puts the power completely in your hands.
+  If you're using the **drafts** feature, it's important for you to consider who
+  can view your drafts, and who can view only published documents. Luckily,
+  Payload makes this extremely simple and puts the power completely in your
+  hands.
 </Banner>
 
 #### Restricting draft access
@@ -28713,13 +24340,14 @@ export const Pages: CollectionConfig = {
 <Banner type="warning">
   **Note regarding adding versions to an existing collection**
 
-  If you already have a collection with documents, and you *opt in* to draft functionality
-  after you have already created existing documents, all of your old documents
-  *will not have a `_status` field* until you resave them. For this reason, if you are
-  *adding* versions into an existing collection, you might want to write your Access Control
-  function to allow for users to read both documents where
-  **`_status` is equal to `"published"`** as well as where
-  **`_status` does not exist**.
+If you already have a collection with documents, and you _opt in_ to draft functionality
+after you have already created existing documents, all of your old documents
+_will not have a `_status` field_ until you resave them. For this reason, if you are
+_adding_ versions into an existing collection, you might want to write your Access Control
+function to allow for users to read both documents where
+**`_status` is equal to `"published"`** as well as where
+**`_status` does not exist**.
+
 </Banner>
 
 Here is an example for how to write an [Access Control](../access-control/overview) function that grants access to both documents where `_status` is equal to "published" and where `_status` does not exist:
@@ -28769,7 +24397,12 @@ Payload provides for an ability to schedule publishing / unpublishing events in 
 You can enable this functionality on both collections and globals via the `versions.drafts.schedulePublish: true` property.
 
 <Banner type="warning">
-  **Important:** if you are going to enable scheduled publish / unpublish, you need to make sure your Payload app is set up to process [Jobs](/docs/jobs-queue/overview). This feature works by creating a Job in the background, which will be picked up after the job becomes available. If you do not have any mechanism in place to run jobs, your scheduled publish / unpublish jobs will never be executed.
+  **Important:** if you are going to enable scheduled publish / unpublish, you
+  need to make sure your Payload app is set up to process
+  [Jobs](/docs/jobs-queue/overview). This feature works by creating a Job in the
+  background, which will be picked up after the job becomes available. If you do
+  not have any mechanism in place to run jobs, your scheduled publish /
+  unpublish jobs will never be executed.
 </Banner>
 
 ## Unpublishing drafts
@@ -28781,7 +24414,7 @@ If a document is published, the Payload Admin UI will be updated to show an "unp
 If a document is published, and you have made further changes which are saved as a draft, Payload will show a "revert to published" button at the top of the sidebar which will allow you to reject your draft changes and "revert" back to the published state of the document. Your drafts will still be saved, but a new version will be created that will reflect the last published state of the document.
 ````
 
-## File: versions/overview.mdx
+## File: versions_overview.mdx
 ````
 ---
 title: Versions
@@ -28792,8 +24425,8 @@ keywords: version history, revisions, audit log, draft, publish, restore, autosa
 ---
 
 <Banner>
-  Payload's powerful Versions functionality allows you to keep a running history of changes over
-  time and extensible to fit any content publishing workflow.
+  Payload's powerful Versions functionality allows you to keep a running history
+  of changes over time and extensible to fit any content publishing workflow.
 </Banner>
 
 When enabled, Payload will automatically scaffold a new Collection in your database to store versions of your document(s) over time, and the Admin UI will be extended with additional views that allow you to browse document versions, view diffs in order to see exactly what has changed in your documents (and when they changed), and restore documents back to prior versions easily.
@@ -28811,9 +24444,9 @@ _Comparing an old version to a newer version of a document_
 - Build a powerful publishing schedule mechanism to create documents and have them become publicly readable automatically at a future date
 
 <Banner type="success">
-  Versions are extremely performant and totally opt-in. They don't change the shape of your data at
-  all. All versions are stored in a separate Collection and can be turned on and off easily at your
-  discretion.
+  Versions are extremely performant and totally opt-in. They don't change the
+  shape of your data at all. All versions are stored in a separate Collection
+  and can be turned on and off easily at your discretion.
 </Banner>
 
 ## Options
